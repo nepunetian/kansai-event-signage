@@ -147,16 +147,33 @@ function updateClock(){
 }
 
 async function loadEvents(){
-  try{
-    const res = await fetch(`events.json?ts=${Date.now()}`, {cache:'no-store'});
-    events = await res.json();
-    $('#updated').textContent = `最終更新: ${new Date().toLocaleString('ja-JP')}`;
+  // まず events-data.js の同梱データを即時表示
+  if(Array.isArray(window.EVENT_DATA) && window.EVENT_DATA.length){
+    events = window.EVENT_DATA;
+    $('#updated').textContent = `最終更新: ${new Date().toLocaleString('ja-JP')}（同梱データ）`;
     heroIndex = 0;
     pageIndex = 0;
     render();
+  }
+
+  // GitHub Pages上では events.json も取り直して最新化
+  try{
+    const res = await fetch(`./events.json?ts=${Date.now()}`, {cache:'no-store'});
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const latest = await res.json();
+    if(Array.isArray(latest) && latest.length){
+      events = latest;
+      window.EVENT_DATA = latest;
+      $('#updated').textContent = `最終更新: ${new Date().toLocaleString('ja-JP')}`;
+      heroIndex = 0;
+      pageIndex = 0;
+      render();
+    }
   }catch(err){
-    console.error(err);
-    $('#grid').innerHTML = `<div class="empty">イベントデータを読み込めませんでした</div>`;
+    console.warn('events.jsonの再取得に失敗。events-data.jsを使用します。', err);
+    if(!events.length){
+      $('#grid').innerHTML = `<div class="empty">イベントデータを読み込めませんでした</div>`;
+    }
   }
 }
 

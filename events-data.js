@@ -1,4 +1,4 @@
-[
+window.EVENT_DATA = [
   {
     "title": "京都国際マンガ・アニメフェア2026（京まふ）",
     "start_date": "2026-09-19",
@@ -232,4 +232,4 @@
     "source_url": "https://ja.kyoto.travel/event/",
     "image_url": ""
   }
-]
+];

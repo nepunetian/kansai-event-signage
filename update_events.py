@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parent
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 OUT = ROOT / "events.json"
+DATA_JS = ROOT / "events-data.js"
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Safari/537.36"
 S = requests.Session()
@@ -414,10 +415,18 @@ def main():
         print("イベント取得結果が0件のため既存events.jsonを保持します。", file=sys.stderr)
         sys.exit(2)
 
+    json_text = json.dumps(events, ensure_ascii=False, indent=2)
+
     tmp = OUT.with_suffix(".json.tmp")
-    tmp.write_text(json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp.write_text(json_text, encoding="utf-8")
     tmp.replace(OUT)
-    print(f"{len(events)}件を events.json に保存しました。")
+
+    DATA_JS.write_text(
+        "window.EVENT_DATA = " + json_text + ";\n",
+        encoding="utf-8"
+    )
+
+    print(f"{len(events)}件を events.json / events-data.js に保存しました。")
     print("Walkerplus / X 統合。image_url 付き。")
 
 if __name__ == "__main__":
