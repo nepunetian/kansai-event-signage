@@ -1,0 +1,206 @@
+{
+  "大阪観光局": {
+    "list_links": 0,
+    "sitemap_links": 2,
+    "candidates": 2,
+    "parsed": 1,
+    "errors": 0,
+    "notes": []
+  },
+  "インテックス大阪": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
+      "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "ATC": {
+    "list_links": 0,
+    "sitemap_links": 180,
+    "candidates": 180,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.atc-co.com/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "グランフロント大阪": {
+    "list_links": 10,
+    "sitemap_links": 0,
+    "candidates": 10,
+    "parsed": 10,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.grandfront-osaka.jp/sitemap.xml: HTTPError",
+      "sitemap https://www.grandfront-osaka.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.grandfront-osaka.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "なんばパークス": {
+    "list_links": 10,
+    "sitemap_links": 0,
+    "candidates": 10,
+    "parsed": 10,
+    "errors": 0,
+    "notes": [
+      "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
+      "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
+      "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "LUCUA大阪": {
+    "list_links": 38,
+    "sitemap_links": 84,
+    "candidates": 88,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "阪急うめだ本店": {
+    "list_links": 32,
+    "sitemap_links": 180,
+    "candidates": 180,
+    "parsed": 0,
+    "errors": 16,
+    "notes": []
+  },
+  "大丸梅田店": {
+    "list_links": 0,
+    "sitemap_links": 104,
+    "candidates": 104,
+    "parsed": 0,
+    "errors": 11,
+    "notes": [
+      "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "あべのハルカス近鉄本店": {
+    "list_links": 1,
+    "sitemap_links": 0,
+    "candidates": 1,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://abenoharukas.d-kintetsu.co.jp/sitemap.xml: HTTPError",
+      "sitemap https://abenoharukas.d-kintetsu.co.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://abenoharukas.d-kintetsu.co.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "アニメイト": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 1,
+    "notes": [
+      "list: 404 Client Error: Not Found for url: https://www.animate.co.jp/event/",
+      "sitemap https://www.animate.co.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.animate.co.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "アニメイト大阪日本橋": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.animate.co.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.animate.co.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "大阪オートメッセ": {
+    "list_links": 1,
+    "sitemap_links": 0,
+    "candidates": 1,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.automesse.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.automesse.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "JR西日本": {
+    "list_links": 29,
+    "sitemap_links": 0,
+    "candidates": 29,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.jr-odekake.net/sitemap.xml: HTTPError",
+      "sitemap https://www.jr-odekake.net/sitemap_index.xml: HTTPError",
+      "sitemap https://www.jr-odekake.net/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "近鉄": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.kintetsu.co.jp/sitemap.xml: HTTPError",
+      "sitemap https://www.kintetsu.co.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.kintetsu.co.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "阪急電鉄": {
+    "list_links": 15,
+    "sitemap_links": 0,
+    "candidates": 15,
+    "parsed": 3,
+    "errors": 0,
+    "notes": []
+  },
+  "南海電鉄": {
+    "list_links": 55,
+    "sitemap_links": 180,
+    "candidates": 180,
+    "parsed": 2,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.nankai.co.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "Feel KOBE": {
+    "list_links": 30,
+    "sitemap_links": 180,
+    "candidates": 180,
+    "parsed": 29,
+    "errors": 0,
+    "notes": [
+      "sitemap https://www.feel-kobe.jp/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "京都観光Navi": {
+    "list_links": 31,
+    "sitemap_links": 43,
+    "candidates": 67,
+    "parsed": 35,
+    "errors": 29,
+    "notes": [
+      "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
+      "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
+    ]
+  },
+  "Peatix": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": []
+  },
+  "TOTAL": {
+    "final_events": 91,
+    "generated_at": "2026-09-06T17:39:02.704285+09:00"
+  }
+}
