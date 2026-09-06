@@ -102,7 +102,7 @@
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 16,
+    "errors": 17,
     "notes": []
   },
   "大丸梅田店": {
@@ -208,7 +208,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 127,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -216,10 +216,10 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 31,
+    "list_links": 29,
     "sitemap_links": 43,
-    "candidates": 67,
-    "parsed": 72,
+    "candidates": 65,
+    "parsed": 76,
     "errors": 29,
     "notes": [
       "listing fallback: 41",
@@ -236,7 +236,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 208,
-    "generated_at": "2026-09-06T20:03:19.359619+09:00"
+    "final_events": 215,
+    "generated_at": "2026-09-07T06:27:55.461738+09:00"
   }
 }
