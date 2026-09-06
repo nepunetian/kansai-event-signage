@@ -1,4 +1,14 @@
 {
+  "JAFモータースポーツ": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 320,
+    "parsed": 0,
+    "errors": 0,
+    "notes": [
+      "calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
+    ]
+  },
   "インテックス大阪専用": {
     "list_links": 0,
     "sitemap_links": 0,
@@ -198,7 +208,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 127,
+    "parsed": 126,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -209,7 +219,7 @@
     "list_links": 31,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 71,
+    "parsed": 72,
     "errors": 29,
     "notes": [
       "listing fallback: 41",
@@ -225,40 +235,8 @@
     "errors": 0,
     "notes": []
   },
-  "ATC 2026-09": {
-    "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
-    "errors": 0,
-    "notes": []
-  },
-  "ATC 2026-10": {
-    "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
-    "errors": 0,
-    "notes": []
-  },
-  "ATC 2026-11": {
-    "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
-    "errors": 0,
-    "notes": []
-  },
-  "ATC 2026-12": {
-    "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
-    "errors": 0,
-    "notes": []
-  },
   "TOTAL": {
-    "final_events": 207,
-    "generated_at": "2026-09-06T19:06:09.002358+09:00"
+    "final_events": 208,
+    "generated_at": "2026-09-06T19:38:01.990382+09:00"
   }
 }
