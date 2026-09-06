@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import json, os, re, sys, time, hashlib, mimetypes, xml.etree.ElementTree as ET
+import json, os, re, sys, time, hashlib, mimetypes, xml.etree.ElementTree as ET, html as html_lib
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -483,6 +483,68 @@ def extract_dates_from_html(soup, text_body):
     if parsed:
         return min(parsed), max(parsed)
 
+    # ATC形式: 2026.08.01 → 08.23 / 2026.08.18、08.19 ... 08.30
+    m = re.search(
+        r"(20\d{2})[./](\d{1,2})[./](\d{1,2})"
+        r".{0,35}?(?:→|～|〜|~|\.\.\.|…|-)"
+        r".{0,25}?(?:(20\d{2})[./])?(?:(\d{1,2})[./])?(\d{1,2})",
+        text_body[:18000], re.S
+    )
+    if m:
+        try:
+            y1, m1, d1, y2, m2, d2 = m.groups()
+            sd = date(int(y1), int(m1), int(d1))
+            ed = date(int(y2 or y1), int(m2 or m1), int(d2))
+            return sd.isoformat(), ed.isoformat()
+        except Exception:
+            pass
+
+    # LUCUA形式: 8/22(土)〜8/23(日)
+    m = re.search(
+        r"(?<!\d)(\d{1,2})/(\d{1,2})"
+        r".{0,12}?(?:～|〜|~|→|-)"
+        r".{0,12}?(\d{1,2})/(\d{1,2})(?!\d)",
+        text_body[:18000], re.S
+    )
+    if m:
+        try:
+            m1,d1,m2,d2 = map(int, m.groups())
+            y = date.today().year
+            sd = date(y,m1,d1)
+            ed = date(y,m2,d2)
+            if ed < sd:
+                ed = date(y+1,m2,d2)
+            if ed < date.today() - timedelta(days=60):
+                sd = date(y+1,m1,d1)
+                ed = date(y+1,m2,d2) if m2 >= m1 else date(y+2,m2,d2)
+            return sd.isoformat(), ed.isoformat()
+        except Exception:
+            pass
+
+    # 百貨店形式: 9月2日(水)→8日(火)
+    m = re.search(
+        r"(?<!\d)(\d{1,2})月\s*(\d{1,2})日"
+        r".{0,12}?(?:→|～|〜|~|-)"
+        r".{0,12}?(?:(\d{1,2})月\s*)?(\d{1,2})日",
+        text_body[:18000], re.S
+    )
+    if m:
+        try:
+            m1,d1,m2,d2 = m.groups()
+            m1,d1,d2 = int(m1),int(d1),int(d2)
+            m2 = int(m2 or m1)
+            y = date.today().year
+            sd = date(y,m1,d1)
+            ed = date(y,m2,d2)
+            if ed < sd:
+                ed = date(y+1,m2,d2)
+            if ed < date.today() - timedelta(days=60):
+                sd = date(y+1,m1,d1)
+                ed = date(y+1,m2,d2) if m2 >= m1 else date(y+2,m2,d2)
+            return sd.isoformat(), ed.isoformat()
+        except Exception:
+            pass
+
     # 本文: 年付きレンジ
     patterns = [
         re.compile(
@@ -812,6 +874,460 @@ def collect_department_store_text(html, source):
 
     return events
 
+
+
+# -------------------------
+# インテックス大阪専用収集
+# -------------------------
+INTEX_VARIANTS = [
+    "https://www.intex-osaka.com/jp/",
+    "https://www.intex-osaka.com/jp/?interfaceLocale=ja-JP&locale=ja-JP",
+    "https://www.intex-osaka.com/jp/?locale=ja-JP",
+    "https://www.intex-osaka.com/jp/?accessToken=undefined&interfaceLocale=ja-JP&locale=ja-JP",
+]
+
+def _intex_parse_date_pair(text_value):
+    """
+    2026 08/14 FRI. 2026 08/16 SUN.
+    のような表記を解析。
+    """
+    m = re.search(
+        r"(20\d{2})\s+(\d{1,2})/(\d{1,2})\s+[A-Z]{3}\.?"
+        r".{0,80}?"
+        r"(20\d{2})\s+(\d{1,2})/(\d{1,2})\s+[A-Z]{3}\.?",
+        text_value, re.S | re.I
+    )
+    if m:
+        try:
+            y1,m1,d1,y2,m2,d2 = map(int, m.groups())
+            return date(y1,m1,d1).isoformat(), date(y2,m2,d2).isoformat()
+        except Exception:
+            pass
+
+    m = re.search(
+        r"(20\d{2})\s+(\d{1,2})/(\d{1,2})\s+[A-Z]{3}\.?",
+        text_value, re.S | re.I
+    )
+    if m:
+        try:
+            y,m,d = map(int, m.groups())
+            iso = date(y,m,d).isoformat()
+            return iso, iso
+        except Exception:
+            pass
+    return None, None
+
+def parse_intex_homepage(html, source_url):
+    """
+    インテックス大阪トップページのEVENTカードを直接解析。
+    h3タイトルの周囲にある開始日・終了日・会場・説明を取得する。
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+    seen = set()
+
+    for h in soup.find_all(["h2","h3","h4"]):
+        title = re.sub(r"\s+", " ", h.get_text(" ", strip=True)).strip()
+        if not title or len(title) < 4:
+            continue
+        if title in ("EVENT", "イベント", "ACCESS", "NEWS"):
+            continue
+
+        node = h
+        block = None
+        for _ in range(7):
+            node = getattr(node, "parent", None)
+            if not node:
+                break
+            txt = re.sub(r"\s+", " ", node.get_text(" ", strip=True))
+            if (
+                re.search(r"20\d{2}\s+\d{1,2}/\d{1,2}", txt)
+                and ("会場" in txt or "開催時間" in txt or "料金" in txt)
+                and len(txt) < 7000
+            ):
+                block = node
+                break
+
+        if not block:
+            continue
+
+        txt = re.sub(r"\s+", " ", block.get_text(" ", strip=True))
+        sd, ed = _intex_parse_date_pair(txt)
+        if not sd:
+            sd, ed = extract_dates_from_html(block, txt)
+        if not sd or (ed or sd) < date.today().isoformat():
+            continue
+
+        # 会場: 「会場 3号館 4号館 5号館A」など
+        venue = "インテックス大阪"
+        vm = re.search(
+            r"会場\s+(.+?)(?:開催時間|料金|ホームページ|詳しく見る|$)",
+            txt
+        )
+        if vm:
+            hall_text = re.sub(r"\s+", " ", vm.group(1)).strip()
+            if 1 <= len(hall_text) <= 180:
+                venue = "インテックス大阪 " + hall_text
+
+        # 説明はタイトル後〜会場前
+        desc = ""
+        if title in txt:
+            after = txt.split(title, 1)[1]
+            desc = re.split(r"\s+会場\s+", after, maxsplit=1)[0].strip()
+        desc = desc[:220] or "詳しくはインテックス大阪公式サイトをご確認ください。"
+
+        full = f"{title} {venue} {desc}"
+        cat = classify(full)
+        image_url = img_from_node(block, "https://www.intex-osaka.com")
+
+        key = (normalize_title(title)[:40], sd)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        # 外部公式ホームページへのリンクがあればそれを優先
+        official = None
+        for a in block.find_all("a", href=True):
+            href = a["href"].strip()
+            if href.startswith("http") and "intex-osaka.com" not in href:
+                official = href
+                break
+
+        events.append({
+            "title": title[:110],
+            "start_date": sd,
+            "end_date": ed or sd,
+            "area": "大阪",
+            "venue": venue,
+            "category": cat,
+            "score": min(99, score(full, cat) + 8),
+            "tags": make_tags(full, cat),
+            "description": desc,
+            "image_url": image_url,
+            "source": "インテックス大阪",
+            "source_url": official or source_url,
+        })
+
+    return events
+
+def _bing_rss_search(query):
+    """
+    Bingの公開RSS検索を使った補助的なイベント発見。
+    APIキー不要。失敗しても他の収集には影響しない。
+    """
+    import urllib.parse
+    url = "https://www.bing.com/search?format=rss&q=" + urllib.parse.quote(query)
+    try:
+        r = S.get(url, timeout=25, headers={
+            "User-Agent": UA,
+            "Accept": "application/rss+xml,application/xml,text/xml,*/*",
+            "Accept-Language": "ja-JP,ja;q=0.9"
+        })
+        r.raise_for_status()
+        root = ET.fromstring(r.text)
+        out = []
+        for item in root.findall(".//item"):
+            title = (item.findtext("title") or "").strip()
+            link = (item.findtext("link") or "").strip()
+            desc = html_lib.unescape(item.findtext("description") or "")
+            if link:
+                out.append((title, link, re.sub("<[^>]+>", " ", desc)))
+        return out
+    except Exception as e:
+        print(f"[INTEX Search] RSS error: {e}", file=sys.stderr)
+        return []
+
+def collect_intex_search_discovery():
+    """
+    インテックス大阪公式カレンダーにイベント名が出ない場合を補完するため、
+    当月〜5か月先について公開検索RSSから主催者公式ページを発見する。
+    発見ページはEvent JSON-LDまたは本文解析でイベント化する。
+    """
+    found = []
+    seen_urls = set()
+    today = date.today()
+
+    for offset in range(0, 6):
+        y = today.year + ((today.month - 1 + offset) // 12)
+        m = ((today.month - 1 + offset) % 12) + 1
+        queries = [
+            f'"インテックス大阪" {y}年{m}月 イベント',
+            f'"インテックス大阪" {y}/{m} 展示会',
+        ]
+        for q in queries:
+            for result_title, link, snippet in _bing_rss_search(q):
+                if link in seen_urls:
+                    continue
+                seen_urls.add(link)
+
+                merged = f"{result_title} {snippet}"
+                if "インテックス大阪" not in merged:
+                    continue
+                # インテックス公式そのものはhomepage collectorで処理する
+                if "intex-osaka.com" in urlparse(link).netloc:
+                    continue
+
+                try:
+                    parsed = parse_event_jsonld_page(link, "インテックス大阪関連", "大阪")
+                    if not parsed:
+                        parsed = parse_simple_event_page(link, "インテックス大阪関連", "大阪")
+                    for e in parsed:
+                        # 会場にインテックス大阪が明示されるイベントだけ採用
+                        verify = " ".join([
+                            e.get("title",""), e.get("venue",""),
+                            e.get("description",""), merged
+                        ])
+                        if "インテックス大阪" not in verify:
+                            continue
+                        e["source"] = "インテックス大阪関連"
+                        e["score"] = min(99, e.get("score", 50) + 5)
+                        found.append(e)
+                except Exception as e:
+                    print(f"[INTEX Search] parse error {link}: {e}", file=sys.stderr)
+                time.sleep(0.08)
+
+    return found
+
+def collect_intex_events():
+    events = []
+    seen = set()
+
+    # 複数URLバリアントを試す。サイト側キャッシュ差でEVENTカードが出ることがある。
+    for url in INTEX_VARIANTS:
+        try:
+            html = fetch(url).text
+            parsed = parse_intex_homepage(html, url)
+            for e in parsed:
+                key = (normalize_title(e.get("title",""))[:40], e.get("start_date",""))
+                if key not in seen:
+                    seen.add(key)
+                    events.append(e)
+        except Exception as e:
+            print(f"[INTEX] homepage error {url}: {e}", file=sys.stderr)
+
+    # 外部主催者サイト探索も補助的に実行
+    try:
+        for e in collect_intex_search_discovery():
+            key = (normalize_title(e.get("title",""))[:40], e.get("start_date",""))
+            if key not in seen:
+                seen.add(key)
+                events.append(e)
+    except Exception as e:
+        print(f"[INTEX] search discovery error: {e}", file=sys.stderr)
+
+    return events
+
+
+# -------------------------
+# 大阪主要サイト専用パーサー
+# -------------------------
+def clean_event_title(s):
+    s = re.sub(r"\s+", " ", s or "").strip()
+    s = re.sub(r"^(開催中|開催予定|予告|〖予告〗|【予告】)\s*", "", s)
+    s = re.sub(r"\s+(お気に入りに追加|詳細を見る|詳しくはこちら).*$", "", s)
+    return s.strip(" ・｜|")[:110]
+
+def dedicated_atc(html, source):
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+    seen = set()
+
+    for h in soup.find_all(["h2","h3"]):
+        title = clean_event_title(h.get_text(" ", strip=True))
+        if not title or title in ("イベント", "イベント検索"):
+            continue
+
+        node = h
+        block = None
+        for _ in range(5):
+            node = getattr(node, "parent", None)
+            if not node:
+                break
+            t = re.sub(r"\s+", " ", node.get_text(" ", strip=True))
+            if re.search(r"20\d{2}[./]\d{1,2}[./]\d{1,2}", t) and len(t) < 1800:
+                block = node
+                break
+        if not block:
+            continue
+
+        txt = re.sub(r"\s+", " ", block.get_text(" ", strip=True))
+        sd, ed = extract_dates_from_html(block, txt)
+        if not sd or (ed or sd) < date.today().isoformat():
+            continue
+
+        m = re.search(r"開催場所\s*([^料金開催時間]{2,120})", txt)
+        venue = m.group(1).strip() if m else "ATC"
+        desc = re.sub(r"^.*?" + re.escape(title), "", txt, count=1).strip()[:170]
+        key = (normalize_title(title), sd)
+        if key in seen:
+            continue
+        seen.add(key)
+        full = f"{title} {venue} {desc}"
+        cat = classify(full)
+
+        link = h.find("a", href=True) or block.find("a", href=True)
+        url = urljoin(source["base"], link["href"]) if link else source["url"]
+
+        events.append({
+            "title": title, "start_date": sd, "end_date": ed or sd,
+            "area": "大阪", "venue": venue, "category": cat,
+            "score": score(full, cat), "tags": make_tags(full, cat),
+            "description": desc or "詳しくはATC公式サイトをご確認ください。",
+            "image_url": img_from_node(block, source["base"]),
+            "source": "ATC", "source_url": url,
+        })
+    return events
+
+def dedicated_lucua(html, source):
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+    seen = set()
+
+    for a in soup.find_all("a", href=True):
+        txt = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
+        if not re.search(r"\d{1,2}/\d{1,2}", txt):
+            continue
+        sd, ed = extract_dates_from_html(a, txt)
+        if not sd or (ed or sd) < date.today().isoformat():
+            continue
+
+        title = re.sub(
+            r"\s+\d{1,2}/\d{1,2}.*$",
+            "",
+            txt
+        ).strip()
+        title = clean_event_title(title)
+        if not title or len(title) < 3:
+            continue
+        if "毎日、服の回収" in title:
+            continue
+
+        key = (normalize_title(title), sd)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        parent = a.parent
+        block = parent.parent if parent and parent.parent else parent
+        desc = re.sub(r"\s+", " ", block.get_text(" ", strip=True)) if block else txt
+        full = f"{title} LUCUA大阪 {desc}"
+        cat = classify(full)
+
+        events.append({
+            "title": title, "start_date": sd, "end_date": ed or sd,
+            "area": "大阪", "venue": "LUCUA大阪", "category": cat,
+            "score": score(full, cat), "tags": make_tags(full, cat),
+            "description": desc[:170],
+            "image_url": img_from_node(block, source["base"]) if block else None,
+            "source": "LUCUA大阪", "source_url": urljoin(source["base"], a["href"]),
+        })
+    return events
+
+def dedicated_hankyu(html, source):
+    soup = BeautifulSoup(html, "html.parser")
+    lines = [re.sub(r"\s+", " ", x).strip() for x in soup.stripped_strings]
+    events = []
+    seen = set()
+
+    for i, line in enumerate(lines):
+        if not re.match(r"^◎\s*\d{1,2}月\s*\d{1,2}日", line):
+            continue
+
+        sd, ed = extract_dates_from_html(soup, line)
+        if not sd or (ed or sd) < date.today().isoformat():
+            continue
+
+        # 直前からタイトル候補を探す
+        title = ""
+        for j in range(i-1, max(-1, i-7), -1):
+            cand = clean_event_title(lines[j])
+            if not cand:
+                continue
+            if re.search(r"※|〈|主催|オンライン|午後|午前", cand):
+                continue
+            if re.match(r"^\d+月\d+日", cand):
+                continue
+            if 4 <= len(cand) <= 120:
+                title = cand
+                break
+        if not title:
+            continue
+
+        venue = "阪急うめだ本店"
+        if i+1 < len(lines) and lines[i+1].startswith("◎"):
+            venue = lines[i+1].lstrip("◎").strip()
+
+        key = (normalize_title(title), sd, venue)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        context = " ".join(lines[max(0,i-5):min(len(lines),i+5)])
+        full = f"{title} {venue} {context}"
+        cat = classify(full)
+        events.append({
+            "title": title, "start_date": sd, "end_date": ed or sd,
+            "area": "大阪", "venue": venue, "category": cat,
+            "score": score(full, cat), "tags": make_tags(full, cat),
+            "description": context[:170],
+            "image_url": None, "source": "阪急うめだ本店",
+            "source_url": source["url"],
+        })
+    return events
+
+def dedicated_harukas(html, source):
+    soup = BeautifulSoup(html, "html.parser")
+    lines = [re.sub(r"\s+", " ", x).strip() for x in soup.stripped_strings]
+    events = []
+    seen = set()
+
+    for i, line in enumerate(lines):
+        if not re.search(r"[［\[]\s*\d{1,2}月\s*\d{1,2}日", line):
+            continue
+        sd, ed = extract_dates_from_html(soup, line)
+        if not sd or (ed or sd) < date.today().isoformat():
+            continue
+
+        title = ""
+        for j in range(i-1, max(-1,i-5), -1):
+            cand = clean_event_title(lines[j])
+            if 3 <= len(cand) <= 120 and not re.search(r"最終日|催会場|アートギャラリー|美術画廊", cand):
+                title = cand
+                break
+        if not title:
+            continue
+
+        key = (normalize_title(title), sd)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        context = " ".join(lines[max(0,i-3):min(len(lines),i+4)])
+        venue = "あべのハルカス近鉄本店"
+        full = f"{title} {venue} {context}"
+        cat = classify(full)
+        events.append({
+            "title": title, "start_date": sd, "end_date": ed or sd,
+            "area": "大阪", "venue": venue, "category": cat,
+            "score": score(full, cat), "tags": make_tags(full, cat),
+            "description": context[:170],
+            "image_url": None, "source": "あべのハルカス近鉄本店",
+            "source_url": source["url"],
+        })
+    return events
+
+def collect_dedicated_listing_events(html, source):
+    name = source["name"]
+    if name.startswith("ATC"):
+        return dedicated_atc(html, source)
+    if name == "LUCUA大阪":
+        return dedicated_lucua(html, source)
+    if name == "阪急うめだ本店":
+        return dedicated_hankyu(html, source)
+    if name == "あべのハルカス近鉄本店":
+        return dedicated_harukas(html, source)
+    return []
+
 # -------------------------
 # 汎用イベントサイト収集
 # Google検索のイベント表示で利用される Event JSON-LD を中心に解析
@@ -985,15 +1501,23 @@ def collect_generic_sources():
             print(f"[{source_name}] list error: {source['url']}: {e}", file=sys.stderr)
             list_html = ""
 
-        # まず一覧ページを直接解析
+        # まず一覧ページを専用 + 汎用で解析
         listing_events = []
         if list_html:
+            try:
+                dedicated = collect_dedicated_listing_events(list_html, source)
+                if dedicated:
+                    listing_events.extend(dedicated)
+                    diag(source_name, note=f"dedicated: {len(dedicated)}")
+            except Exception as e:
+                diag(source_name, note=f"dedicated-error: {e}")
+
             try:
                 listing_events.extend(collect_events_from_listing_cards(list_html, source))
             except Exception as e:
                 diag(source_name, note=f"listing-card: {e}")
 
-            if source_name in ("阪急うめだ本店", "大丸梅田店", "あべのハルカス近鉄本店"):
+            if source_name in ("大丸梅田店",):
                 try:
                     listing_events.extend(collect_department_store_text(list_html, source))
                 except Exception as e:
@@ -1429,6 +1953,12 @@ def dedupe(events):
 def main():
     events = []
     events.extend(collect_walker())
+
+    intex_events = collect_intex_events()
+    if intex_events:
+        diag("インテックス大阪専用", parsed=len(intex_events), note=f"dedicated total: {len(intex_events)}")
+        events.extend(intex_events)
+
     events.extend(collect_generic_sources())
     events.extend(collect_x())
 

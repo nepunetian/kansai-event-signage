@@ -6,7 +6,7 @@
     "滋賀県",
     "和歌山県"
   ],
-  "max_events": 220,
+  "max_events": 260,
   "interest_keywords": {
     "鉄道": 28,
     "電車": 26,
@@ -172,6 +172,7 @@
     "期間限定ストア",
     "展覧"
   ],
-  "collection_version": 3,
-  "collection_strategy": "detail parser + list-card fallback + department-store text parser + sitemap"
+  "collection_version": 5,
+  "collection_strategy": "dedicated INTEX homepage variants + search discovery + Osaka dedicated parsers + generic fallback",
+  "intex_search_months": 6
 }
