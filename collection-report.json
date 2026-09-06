@@ -32,9 +32,10 @@
     "list_links": 10,
     "sitemap_links": 0,
     "candidates": 10,
-    "parsed": 10,
+    "parsed": 20,
     "errors": 0,
     "notes": [
+      "listing fallback: 10",
       "sitemap https://www.grandfront-osaka.jp/sitemap.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap-index.xml: HTTPError"
@@ -44,9 +45,10 @@
     "list_links": 10,
     "sitemap_links": 0,
     "candidates": 10,
-    "parsed": 10,
+    "parsed": 20,
     "errors": 0,
     "notes": [
+      "listing fallback: 10",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -93,23 +95,11 @@
       "sitemap https://abenoharukas.d-kintetsu.co.jp/sitemap-index.xml: HTTPError"
     ]
   },
-  "アニメイト": {
-    "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
-    "errors": 1,
-    "notes": [
-      "list: 404 Client Error: Not Found for url: https://www.animate.co.jp/event/",
-      "sitemap https://www.animate.co.jp/sitemap_index.xml: HTTPError",
-      "sitemap https://www.animate.co.jp/sitemap-index.xml: HTTPError"
-    ]
-  },
   "アニメイト大阪日本橋": {
-    "list_links": 0,
+    "list_links": 12,
     "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
+    "candidates": 12,
+    "parsed": 3,
     "errors": 0,
     "notes": [
       "sitemap https://www.animate.co.jp/sitemap_index.xml: HTTPError",
@@ -174,9 +164,10 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 29,
+    "parsed": 62,
     "errors": 0,
     "notes": [
+      "listing fallback: 34",
       "sitemap https://www.feel-kobe.jp/sitemap-index.xml: HTTPError"
     ]
   },
@@ -184,9 +175,10 @@
     "list_links": 31,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 35,
+    "parsed": 68,
     "errors": 29,
     "notes": [
+      "listing fallback: 35",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -199,8 +191,40 @@
     "errors": 0,
     "notes": []
   },
+  "ATC 2026-09": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": []
+  },
+  "ATC 2026-10": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": []
+  },
+  "ATC 2026-11": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": []
+  },
+  "ATC 2026-12": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 0,
+    "notes": []
+  },
   "TOTAL": {
-    "final_events": 91,
-    "generated_at": "2026-09-06T17:39:02.704285+09:00"
+    "final_events": 130,
+    "generated_at": "2026-09-06T17:51:53.860730+09:00"
   }
 }
