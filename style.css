@@ -267,6 +267,7 @@ h1{
   width:100%;
   height:100%;
   object-fit:cover;
+  background:#111820;
   display:block;
 }
 .card-body{

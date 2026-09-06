@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import json, os, re, sys, time
+import json, os, re, sys, time, hashlib, mimetypes
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin
@@ -379,6 +379,116 @@ def collect_x():
 
     return out
 
+
+# -------------------------
+# 画像をローカル保存
+# -------------------------
+IMAGE_DIR = ROOT / "images"
+IMAGE_DIR.mkdir(exist_ok=True)
+
+def image_extension(content_type, url):
+    ctype = (content_type or "").split(";")[0].strip().lower()
+    mapping = {
+        "image/jpeg": ".jpg",
+        "image/jpg": ".jpg",
+        "image/png": ".png",
+        "image/webp": ".webp",
+        "image/gif": ".gif",
+    }
+    if ctype in mapping:
+        return mapping[ctype]
+
+    lower = (url or "").lower()
+    for ext in (".jpg", ".jpeg", ".png", ".webp", ".gif"):
+        if ext in lower:
+            return ".jpg" if ext == ".jpeg" else ext
+    return ".jpg"
+
+def localize_event_image(event):
+    """
+    外部画像をGitHubリポジトリ内 images/ に保存。
+    Fire TVは外部サイトへ直接画像アクセスしない。
+    """
+    url = (event.get("image_url") or "").strip()
+    if not url:
+        event["image_url"] = ""
+        return event
+
+    key_source = "|".join([
+        event.get("title", ""),
+        event.get("start_date", ""),
+        event.get("source_url", ""),
+        url,
+    ])
+    digest = hashlib.sha1(key_source.encode("utf-8")).hexdigest()[:18]
+
+    try:
+        r = S.get(
+            url,
+            timeout=30,
+            stream=True,
+            headers={
+                "User-Agent": UA,
+                "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+                "Referer": event.get("source_url", "") or "https://www.walkerplus.com/",
+            }
+        )
+        r.raise_for_status()
+
+        content_type = r.headers.get("content-type", "")
+        if not content_type.lower().startswith("image/"):
+            raise ValueError(f"not image: {content_type}")
+
+        ext = image_extension(content_type, url)
+        path = IMAGE_DIR / f"{digest}{ext}"
+
+        # 大きすぎる画像は無制限に保存しない（最大8MB）
+        total = 0
+        with path.open("wb") as f:
+            for chunk in r.iter_content(65536):
+                if not chunk:
+                    continue
+                total += len(chunk)
+                if total > 8 * 1024 * 1024:
+                    raise ValueError("image too large")
+                f.write(chunk)
+
+        if total < 1024:
+            path.unlink(missing_ok=True)
+            raise ValueError("image too small")
+
+        event["original_image_url"] = url
+        event["image_url"] = f"images/{path.name}"
+        return event
+
+    except Exception as e:
+        print(f"[Image] download error: {event.get('title')}: {e}", file=sys.stderr)
+        event["image_url"] = ""
+        return event
+
+def localize_images(events):
+    used = set()
+
+    for event in events:
+        localize_event_image(event)
+        local = event.get("image_url", "")
+        if local.startswith("images/"):
+            used.add(Path(local).name)
+        time.sleep(0.05)
+
+    # 古い画像キャッシュを整理
+    for p in IMAGE_DIR.iterdir():
+        if p.name == ".gitkeep":
+            continue
+        if p.is_file() and p.name not in used:
+            try:
+                p.unlink()
+            except Exception:
+                pass
+
+    return events
+
+
 # -------------------------
 # Merge
 # -------------------------
@@ -410,6 +520,7 @@ def main():
         and "道の駅" not in ((e.get("title") or "") + " " + (e.get("description") or ""))
     ]
     events = dedupe(events)[:int(CONFIG.get("max_events", 80))]
+    events = localize_images(events)
 
     if not events:
         print("イベント取得結果が0件のため既存events.jsonを保持します。", file=sys.stderr)
