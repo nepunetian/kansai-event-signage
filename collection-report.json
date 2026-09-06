@@ -187,18 +187,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 16,
+    "parsed": 15,
     "errors": 0,
     "notes": [
-      "dedicated: 16",
-      "listing fallback: 16"
+      "dedicated: 15",
+      "listing fallback: 15"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 127,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -209,7 +209,7 @@
     "list_links": 31,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 72,
+    "parsed": 71,
     "errors": 29,
     "notes": [
       "listing fallback: 41",
@@ -258,7 +258,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 209,
-    "generated_at": "2026-09-06T18:52:12.796049+09:00"
+    "final_events": 207,
+    "generated_at": "2026-09-06T19:06:09.002358+09:00"
   }
 }
