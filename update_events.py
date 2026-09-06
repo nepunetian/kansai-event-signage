@@ -2411,6 +2411,91 @@ def apply_local_priority(events):
 
 
 
+
+def detect_categories(text):
+    """
+    1イベントを複数カテゴリへ所属可能にする。
+    例:
+      京阪電車×アニメのコラボカフェ
+        -> rail + anime + food
+      自動車イベントのキッチンカー
+        -> car（キッチンカーだけではfoodにしない）
+    """
+    t = text or ""
+    cats = []
+
+    def add(cat):
+        if cat not in cats:
+            cats.append(cat)
+
+    # 鉄道
+    if re.search(
+        r"鉄道|電車|列車|新幹線|鉄道模型|駅弁|京阪電車|阪急電鉄|近鉄|JR西日本|南海電鉄|阪神電車",
+        t, re.I
+    ):
+        add("rail")
+
+    # AI・IT
+    if re.search(
+        r"生成AI|人工知能|ChatGPT|LLM|DX|ガジェット|パソコン|スマートフォン|"
+        r"(?<![A-Za-z])AI(?![A-Za-z])|(?<![A-Za-z])IT(?![A-Za-z])|"
+        r"(?<![A-Za-z])XR(?![A-Za-z])|(?<![A-Za-z])VR(?![A-Za-z])|"
+        r"(?<![A-Za-z])AR(?![A-Za-z])|(?<![A-Za-z])PC(?![A-Za-z])",
+        t, re.I
+    ):
+        add("tech")
+
+    # アニメ・ゲーム
+    if re.search(
+        r"アニメ|マンガ|漫画|声優|コスプレ|コミック|キャラクター|"
+        r"ゲーム(?:大会|イベント|フェス|体験|展示)?|eスポーツ|アニメイト|"
+        r"オンリーショップ|コラボカフェ|キャラクターカフェ",
+        t, re.I
+    ):
+        add("anime")
+
+    # クルマ
+    if re.search(
+        r"モーターショー|オートメッセ|オートショー|カスタムカー|チューニングカー|"
+        r"旧車|クラシックカー|スーパーカー|スポーツカー|電気自動車|EV車|"
+        r"モータースポーツ|サーキット|ラリー|ドリフト|試乗会|カーイベント|"
+        r"カーミーティング|自動車展示",
+        t, re.I
+    ):
+        add("car")
+
+    # 食・グルメ
+    # 「食」単独や「キッチンカー」単独は誤爆が多いため使わない。
+    if re.search(
+        r"コラボカフェ|キャラクターカフェ|期間限定カフェ|カフェイベント|"
+        r"グルメ(?:フェス|イベント|フェア)?|フード(?:フェス|イベント|フェア)?|"
+        r"食フェス|食の祭典|ラーメン(?:祭|フェス|博|イベント|フェア)?|"
+        r"カレー(?:祭|フェス|博|イベント|フェア)?|"
+        r"スイーツ(?:フェア|フェス|イベント|博)?|"
+        r"パン(?:祭|フェス|マルシェ|イベント|フェア)?|"
+        r"肉フェス|日本酒(?:祭|フェス|イベント|フェア)?|"
+        r"ビール(?:祭|フェス|イベント|フェア)?|"
+        r"ワイン(?:祭|フェス|イベント|フェア)?|"
+        r"物産展|北海道展|駅弁大会|駅弁フェア|"
+        r"アフタヌーンティー|ビュッフェ|ブッフェ|デザートフェア|"
+        r"チョコレート(?:博|フェア|イベント)|ショコラ(?:フェア|イベント)|"
+        r"アイスクリーム(?:万博|フェア|イベント)",
+        t, re.I
+    ):
+        add("food")
+
+    # 展示
+    if re.search(
+        r"展覧会|企画展|特別展|美術展|写真展|博物館|美術館|アート展|原画展|展示会",
+        t, re.I
+    ):
+        add("exhibition")
+
+    if not cats:
+        cats.append("tourism")
+    return cats
+
+
 # -------------------------
 # カテゴリ・タグ最終正規化
 # -------------------------
@@ -2420,11 +2505,38 @@ def normalize_event_categories_and_tags(events):
         desc = e.get("description","") or ""
         venue = e.get("venue","") or ""
 
-        # タイトルを最重視（3回）、説明・会場を補助にする
+        # タイトルを重視しつつ、複数カテゴリ判定
         evidence = " ".join([title, title, title, desc, venue])
-        cat = classify(evidence)
-        e["category"] = cat
-        e["tags"] = make_tags(evidence, cat)
+        cats = detect_categories(evidence)
+
+        # 既存の主カテゴリ候補が複数カテゴリに含まれるなら維持。
+        # それ以外は最初の高信頼カテゴリを主カテゴリにする。
+        old_cat = e.get("category")
+        if old_cat in cats:
+            primary = old_cat
+        else:
+            primary = cats[0]
+
+        e["category"] = primary
+        e["categories"] = cats
+
+        # 主タグに加えて、複数カテゴリの場合はカテゴリタグも最大3個まで反映
+        tags = make_tags(evidence, primary)
+        cat_label = {
+            "rail": "鉄道",
+            "tech": "AI・IT",
+            "anime": "アニメ・ゲーム",
+            "car": "クルマ",
+            "food": "食・グルメ",
+            "exhibition": "展示",
+            "tourism": "イベント",
+        }
+        for c in cats:
+            label = cat_label.get(c)
+            if label and label not in tags:
+                tags.append(label)
+        e["tags"] = tags[:3]
+
     return events
 
 

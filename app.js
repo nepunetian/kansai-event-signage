@@ -23,33 +23,65 @@ function safeImage(url){
   return url && String(url).trim() ? url : FALLBACK_IMAGE;
 }
 
-function isToday(iso){
-  const now = new Date();
-  const d = new Date(iso+'T00:00:00');
-  return now.toDateString() === d.toDateString();
+function eventStart(e){
+  return new Date((e.start_date || e.end_date) + 'T00:00:00');
 }
 
-function isThisWeekend(iso){
+function eventEnd(e){
+  return new Date((e.end_date || e.start_date) + 'T23:59:59');
+}
+
+function isTodayEvent(e){
+  const todayStart = new Date();
+  todayStart.setHours(0,0,0,0);
+  const todayEnd = new Date(todayStart);
+  todayEnd.setHours(23,59,59,999);
+
+  return eventStart(e) <= todayEnd && eventEnd(e) >= todayStart;
+}
+
+function isThisWeekendEvent(e){
   const now = new Date();
+  now.setHours(0,0,0,0);
+
+  // 「今週末」= 次に来る土日。
+  // 土曜なら今日+明日、日曜なら今日だけを含む。
   const day = now.getDay();
-  const diffToSat = (6 - day + 7) % 7;
-  const sat = new Date(now); sat.setHours(0,0,0,0); sat.setDate(now.getDate()+diffToSat);
-  const sun = new Date(sat); sun.setDate(sat.getDate()+1);
-  const d = new Date(iso+'T00:00:00');
-  return d >= sat && d <= sun;
+  let sat;
+  if(day === 6){
+    sat = new Date(now);
+  }else if(day === 0){
+    sat = new Date(now);
+    sat.setDate(now.getDate()-1);
+  }else{
+    const diffToSat = 6 - day;
+    sat = new Date(now);
+    sat.setDate(now.getDate()+diffToSat);
+  }
+  sat.setHours(0,0,0,0);
+
+  const sun = new Date(sat);
+  sun.setDate(sat.getDate()+1);
+  sun.setHours(23,59,59,999);
+
+  // 開始日ではなく「開催期間が土日に重なるか」で判定
+  return eventStart(e) <= sun && eventEnd(e) >= sat;
 }
 
 function matches(e){
   if(currentFilter==='all') return true;
-  if(currentFilter==='today') return isToday(e.start_date);
-  if(currentFilter==='weekend') return isThisWeekend(e.start_date);
+  if(currentFilter==='today') return isTodayEvent(e);
+  if(currentFilter==='weekend') return isThisWeekendEvent(e);
   if(currentFilter==='tech') return e.category === 'tech';
   if(currentFilter==='rail') return e.category === 'rail';
   if(currentFilter==='anime') return e.category === 'anime';
   if(currentFilter==='food') return e.category === 'food';
   if(currentFilter==='car') return e.category === 'car';
   if(currentFilter==='tourism') return ['tourism','exhibition'].includes(e.category);
-  return e.category === currentFilter;
+  if(Array.isArray(e.categories) && e.categories.length){
+    return e.categories.includes(currentFilter);
+  }
+  return e.category===currentFilter;
 }
 
 function tagHtml(tags=[]){
