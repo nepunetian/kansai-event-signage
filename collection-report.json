@@ -2,11 +2,11 @@
   "JAFモータースポーツ": {
     "list_links": 0,
     "sitemap_links": 0,
-    "candidates": 320,
+    "candidates": 0,
     "parsed": 0,
     "errors": 0,
     "notes": [
-      "calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
+      "semantic parser v2 / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
   "インテックス大阪専用": {
@@ -208,7 +208,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 126,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -237,6 +237,6 @@
   },
   "TOTAL": {
     "final_events": 208,
-    "generated_at": "2026-09-06T19:38:01.990382+09:00"
+    "generated_at": "2026-09-06T20:03:19.359619+09:00"
   }
 }
