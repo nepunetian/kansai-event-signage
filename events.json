@@ -1,0 +1,222 @@
+[
+  {
+    "title": "京都国際マンガ・アニメフェア2026（京まふ）",
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-20",
+    "area": "京都",
+    "venue": "京都市勧業館 みやこめっせ ほか",
+    "category": "anime",
+    "score": 97,
+    "tags": [
+      "アニメ",
+      "ゲーム",
+      "京都",
+      "大型イベント"
+    ],
+    "description": "漫画・アニメ・ゲームに特化した西日本最大級のイベント。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/"
+  },
+  {
+    "title": "ジブリパーク展（大阪）",
+    "start_date": "2026-07-18",
+    "end_date": "2026-09-26",
+    "area": "大阪",
+    "venue": "大阪南港ATCギャラリー",
+    "category": "anime",
+    "score": 91,
+    "tags": [
+      "ジブリ",
+      "展示",
+      "大阪"
+    ],
+    "description": "「遊べる」をテーマに、ジブリパークの世界を体験できる展覧会。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0727e599293/"
+  },
+  {
+    "title": "万博記念公園 万博夏まつり2026",
+    "start_date": "2026-07-24",
+    "end_date": "2026-09-23",
+    "area": "大阪",
+    "venue": "万博記念公園",
+    "category": "tourism",
+    "score": 88,
+    "tags": [
+      "祭り",
+      "万博記念公園",
+      "大阪"
+    ],
+    "description": "太陽の塔周辺などで開催される大規模な夏まつりイベント。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+  },
+  {
+    "title": "京阪電車×響け！ユーフォニアム2026 秋 コラボカフェ",
+    "start_date": "2026-09-01",
+    "end_date": "2026-12-20",
+    "area": "大阪",
+    "venue": "ホテル京阪 京橋 グランデ",
+    "category": "rail",
+    "score": 96,
+    "tags": [
+      "鉄道",
+      "アニメ",
+      "京阪電車"
+    ],
+    "description": "京阪電車と『響け！ユーフォニアム』のコラボ企画。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/"
+  },
+  {
+    "title": "特別展「大絶滅展ー生命史のビッグファイブ」（大阪）",
+    "start_date": "2026-07-17",
+    "end_date": "2026-10-12",
+    "area": "大阪",
+    "venue": "大阪市立自然史博物館",
+    "category": "exhibition",
+    "score": 84,
+    "tags": [
+      "博物館",
+      "科学",
+      "展示"
+    ],
+    "description": "地球史上の5回の大規模絶滅から生命進化の歴史をたどる特別展。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+  },
+  {
+    "title": "空庭妖怪祭",
+    "start_date": "2026-08-08",
+    "end_date": "2026-09-30",
+    "area": "大阪",
+    "venue": "空庭温泉 OSAKA BAY TOWER",
+    "category": "tourism",
+    "score": 76,
+    "tags": [
+      "妖怪",
+      "体験",
+      "大阪"
+    ],
+    "description": "あやかしの世界をテーマにした体験型イベント。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+  },
+  {
+    "title": "1999展ー存在しないあの日の記憶ー（大阪）",
+    "start_date": "2026-07-11",
+    "end_date": "2026-09-27",
+    "area": "大阪",
+    "venue": "谷口悦第2ビル",
+    "category": "exhibition",
+    "score": 82,
+    "tags": [
+      "体験型展示",
+      "大阪"
+    ],
+    "description": "「世界の終わり」をテーマにした恐怖体験型展覧会。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+  },
+  {
+    "title": "神戸ホラーコレクション2026",
+    "start_date": "2026-07-11",
+    "end_date": "2026-09-23",
+    "area": "兵庫",
+    "venue": "三宮オーパ2",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "体験",
+      "神戸",
+      "ホラー"
+    ],
+    "description": "4つのコンテンツのお化け屋敷を楽しめるイベント。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+  },
+  {
+    "title": "有馬の秘宝と月への舟 第2章",
+    "start_date": "2026-07-01",
+    "end_date": "2026-12-31",
+    "area": "兵庫",
+    "venue": "月への舟",
+    "category": "game",
+    "score": 79,
+    "tags": [
+      "謎解き",
+      "有馬",
+      "兵庫"
+    ],
+    "description": "旅館を巡りながら楽しむミッション型謎解きイベント。",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/"
+  },
+  {
+    "title": "重陽神事と烏相撲",
+    "start_date": "2026-09-09",
+    "end_date": "2026-09-09",
+    "area": "京都",
+    "venue": "上賀茂神社",
+    "category": "tourism",
+    "score": 72,
+    "tags": [
+      "伝統行事",
+      "京都",
+      "神社"
+    ],
+    "description": "京都・上賀茂神社で行われる伝統行事。",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/"
+  },
+  {
+    "title": "菊の巫女神楽",
+    "start_date": "2026-09-09",
+    "end_date": "2026-09-27",
+    "area": "京都",
+    "venue": "城南宮",
+    "category": "tourism",
+    "score": 71,
+    "tags": [
+      "伝統行事",
+      "京都"
+    ],
+    "description": "9月の複数日に城南宮で奉納される巫女神楽。",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/"
+  },
+  {
+    "title": "くらげと傘と風鈴と",
+    "start_date": "2026-05-30",
+    "end_date": "2026-09-30",
+    "area": "京都",
+    "venue": "京都水族館",
+    "category": "tourism",
+    "score": 75,
+    "tags": [
+      "京都水族館",
+      "アート",
+      "夜"
+    ],
+    "description": "くらげ・傘・風鈴をテーマにした京都水族館の季節イベント。",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/"
+  },
+  {
+    "title": "寛永行幸四百年記念 特別展 寛永行幸と花の都の文化びと",
+    "start_date": "2026-09-05",
+    "end_date": "2026-10-18",
+    "area": "京都",
+    "venue": "泉屋博古館",
+    "category": "exhibition",
+    "score": 73,
+    "tags": [
+      "美術",
+      "歴史",
+      "京都"
+    ],
+    "description": "寛永行幸400年を記念した特別展。",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/"
+  }
+]
