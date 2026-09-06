@@ -47,6 +47,7 @@ function matches(e){
   if(currentFilter==='rail') return e.category === 'rail';
   if(currentFilter==='anime') return e.category === 'anime';
   if(currentFilter==='food') return e.category === 'food';
+  if(currentFilter==='car') return e.category === 'car';
   if(currentFilter==='tourism') return ['tourism','exhibition'].includes(e.category);
   return e.category === currentFilter;
 }

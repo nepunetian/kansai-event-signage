@@ -66,6 +66,8 @@ def classify(text):
         return "tech"
     if re.search(r"アニメ|マンガ|漫画|声優|コスプレ|ゲーム|eスポーツ", text, re.I):
         return "anime"
+    if re.search(r"自動車|クルマ|モーターショー|オートショー|カスタムカー|チューニングカー|旧車|クラシックカー|スーパーカー|スポーツカー|電気自動車|モータースポーツ|サーキット|ラリー|ドリフト|試乗会|カーイベント|カーミーティング", text, re.I):
+        return "car"
     if re.search(r"グルメ|フード|食フェス|ラーメン|カレー|スイーツ|パン|肉フェス|日本酒|ビール|食べ放題", text, re.I):
         return "food"
     if re.search(r"展示|展覧|博物館|美術館", text):
@@ -74,7 +76,7 @@ def classify(text):
 
 def score(text, category):
     base = {
-        "rail": 72, "tech": 70, "anime": 72, "food": 68,
+        "rail": 72, "tech": 70, "anime": 72, "car": 72, "food": 68,
         "exhibition": 56, "tourism": 50
     }.get(category, 50)
 
@@ -94,6 +96,8 @@ def make_tags(text, cat):
         ("AI・IT", r"\bAI\b|生成AI|\bIT\b|DX|XR|VR|AR|ガジェット"),
         ("アニメ", r"アニメ|マンガ|漫画|声優|コスプレ"),
         ("ゲーム", r"ゲーム|eスポーツ"),
+        ("クルマ", r"自動車|クルマ|モーターショー|オートショー|カスタムカー|旧車|クラシックカー|スーパーカー|スポーツカー|電気自動車|試乗会"),
+        ("モータースポーツ", r"モータースポーツ|レース|サーキット|ラリー|ドリフト"),
         ("グルメ", r"グルメ|フード|ラーメン|カレー|スイーツ|パン|肉|日本酒|ビール"),
         ("展示", r"展示|展覧|博物館|美術館"),
         ("フェス", r"フェス|祭り|フェア|マルシェ"),
@@ -107,6 +111,7 @@ def make_tags(text, cat):
             "rail": "鉄道",
             "tech": "AI・IT",
             "anime": "アニメ・ゲーム",
+            "car": "クルマ",
             "food": "食・グルメ",
             "exhibition": "展示",
             "tourism": "イベント"
