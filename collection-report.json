@@ -28,6 +28,17 @@
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
     ]
   },
+  "ATCトップ": {
+    "list_links": 16,
+    "sitemap_links": 0,
+    "candidates": 16,
+    "parsed": 46,
+    "errors": 0,
+    "notes": [
+      "dedicated: 16",
+      "listing fallback: 31"
+    ]
+  },
   "ATC": {
     "list_links": 0,
     "sitemap_links": 180,
@@ -172,11 +183,22 @@
       "sitemap https://www.nankai.co.jp/sitemap-index.xml: HTTPError"
     ]
   },
+  "セブンパーク天美": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 16,
+    "errors": 0,
+    "notes": [
+      "dedicated: 16",
+      "listing fallback: 16"
+    ]
+  },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 125,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -187,7 +209,7 @@
     "list_links": 31,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 71,
+    "parsed": 72,
     "errors": 29,
     "notes": [
       "listing fallback: 41",
@@ -236,7 +258,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 165,
-    "generated_at": "2026-09-06T18:15:20.723122+09:00"
+    "final_events": 209,
+    "generated_at": "2026-09-06T18:52:12.796049+09:00"
   }
 }
