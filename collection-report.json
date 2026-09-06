@@ -1,4 +1,14 @@
 {
+  "インテックス大阪専用": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 9,
+    "errors": 0,
+    "notes": [
+      "dedicated total: 9"
+    ]
+  },
   "大阪観光局": {
     "list_links": 0,
     "sitemap_links": 2,
@@ -58,9 +68,11 @@
     "list_links": 38,
     "sitemap_links": 84,
     "candidates": 88,
-    "parsed": 0,
+    "parsed": 51,
     "errors": 0,
     "notes": [
+      "dedicated: 19",
+      "listing fallback: 45",
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
@@ -99,7 +111,7 @@
     "list_links": 12,
     "sitemap_links": 0,
     "candidates": 12,
-    "parsed": 3,
+    "parsed": 8,
     "errors": 0,
     "notes": [
       "sitemap https://www.animate.co.jp/sitemap_index.xml: HTTPError",
@@ -153,7 +165,7 @@
     "list_links": 55,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 2,
+    "parsed": 3,
     "errors": 0,
     "notes": [
       "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
@@ -164,7 +176,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 62,
+    "parsed": 125,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -175,10 +187,10 @@
     "list_links": 31,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 68,
+    "parsed": 71,
     "errors": 29,
     "notes": [
-      "listing fallback: 35",
+      "listing fallback: 41",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -224,7 +236,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 130,
-    "generated_at": "2026-09-06T17:51:53.860730+09:00"
+    "final_events": 165,
+    "generated_at": "2026-09-06T18:15:20.723122+09:00"
   }
 }
