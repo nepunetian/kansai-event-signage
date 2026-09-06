@@ -6,7 +6,7 @@
     "滋賀県",
     "和歌山県"
   ],
-  "max_events": 260,
+  "max_events": 280,
   "interest_keywords": {
     "鉄道": 28,
     "電車": 26,
@@ -172,7 +172,19 @@
     "期間限定ストア",
     "展覧"
   ],
-  "collection_version": 5,
-  "collection_strategy": "dedicated INTEX homepage variants + search discovery + Osaka dedicated parsers + generic fallback",
-  "intex_search_months": 6
+  "collection_version": 7,
+  "collection_strategy": "Tennoji-focused dedicated ATC homepage + Harukas schedule + Seven Park Amami detail parser",
+  "intex_search_months": 6,
+  "priority_places": [
+    "天王寺",
+    "阿倍野",
+    "あべのハルカス",
+    "松原",
+    "天美",
+    "セブンパーク天美",
+    "なんば",
+    "南港"
+  ],
+  "tagging_version": 2,
+  "tagging_strategy": "strict high-confidence tags; title weighted x3; English abbreviations require token boundaries"
 }

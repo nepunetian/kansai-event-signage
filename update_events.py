@@ -30,6 +30,8 @@ MULTI_SOURCES = [
     # 大阪中心：大型会場・商業施設
     {"name":"大阪観光局","url":"https://osaka-info.jp/event/","base":"https://osaka-info.jp","area":"大阪","link_patterns":[r"/event/[^?#]+"],"max_links":100},
     {"name":"インテックス大阪","url":"https://www.intex-osaka.com/jp/event/","base":"https://www.intex-osaka.com","area":"大阪","link_patterns":[r"/jp/event/[^?#]+", r"/event/[^?#]+"],"max_links":100},
+
+    {"name":"ATCトップ","url":"https://www.atc-co.com/","base":"https://www.atc-co.com","area":"大阪","link_patterns":[r"/event/[^?#]+"],"max_links":120,"max_sitemap_links":0},
     {"name":"ATC","url":"https://www.atc-co.com/event/","base":"https://www.atc-co.com","area":"大阪","link_patterns":[r"/event/[^?#]+"],"max_links":100},
     {"name":"グランフロント大阪","url":"https://www.grandfront-osaka.jp/event/","base":"https://www.grandfront-osaka.jp","area":"大阪","link_patterns":[r"/event/[^?#]+"],"max_links":100},
     {"name":"なんばパークス","url":"https://nambaparks.com/event","base":"https://nambaparks.com","area":"大阪","link_patterns":[r"/event/[^?#]+", r"/event\?[^#]+"],"max_links":100},
@@ -51,6 +53,9 @@ MULTI_SOURCES = [
     {"name":"近鉄","url":"https://www.kintetsu.co.jp/railway/","base":"https://www.kintetsu.co.jp","area":"関西","link_patterns":[r"/railway/[^?#]+", r"/event/[^?#]+", r"/news/[^?#]+"],"max_links":100},
     {"name":"阪急電鉄","url":"https://www.hankyu.co.jp/area_info/","base":"https://www.hankyu.co.jp","area":"関西","link_patterns":[r"/area_info/[^?#]+", r"/event/[^?#]+"],"max_links":100},
     {"name":"南海電鉄","url":"https://www.nankai.co.jp/","base":"https://www.nankai.co.jp","area":"大阪","link_patterns":[r"/traffic/[^?#]+", r"/event/[^?#]+", r"/news/[^?#]+"],"max_links":100},
+
+
+    {"name":"セブンパーク天美","url":"https://amami.sevenpark.jp/event/","base":"https://amami.sevenpark.jp","area":"大阪","link_patterns":[r"/event/\d+/"],"max_links":140},
 
     # 大阪周辺の補助ソース
     {"name":"Feel KOBE","url":"https://www.feel-kobe.jp/event/","base":"https://www.feel-kobe.jp","area":"兵庫","link_patterns":[r"/event/[^?#]+"],"max_links":60},
@@ -110,19 +115,61 @@ def area_from_text(text):
     return "関西"
 
 def classify(text):
-    if re.search(r"鉄道|電車|列車|新幹線|京阪|阪急|近鉄|JR|南海|阪神", text, re.I):
+    """
+    主カテゴリ判定。
+    短い英字（AR/VR/AI/EV等）は必ず単語境界を付けて誤爆を防ぐ。
+    """
+    t = text or ""
+
+    if re.search(
+        r"鉄道|電車|列車|新幹線|鉄道模型|駅弁|京阪電車|阪急電鉄|近鉄|JR西日本|南海電鉄|阪神電車",
+        t, re.I
+    ):
         return "rail"
-    if re.search(r"\bAI\b|生成AI|\bIT\b|DX|XR|VR|AR|ガジェット|PC", text, re.I):
+
+    if re.search(
+        r"生成AI|人工知能|ChatGPT|LLM|DX|ガジェット|パソコン|スマートフォン|"
+        r"(?<![A-Za-z])AI(?![A-Za-z])|(?<![A-Za-z])IT(?![A-Za-z])|"
+        r"(?<![A-Za-z])XR(?![A-Za-z])|(?<![A-Za-z])VR(?![A-Za-z])|"
+        r"(?<![A-Za-z])AR(?![A-Za-z])|(?<![A-Za-z])PC(?![A-Za-z])",
+        t, re.I
+    ):
         return "tech"
-    if re.search(r"アニメ|マンガ|漫画|声優|コスプレ|ゲーム|eスポーツ", text, re.I):
+
+    if re.search(
+        r"アニメ|マンガ|漫画|声優|コスプレ|コミック|キャラクター|"
+        r"ゲーム(?:大会|イベント|フェス|体験|展示)?|eスポーツ|アニメイト|オンリーショップ",
+        t, re.I
+    ):
         return "anime"
-    if re.search(r"自動車|クルマ|モーターショー|オートショー|カスタムカー|チューニングカー|旧車|クラシックカー|スーパーカー|スポーツカー|電気自動車|モータースポーツ|サーキット|ラリー|ドリフト|試乗会|カーイベント|カーミーティング", text, re.I):
+
+    if re.search(
+        r"モーターショー|オートメッセ|オートショー|カスタムカー|チューニングカー|"
+        r"旧車|クラシックカー|スーパーカー|スポーツカー|電気自動車|EV車|"
+        r"モータースポーツ|サーキット|ラリー|ドリフト|試乗会|カーイベント|カーミーティング|"
+        r"自動車展示",
+        t, re.I
+    ):
         return "car"
-    if re.search(r"グルメ|フード|食フェス|ラーメン|カレー|スイーツ|パン|肉フェス|日本酒|ビール|食べ放題", text, re.I):
+
+    if re.search(
+        r"グルメ(?:フェス|イベント)?|フード(?:フェス|イベント|コート)?|食フェス|"
+        r"ラーメン(?:祭|フェス|博|イベント)?|カレー(?:祭|フェス|博|イベント)?|"
+        r"スイーツ(?:フェア|フェス|イベント)?|パン(?:祭|フェス|マルシェ|イベント)?|"
+        r"肉フェス|日本酒(?:祭|フェス|イベント)?|ビール(?:祭|フェス|イベント)?|"
+        r"物産展|北海道展|駅弁大会",
+        t, re.I
+    ):
         return "food"
-    if re.search(r"展示|展覧|博物館|美術館", text):
+
+    if re.search(
+        r"展覧会|企画展|特別展|美術展|写真展|博物館|美術館|アート展|原画展",
+        t, re.I
+    ):
         return "exhibition"
+
     return "tourism"
+
 
 def score(text, category):
     base = {
@@ -140,34 +187,93 @@ def score(text, category):
     return max(35, min(99, base))
 
 def make_tags(text, cat):
+    """
+    タグは高信頼キーワードだけ。
+    主カテゴリタグ + 明確な副タグのみ付与する。
+    最大3個。
+    """
+    t = text or ""
     tags = []
-    mapping = [
-        ("鉄道", r"鉄道|電車|列車|新幹線|京阪|阪急|近鉄|南海"),
-        ("AI・IT", r"\bAI\b|生成AI|\bIT\b|DX|XR|VR|AR|ガジェット"),
-        ("アニメ", r"アニメ|マンガ|漫画|声優|コスプレ"),
-        ("ゲーム", r"ゲーム|eスポーツ"),
-        ("クルマ", r"自動車|クルマ|モーターショー|オートショー|カスタムカー|旧車|クラシックカー|スーパーカー|スポーツカー|電気自動車|試乗会"),
+
+    primary = {
+        "rail": "鉄道",
+        "tech": "AI・IT",
+        "anime": "アニメ・ゲーム",
+        "car": "クルマ",
+        "food": "食・グルメ",
+        "exhibition": "展示",
+        "tourism": "イベント",
+    }
+    tags.append(primary.get(cat, "イベント"))
+
+    # カテゴリ内の詳細タグ
+    secondary_rules = [
+        ("鉄道模型", r"鉄道模型|Nゲージ|HOゲージ"),
+        ("新幹線", r"新幹線"),
+        ("駅弁", r"駅弁"),
+
+        ("生成AI", r"生成AI|ChatGPT|LLM"),
+        ("XR", r"(?<![A-Za-z])XR(?![A-Za-z])|(?<![A-Za-z])VR(?![A-Za-z])|(?<![A-Za-z])AR(?![A-Za-z])"),
+        ("ガジェット", r"ガジェット|スマートフォン|パソコン|(?<![A-Za-z])PC(?![A-Za-z])"),
+
+        ("声優", r"声優"),
+        ("コスプレ", r"コスプレ"),
+        ("マンガ", r"マンガ|漫画|コミック"),
+        ("ゲーム", r"eスポーツ|ゲーム(?:大会|イベント|フェス|体験|展示)"),
+
+        ("旧車", r"旧車|クラシックカー"),
+        ("スーパーカー", r"スーパーカー"),
+        ("カスタムカー", r"カスタムカー|チューニングカー"),
         ("モータースポーツ", r"モータースポーツ|レース|サーキット|ラリー|ドリフト"),
-        ("グルメ", r"グルメ|フード|ラーメン|カレー|スイーツ|パン|肉|日本酒|ビール"),
-        ("展示", r"展示|展覧|博物館|美術館"),
-        ("フェス", r"フェス|祭り|フェア|マルシェ"),
+        ("EV", r"電気自動車|EV車|(?<![A-Za-z])EV(?![A-Za-z])"),
+
+        ("ラーメン", r"ラーメン(?:祭|フェス|博|イベント)?"),
+        ("カレー", r"カレー(?:祭|フェス|博|イベント)?"),
+        ("スイーツ", r"スイーツ(?:フェア|フェス|イベント)?"),
+        ("パン", r"パン(?:祭|フェス|マルシェ|イベント)?"),
+        ("物産展", r"物産展|北海道展"),
+        ("日本酒", r"日本酒(?:祭|フェス|イベント)?"),
+        ("ビール", r"ビール(?:祭|フェス|イベント)?"),
+
+        ("美術", r"美術展|美術館|アート展"),
+        ("写真", r"写真展"),
+        ("特別展", r"特別展|企画展"),
+
+        ("フェス", r"フェス(?:ティバル)?|祭り"),
+        ("マルシェ", r"マルシェ"),
+        ("ポップアップ", r"POP[\s-]?UP|ポップアップ"),
     ]
-    for name, pat in mapping:
-        if re.search(pat, text, re.I):
-            tags.append(name)
 
-    if not tags:
-        tags = [{
-            "rail": "鉄道",
-            "tech": "AI・IT",
-            "anime": "アニメ・ゲーム",
-            "car": "クルマ",
-            "food": "食・グルメ",
-            "exhibition": "展示",
-            "tourism": "イベント"
-        }.get(cat, "イベント")]
+    # 明確な関連があるタグだけ追加
+    for name, pat in secondary_rules:
+        if re.search(pat, t, re.I):
+            # カテゴリと明らかに矛盾するものは付けない
+            allowed = True
+            if name in ("鉄道模型","新幹線","駅弁") and cat != "rail":
+                allowed = False
+            if name in ("生成AI","XR","ガジェット") and cat != "tech":
+                allowed = False
+            if name in ("声優","コスプレ","マンガ","ゲーム") and cat != "anime":
+                allowed = False
+            if name in ("旧車","スーパーカー","カスタムカー","モータースポーツ","EV") and cat != "car":
+                allowed = False
+            if name in ("ラーメン","カレー","スイーツ","パン","物産展","日本酒","ビール") and cat != "food":
+                allowed = False
+            if name in ("美術","写真","特別展") and cat != "exhibition":
+                allowed = False
 
-    return tags[:4]
+            if allowed and name not in tags:
+                tags.append(name)
+
+    # 一般イベント系の補助タグは主カテゴリを問わず可
+    if re.search(r"フェス(?:ティバル)?|祭り", t, re.I) and "フェス" not in tags:
+        tags.append("フェス")
+    elif re.search(r"マルシェ", t, re.I) and "マルシェ" not in tags:
+        tags.append("マルシェ")
+    elif re.search(r"POP[\s-]?UP|ポップアップ", t, re.I) and "ポップアップ" not in tags:
+        tags.append("ポップアップ")
+
+    return tags[:3]
 
 def extract_image_from_jsonld(ev):
     img = ev.get("image")
@@ -1118,6 +1224,354 @@ def collect_intex_events():
     return events
 
 
+
+# -------------------------
+# ATCトップページ専用
+# -------------------------
+def dedicated_atc_home(html, source):
+    """
+    ATCトップページのEVENT欄を直接読む。
+    例:
+      2026.09.19 → 09.22 OSAKAアート＆てづくりバザール VOL.52
+      2026.09.06、10.04、10.25 第39回 ATC咲洲ダンスフェス
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+    seen = set()
+
+    # aタグを優先
+    for a in soup.find_all("a", href=True):
+        txt = re.sub(r"\s+", " ", a.get_text(" ", strip=True)).strip()
+        if not re.search(r"20\d{2}[./]\d{1,2}[./]\d{1,2}", txt):
+            continue
+
+        # 先頭の日付部分とタイトルを分離
+        m = re.match(
+            r"^(20\d{2})[./](\d{1,2})[./](\d{1,2})"
+            r"(?P<dates>(?:\s*(?:→|～|〜|-)\s*(?:20\d{2}[./])?\d{1,2}[./]\d{1,2}|(?:、\s*\d{1,2}[./]\d{1,2})*)?)"
+            r"\s*(?P<title>.+)$",
+            txt
+        )
+        if not m:
+            continue
+
+        y, mo, da = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        try:
+            sd_obj = date(y, mo, da)
+        except Exception:
+            continue
+
+        date_tail = m.group("dates") or ""
+        title = clean_event_title(m.group("title"))
+        if not title:
+            continue
+
+        # 終了日
+        ed_obj = sd_obj
+        range_match = re.search(
+            r"(?:→|～|〜|-)\s*(?:(20\d{2})[./])?(\d{1,2})[./](\d{1,2})",
+            date_tail
+        )
+        if range_match:
+            y2, m2, d2 = range_match.groups()
+            try:
+                ed_obj = date(int(y2 or y), int(m2), int(d2))
+                if ed_obj < sd_obj:
+                    ed_obj = date(int(y2 or y) + 1, int(m2), int(d2))
+            except Exception:
+                ed_obj = sd_obj
+
+        # 複数開催日は最初の日を代表日、説明に全日程を残す
+        if sd_obj < date.today() and ed_obj < date.today():
+            # 「9/6、10/4、10/25」のような複数日程は未来日が残っている可能性あり
+            future = []
+            for mm, dd in re.findall(r"(\d{1,2})[./](\d{1,2})", date_tail):
+                try:
+                    d = date(y, int(mm), int(dd))
+                    if d >= date.today():
+                        future.append(d)
+                except Exception:
+                    pass
+            if not future:
+                continue
+            sd_obj = min(future)
+            ed_obj = sd_obj
+
+        url = urljoin(source["base"], a["href"])
+        parent = a.parent
+        block = parent.parent if parent and parent.parent else parent
+        desc = re.sub(r"\s+", " ", block.get_text(" ", strip=True)) if block else txt
+        full = f"{title} ATC {desc}"
+        cat = classify(full)
+
+        key = (normalize_title(title), sd_obj.isoformat())
+        if key in seen:
+            continue
+        seen.add(key)
+
+        events.append({
+            "title": title[:110],
+            "start_date": sd_obj.isoformat(),
+            "end_date": ed_obj.isoformat(),
+            "area": "大阪",
+            "venue": "ATC",
+            "category": cat,
+            "score": min(99, score(full, cat) + 10),
+            "tags": make_tags(full, cat),
+            "description": desc[:180],
+            "image_url": img_from_node(block, source["base"]) if block else None,
+            "source": "ATC",
+            "source_url": url,
+        })
+
+    # aタグで取れない場合、ページ全体のテキストからも拾う
+    body = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+    pattern = re.compile(
+        r"(20\d{2})[./](\d{1,2})[./](\d{1,2})"
+        r"\s*(?:(→|～|〜|-)\s*(?:(20\d{2})[./])?(\d{1,2})[./](\d{1,2}))?"
+        r"\s+(.{4,100}?)(?=\s+20\d{2}[./]\d{1,2}[./]\d{1,2}|\s+イベント一覧|\s+レストラン|$)"
+    )
+    for m in pattern.finditer(body):
+        y,m1,d1,arrow,y2,m2,d2,title = m.groups()
+        title = clean_event_title(title)
+        if not title:
+            continue
+        try:
+            sd = date(int(y),int(m1),int(d1))
+            ed = date(int(y2 or y),int(m2 or m1),int(d2 or d1))
+        except Exception:
+            continue
+        if ed < date.today():
+            continue
+
+        key = (normalize_title(title), sd.isoformat())
+        if key in seen:
+            continue
+        seen.add(key)
+        full = f"{title} ATC"
+        cat = classify(full)
+        events.append({
+            "title": title[:110],
+            "start_date": sd.isoformat(),
+            "end_date": ed.isoformat(),
+            "area": "大阪",
+            "venue": "ATC",
+            "category": cat,
+            "score": min(99, score(full, cat) + 10),
+            "tags": make_tags(full, cat),
+            "description": "ATC公式サイト掲載イベント。",
+            "image_url": None,
+            "source": "ATC",
+            "source_url": source["url"],
+        })
+
+    return events
+
+
+# -------------------------
+# あべのハルカス専用 v2
+# -------------------------
+def dedicated_harukas_v2(html, source):
+    """
+    催しスケジュール本文を直接正規表現で解析。
+    例:
+      大北海道展［9月9日(水)→23日(水・祝)］
+      ちいかわ POP UP STORE［9月3日(木)→14日(月)］
+      第40回 近美展［9月9日(水)→13日(日)］
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    raw_text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+    events = []
+    seen = set()
+
+    # 現在の年はページヘッダの「2026 9」を優先
+    ym = re.search(r"\b(20\d{2})\s+\d{1,2}\b", raw_text)
+    base_year = int(ym.group(1)) if ym else date.today().year
+
+    # タイトル + ［日付］ を直接抽出
+    pat = re.compile(
+        r"(?P<title>[^［\[] {0,0})"
+    )
+    # Pythonで扱いやすいよう別パターン
+    event_pat = re.compile(
+        r"(?P<title>[^。|]{3,120}?)"
+        r"[［\[]\s*"
+        r"(?:(?P<year>20\d{2})年\s*)?"
+        r"(?P<m1>\d{1,2})月\s*(?P<d1>\d{1,2})日[^］\]]*?"
+        r"(?:(?:→|～|〜|~|-)\s*(?:(?P<m2>\d{1,2})月\s*)?(?P<d2>\d{1,2})日[^］\]]*)?"
+        r"[］\]]"
+    )
+
+    for m in event_pat.finditer(raw_text):
+        title = clean_event_title(m.group("title"))
+        # 前方に会場名や注意書きが混ざるので、末尾の自然なイベント名だけ残す
+        for sep in ["催会場 ", "美術画廊 ", "アートギャラリー ", "イベントスペース "]:
+            if sep in title:
+                title = title.split(sep)[-1].strip()
+        title = re.sub(r"^.*?\|\s*", "", title)
+        title = title[-110:].strip()
+
+        if not title or len(title) < 3:
+            continue
+        if re.search(r"最終日は|閉場|営業時間|EVENT SCHEDULE", title):
+            continue
+
+        y = int(m.group("year") or base_year)
+        try:
+            sd = date(y, int(m.group("m1")), int(m.group("d1")))
+            if m.group("d2"):
+                ed = date(y, int(m.group("m2") or m.group("m1")), int(m.group("d2")))
+                if ed < sd:
+                    ed = date(y+1, int(m.group("m2") or m.group("m1")), int(m.group("d2")))
+            else:
+                ed = sd
+        except Exception:
+            continue
+
+        if ed < date.today():
+            continue
+
+        # ノイズ除外（セール・アプリキャンペーン等は後段フィルタにもかかる）
+        context_start = max(0, m.start()-160)
+        context_end = min(len(raw_text), m.end()+180)
+        context = raw_text[context_start:context_end]
+
+        # 会場推定
+        venue = "あべのハルカス近鉄本店"
+        for venue_name in [
+            "ウイング館9階催会場",
+            "ウイング館4階第2催会場",
+            "ウイング館地2階イベントホール",
+            "タワー館11階美術画廊",
+            "タワー館11階アートギャラリー",
+            "タワー館地1階デリシャスステージ",
+            "タワー館地1階POP UP SWEETS",
+        ]:
+            if venue_name.replace(" ", "") in context.replace(" ", ""):
+                venue = venue_name
+                break
+
+        full = f"{title} {venue} {context}"
+        cat = classify(full)
+        key = (normalize_title(title), sd.isoformat())
+        if key in seen:
+            continue
+        seen.add(key)
+
+        events.append({
+            "title": title,
+            "start_date": sd.isoformat(),
+            "end_date": ed.isoformat(),
+            "area": "大阪",
+            "venue": venue,
+            "category": cat,
+            "score": min(99, score(full, cat) + 12),
+            "tags": make_tags(full, cat),
+            "description": context[:180],
+            "image_url": None,
+            "source": "あべのハルカス近鉄本店",
+            "source_url": source["url"],
+        })
+
+    return events
+
+
+# -------------------------
+# セブンパーク天美専用
+# -------------------------
+def parse_sevenpark_detail(url):
+    html = fetch(url).text
+    soup = BeautifulSoup(html, "html.parser")
+    text_body = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+
+    h1 = soup.find("h1")
+    title = h1.get_text(" ", strip=True) if h1 else ""
+    if not title:
+        ogt = soup.find("meta", property="og:title")
+        title = ogt.get("content", "").strip() if ogt else ""
+    title = clean_event_title(title)
+    if not title:
+        return None
+
+    # 日程 2026/07/26(日)
+    dm = re.search(r"日程\s*(20\d{2})/(\d{1,2})/(\d{1,2})", text_body)
+    if not dm:
+        dm = re.search(r"(20\d{2})/(\d{1,2})/(\d{1,2})", text_body)
+    if not dm:
+        return None
+    try:
+        sd = date(*map(int, dm.groups()))
+    except Exception:
+        return None
+    if sd < date.today():
+        return None
+
+    # 場所
+    venue = "セブンパーク天美"
+    vm = re.search(r"場所\s*(.+?)(?:備考欄|所在地|時間|$)", text_body)
+    if vm:
+        v = vm.group(1).strip()
+        if 2 <= len(v) <= 120:
+            venue = "セブンパーク天美 " + v
+
+    # 時間
+    tm = re.search(r"時間\s*(.+?)(?:場所|備考欄|所在地|$)", text_body)
+    times = tm.group(1).strip() if tm else ""
+
+    desc_meta = (
+        soup.find("meta", attrs={"name":"description"})
+        or soup.find("meta", property="og:description")
+    )
+    desc = desc_meta.get("content", "").strip() if desc_meta else ""
+    if not desc:
+        desc = text_body[:220]
+
+    full = f"{title} {venue} {desc}"
+    cat = classify(full)
+    image_url = extract_meta_image(soup)
+
+    return {
+        "title": title[:110],
+        "start_date": sd.isoformat(),
+        "end_date": sd.isoformat(),
+        "area": "大阪",
+        "venue": venue,
+        "category": cat,
+        "score": min(99, score(full, cat) + 15),
+        "tags": make_tags(full, cat),
+        "description": ((times + " " + desc).strip())[:180],
+        "image_url": image_url,
+        "source": "セブンパーク天美",
+        "source_url": url,
+    }
+
+def dedicated_sevenpark(html, source):
+    soup = BeautifulSoup(html, "html.parser")
+    urls = []
+    seen = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not re.search(r"/event/\d+/?", href):
+            continue
+        u = urljoin(source["base"], href)
+        if u not in seen:
+            seen.add(u)
+            urls.append(u)
+
+    events = []
+    # 一覧から見つかった詳細を並列取得
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        futs = [ex.submit(parse_sevenpark_detail, u) for u in urls[:160]]
+        for fut in as_completed(futs):
+            try:
+                ev = fut.result()
+                if ev:
+                    events.append(ev)
+            except Exception as e:
+                print(f"[SevenPark] detail error: {e}", file=sys.stderr)
+
+    return events
+
 # -------------------------
 # 大阪主要サイト専用パーサー
 # -------------------------
@@ -1318,14 +1772,19 @@ def dedicated_harukas(html, source):
 
 def collect_dedicated_listing_events(html, source):
     name = source["name"]
+    if name == "ATCトップ":
+        return dedicated_atc_home(html, source)
     if name.startswith("ATC"):
-        return dedicated_atc(html, source)
+        # event検索ページは0件になることがあるので汎用専用は使わない
+        return []
     if name == "LUCUA大阪":
         return dedicated_lucua(html, source)
     if name == "阪急うめだ本店":
         return dedicated_hankyu(html, source)
     if name == "あべのハルカス近鉄本店":
-        return dedicated_harukas(html, source)
+        return dedicated_harukas_v2(html, source)
+    if name == "セブンパーク天美":
+        return dedicated_sevenpark(html, source)
     return []
 
 # -------------------------
@@ -1911,6 +2370,64 @@ def filter_noise_events(events):
     return kept
 
 
+
+# -------------------------
+# 天王寺周辺・大阪南部優先
+# -------------------------
+def apply_local_priority(events):
+    source_bonus = {
+        "あべのハルカス近鉄本店": 16,
+        "セブンパーク天美": 16,
+        "ATC": 10,
+        "ATCトップ": 10,
+        "インテックス大阪": 8,
+        "インテックス大阪関連": 8,
+        "なんばパークス": 8,
+        "大阪観光局": 6,
+        "LUCUA大阪": 4,
+    }
+    place_bonus_words = {
+        "天王寺": 18,
+        "阿倍野": 18,
+        "あべの": 18,
+        "松原": 15,
+        "天美": 18,
+        "河内天美": 18,
+        "なんば": 8,
+        "難波": 8,
+        "南港": 6,
+    }
+
+    for e in events:
+        bonus = source_bonus.get(e.get("source",""), 0)
+        merged = " ".join([
+            e.get("title",""), e.get("venue",""), e.get("description","")
+        ])
+        for word, b in place_bonus_words.items():
+            if word in merged:
+                bonus = max(bonus, b)
+        e["score"] = min(99, int(e.get("score", 50)) + bonus)
+    return events
+
+
+
+# -------------------------
+# カテゴリ・タグ最終正規化
+# -------------------------
+def normalize_event_categories_and_tags(events):
+    for e in events:
+        title = e.get("title","") or ""
+        desc = e.get("description","") or ""
+        venue = e.get("venue","") or ""
+
+        # タイトルを最重視（3回）、説明・会場を補助にする
+        evidence = " ".join([title, title, title, desc, venue])
+        cat = classify(evidence)
+        e["category"] = cat
+        e["tags"] = make_tags(evidence, cat)
+    return events
+
+
 # -------------------------
 # Merge
 # -------------------------
@@ -1970,6 +2487,8 @@ def main():
         and "道の駅" not in ((e.get("title") or "") + " " + (e.get("description") or ""))
     ]
     events = [apply_priority_bonus(e) for e in events]
+    events = normalize_event_categories_and_tags(events)
+    events = apply_local_priority(events)
     events = filter_noise_events(events)
     events = dedupe(events)[:int(CONFIG.get("max_events", 100))]
     events = localize_images(events)
