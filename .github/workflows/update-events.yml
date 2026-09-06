@@ -2,8 +2,7 @@ name: Update Kansai Events
 
 on:
   schedule:
-    # JST 06:10 = UTC 21:10 (前日)
-    - cron: '10 21 * * *'
+    - cron: '10 21 * * *'   # 日本時間 毎朝6:10
   workflow_dispatch:
 
 permissions:
@@ -18,9 +17,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - name: Collect events
+
+      - name: Collect Walkerplus and X events
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: python update_events.py
-      - name: Commit updated data
+
+      - name: Commit updated event data
         run: |
           git config user.name "event-signage-bot"
           git config user.email "actions@users.noreply.github.com"

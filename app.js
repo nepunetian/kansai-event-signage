@@ -32,6 +32,8 @@ function matches(e){
   if(currentFilter==='weekend') return isThisWeekend(e.start_date);
   if(currentFilter==='tech') return e.category === 'tech';
   if(currentFilter==='rail') return e.category === 'rail';
+  if(currentFilter==='anime') return e.category === 'anime';
+  if(currentFilter==='food') return e.category === 'food';
   if(currentFilter==='tourism') return ['tourism','exhibition'].includes(e.category);
   return e.category === currentFilter;
 }
@@ -60,7 +62,7 @@ function render(){
       </div>
       <div>
         <div class="tags">${tagHtml(e.tags)}</div>
-        <div class="source">${e.source ? '情報元: ' + e.source : ''}</div>
+        <div class="source">${e.source ? '情報元: ' + e.source : ''}${e.source_url ? ' ｜ <a href="' + e.source_url + '" target="_blank" rel="noopener">詳細</a>' : ''}</div>
       </div>
     </article>
   `).join('') : `<div class="empty">該当するイベントはありません</div>`;

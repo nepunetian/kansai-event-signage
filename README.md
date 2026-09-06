@@ -1,47 +1,43 @@
-# 関西イベントサイネージ（自動収集版）
+# 関西イベントサイネージ（X対応版）
 
-Fire TVなどのブラウザで常時表示するためのWebアプリです。
+Fire TVのブラウザで常時表示する個人向けイベントサイネージです。
 
-## 今回追加した機能
-- 実在イベントを初期データとして収録
-- Walkerplus関西イベントから自動収集する `update_events.py`
-- 開催終了イベントを自動除外
-- 鉄道 / AI・IT / XR / ガジェット / アニメ・ゲーム / 道の駅等を優先するスコアリング
-- 取得失敗時に既存データを壊さない安全処理
-- GitHub Actionsで毎朝自動更新
-- Fire TV側はURLを開いたままで、15分ごとに更新データを再読込
+## 収集対象
+- Walkerplus 関西イベント
+- X の直近投稿（X APIのBearer Tokenを設定した場合）
 
-## 一番簡単な公開方法: GitHub Pages
+## 優先ジャンル
+- 鉄道
+- AI / IT / XR / ガジェット
+- アニメ / マンガ / 声優 / コスプレ
+- ゲーム
+- 食 / グルメ / ラーメン / カレー / スイーツ / パン / フードフェス
+- 展示会
 
-1. GitHubで新しいリポジトリを作る
-2. このフォルダの中身をアップロードする
-3. Settings → Pages → Deploy from a branch → `main` / root を選択
-4. 発行されたURLをFire TVブラウザで開く
-5. Settings → Actions → General → Workflow permissions を
-   `Read and write permissions` にする
+「道の駅」は個人向け推薦から除外しています。
 
-GitHub Actionsが日本時間の毎朝6:10頃にイベント一覧を更新します。
-手動更新したい場合は Actions → Update Kansai Events → Run workflow。
+## X APIを有効にする
+X Developer Consoleで利用可能なBearer Tokenを用意します。
 
-## PCで自動収集を試す
+GitHub:
+1. リポジトリ → Settings
+2. Secrets and variables → Actions
+3. New repository secret
+4. Name: `X_BEARER_TOKEN`
+5. Secret: Bearer Tokenを貼り付け
+6. Add secret
 
-    pip install -r requirements.txt
-    python update_events.py
-    python -m http.server 8080
+Bearer Tokenは `config.json` や `app.js` に直接書かないでください。
 
-ブラウザ:
-    http://localhost:8080
+## 手動更新
+GitHub → Actions → Update Kansai Events → Run workflow
 
-## 好みを変える
-`config.json` の `interest_keywords` の数字を変更してください。
-数字が大きいほどサイネージ上位に出やすくなります。
+## 自動更新
+GitHub Actionsで毎朝6:10（日本時間）に更新します。
 
-例:
-    "鉄道": 25
-    "AI": 24
-    "道の駅": 25
+## Xの検索内容
+`config.json` の `x_queries` で変更できます。
+現在は、関西の一般イベント・アニメ/ゲーム・食/グルメ・鉄道・AI/ガジェットを検索します。
 
-## 注意
-イベント情報サイトのHTML構造が将来変更された場合は、
-`update_events.py` の解析部分を調整する必要があります。
-イベント開催状況は主催者の公式情報も確認してください。
+X投稿からイベントとして採用するのは、開催日（例: 9/20、9月20日）が本文に明記されている投稿だけです。
+誤検出を減らすための仕様です。
