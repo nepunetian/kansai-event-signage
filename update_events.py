@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import json, os, re, sys, time, hashlib, mimetypes
+import json, os, re, sys, time, hashlib, mimetypes, xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 from bs4 import BeautifulSoup
@@ -268,6 +269,292 @@ def collect_walker():
     return events
 
 
+
+# -------------------------
+# 収集診断 / サイトマップ探索
+# -------------------------
+DIAGNOSTICS = {}
+DIAGNOSTICS_PATH = ROOT / "collection-report.json"
+
+def diag(source_name, **kwargs):
+    d = DIAGNOSTICS.setdefault(source_name, {
+        "list_links": 0,
+        "sitemap_links": 0,
+        "candidates": 0,
+        "parsed": 0,
+        "errors": 0,
+        "notes": []
+    })
+    for k, v in kwargs.items():
+        if k == "note":
+            d["notes"].append(str(v)[:300])
+        elif isinstance(v, (int, float)) and isinstance(d.get(k), (int, float)):
+            d[k] += v
+        else:
+            d[k] = v
+
+def same_host(url, base):
+    try:
+        return urlparse(url).netloc.lower().replace("www.", "") == urlparse(base).netloc.lower().replace("www.", "")
+    except Exception:
+        return False
+
+def parse_sitemap_xml(xml_text):
+    """
+    sitemap / sitemapindex の両方を読み取る。
+    namespaceは無視して loc / lastmod を抽出。
+    """
+    out = []
+    try:
+        root = ET.fromstring(xml_text)
+    except Exception:
+        return out
+
+    for node in root.iter():
+        tag = node.tag.rsplit("}", 1)[-1].lower()
+        if tag not in ("url", "sitemap"):
+            continue
+        loc = None
+        lastmod = None
+        for child in list(node):
+            ctag = child.tag.rsplit("}", 1)[-1].lower()
+            if ctag == "loc":
+                loc = (child.text or "").strip()
+            elif ctag == "lastmod":
+                lastmod = (child.text or "").strip()
+        if loc:
+            out.append((tag, loc, lastmod))
+    return out
+
+def candidate_url_for_source(url, source):
+    patterns = source.get("link_patterns", [r"/event/"])
+    path = urlparse(url).path + ("?" + urlparse(url).query if urlparse(url).query else "")
+    return any(re.search(p, path, re.I) for p in patterns)
+
+def sitemap_seeds(source):
+    base = source["base"].rstrip("/")
+    explicit = source.get("sitemaps", [])
+    seeds = list(explicit)
+    for suffix in ("/sitemap.xml", "/sitemap_index.xml", "/sitemap-index.xml"):
+        u = base + suffix
+        if u not in seeds:
+            seeds.append(u)
+    return seeds
+
+def discover_from_sitemaps(source):
+    """
+    公式サイトのサイトマップからイベント詳細URLを発見。
+    一覧ページがJavaScript描画でも拾えることがある。
+    """
+    source_name = source["name"]
+    found = []
+    seen = set()
+    queue = sitemap_seeds(source)
+    visited_maps = set()
+    max_maps = int(source.get("max_sitemaps", 12))
+    max_links = int(source.get("max_sitemap_links", 180))
+
+    while queue and len(visited_maps) < max_maps and len(found) < max_links:
+        sm = queue.pop(0)
+        if sm in visited_maps:
+            continue
+        visited_maps.add(sm)
+
+        try:
+            r = fetch(sm)
+            entries = parse_sitemap_xml(r.text)
+            if not entries:
+                continue
+
+            for typ, loc, lastmod in entries:
+                if typ == "sitemap":
+                    # イベント・ニュース・現在年のsitemapを優先
+                    loc_low = loc.lower()
+                    if (
+                        any(k in loc_low for k in ["event", "news", "topic", "post", "page"])
+                        or str(date.today().year) in loc_low
+                        or len(queue) < 3
+                    ):
+                        if loc not in visited_maps and loc not in queue:
+                            queue.append(loc)
+                    continue
+
+                if not same_host(loc, source["base"]):
+                    continue
+                if not candidate_url_for_source(loc, source):
+                    continue
+                if loc in seen:
+                    continue
+                seen.add(loc)
+                found.append(loc)
+                if len(found) >= max_links:
+                    break
+
+        except Exception as e:
+            # sitemapが存在しないサイトは普通にある
+            diag(source_name, note=f"sitemap {sm}: {type(e).__name__}")
+            continue
+
+    diag(source_name, sitemap_links=len(found))
+    return found
+
+def discover_source_urls(list_html, source):
+    """
+    1) 一覧HTMLのリンク
+    2) sitemap
+    を統合する。
+    """
+    source_name = source["name"]
+    list_urls = extract_generic_detail_urls(list_html, source)
+    diag(source_name, list_links=len(list_urls))
+
+    sitemap_urls = discover_from_sitemaps(source)
+
+    out = []
+    seen = set()
+    for u in list_urls + sitemap_urls:
+        if u in seen:
+            continue
+        seen.add(u)
+        out.append(u)
+
+    # サイト別最大値。UIはページ送りできるので以前より多め。
+    limit = int(source.get("max_total_links", max(
+        source.get("max_links", 100),
+        source.get("max_sitemap_links", 180)
+    )))
+    out = out[:limit]
+    diag(source_name, candidates=len(out))
+    return out
+
+def parse_iso_or_japanese_date(value):
+    if not value:
+        return None
+    s = str(value).strip()
+    m = re.search(r"(20\d{2})-(\d{1,2})-(\d{1,2})", s)
+    if m:
+        try:
+            return date(*map(int, m.groups())).isoformat()
+        except Exception:
+            pass
+    m = re.search(r"(20\d{2})[年/.](\d{1,2})[月/.](\d{1,2})日?", s)
+    if m:
+        try:
+            return date(*map(int, m.groups())).isoformat()
+        except Exception:
+            pass
+    return None
+
+def extract_dates_from_html(soup, text_body):
+    """
+    JSON-LD以外の明示日付を幅広く拾う。
+    """
+    # <time datetime=...>
+    time_values = []
+    for t in soup.find_all("time"):
+        if t.get("datetime"):
+            time_values.append(t.get("datetime"))
+        if t.get_text(strip=True):
+            time_values.append(t.get_text(" ", strip=True))
+
+    # meta/itemprop
+    for tag in soup.find_all(["meta", "data"], attrs={"itemprop": re.compile(r"startDate|endDate", re.I)}):
+        val = tag.get("content") or tag.get("value") or tag.get_text(strip=True)
+        if val:
+            time_values.append(val)
+
+    parsed = [parse_iso_or_japanese_date(v) for v in time_values]
+    parsed = [x for x in parsed if x]
+    if parsed:
+        return min(parsed), max(parsed)
+
+    # 本文: 年付きレンジ
+    patterns = [
+        re.compile(
+            r"(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日"
+            r".{0,40}?(?:～|〜|~|-|ー)"
+            r".{0,20}?(?:(20\d{2})年\s*)?(\d{1,2})月\s*(\d{1,2})日",
+            re.S
+        ),
+        re.compile(
+            r"(20\d{2})[/.](\d{1,2})[/.](\d{1,2})"
+            r".{0,40}?(?:～|〜|~|-)"
+            r".{0,20}?(?:(20\d{2})[/.])?(\d{1,2})[/.](\d{1,2})",
+            re.S
+        )
+    ]
+    for pat in patterns:
+        m = pat.search(text_body[:18000])
+        if m:
+            try:
+                y1,m1,d1,y2,m2,d2 = m.groups()
+                sd = date(int(y1),int(m1),int(d1))
+                ed = date(int(y2 or y1),int(m2),int(d2))
+                return sd.isoformat(), ed.isoformat()
+            except Exception:
+                pass
+
+    # 年付き単日
+    single = re.search(r"(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日", text_body[:18000])
+    if not single:
+        single = re.search(r"(20\d{2})[/.](\d{1,2})[/.](\d{1,2})", text_body[:18000])
+    if single:
+        try:
+            d = date(*map(int, single.groups())).isoformat()
+            return d, d
+        except Exception:
+            pass
+
+    # 年なし単日。今後の日付として推定
+    single = re.search(r"(?<!\d)(\d{1,2})月\s*(\d{1,2})日", text_body[:18000])
+    if single:
+        try:
+            mo, da = map(int, single.groups())
+            y = date.today().year
+            d = date(y, mo, da)
+            if d < date.today() - timedelta(days=60):
+                d = date(y+1, mo, da)
+            return d.isoformat(), d.isoformat()
+        except Exception:
+            pass
+
+    return None, None
+
+def extract_venue_from_html(soup, text_body, forced_area=None):
+    selectors = [
+        '[itemprop="location"]',
+        '[class*="venue"]',
+        '[class*="place"]',
+        '[class*="access"]',
+        '[class*="location"]',
+    ]
+    for sel in selectors:
+        try:
+            node = soup.select_one(sel)
+        except Exception:
+            node = None
+        if node:
+            s = node.get_text(" ", strip=True)
+            if 2 <= len(s) <= 100:
+                return s
+
+    m = re.search(r"(?:会場|開催場所|場所|ところ)[：:\s]+([^\n]{2,90})", text_body)
+    if m:
+        return m.group(1).strip()
+
+    return forced_area or "関西"
+
+def page_looks_like_event(title, text_body):
+    merged = (title + " " + text_body[:7000]).lower()
+    positives = CONFIG.get("event_intent_keywords", [])
+    if any(k.lower() in merged for k in positives):
+        return True
+    # よくある追加語
+    return bool(re.search(
+        r"開催期間|開催日時|会期|入場|会場|open|event|exhibition|festival|popup|pop-up",
+        merged, re.I
+    ))
+
 # -------------------------
 # 汎用イベントサイト収集
 # Google検索のイベント表示で利用される Event JSON-LD を中心に解析
@@ -355,70 +642,75 @@ def parse_event_jsonld_page(url, source_name, forced_area=None):
     return found
 
 def parse_simple_event_page(url, source_name, forced_area=None):
+    """
+    JSON-LDがないページ向け。
+    time/meta/本文の日付・OG画像・会場を解析する。
+    """
     html = fetch(url).text
     soup = BeautifulSoup(html, "html.parser")
-    text = soup.get_text("\n", strip=True)
+    text_body = soup.get_text("\n", strip=True)
 
     h1 = soup.find("h1")
     title = h1.get_text(" ", strip=True) if h1 else ""
     if not title:
         ogt = soup.find("meta", property="og:title")
         title = ogt.get("content", "").strip() if ogt else ""
+    if not title and soup.title:
+        title = soup.title.get_text(" ", strip=True)
     if not title:
         return []
 
-    start_date = None
-    base_year = date.today().year
-    patterns = [
-        re.compile(r"(20\d{2})[年./-](\d{1,2})[月./-](\d{1,2})日?"),
-        re.compile(r"(?<!\d)(\d{1,2})月(\d{1,2})日"),
-    ]
-    for pat in patterns:
-        m = pat.search(text[:10000])
-        if not m:
-            continue
-        try:
-            if len(m.groups()) == 3:
-                y, mo, da = map(int, m.groups())
-            else:
-                y = base_year
-                mo, da = map(int, m.groups())
-                if date(y, mo, da) < date.today() - timedelta(days=60):
-                    y += 1
-            start_date = date(y, mo, da).isoformat()
-            break
-        except Exception:
-            pass
-
-    if not start_date:
+    # 一覧/カテゴリ/店舗トップなどを弾く
+    if not page_looks_like_event(title, text_body):
         return []
 
-    kansai_tokens = ["大阪", "京都", "兵庫", "神戸", "滋賀", "和歌山"]
-    if not any(x in text[:14000] for x in kansai_tokens) and forced_area == "関西":
+    sd, ed = extract_dates_from_html(soup, text_body)
+    if not sd:
         return []
 
-    desc_meta = soup.find("meta", attrs={"name": "description"})
+    # 過去だけのページは早期除外
+    if (ed or sd) < date.today().isoformat():
+        return []
+
+    desc_meta = (
+        soup.find("meta", attrs={"name":"description"})
+        or soup.find("meta", property="og:description")
+    )
     desc = desc_meta.get("content", "").strip() if desc_meta else ""
     if not desc:
-        desc = text.replace("\n", " ")[:150]
+        # 冒頭のナビ文字列を避け、イベント語を含む段落を優先
+        paragraphs = [
+            p.get_text(" ", strip=True)
+            for p in soup.find_all(["p","div"])
+            if 30 <= len(p.get_text(" ", strip=True)) <= 500
+        ]
+        desc = next((p for p in paragraphs if page_looks_like_event("", p)), "")
+    if not desc:
+        desc = re.sub(r"\s+", " ", text_body)[:180]
 
     image_url = extract_meta_image(soup)
-    full = " ".join([title, desc, text[:5000]])
+    venue = extract_venue_from_html(soup, text_body, forced_area)
+    full = " ".join([title, desc, venue, text_body[:5000]])
+
+    # 関西でないページを弾く。ただし大阪固定ソースは採用
     area = area_from_text(full)
     if area == "関西" and forced_area:
         area = forced_area
+    if forced_area == "関西" and area == "関西":
+        return []
+
     cat = classify(full)
 
     return [{
-        "title": title[:100],
-        "start_date": start_date,
-        "end_date": start_date,
+        "title": re.sub(r"\s*[|｜]\s*[^|｜]{3,50}$", "", title)[:110],
+        "start_date": sd,
+        "end_date": ed or sd,
         "area": area,
-        "venue": area,
+        "venue": venue,
         "category": cat,
         "score": score(full, cat),
         "tags": make_tags(full, cat),
-        "description": desc[:150],
+        "description": desc[:170],
         "image_url": image_url,
         "source": source_name,
         "source_url": url,
@@ -426,27 +718,42 @@ def parse_simple_event_page(url, source_name, forced_area=None):
 
 def collect_generic_sources():
     events = []
+
     for source in MULTI_SOURCES:
+        source_name = source["name"]
         try:
             list_html = fetch(source["url"]).text
-            try:
-                events.extend(parse_event_jsonld_page(source["url"], source["name"], source.get("area")))
-            except Exception:
-                pass
-
-            urls = extract_generic_detail_urls(list_html, source)
-            print(f"[{source['name']}] detail candidates: {len(urls)}")
-            for u in urls:
-                try:
-                    parsed = parse_event_jsonld_page(u, source["name"], source.get("area"))
-                    if not parsed:
-                        parsed = parse_simple_event_page(u, source["name"], source.get("area"))
-                    events.extend(parsed)
-                except Exception as e:
-                    print(f"[{source['name']}] detail error: {u}: {e}", file=sys.stderr)
-                time.sleep(0.12)
         except Exception as e:
-            print(f"[{source['name']}] list error: {source['url']}: {e}", file=sys.stderr)
+            diag(source_name, errors=1, note=f"list: {e}")
+            print(f"[{source_name}] list error: {source['url']}: {e}", file=sys.stderr)
+            # 一覧が死んでもサイトマップだけ試す
+            list_html = ""
+
+        urls = discover_source_urls(list_html, source)
+        print(f"[{source_name}] candidates: {len(urls)}")
+
+        def parse_one(u):
+            try:
+                parsed = parse_event_jsonld_page(u, source_name, source.get("area"))
+                if not parsed:
+                    parsed = parse_simple_event_page(u, source_name, source.get("area"))
+                return u, parsed, None
+            except Exception as e:
+                return u, [], e
+
+        # サイトごとに並列化してAction時間を短縮
+        workers = min(8, max(2, int(source.get("workers", 6))))
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            futures = [ex.submit(parse_one, u) for u in urls]
+            for fut in as_completed(futures):
+                u, parsed, err = fut.result()
+                if err:
+                    diag(source_name, errors=1)
+                    continue
+                if parsed:
+                    diag(source_name, parsed=len(parsed))
+                    events.extend(parsed)
+
     return events
 
 
@@ -867,6 +1174,16 @@ def main():
         print("イベント取得結果が0件のため既存events.jsonを保持します。", file=sys.stderr)
         sys.exit(2)
 
+    # 収集状況をGitHub上で確認できるよう保存
+    DIAGNOSTICS["TOTAL"] = {
+        "final_events": len(events),
+        "generated_at": datetime.now(JP_TZ).isoformat()
+    }
+    DIAGNOSTICS_PATH.write_text(
+        json.dumps(DIAGNOSTICS, ensure_ascii=False, indent=2),
+        encoding="utf-8"
+    )
+
     json_text = json.dumps(events, ensure_ascii=False, indent=2)
 
     tmp = OUT.with_suffix(".json.tmp")
@@ -879,7 +1196,7 @@ def main():
     )
 
     print(f"{len(events)}件を events.json / events-data.js に保存しました。")
-    print("Walkerplus / X 統合。image_url 付き。")
+    print("Walkerplus / 公式サイト / X 統合。画像ローカル保存。")
 
 if __name__ == "__main__":
     main()

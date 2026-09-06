@@ -6,7 +6,7 @@
     "滋賀県",
     "和歌山県"
   ],
-  "max_events": 100,
+  "max_events": 180,
   "interest_keywords": {
     "鉄道": 28,
     "電車": 26,
@@ -171,5 +171,7 @@
     "期間限定ショップ",
     "期間限定ストア",
     "展覧"
-  ]
+  ],
+  "collection_version": 2,
+  "collection_strategy": "list page + sitemap + JSON-LD + HTML date parser"
 }
