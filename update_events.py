@@ -25,6 +25,40 @@ WALKER_LIST_URLS = [
     "https://www.walkerplus.com/event_list/ar0700/eg0126/",
 ]
 
+MULTI_SOURCES = [
+    # 大阪中心：大型会場・商業施設
+    {"name":"大阪観光局","url":"https://osaka-info.jp/event/","base":"https://osaka-info.jp","area":"大阪","link_patterns":[r"/event/[^?#]+"],"max_links":100},
+    {"name":"インテックス大阪","url":"https://www.intex-osaka.com/jp/event/","base":"https://www.intex-osaka.com","area":"大阪","link_patterns":[r"/jp/event/[^?#]+", r"/event/[^?#]+"],"max_links":100},
+    {"name":"ATC","url":"https://www.atc-co.com/event/","base":"https://www.atc-co.com","area":"大阪","link_patterns":[r"/event/[^?#]+"],"max_links":100},
+    {"name":"グランフロント大阪","url":"https://www.grandfront-osaka.jp/event/","base":"https://www.grandfront-osaka.jp","area":"大阪","link_patterns":[r"/event/[^?#]+"],"max_links":100},
+    {"name":"なんばパークス","url":"https://nambaparks.com/event","base":"https://nambaparks.com","area":"大阪","link_patterns":[r"/event/[^?#]+", r"/event\?[^#]+"],"max_links":100},
+    {"name":"LUCUA大阪","url":"https://www.lucua.jp/topics_category/event_info/","base":"https://www.lucua.jp","area":"大阪","link_patterns":[r"/topics/[^?#]+", r"/topics_category/[^?#]+"],"max_links":100},
+
+    # 百貨店催事
+    {"name":"阪急うめだ本店","url":"https://www.hankyu-dept.co.jp/honten/event/index.html","base":"https://www.hankyu-dept.co.jp","area":"大阪","link_patterns":[r"/honten/[^?#]+", r"/event/[^?#]+"],"max_links":100},
+    {"name":"大丸梅田店","url":"https://www.daimaru.co.jp/umedamise/event/","base":"https://www.daimaru.co.jp","area":"大阪","link_patterns":[r"/umedamise/[^?#]+"],"max_links":100},
+    {"name":"あべのハルカス近鉄本店","url":"https://abenoharukas.d-kintetsu.co.jp/eventschedule/","base":"https://abenoharukas.d-kintetsu.co.jp","area":"大阪","link_patterns":[r"/eventschedule/[^?#]*", r"/event/[^?#]+", r"/news/[^?#]+"],"max_links":100},
+
+    # アニメ・ポップカルチャー公式
+    {"name":"アニメイト","url":"https://www.animate.co.jp/event/","base":"https://www.animate.co.jp","area":"関西","link_patterns":[r"/event/[^?#]+", r"/onlyshop/[^?#]+", r"/fair/[^?#]+"],"max_links":120},
+    {"name":"アニメイト大阪日本橋","url":"https://www.animate.co.jp/shop/nipponbashi/","base":"https://www.animate.co.jp","area":"大阪","link_patterns":[r"/event/[^?#]+", r"/onlyshop/[^?#]+", r"/fair/[^?#]+"],"max_links":80},
+
+    # 車イベント公式
+    {"name":"大阪オートメッセ","url":"https://www.automesse.jp/","base":"https://www.automesse.jp","area":"大阪","link_patterns":[r"/20\d{2}/[^?#]+", r"/event[^?#]*", r"/news/[^?#]+"],"max_links":80},
+
+    # 鉄道会社公式
+    {"name":"JR西日本","url":"https://www.jr-odekake.net/","base":"https://www.jr-odekake.net","area":"関西","link_patterns":[r"/navi/[^?#]+", r"/railroad/[^?#]+", r"/event/[^?#]+"],"max_links":100},
+    {"name":"近鉄","url":"https://www.kintetsu.co.jp/railway/","base":"https://www.kintetsu.co.jp","area":"関西","link_patterns":[r"/railway/[^?#]+", r"/event/[^?#]+", r"/news/[^?#]+"],"max_links":100},
+    {"name":"阪急電鉄","url":"https://www.hankyu.co.jp/area_info/","base":"https://www.hankyu.co.jp","area":"関西","link_patterns":[r"/area_info/[^?#]+", r"/event/[^?#]+"],"max_links":100},
+    {"name":"南海電鉄","url":"https://www.nankai.co.jp/","base":"https://www.nankai.co.jp","area":"大阪","link_patterns":[r"/traffic/[^?#]+", r"/event/[^?#]+", r"/news/[^?#]+"],"max_links":100},
+
+    # 大阪周辺の補助ソース
+    {"name":"Feel KOBE","url":"https://www.feel-kobe.jp/event/","base":"https://www.feel-kobe.jp","area":"兵庫","link_patterns":[r"/event/[^?#]+"],"max_links":60},
+    {"name":"京都観光Navi","url":"https://ja.kyoto.travel/event/","base":"https://ja.kyoto.travel","area":"京都","link_patterns":[r"/event/[^?#]+"],"max_links":60},
+    {"name":"Peatix","url":"https://peatix.com/search?q=%E5%A4%A7%E9%98%AA","base":"https://peatix.com","area":"大阪","link_patterns":[r"/event/\d+", r"/event/[^?#]+"],"max_links":60},
+]
+
+
 def fetch(url, headers=None, params=None):
     r = S.get(url, headers=headers, params=params, timeout=30)
     r.raise_for_status()
@@ -50,9 +84,9 @@ def iso_date(v):
 def area_from_text(text):
     aliases = [
         ("大阪府", "大阪"), ("京都府", "京都"), ("兵庫県", "兵庫"),
-        ("奈良県", "奈良"), ("滋賀県", "滋賀"), ("和歌山県", "和歌山"),
+        ("滋賀県", "滋賀"), ("和歌山県", "和歌山"),
         ("神戸", "兵庫"), ("大阪", "大阪"), ("京都", "京都"),
-        ("奈良", "奈良"), ("滋賀", "滋賀"), ("和歌山", "和歌山"),
+        ("滋賀", "滋賀"), ("和歌山", "和歌山"),
     ]
     for needle, area in aliases:
         if needle in text:
@@ -233,6 +267,189 @@ def collect_walker():
 
     return events
 
+
+# -------------------------
+# 汎用イベントサイト収集
+# Google検索のイベント表示で利用される Event JSON-LD を中心に解析
+# -------------------------
+def is_probable_event_link(href, patterns):
+    if not href:
+        return False
+    if href.startswith(("#", "mailto:", "javascript:")):
+        return False
+    return any(re.search(pat, href, re.I) for pat in patterns)
+
+def extract_generic_detail_urls(html, source):
+    soup = BeautifulSoup(html, "html.parser")
+    urls, seen = [], set()
+    for a in soup.find_all("a", href=True):
+        href = a.get("href", "").strip()
+        if not is_probable_event_link(href, source.get("link_patterns", [r"/event/"])):
+            continue
+        u = urljoin(source["base"], href)
+        if u.rstrip("/") == source["url"].rstrip("/") or u in seen:
+            continue
+        seen.add(u)
+        urls.append(u)
+        if len(urls) >= int(source.get("max_links", 60)):
+            break
+    return urls
+
+def parse_event_jsonld_page(url, source_name, forced_area=None):
+    html = fetch(url).text
+    soup = BeautifulSoup(html, "html.parser")
+    meta_image = extract_meta_image(soup)
+    found = []
+
+    for script in soup.find_all("script", type="application/ld+json"):
+        raw = script.get_text(strip=True)
+        if not raw:
+            continue
+        try:
+            obj = json.loads(raw)
+        except Exception:
+            continue
+
+        for ev in flatten_jsonld(obj):
+            title = ev.get("name")
+            sd = iso_date(ev.get("startDate"))
+            ed = iso_date(ev.get("endDate")) or sd
+            if not title or not sd:
+                continue
+
+            loc = ev.get("location") or {}
+            if isinstance(loc, list):
+                loc = loc[0] if loc else {}
+
+            venue = ""
+            address_text = ""
+            if isinstance(loc, dict):
+                venue = str(loc.get("name") or "").strip()
+                addr = loc.get("address") or {}
+                if isinstance(addr, dict):
+                    address_text = " ".join(str(addr.get(k) or "") for k in ["addressRegion","addressLocality","streetAddress"]).strip()
+                else:
+                    address_text = str(addr)
+
+            desc = BeautifulSoup(str(ev.get("description", "")), "html.parser").get_text(" ", strip=True)
+            image_url = extract_image_from_jsonld(ev) or meta_image
+            full = " ".join([title, venue, address_text, desc])
+            area = area_from_text(full)
+            if area == "関西" and forced_area:
+                area = forced_area
+            cat = classify(full)
+            found.append({
+                "title": title,
+                "start_date": sd,
+                "end_date": ed,
+                "area": area,
+                "venue": venue or area,
+                "category": cat,
+                "score": score(full, cat),
+                "tags": make_tags(full, cat),
+                "description": desc[:150] or "詳しくはイベント公式ページをご確認ください。",
+                "image_url": image_url,
+                "source": source_name,
+                "source_url": url,
+            })
+    return found
+
+def parse_simple_event_page(url, source_name, forced_area=None):
+    html = fetch(url).text
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n", strip=True)
+
+    h1 = soup.find("h1")
+    title = h1.get_text(" ", strip=True) if h1 else ""
+    if not title:
+        ogt = soup.find("meta", property="og:title")
+        title = ogt.get("content", "").strip() if ogt else ""
+    if not title:
+        return []
+
+    start_date = None
+    base_year = date.today().year
+    patterns = [
+        re.compile(r"(20\d{2})[年./-](\d{1,2})[月./-](\d{1,2})日?"),
+        re.compile(r"(?<!\d)(\d{1,2})月(\d{1,2})日"),
+    ]
+    for pat in patterns:
+        m = pat.search(text[:10000])
+        if not m:
+            continue
+        try:
+            if len(m.groups()) == 3:
+                y, mo, da = map(int, m.groups())
+            else:
+                y = base_year
+                mo, da = map(int, m.groups())
+                if date(y, mo, da) < date.today() - timedelta(days=60):
+                    y += 1
+            start_date = date(y, mo, da).isoformat()
+            break
+        except Exception:
+            pass
+
+    if not start_date:
+        return []
+
+    kansai_tokens = ["大阪", "京都", "兵庫", "神戸", "滋賀", "和歌山"]
+    if not any(x in text[:14000] for x in kansai_tokens) and forced_area == "関西":
+        return []
+
+    desc_meta = soup.find("meta", attrs={"name": "description"})
+    desc = desc_meta.get("content", "").strip() if desc_meta else ""
+    if not desc:
+        desc = text.replace("\n", " ")[:150]
+
+    image_url = extract_meta_image(soup)
+    full = " ".join([title, desc, text[:5000]])
+    area = area_from_text(full)
+    if area == "関西" and forced_area:
+        area = forced_area
+    cat = classify(full)
+
+    return [{
+        "title": title[:100],
+        "start_date": start_date,
+        "end_date": start_date,
+        "area": area,
+        "venue": area,
+        "category": cat,
+        "score": score(full, cat),
+        "tags": make_tags(full, cat),
+        "description": desc[:150],
+        "image_url": image_url,
+        "source": source_name,
+        "source_url": url,
+    }]
+
+def collect_generic_sources():
+    events = []
+    for source in MULTI_SOURCES:
+        try:
+            list_html = fetch(source["url"]).text
+            try:
+                events.extend(parse_event_jsonld_page(source["url"], source["name"], source.get("area")))
+            except Exception:
+                pass
+
+            urls = extract_generic_detail_urls(list_html, source)
+            print(f"[{source['name']}] detail candidates: {len(urls)}")
+            for u in urls:
+                try:
+                    parsed = parse_event_jsonld_page(u, source["name"], source.get("area"))
+                    if not parsed:
+                        parsed = parse_simple_event_page(u, source["name"], source.get("area"))
+                    events.extend(parsed)
+                except Exception as e:
+                    print(f"[{source['name']}] detail error: {u}: {e}", file=sys.stderr)
+                time.sleep(0.12)
+        except Exception as e:
+            print(f"[{source['name']}] list error: {source['url']}: {e}", file=sys.stderr)
+    return events
+
+
 # -------------------------
 # X
 # -------------------------
@@ -293,7 +510,7 @@ def x_place_from_text(text):
 def is_likely_event_post(text):
     if not re.search(r"イベント|開催|フェス|フェア|祭|展示|展覧|ライブ|セミナー|マルシェ|コラボ|POP.?UP|ポップアップ", text, re.I):
         return False
-    if not any(x in text for x in ["大阪", "京都", "兵庫", "神戸", "奈良", "滋賀", "和歌山"]):
+    if not any(x in text for x in ["大阪", "京都", "兵庫", "神戸", "滋賀", "和歌山"]):
         return False
     return True
 
@@ -494,6 +711,101 @@ def localize_images(events):
     return events
 
 
+
+def apply_priority_bonus(event):
+    # 大阪中心に順位を上げる
+    bonus = 0
+    area = event.get("area", "")
+    if area == "大阪":
+        bonus += 12
+    elif area in ("兵庫", "京都"):
+        bonus += 3
+
+    source_bonus = CONFIG.get("source_bonus", {}).get(event.get("source", ""), 0)
+    bonus += int(source_bonus or 0)
+    event["score"] = max(35, min(99, int(event.get("score", 50)) + bonus))
+    return event
+
+
+# -------------------------
+# 広告・セール・常設キャンペーン除外
+# -------------------------
+def is_noise_event(event):
+    """
+    サイネージに不要な広告・単なるセール・常設キャンペーンを除外する。
+    """
+    title = event.get("title", "") or ""
+    desc = event.get("description", "") or ""
+    venue = event.get("venue", "") or ""
+    text = " ".join([title, desc, venue])
+
+    excludes = CONFIG.get("exclude_keywords", [])
+    event_intents = CONFIG.get("event_intent_keywords", [])
+
+    low = text.lower()
+
+    # 強い除外語
+    for kw in excludes:
+        if kw.lower() in low:
+            # 「期間限定ショップ」「催事」等の明確なイベント性があれば一部救済
+            if any(pos.lower() in low for pos in [
+                "期間限定ショップ", "期間限定ストア", "ポップアップ", "pop up",
+                "物産展", "催事", "展示", "展覧会", "イベント", "フェス",
+                "試乗会", "モーターショー", "オートメッセ"
+            ]):
+                continue
+            return True
+
+    # タイトルが価格訴求だけのもの
+    price_sale_patterns = [
+        r"\d+%OFF",
+        r"\d+％OFF",
+        r"最大\d+%OFF",
+        r"最大\d+％OFF",
+        r"ポイント\d+倍",
+        r"送料無料",
+        r"クーポン",
+    ]
+    if any(re.search(p, text, re.I) for p in price_sale_patterns):
+        return True
+
+    # 常設展示・常設サービス
+    if re.search(r"常設展|常設展示|常設コーナー|常設ショップ|常設店舗", text, re.I):
+        return True
+
+    # イベント性が弱いもの
+    has_event_intent = any(kw.lower() in low for kw in event_intents)
+
+    # 日付が1年近く続くものは、イベント性が弱ければ常設扱い
+    try:
+        sd = date.fromisoformat(event.get("start_date", ""))
+        ed = date.fromisoformat(event.get("end_date", "") or event.get("start_date", ""))
+        duration = (ed - sd).days
+        if duration > 240 and not has_event_intent:
+            return True
+    except Exception:
+        pass
+
+    # EC/オンラインだけのもの
+    if re.search(r"オンラインショップ|オンラインストア|ECサイト|通販", text, re.I) and not has_event_intent:
+        return True
+
+    return False
+
+
+def filter_noise_events(events):
+    kept = []
+    removed = 0
+    for e in events:
+        if is_noise_event(e):
+            removed += 1
+            print(f"[Filter] excluded: {e.get('title')}")
+            continue
+        kept.append(e)
+    print(f"[Filter] removed {removed} noise entries")
+    return kept
+
+
 # -------------------------
 # Merge
 # -------------------------
@@ -503,28 +815,52 @@ def normalize_title(s):
     return s.lower()
 
 def dedupe(events):
-    result = []
-    seen = set()
-    for e in sorted(events, key=lambda x: (-x.get("score", 0), x.get("start_date", "9999"))):
-        key = (normalize_title(e.get("title", ""))[:30], e.get("start_date", ""), e.get("area", ""))
-        if key in seen:
+    groups = {}
+    for e in events:
+        key = (normalize_title(e.get("title", ""))[:36], e.get("start_date", ""), e.get("area", ""))
+        if key not in groups:
+            groups[key] = dict(e)
+            groups[key]["sources"] = [e.get("source")] if e.get("source") else []
             continue
-        seen.add(key)
-        result.append(e)
+        cur = groups[key]
+        if e.get("source") and e.get("source") not in cur.get("sources", []):
+            cur.setdefault("sources", []).append(e.get("source"))
+        if e.get("score", 0) > cur.get("score", 0):
+            old_image = cur.get("image_url")
+            srcs = cur.get("sources", [])
+            cur.update(e)
+            cur["sources"] = srcs
+            if not cur.get("image_url") and old_image:
+                cur["image_url"] = old_image
+        else:
+            if not cur.get("image_url") and e.get("image_url"):
+                cur["image_url"] = e.get("image_url")
+            if len(cur.get("description", "")) < 40 and e.get("description"):
+                cur["description"] = e["description"]
+    result = list(groups.values())
+    for e in result:
+        srcs = [x for x in e.pop("sources", []) if x]
+        if len(srcs) > 1:
+            e["source"] = " / ".join(srcs[:3])
+    result.sort(key=lambda x: (-x.get("score", 0), x.get("start_date", "9999")))
     return result
 
 def main():
     events = []
     events.extend(collect_walker())
+    events.extend(collect_generic_sources())
     events.extend(collect_x())
 
     today = date.today().isoformat()
     events = [
         e for e in events
         if (e.get("end_date") or e.get("start_date") or "") >= today
+        and e.get("area") != "奈良"
         and "道の駅" not in ((e.get("title") or "") + " " + (e.get("description") or ""))
     ]
-    events = dedupe(events)[:int(CONFIG.get("max_events", 80))]
+    events = [apply_priority_bonus(e) for e in events]
+    events = filter_noise_events(events)
+    events = dedupe(events)[:int(CONFIG.get("max_events", 100))]
     events = localize_images(events)
 
     if not events:
