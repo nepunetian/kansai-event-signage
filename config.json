@@ -172,8 +172,8 @@
     "期間限定ストア",
     "展覧"
   ],
-  "collection_version": 9,
-  "collection_strategy": "Tennoji-focused dedicated ATC homepage + Harukas schedule + Seven Park Amami detail parser",
+  "collection_version": 10,
+  "collection_strategy": "Harukas DOM schedule parser v3 + existing dedicated collectors",
   "intex_search_months": 6,
   "priority_places": [
     "天王寺",
@@ -188,5 +188,6 @@
   "tagging_version": 2,
   "tagging_strategy": "strict high-confidence tags; title weighted x3; English abbreviations require token boundaries",
   "category_model": "multi-label",
-  "category_strategy": "one event can belong to rail/anime/food/etc simultaneously"
+  "category_strategy": "one event can belong to rail/anime/food/etc simultaneously",
+  "recommendation_version": 1
 }

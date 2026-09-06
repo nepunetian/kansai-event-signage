@@ -63,22 +63,6 @@ MULTI_SOURCES = [
     {"name":"Peatix","url":"https://peatix.com/search?q=%E5%A4%A7%E9%98%AA","base":"https://peatix.com","area":"大阪","link_patterns":[r"/event/\d+", r"/event/[^?#]+"],"max_links":60},
 ]
 
-# ATCは月指定URLの方がイベント一覧を安定して返すため、当月から4か月分を追加
-_today = date.today()
-for _offset in range(0, 4):
-    _y = _today.year + ((_today.month - 1 + _offset) // 12)
-    _m = ((_today.month - 1 + _offset) % 12) + 1
-    MULTI_SOURCES.append({
-        "name": f"ATC {_y}-{_m:02d}",
-        "url": f"https://www.atc-co.com/event/?dt={_y}{_m:02d}",
-        "base": "https://www.atc-co.com",
-        "area": "大阪",
-        "link_patterns": [r"/event/[^?#]+"],
-        "max_links": 100,
-        "max_sitemap_links": 0,
-    })
-
-
 
 def fetch(url, headers=None, params=None):
     r = S.get(url, headers=headers, params=params, timeout=30)
@@ -1371,106 +1355,189 @@ def dedicated_atc_home(html, source):
 # -------------------------
 # あべのハルカス専用 v2
 # -------------------------
-def dedicated_harukas_v2(html, source):
+def dedicated_harukas_v3(html, source):
     """
-    催しスケジュール本文を直接正規表現で解析。
-    例:
+    あべのハルカス近鉄本店の催しスケジュール専用。
+
+    HTML上の表示順をそのまま使い、
+      秋のリビングフェスティバル［9月3日(木)→7日(月)］
       大北海道展［9月9日(水)→23日(水・祝)］
-      ちいかわ POP UP STORE［9月3日(木)→14日(月)］
-      第40回 近美展［9月9日(水)→13日(日)］
+    のような同一行形式と、
+
+      黄金工芸逸品展
+      ［9月2日(水)→8日(火)］
+
+    のような改行形式の両方を解析する。
+
+    「11月29日まで」のように開始日が明記されない開催中イベントは、
+    収集日を開始日として扱う。
     """
     soup = BeautifulSoup(html, "html.parser")
-    raw_text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
     events = []
     seen = set()
 
-    # 現在の年はページヘッダの「2026 9」を優先
-    ym = re.search(r"\b(20\d{2})\s+\d{1,2}\b", raw_text)
+    lines = [re.sub(r"\s+", " ", s).strip() for s in soup.stripped_strings]
+    lines = [s for s in lines if s]
+
+    # ページ上の年月（例: 2026 9）
+    joined_head = " ".join(lines[:120])
+    ym = re.search(r"\b(20\d{2})\s+(\d{1,2})\b", joined_head)
     base_year = int(ym.group(1)) if ym else date.today().year
 
-    # タイトル + ［日付］ を直接抽出
-    pat = re.compile(
-        r"(?P<title>[^［\[] {0,0})"
-    )
-    # Pythonで扱いやすいよう別パターン
-    event_pat = re.compile(
-        r"(?P<title>[^。|]{3,120}?)"
+    # リンクをタイトル文字列から逆引き
+    link_map = {}
+    for a in soup.find_all("a", href=True):
+        at = re.sub(r"\s+", " ", a.get_text(" ", strip=True)).strip()
+        if at:
+            link_map[normalize_title(at)[:80]] = urljoin(source["base"], a["href"])
+
+    current_floor = ""
+    current_venue = "あべのハルカス近鉄本店"
+
+    def update_venue(line, next_line=""):
+        nonlocal current_floor, current_venue
+        if re.search(r"(?:ウイング館|タワー館).*(?:階|地\d階)$", line):
+            current_floor = line
+            # 次行が催会場等なら次ループで結合
+            current_venue = f"あべのハルカス近鉄本店 {current_floor}"
+            return True
+        if re.search(r"催会場|第\d催会場|美術画廊|アートギャラリー|イベントホール|イベントスペース|デリシャスステージ|POP UP SWEETS|トレンドスペース", line, re.I):
+            if current_floor:
+                current_venue = f"あべのハルカス近鉄本店 {current_floor} {line}"
+            else:
+                current_venue = f"あべのハルカス近鉄本店 {line}"
+            return True
+        return False
+
+    # 日付ブロック
+    date_pat = re.compile(
         r"[［\[]\s*"
         r"(?:(?P<year>20\d{2})年\s*)?"
         r"(?P<m1>\d{1,2})月\s*(?P<d1>\d{1,2})日[^］\]]*?"
-        r"(?:(?:→|～|〜|~|-)\s*(?:(?P<m2>\d{1,2})月\s*)?(?P<d2>\d{1,2})日[^］\]]*)?"
+        r"(?:(?P<range>→|～|〜|~|-)\s*(?:(?P<m2>\d{1,2})月\s*)?(?P<d2>\d{1,2})日[^］\]]*|(?P<until>まで))?"
         r"[］\]]"
     )
 
-    for m in event_pat.finditer(raw_text):
-        title = clean_event_title(m.group("title"))
-        # 前方に会場名や注意書きが混ざるので、末尾の自然なイベント名だけ残す
-        for sep in ["催会場 ", "美術画廊 ", "アートギャラリー ", "イベントスペース "]:
-            if sep in title:
-                title = title.split(sep)[-1].strip()
-        title = re.sub(r"^.*?\|\s*", "", title)
-        title = title[-110:].strip()
-
-        if not title or len(title) < 3:
-            continue
-        if re.search(r"最終日は|閉場|営業時間|EVENT SCHEDULE", title):
-            continue
-
-        y = int(m.group("year") or base_year)
+    def parse_range(match):
+        y = int(match.group("year") or base_year)
+        m1 = int(match.group("m1"))
+        d1 = int(match.group("d1"))
         try:
-            sd = date(y, int(m.group("m1")), int(m.group("d1")))
-            if m.group("d2"):
-                ed = date(y, int(m.group("m2") or m.group("m1")), int(m.group("d2")))
-                if ed < sd:
-                    ed = date(y+1, int(m.group("m2") or m.group("m1")), int(m.group("d2")))
-            else:
-                ed = sd
+            first = date(y, m1, d1)
         except Exception:
+            return None, None
+
+        if match.group("until"):
+            # 開始日不明。今日時点で開催中として扱う。
+            end = first
+            start = date.today() if end >= date.today() else first
+            return start, end
+
+        if match.group("d2"):
+            m2 = int(match.group("m2") or m1)
+            d2 = int(match.group("d2"))
+            try:
+                end = date(y, m2, d2)
+                if end < first:
+                    end = date(y + 1, m2, d2)
+            except Exception:
+                end = first
+            return first, end
+
+        return first, first
+
+    def good_title_piece(s):
+        s = clean_event_title(s)
+        if not (2 <= len(s) <= 130):
+            return False
+        if re.fullmatch(r"\d+|\([月火水木金土日]\)|[|｜]+", s):
+            return False
+        if re.search(r"^(EVENT SCHEDULE|催しスケジュール|催会場|食品のフロア|美術画廊・アートギャラリー|営業時間|フロアガイド)$", s):
+            return False
+        if re.search(r"※最終日|閉場|午前\d|午後\d", s):
+            return False
+        if re.search(r"(?:ウイング館|タワー館).*(?:階|地\d階)$", s):
+            return False
+        if re.search(r"催会場|第\d催会場|美術画廊|アートギャラリー|イベントホール|イベントスペース|デリシャスステージ|POP UP SWEETS", s, re.I):
+            return False
+        return True
+
+    for i, line in enumerate(lines):
+        next_line = lines[i + 1] if i + 1 < len(lines) else ""
+        if update_venue(line, next_line):
             continue
 
-        if ed < date.today():
+        dm = date_pat.search(line)
+        if not dm:
             continue
 
-        # ノイズ除外（セール・アプリキャンペーン等は後段フィルタにもかかる）
-        context_start = max(0, m.start()-160)
-        context_end = min(len(raw_text), m.end()+180)
-        context = raw_text[context_start:context_end]
+        sd_obj, ed_obj = parse_range(dm)
+        if not sd_obj or not ed_obj or ed_obj < date.today():
+            continue
 
-        # 会場推定
-        venue = "あべのハルカス近鉄本店"
-        for venue_name in [
-            "ウイング館9階催会場",
-            "ウイング館4階第2催会場",
-            "ウイング館地2階イベントホール",
-            "タワー館11階美術画廊",
-            "タワー館11階アートギャラリー",
-            "タワー館地1階デリシャスステージ",
-            "タワー館地1階POP UP SWEETS",
-        ]:
-            if venue_name.replace(" ", "") in context.replace(" ", ""):
-                venue = venue_name
+        # 同一行の日付より前を第一候補
+        before = clean_event_title(line[:dm.start()].strip())
+        title_parts = []
+
+        if good_title_piece(before):
+            title_parts = [before]
+        else:
+            # 改行型。直前1～3行からタイトルを組み立てる。
+            for j in range(i - 1, max(-1, i - 4), -1):
+                cand = clean_event_title(lines[j])
+                if not good_title_piece(cand):
+                    continue
+                title_parts.insert(0, cand)
+                # ブランド表記+商品名、あるいは展覧会の副題を最大2行まで
+                if len(title_parts) >= 2:
+                    break
+
+        if not title_parts:
+            continue
+
+        # 同じ文言の繰り返しを除いて結合
+        compact_parts = []
+        for part in title_parts:
+            if not compact_parts or normalize_title(part) != normalize_title(compact_parts[-1]):
+                compact_parts.append(part)
+        title = " ".join(compact_parts).strip()[:110]
+
+        # ページヘッダ・キャンペーン等のノイズは後段フィルタでも落ちるが、
+        # ここでも明らかなものだけ除外
+        if re.search(r"プレミアム付商品券|アプリ大感謝祭|新規・増口ご入会キャンペーン", title):
+            continue
+
+        # 前後文脈
+        context = " ".join(lines[max(0, i - 3):min(len(lines), i + 3)])
+        full = f"{title} {current_venue} {context}"
+        cat = classify(full)
+
+        # タイトルを含むリンクを探す
+        source_url = source["url"]
+        nt = normalize_title(title)
+        for k, u in link_map.items():
+            if nt[:28] and (nt[:28] in k or k[:28] in nt):
+                source_url = u
                 break
 
-        full = f"{title} {venue} {context}"
-        cat = classify(full)
-        key = (normalize_title(title), sd.isoformat())
+        key = (normalize_title(title)[:45], sd_obj.isoformat(), current_venue)
         if key in seen:
             continue
         seen.add(key)
 
         events.append({
             "title": title,
-            "start_date": sd.isoformat(),
-            "end_date": ed.isoformat(),
+            "start_date": sd_obj.isoformat(),
+            "end_date": ed_obj.isoformat(),
             "area": "大阪",
-            "venue": venue,
+            "venue": current_venue,
             "category": cat,
-            "score": min(99, score(full, cat) + 12),
+            "score": min(99, score(full, cat) + 14),
             "tags": make_tags(full, cat),
             "description": context[:180],
             "image_url": None,
             "source": "あべのハルカス近鉄本店",
-            "source_url": source["url"],
+            "source_url": source_url,
         })
 
     return events
@@ -1782,7 +1849,7 @@ def collect_dedicated_listing_events(html, source):
     if name == "阪急うめだ本店":
         return dedicated_hankyu(html, source)
     if name == "あべのハルカス近鉄本店":
-        return dedicated_harukas_v2(html, source)
+        return dedicated_harukas_v3(html, source)
     if name == "セブンパーク天美":
         return dedicated_sevenpark(html, source)
     return []

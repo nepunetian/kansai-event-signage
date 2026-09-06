@@ -51,6 +51,11 @@
             <span>おすすめ度</span>
             <strong id="heroScore">--</strong>
           </div>
+          <div class="hero-feedback" aria-label="おすすめ学習">
+            <button id="heroLike" class="feedback-btn feedback-like" type="button" title="このイベントが好き">👍 <span>いいね</span></button>
+            <button id="heroDislike" class="feedback-btn feedback-dislike" type="button" title="このイベントは好みではない">👎 <span>バッド</span></button>
+            <span id="learningStatus" class="learning-status">学習 0件</span>
+          </div>
           <div class="hero-source" id="heroSource">情報元: --</div>
         </div>
       </section>
@@ -68,8 +73,8 @@
     </main>
 
     <footer class="footer">
-      <span>フルHD 1画面表示 / 画像付き / 15分ごと自動更新</span>
-      <span id="updated">最終更新: --</span>
+      <span>フルHD 1画面表示 / 画像付き / 15分ごと自動更新 / いいね学習</span>
+      <span><button id="resetLearning" class="reset-learning" type="button">学習リセット</button>　<span id="updated">最終更新: --</span></span>
     </footer>
   </div>
 

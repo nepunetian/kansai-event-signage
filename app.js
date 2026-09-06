@@ -5,6 +5,122 @@ let pageIndex = 0;
 const CARDS_PER_PAGE = 6;
 const FALLBACK_IMAGE = 'placeholder.svg';
 
+const PREFS_KEY = 'kansaiEventSignagePrefsV1';
+
+function loadPrefs(){
+  try{
+    const parsed = JSON.parse(localStorage.getItem(PREFS_KEY) || '{}');
+    return parsed && typeof parsed === 'object' ? {votes: parsed.votes || {}} : {votes:{}};
+  }catch(_){
+    return {votes:{}};
+  }
+}
+
+let userPrefs = loadPrefs();
+
+function savePrefs(){
+  try{
+    localStorage.setItem(PREFS_KEY, JSON.stringify(userPrefs));
+  }catch(err){
+    console.warn('学習データを保存できませんでした', err);
+  }
+}
+
+function eventKey(e){
+  const raw = e.source_url || `${e.title || ''}|${e.start_date || ''}|${e.venue || ''}`;
+  // data属性でも安全に扱える単純キーへ
+  let h = 2166136261;
+  for(let i=0;i<raw.length;i++){
+    h ^= raw.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return 'e' + (h >>> 0).toString(36);
+}
+
+function featureSnapshot(e){
+  return {
+    categories: Array.isArray(e.categories) && e.categories.length ? [...e.categories] : [e.category].filter(Boolean),
+    tags: Array.isArray(e.tags) ? [...e.tags] : [],
+    source: e.source || '',
+    area: e.area || '',
+    venue: e.venue || ''
+  };
+}
+
+function setVote(e, value){
+  const key = eventKey(e);
+  const old = userPrefs.votes[key];
+  // 同じボタンをもう一度押すと解除
+  if(old && old.value === value){
+    delete userPrefs.votes[key];
+  }else{
+    userPrefs.votes[key] = {
+      value,
+      ...featureSnapshot(e),
+      title: e.title || '',
+      votedAt: Date.now()
+    };
+  }
+  savePrefs();
+  heroIndex = 0;
+  pageIndex = 0;
+  render();
+}
+
+function getVote(e){
+  return userPrefs.votes[eventKey(e)]?.value || 0;
+}
+
+function overlapCount(a=[], b=[]){
+  const bs = new Set(b);
+  return a.reduce((n,x)=>n + (bs.has(x) ? 1 : 0), 0);
+}
+
+function preferenceBonus(e){
+  const direct = getVote(e);
+  let bonus = direct === 1 ? 38 : direct === -1 ? -90 : 0;
+  const f = featureSnapshot(e);
+
+  Object.values(userPrefs.votes).forEach(v=>{
+    if(!v || !v.value) return;
+    // そのイベント自身への効果は direct で処理済み
+    if(v.title && v.title === e.title && v.venue === e.venue) return;
+
+    const sign = v.value > 0 ? 1 : -1;
+    const catOverlap = overlapCount(f.categories, v.categories || []);
+    const tagOverlap = overlapCount(f.tags, v.tags || []);
+
+    bonus += sign * Math.min(12, catOverlap * 7);
+    bonus += sign * Math.min(9, tagOverlap * 3);
+
+    if(f.source && v.source && f.source === v.source) bonus += sign * 4;
+    if(f.area && v.area && f.area === v.area) bonus += sign * 1;
+    if(f.venue && v.venue && f.venue === v.venue) bonus += sign * 3;
+  });
+
+  // 類似嗜好による補正は過学習を避けるため制限
+  if(direct === 0) bonus = Math.max(-35, Math.min(35, bonus));
+  return bonus;
+}
+
+function personalizedScore(e){
+  return Math.max(0, Math.min(99, Number(e.score || 0) + preferenceBonus(e)));
+}
+
+function learningCount(){
+  return Object.keys(userPrefs.votes).length;
+}
+
+function updateLearningStatus(){
+  const el = $('#learningStatus');
+  if(!el) return;
+  const votes = Object.values(userPrefs.votes);
+  const likes = votes.filter(v=>v.value===1).length;
+  const dislikes = votes.filter(v=>v.value===-1).length;
+  el.textContent = `学習 👍${likes} / 👎${dislikes}`;
+}
+
+
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
 
@@ -72,16 +188,9 @@ function matches(e){
   if(currentFilter==='all') return true;
   if(currentFilter==='today') return isTodayEvent(e);
   if(currentFilter==='weekend') return isThisWeekendEvent(e);
-  if(currentFilter==='tech') return e.category === 'tech';
-  if(currentFilter==='rail') return e.category === 'rail';
-  if(currentFilter==='anime') return e.category === 'anime';
-  if(currentFilter==='food') return e.category === 'food';
-  if(currentFilter==='car') return e.category === 'car';
-  if(currentFilter==='tourism') return ['tourism','exhibition'].includes(e.category);
-  if(Array.isArray(e.categories) && e.categories.length){
-    return e.categories.includes(currentFilter);
-  }
-  return e.category===currentFilter;
+  const cats = Array.isArray(e.categories) && e.categories.length ? e.categories : [e.category];
+  if(currentFilter==='tourism') return cats.includes('tourism') || cats.includes('exhibition');
+  return cats.includes(currentFilter);
 }
 
 function tagHtml(tags=[]){
@@ -97,11 +206,15 @@ function getFilteredEvents(){
       return end >= today;
     })
     .filter(matches)
-    .sort((a,b)=>b.score-a.score);
+    .sort((a,b)=>personalizedScore(b)-personalizedScore(a) || String(a.start_date).localeCompare(String(b.start_date)));
 }
 
 function escapeAttr(str){
-  return String(str ?? '').replace(/"/g, '&quot;');
+  return String(str ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
 }
 
 function render(){
@@ -119,6 +232,7 @@ function render(){
     $('#heroTags').innerHTML = '';
     $('#heroScore').textContent = '--';
     $('#heroSource').textContent = '情報元: --';
+    updateLearningStatus();
     return;
   }
 
@@ -145,14 +259,20 @@ function render(){
         <div>
           <div class="card-head">
             <div class="card-date">${dateRangeText(e)}</div>
-            <div class="card-score">${e.score}</div>
+            <div class="card-score">${personalizedScore(e)}</div>
           </div>
           <h4>${e.title}</h4>
           <div class="place">${e.area} ｜ ${e.venue}</div>
           <div class="desc">${e.description || ''}</div>
         </div>
         <div>
-          <div class="tags">${tagHtml(e.tags)}</div>
+          <div class="card-bottom">
+            <div class="tags">${tagHtml(e.tags)}</div>
+            <div class="card-feedback">
+              <button class="feedback-btn mini ${getVote(e)===1 ? 'selected' : ''}" data-vote="1" data-event-key="${eventKey(e)}" type="button" title="いいね">👍</button>
+              <button class="feedback-btn mini ${getVote(e)===-1 ? 'selected bad' : ''}" data-vote="-1" data-event-key="${eventKey(e)}" type="button" title="バッド">👎</button>
+            </div>
+          </div>
           <div class="source">${e.source ? '情報元: ' + e.source : ''}${e.source_url ? ' ｜ <a href="' + e.source_url + '" target="_blank" rel="noopener">詳細</a>' : ''}</div>
         </div>
       </div>
@@ -169,8 +289,19 @@ function setHero(e){
   $('#heroTitle').textContent = e.title;
   $('#heroDesc').textContent = e.description || '';
   $('#heroTags').innerHTML = tagHtml(e.tags);
-  $('#heroScore').textContent = e.score;
+  $('#heroScore').textContent = personalizedScore(e);
   $('#heroSource').innerHTML = `${e.source ? '情報元: ' + e.source : '情報元: --'}${e.source_url ? ' ｜ <a href="' + e.source_url + '" target="_blank" rel="noopener">詳細</a>' : ''}`;
+
+  const like = $('#heroLike');
+  const bad = $('#heroDislike');
+  if(like && bad){
+    like.dataset.eventKey = eventKey(e);
+    bad.dataset.eventKey = eventKey(e);
+    like.classList.toggle('selected', getVote(e) === 1);
+    bad.classList.toggle('selected', getVote(e) === -1);
+    bad.classList.toggle('bad', getVote(e) === -1);
+  }
+  updateLearningStatus();
 }
 
 function updateClock(){
@@ -208,6 +339,38 @@ async function loadEvents(){
       $('#grid').innerHTML = `<div class="empty">イベントデータを読み込めませんでした</div>`;
     }
   }
+}
+
+
+function findEventByKey(key){
+  return events.find(e => eventKey(e) === key);
+}
+
+document.addEventListener('click', (ev)=>{
+  const btn = ev.target.closest('.feedback-btn');
+  if(!btn) return;
+  const key = btn.dataset.eventKey;
+  const value = Number(btn.dataset.vote || (btn.id === 'heroLike' ? 1 : btn.id === 'heroDislike' ? -1 : 0));
+  if(!key || !value) return;
+  const event = findEventByKey(key);
+  if(!event) return;
+  ev.preventDefault();
+  ev.stopPropagation();
+  setVote(event, value);
+});
+
+const resetLearning = $('#resetLearning');
+if(resetLearning){
+  resetLearning.addEventListener('click', ()=>{
+    if(!learningCount()) return;
+    if(confirm('いいね・バッドの学習内容をリセットしますか？')){
+      userPrefs = {votes:{}};
+      savePrefs();
+      heroIndex = 0;
+      pageIndex = 0;
+      render();
+    }
+  });
 }
 
 $$('.filter').forEach(btn=>{
