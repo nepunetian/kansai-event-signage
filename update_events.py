@@ -41,8 +41,7 @@ MULTI_SOURCES = [
     {"name":"あべのハルカス近鉄本店","url":"https://abenoharukas.d-kintetsu.co.jp/eventschedule/","base":"https://abenoharukas.d-kintetsu.co.jp","area":"大阪","link_patterns":[r"/eventschedule/[^?#]*", r"/event/[^?#]+", r"/news/[^?#]+"],"max_links":100},
 
     # アニメ・ポップカルチャー公式
-    {"name":"アニメイト","url":"https://www.animate.co.jp/event/","base":"https://www.animate.co.jp","area":"関西","link_patterns":[r"/event/[^?#]+", r"/onlyshop/[^?#]+", r"/fair/[^?#]+"],"max_links":120},
-    {"name":"アニメイト大阪日本橋","url":"https://www.animate.co.jp/shop/nipponbashi/","base":"https://www.animate.co.jp","area":"大阪","link_patterns":[r"/event/[^?#]+", r"/onlyshop/[^?#]+", r"/fair/[^?#]+"],"max_links":80},
+    {"name":"アニメイト大阪日本橋","url":"https://www.animate.co.jp/onlyshop/search/relation_shop%3A105/","base":"https://www.animate.co.jp","area":"大阪","link_patterns":[r"/onlyshop/\d+/", r"/gratte/\d+/", r"/fair/\d+/"],"max_links":120},
 
     # 車イベント公式
     {"name":"大阪オートメッセ","url":"https://www.automesse.jp/","base":"https://www.automesse.jp","area":"大阪","link_patterns":[r"/20\d{2}/[^?#]+", r"/event[^?#]*", r"/news/[^?#]+"],"max_links":80},
@@ -58,6 +57,22 @@ MULTI_SOURCES = [
     {"name":"京都観光Navi","url":"https://ja.kyoto.travel/event/","base":"https://ja.kyoto.travel","area":"京都","link_patterns":[r"/event/[^?#]+"],"max_links":60},
     {"name":"Peatix","url":"https://peatix.com/search?q=%E5%A4%A7%E9%98%AA","base":"https://peatix.com","area":"大阪","link_patterns":[r"/event/\d+", r"/event/[^?#]+"],"max_links":60},
 ]
+
+# ATCは月指定URLの方がイベント一覧を安定して返すため、当月から4か月分を追加
+_today = date.today()
+for _offset in range(0, 4):
+    _y = _today.year + ((_today.month - 1 + _offset) // 12)
+    _m = ((_today.month - 1 + _offset) % 12) + 1
+    MULTI_SOURCES.append({
+        "name": f"ATC {_y}-{_m:02d}",
+        "url": f"https://www.atc-co.com/event/?dt={_y}{_m:02d}",
+        "base": "https://www.atc-co.com",
+        "area": "大阪",
+        "link_patterns": [r"/event/[^?#]+"],
+        "max_links": 100,
+        "max_sitemap_links": 0,
+    })
+
 
 
 def fetch(url, headers=None, params=None):
@@ -555,6 +570,248 @@ def page_looks_like_event(title, text_body):
         merged, re.I
     ))
 
+
+# -------------------------
+# 一覧ページから直接イベントカードを解析
+# -------------------------
+def img_from_node(node, base):
+    if not node:
+        return None
+    img = node.find("img")
+    if not img:
+        return None
+    for key in ("src", "data-src", "data-original", "data-lazy-src"):
+        val = img.get(key)
+        if val and not str(val).startswith("data:"):
+            return urljoin(base, val)
+    srcset = img.get("srcset")
+    if srcset:
+        first = srcset.split(",")[0].strip().split(" ")[0]
+        if first:
+            return urljoin(base, first)
+    return None
+
+def meaningful_title_from_node(node, fallback=""):
+    if not node:
+        return fallback
+    for tagname in ("h1","h2","h3","h4","h5"):
+        h = node.find(tagname)
+        if h:
+            t = re.sub(r"\s+", " ", h.get_text(" ", strip=True)).strip()
+            if 3 <= len(t) <= 130:
+                return t
+    # anchor strong/b text
+    for tagname in ("strong","b"):
+        h = node.find(tagname)
+        if h:
+            t = re.sub(r"\s+", " ", h.get_text(" ", strip=True)).strip()
+            if 3 <= len(t) <= 130 and not re.fullmatch(r"詳細を見る|詳しくはこちら|MORE|VIEW MORE", t, re.I):
+                return t
+    return fallback
+
+def nearest_event_block(anchor):
+    """
+    詳細リンクから親要素を遡り、日付を含む適度なサイズのカードを探す。
+    """
+    node = anchor
+    best = anchor.parent
+    for _ in range(6):
+        if not node or not getattr(node, "parent", None):
+            break
+        node = node.parent
+        txt = re.sub(r"\s+", " ", node.get_text(" ", strip=True))
+        if 25 <= len(txt) <= 1800:
+            sd, ed = extract_dates_from_html(node, txt)
+            if sd:
+                best = node
+                # タイトルも取れそうなら即採用
+                if meaningful_title_from_node(node):
+                    return node
+    return best
+
+def collect_events_from_listing_cards(html, source):
+    """
+    ATC/LUCUA/阪急/大丸など:
+    詳細ページが読めなくても一覧ページのカードから拾う。
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+    seen = set()
+
+    for a in soup.find_all("a", href=True):
+        href = a.get("href", "").strip()
+        if not is_probable_event_link(href, source.get("link_patterns", [r"/event/"])):
+            continue
+
+        url = urljoin(source["base"], href)
+        block = nearest_event_block(a)
+        block_text = re.sub(r"\s+", " ", block.get_text(" ", strip=True))
+        sd, ed = extract_dates_from_html(block, block_text)
+        if not sd:
+            # LUCUAのようにリンク本文に「タイトル 9/6〜9/7」が入るケース
+            sd, ed = extract_dates_from_html(a, a.get_text(" ", strip=True))
+        if not sd:
+            continue
+        if (ed or sd) < date.today().isoformat():
+            continue
+
+        anchor_text = re.sub(r"\s+", " ", a.get_text(" ", strip=True)).strip()
+        anchor_text = re.sub(
+            r"\s+\d{1,2}/\d{1,2}.*$",
+            "",
+            anchor_text
+        ).strip()
+        if anchor_text in ("詳細を見る", "詳しくはこちら", "MORE", "VIEW MORE"):
+            anchor_text = ""
+
+        title = meaningful_title_from_node(block, anchor_text)
+        if not title:
+            continue
+
+        # 状態語や日付の前置きを削る
+        title = re.sub(r"^(開催中|開催予定|終了|予告)\s*", "", title).strip()
+        title = re.sub(r"\s+", " ", title)[:110]
+
+        key = (normalize_title(title)[:36], sd, url)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        venue = extract_venue_from_html(block, block_text, source.get("area"))
+        image_url = img_from_node(block, source["base"])
+        desc = block_text
+        # タイトル・日付・詳細を見るなどを少し整理
+        desc = re.sub(r"\s+", " ", desc)
+        desc = desc.replace("詳細を見る", "").strip()
+        if desc.startswith(title):
+            desc = desc[len(title):].strip(" -｜|")
+        desc = desc[:170]
+
+        full = " ".join([title, venue, desc])
+        area = area_from_text(full)
+        if area == "関西" and source.get("area"):
+            area = source.get("area")
+
+        cat = classify(full)
+        events.append({
+            "title": title,
+            "start_date": sd,
+            "end_date": ed or sd,
+            "area": area,
+            "venue": venue,
+            "category": cat,
+            "score": score(full, cat),
+            "tags": make_tags(full, cat),
+            "description": desc or "詳しくは公式ページをご確認ください。",
+            "image_url": image_url,
+            "source": source["name"],
+            "source_url": url,
+        })
+
+    return events
+
+def monthless_date_range(text_value):
+    """
+    百貨店一覧の「9月2日(水)→8日(火)」にも対応。
+    """
+    m = re.search(
+        r"(?:(20\d{2})年)?\s*(\d{1,2})月\s*(\d{1,2})日"
+        r".{0,20}?(?:→|～|〜|~|-)"
+        r".{0,15}?(?:(\d{1,2})月)?\s*(\d{1,2})日",
+        text_value, re.S
+    )
+    if not m:
+        return None, None
+    y, m1, d1, m2, d2 = m.groups()
+    y = int(y or date.today().year)
+    m1 = int(m1); d1 = int(d1); m2 = int(m2 or m1); d2 = int(d2)
+    try:
+        sd = date(y,m1,d1)
+        ed = date(y,m2,d2)
+        if ed < sd:
+            ed = date(y+1,m2,d2)
+        if ed < date.today() - timedelta(days=60):
+            sd = date(y+1,m1,d1)
+            ed = date(y+1,m2,d2) if m2 >= m1 else date(y+2,m2,d2)
+        return sd.isoformat(), ed.isoformat()
+    except Exception:
+        return None, None
+
+def collect_department_store_text(html, source):
+    """
+    阪急・大丸のように一覧ページ本文だけで多数の催事が完結しているページを解析。
+    各日付レンジの直前の見出し/短文をタイトル候補にする。
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    # script/style除外
+    for x in soup(["script","style","noscript"]):
+        x.decompose()
+
+    # ブロック単位で読む
+    nodes = soup.find_all(["h2","h3","h4","h5","p","li","div"])
+    events = []
+    seen = set()
+
+    for node in nodes:
+        txt = re.sub(r"\s+", " ", node.get_text(" ", strip=True)).strip()
+        if not (10 <= len(txt) <= 1200):
+            continue
+
+        sd, ed = monthless_date_range(txt)
+        if not sd:
+            sd, ed = extract_dates_from_html(node, txt)
+        if not sd or (ed or sd) < date.today().isoformat():
+            continue
+
+        # タイトルは日付直前のテキスト
+        date_pos = None
+        for pat in [
+            r"(?:(20\d{2})年)?\s*\d{1,2}月\s*\d{1,2}日",
+            r"\d{1,2}/\d{1,2}"
+        ]:
+            mm = re.search(pat, txt)
+            if mm:
+                date_pos = mm.start()
+                break
+
+        before = txt[:date_pos].strip(" ◎・｜|:-") if date_pos is not None else ""
+        # 長すぎる説明文なら末尾100字程度からタイトルらしい部分
+        if len(before) > 150:
+            # 説明の末尾にイベント名が来る阪急形式を想定
+            candidates = re.split(r"[。！？!?\n]", before)
+            before = next((c.strip() for c in reversed(candidates) if 4 <= len(c.strip()) <= 120), before[-120:])
+
+        title = re.sub(r"^(予告|〖予告〗|開催中|開催予定)\s*", "", before).strip()
+        if not (3 <= len(title) <= 130):
+            continue
+        if re.search(r"営業時間|アクセス|電話|住所|検索|カレンダー", title):
+            continue
+
+        key = (normalize_title(title)[:36], sd)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        venue = extract_venue_from_html(node, txt, source.get("area"))
+        full = " ".join([title, txt, venue])
+        cat = classify(full)
+        events.append({
+            "title": title[:110],
+            "start_date": sd,
+            "end_date": ed or sd,
+            "area": source.get("area","大阪"),
+            "venue": venue,
+            "category": cat,
+            "score": score(full, cat),
+            "tags": make_tags(full, cat),
+            "description": txt[:170],
+            "image_url": img_from_node(node, source["base"]),
+            "source": source["name"],
+            "source_url": source["url"],
+        })
+
+    return events
+
 # -------------------------
 # 汎用イベントサイト収集
 # Google検索のイベント表示で利用される Event JSON-LD を中心に解析
@@ -726,11 +983,29 @@ def collect_generic_sources():
         except Exception as e:
             diag(source_name, errors=1, note=f"list: {e}")
             print(f"[{source_name}] list error: {source['url']}: {e}", file=sys.stderr)
-            # 一覧が死んでもサイトマップだけ試す
             list_html = ""
 
+        # まず一覧ページを直接解析
+        listing_events = []
+        if list_html:
+            try:
+                listing_events.extend(collect_events_from_listing_cards(list_html, source))
+            except Exception as e:
+                diag(source_name, note=f"listing-card: {e}")
+
+            if source_name in ("阪急うめだ本店", "大丸梅田店", "あべのハルカス近鉄本店"):
+                try:
+                    listing_events.extend(collect_department_store_text(list_html, source))
+                except Exception as e:
+                    diag(source_name, note=f"department-list: {e}")
+
+        if listing_events:
+            diag(source_name, parsed=len(listing_events), note=f"listing fallback: {len(listing_events)}")
+            events.extend(listing_events)
+
+        # 詳細URLも従来どおり探索
         urls = discover_source_urls(list_html, source)
-        print(f"[{source_name}] candidates: {len(urls)}")
+        print(f"[{source_name}] candidates: {len(urls)} / listing: {len(listing_events)}")
 
         def parse_one(u):
             try:
@@ -741,7 +1016,6 @@ def collect_generic_sources():
             except Exception as e:
                 return u, [], e
 
-        # サイトごとに並列化してAction時間を短縮
         workers = min(8, max(2, int(source.get("workers", 6))))
         with ThreadPoolExecutor(max_workers=workers) as ex:
             futures = [ex.submit(parse_one, u) for u in urls]
