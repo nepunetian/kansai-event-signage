@@ -15,7 +15,8 @@
     ],
     "description": "漫画・アニメ・ゲームに特化した西日本最大級のイベント。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/"
+    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/",
+    "image_url": ""
   },
   {
     "title": "ジブリパーク展（大阪）",
@@ -32,7 +33,8 @@
     ],
     "description": "「遊べる」をテーマに、ジブリパークの世界を体験できる展覧会。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0727e599293/"
+    "source_url": "https://www.walkerplus.com/event/ar0727e599293/",
+    "image_url": ""
   },
   {
     "title": "万博記念公園 万博夏まつり2026",
@@ -49,7 +51,8 @@
     ],
     "description": "太陽の塔周辺などで開催される大規模な夏まつりイベント。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/",
+    "image_url": ""
   },
   {
     "title": "京阪電車×響け！ユーフォニアム2026 秋 コラボカフェ",
@@ -66,7 +69,8 @@
     ],
     "description": "京阪電車と『響け！ユーフォニアム』のコラボ企画。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/"
+    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/",
+    "image_url": ""
   },
   {
     "title": "特別展「大絶滅展ー生命史のビッグファイブ」（大阪）",
@@ -83,7 +87,8 @@
     ],
     "description": "地球史上の5回の大規模絶滅から生命進化の歴史をたどる特別展。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/",
+    "image_url": ""
   },
   {
     "title": "空庭妖怪祭",
@@ -100,7 +105,8 @@
     ],
     "description": "あやかしの世界をテーマにした体験型イベント。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/",
+    "image_url": ""
   },
   {
     "title": "1999展ー存在しないあの日の記憶ー（大阪）",
@@ -116,7 +122,8 @@
     ],
     "description": "「世界の終わり」をテーマにした恐怖体験型展覧会。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/",
+    "image_url": ""
   },
   {
     "title": "神戸ホラーコレクション2026",
@@ -133,7 +140,8 @@
     ],
     "description": "4つのコンテンツのお化け屋敷を楽しめるイベント。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/"
+    "source_url": "https://www.walkerplus.com/event_list/09/ar0700/",
+    "image_url": ""
   },
   {
     "title": "有馬の秘宝と月への舟 第2章",
@@ -150,7 +158,8 @@
     ],
     "description": "旅館を巡りながら楽しむミッション型謎解きイベント。",
     "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/"
+    "source_url": "https://www.walkerplus.com/event_list/ar0700/eg0127/",
+    "image_url": ""
   },
   {
     "title": "重陽神事と烏相撲",
@@ -167,7 +176,8 @@
     ],
     "description": "京都・上賀茂神社で行われる伝統行事。",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/"
+    "source_url": "https://ja.kyoto.travel/event/",
+    "image_url": ""
   },
   {
     "title": "菊の巫女神楽",
@@ -183,7 +193,8 @@
     ],
     "description": "9月の複数日に城南宮で奉納される巫女神楽。",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/"
+    "source_url": "https://ja.kyoto.travel/event/",
+    "image_url": ""
   },
   {
     "title": "くらげと傘と風鈴と",
@@ -200,7 +211,8 @@
     ],
     "description": "くらげ・傘・風鈴をテーマにした京都水族館の季節イベント。",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/"
+    "source_url": "https://ja.kyoto.travel/event/",
+    "image_url": ""
   },
   {
     "title": "寛永行幸四百年記念 特別展 寛永行幸と花の都の文化びと",
@@ -217,6 +229,7 @@
     ],
     "description": "寛永行幸400年を記念した特別展。",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/"
+    "source_url": "https://ja.kyoto.travel/event/",
+    "image_url": ""
   }
 ]

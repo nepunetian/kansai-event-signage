@@ -51,14 +51,17 @@
   "negative_keywords": {
     "乳幼児": -12,
     "ベビー": -10,
-    "道の駅": -25
+    "道の駅": -30
   },
   "x_queries": [
-    "(イベント OR フェス OR 開催) (大阪 OR 京都 OR 神戸 OR 奈良 OR 滋賀 OR 和歌山) -is:retweet lang:ja",
     "(アニメ OR マンガ OR 漫画 OR 声優 OR コスプレ OR ゲーム) (大阪 OR 京都 OR 神戸 OR 奈良) -is:retweet lang:ja",
     "(グルメ OR フード OR ラーメン OR カレー OR スイーツ OR パン OR 肉フェス OR 食フェス) (大阪 OR 京都 OR 神戸 OR 奈良 OR 滋賀 OR 和歌山) -is:retweet lang:ja",
     "(鉄道 OR 電車 OR 列車) (イベント OR フェス OR 展示) (大阪 OR 京都 OR 兵庫 OR 奈良 OR 滋賀 OR 和歌山) -is:retweet lang:ja",
-    "(AI OR 生成AI OR XR OR VR OR ガジェット) (イベント OR 展示会 OR セミナー) (大阪 OR 京都 OR 神戸) -is:retweet lang:ja"
+    "(AI OR 生成AI OR XR OR VR OR ガジェット) (イベント OR 展示会 OR セミナー) (大阪 OR 京都 OR 神戸) -is:retweet lang:ja",
+    "(イベント OR フェス OR 開催) (大阪 OR 京都 OR 神戸 OR 奈良 OR 滋賀 OR 和歌山) -is:retweet lang:ja"
   ],
-  "x_max_results_per_query": 50
+  "x_max_results_per_query": 10,
+  "x_daily_post_budget": 50,
+  "x_collect_enabled": true,
+  "x_cost_mode": "low"
 }

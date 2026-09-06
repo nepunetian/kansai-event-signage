@@ -1,43 +1,28 @@
-# 関西イベントサイネージ（X対応版）
+# 関西イベントサイネージ（フルHD画像版）
 
-Fire TVのブラウザで常時表示する個人向けイベントサイネージです。
+Fire TV のブラウザ向けに、**1920x1080 の1画面で情報が収まる**ように調整した版です。
 
-## 収集対象
-- Walkerplus 関西イベント
-- X の直近投稿（X APIのBearer Tokenを設定した場合）
+## 今回の変更
+- フルHD 1画面固定レイアウト
+- ページ全体のスクロールなし
+- 左側に注目イベントの大きな画像表示
+- 右側にイベントカード6件を画像付きで表示
+- 注目イベントは12秒ごとに切替
+- 右側一覧は16秒ごとにページ切替
+- `events.json` に `image_url` を持てるよう変更
+- `update_events.py` でイベント画像URLも収集
+- 画像がない場合は `placeholder.svg` を表示
 
-## 優先ジャンル
-- 鉄道
-- AI / IT / XR / ガジェット
-- アニメ / マンガ / 声優 / コスプレ
-- ゲーム
-- 食 / グルメ / ラーメン / カレー / スイーツ / パン / フードフェス
-- 展示会
+## 画像の取得元
+- Walkerplus のイベント詳細ページの JSON-LD `image`
+- 取れない場合は `og:image`
+- X は添付画像がある投稿のみ `image_url` を取得
 
-「道の駅」は個人向け推薦から除外しています。
+## GitHub への更新
+1. ZIPを解凍
+2. ローカルの `kansai-event-signage` フォルダへ上書き
+3. GitHub Desktop で Commit
+4. Push origin
 
-## X APIを有効にする
-X Developer Consoleで利用可能なBearer Tokenを用意します。
-
-GitHub:
-1. リポジトリ → Settings
-2. Secrets and variables → Actions
-3. New repository secret
-4. Name: `X_BEARER_TOKEN`
-5. Secret: Bearer Tokenを貼り付け
-6. Add secret
-
-Bearer Tokenは `config.json` や `app.js` に直接書かないでください。
-
-## 手動更新
-GitHub → Actions → Update Kansai Events → Run workflow
-
-## 自動更新
-GitHub Actionsで毎朝6:10（日本時間）に更新します。
-
-## Xの検索内容
-`config.json` の `x_queries` で変更できます。
-現在は、関西の一般イベント・アニメ/ゲーム・食/グルメ・鉄道・AI/ガジェットを検索します。
-
-X投稿からイベントとして採用するのは、開催日（例: 9/20、9月20日）が本文に明記されている投稿だけです。
-誤検出を減らすための仕様です。
+## Fire TV での使い方
+公開URLを開くだけです。画面全体は固定で、注目イベントと一覧だけが自動切替します。

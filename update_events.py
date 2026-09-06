@@ -19,9 +19,9 @@ S.headers.update({"User-Agent": UA, "Accept-Language": "ja,en;q=0.8"})
 
 WALKER_LIST_URLS = [
     "https://www.walkerplus.com/event_list/ar0700/",
-    "https://www.walkerplus.com/event_list/ar0700/eg0127/",  # アニメ・ゲーム等
-    "https://www.walkerplus.com/event_list/ar0700/eg0135/",  # グルメ系候補
-    "https://www.walkerplus.com/event_list/ar0700/eg0126/",  # 展示系候補
+    "https://www.walkerplus.com/event_list/ar0700/eg0127/",
+    "https://www.walkerplus.com/event_list/ar0700/eg0135/",
+    "https://www.walkerplus.com/event_list/ar0700/eg0126/",
 ]
 
 def fetch(url, headers=None, params=None):
@@ -76,11 +76,12 @@ def score(text, category):
         "rail": 72, "tech": 70, "anime": 72, "food": 68,
         "exhibition": 56, "tourism": 50
     }.get(category, 50)
+
     low = text.lower()
-    for k, v in CONFIG["interest_keywords"].items():
+    for k, v in CONFIG.get("interest_keywords", {}).items():
         if k.lower() in low:
             base += v
-    for k, v in CONFIG["negative_keywords"].items():
+    for k, v in CONFIG.get("negative_keywords", {}).items():
         if k.lower() in low:
             base += v
     return max(35, min(99, base))
@@ -99,15 +100,51 @@ def make_tags(text, cat):
     for name, pat in mapping:
         if re.search(pat, text, re.I):
             tags.append(name)
+
     if not tags:
         tags = [{
-            "rail":"鉄道","tech":"AI・IT","anime":"アニメ・ゲーム","food":"食・グルメ",
-            "exhibition":"展示","tourism":"イベント"
+            "rail": "鉄道",
+            "tech": "AI・IT",
+            "anime": "アニメ・ゲーム",
+            "food": "食・グルメ",
+            "exhibition": "展示",
+            "tourism": "イベント"
         }.get(cat, "イベント")]
+
     return tags[:4]
 
-# ---------- Walkerplus ----------
+def extract_image_from_jsonld(ev):
+    img = ev.get("image")
+    if isinstance(img, str):
+        return img
+    if isinstance(img, list):
+        for item in img:
+            if isinstance(item, str):
+                return item
+            if isinstance(item, dict):
+                if item.get("url"):
+                    return item["url"]
+                if item.get("contentUrl"):
+                    return item["contentUrl"]
+    if isinstance(img, dict):
+        return img.get("url") or img.get("contentUrl")
+    return None
 
+def extract_meta_image(soup):
+    for selector in [
+        ('meta', {'property': 'og:image'}),
+        ('meta', {'name': 'og:image'}),
+        ('meta', {'name': 'twitter:image'}),
+        ('meta', {'property': 'twitter:image'}),
+    ]:
+        tag = soup.find(*selector)
+        if tag and tag.get('content'):
+            return tag['content']
+    return None
+
+# -------------------------
+# Walkerplus
+# -------------------------
 def extract_detail_urls(html):
     soup = BeautifulSoup(html, "html.parser")
     urls = []
@@ -123,23 +160,30 @@ def parse_walker_event(url):
     html = fetch(url).text
     soup = BeautifulSoup(html, "html.parser")
 
+    meta_image = extract_meta_image(soup)
+
     for script in soup.find_all("script", type="application/ld+json"):
         try:
             obj = json.loads(script.get_text(strip=True))
         except Exception:
             continue
+
         for ev in flatten_jsonld(obj):
             title = ev.get("name")
             sd = iso_date(ev.get("startDate"))
             ed = iso_date(ev.get("endDate")) or sd
             loc = ev.get("location") or {}
+
             if isinstance(loc, list):
                 loc = loc[0] if loc else {}
+
             venue = loc.get("name", "") if isinstance(loc, dict) else ""
             addr = loc.get("address", {}) if isinstance(loc, dict) else {}
             addrtext = json.dumps(addr, ensure_ascii=False) if isinstance(addr, dict) else str(addr)
             desc = BeautifulSoup(str(ev.get("description", "")), "html.parser").get_text(" ", strip=True)
+            image_url = extract_image_from_jsonld(ev) or meta_image
             full = " ".join([title or "", venue, addrtext, desc])
+
             if title and sd:
                 cat = classify(full)
                 return {
@@ -152,13 +196,17 @@ def parse_walker_event(url):
                     "score": score(full, cat),
                     "tags": make_tags(full, cat),
                     "description": desc[:140] or "詳しくはイベント情報ページをご確認ください。",
+                    "image_url": image_url,
                     "source": "ウォーカープラス",
                     "source_url": url,
                 }
+
     return None
 
 def collect_walker():
-    urls, events = [], []
+    urls = []
+    events = []
+
     for list_url in WALKER_LIST_URLS:
         try:
             html = fetch(list_url).text
@@ -168,7 +216,7 @@ def collect_walker():
         except Exception as e:
             print(f"[Walker] list error: {list_url}: {e}", file=sys.stderr)
 
-    for u in urls[:140]:
+    for u in urls[:160]:
         try:
             ev = parse_walker_event(u)
             if ev:
@@ -176,19 +224,17 @@ def collect_walker():
         except Exception as e:
             print(f"[Walker] detail error: {u}: {e}", file=sys.stderr)
         time.sleep(0.15)
+
     return events
 
-# ---------- X ----------
-
+# -------------------------
+# X
+# -------------------------
 JP_TZ = timezone(timedelta(hours=9))
 
 def parse_japanese_event_date(text, created_at=None):
-    """
-    X投稿本文から開催日を抽出。
-    誤判定を避けるため明示的な月日がある投稿のみ採用。
-    例: 9/20, 9月20日, 2026年9月20日
-    """
     base = datetime.now(JP_TZ)
+
     if created_at:
         try:
             base = datetime.fromisoformat(created_at.replace("Z", "+00:00")).astimezone(JP_TZ)
@@ -200,25 +246,30 @@ def parse_japanese_event_date(text, created_at=None):
         re.compile(r"(?<!\d)(?P<m>\d{1,2})月(?P<d>\d{1,2})日"),
         re.compile(r"(?<!\d)(?P<m>\d{1,2})/(?P<d>\d{1,2})(?!\d)"),
     ]
+
     for pat in patterns:
         m = pat.search(text)
         if not m:
             continue
+
         gd = m.groupdict()
         y = int(gd.get("y") or base.year)
-        mo, da = int(gd["m"]), int(gd["d"])
+        mo = int(gd["m"])
+        da = int(gd["d"])
+
         try:
             dt = date(y, mo, da)
         except ValueError:
             continue
 
-        # 年のない「1月」等を年末に見た場合は翌年扱い
         if not gd.get("y") and dt < base.date() - timedelta(days=45):
             try:
                 dt = date(y + 1, mo, da)
             except ValueError:
                 pass
+
         return dt.isoformat()
+
     return None
 
 def x_place_from_text(text):
@@ -226,6 +277,7 @@ def x_place_from_text(text):
         r"(?:会場|場所|開催場所)[：:\s]*([^\n。]{2,45})",
         r"於[：:\s]*([^\n。]{2,45})",
     ]
+
     for pat in venue_patterns:
         m = re.search(pat, text)
         if m:
@@ -235,7 +287,7 @@ def x_place_from_text(text):
 def is_likely_event_post(text):
     if not re.search(r"イベント|開催|フェス|フェア|祭|展示|展覧|ライブ|セミナー|マルシェ|コラボ|POP.?UP|ポップアップ", text, re.I):
         return False
-    if not any(x in text for x in ["大阪","京都","兵庫","神戸","奈良","滋賀","和歌山"]):
+    if not any(x in text for x in ["大阪", "京都", "兵庫", "神戸", "奈良", "滋賀", "和歌山"]):
         return False
     return True
 
@@ -260,10 +312,12 @@ def collect_x():
         params = {
             "query": query,
             "max_results": max(10, min(100, int(CONFIG.get("x_max_results_per_query", 50)))),
-            "tweet.fields": "created_at,author_id,lang,entities,public_metrics",
-            "expansions": "author_id",
+            "tweet.fields": "created_at,author_id,lang,entities,public_metrics,attachments",
+            "expansions": "author_id,attachments.media_keys",
             "user.fields": "username,name,verified",
+            "media.fields": "type,url,preview_image_url",
         }
+
         try:
             r = requests.get(api, headers=headers, params=params, timeout=30)
             if r.status_code in (401, 403, 429):
@@ -276,16 +330,19 @@ def collect_x():
             continue
 
         users = {u["id"]: u for u in payload.get("includes", {}).get("users", [])}
+        medias = {m["media_key"]: m for m in payload.get("includes", {}).get("media", [])}
+
         for tw in payload.get("data", []):
             text = tw.get("text", "")
             if not is_likely_event_post(text):
                 continue
+
             sd = parse_japanese_event_date(text, tw.get("created_at"))
             if not sd:
                 continue
-
-            # 直近投稿検索なので、過去イベントは除外
             if sd < date.today().isoformat():
+                continue
+            if "道の駅" in text:
                 continue
 
             author = users.get(tw.get("author_id"), {})
@@ -294,9 +351,13 @@ def collect_x():
             full = text
             cat = classify(full)
 
-            # 道の駅は「仕事上の関心」で個人推薦には不要
-            if "道の駅" in full:
-                continue
+            image_url = None
+            media_keys = tw.get("attachments", {}).get("media_keys", []) if isinstance(tw.get("attachments"), dict) else []
+            for key in media_keys:
+                media = medias.get(key, {})
+                image_url = media.get("url") or media.get("preview_image_url")
+                if image_url:
+                    break
 
             out.append({
                 "title": clean_x_title(text),
@@ -308,15 +369,18 @@ def collect_x():
                 "score": score(full, cat),
                 "tags": make_tags(full, cat),
                 "description": re.sub(r"https?://\S+", "", text).replace("\n", " ")[:150],
+                "image_url": image_url,
                 "source": f"X @{username}" if username else "X",
                 "source_url": source_url,
             })
+
         time.sleep(0.5)
 
     return out
 
-# ---------- Merge ----------
-
+# -------------------------
+# Merge
+# -------------------------
 def normalize_title(s):
     s = re.sub(r"\s+", "", s or "")
     s = re.sub(r"[【】\[\]（）()「」『』・!！?？:：\-ー]", "", s)
@@ -326,7 +390,7 @@ def dedupe(events):
     result = []
     seen = set()
     for e in sorted(events, key=lambda x: (-x.get("score", 0), x.get("start_date", "9999"))):
-        key = (normalize_title(e.get("title",""))[:30], e.get("start_date",""), e.get("area",""))
+        key = (normalize_title(e.get("title", ""))[:30], e.get("start_date", ""), e.get("area", ""))
         if key in seen:
             continue
         seen.add(key)
@@ -334,13 +398,6 @@ def dedupe(events):
     return result
 
 def main():
-    old = []
-    if OUT.exists():
-        try:
-            old = json.loads(OUT.read_text(encoding="utf-8"))
-        except Exception:
-            old = []
-
     events = []
     events.extend(collect_walker())
     events.extend(collect_x())
@@ -361,7 +418,7 @@ def main():
     tmp.write_text(json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(OUT)
     print(f"{len(events)}件を events.json に保存しました。")
-    print(f"  Walker/X 統合。Xは X_BEARER_TOKEN 設定時のみ収集。")
+    print("Walkerplus / X 統合。image_url 付き。")
 
 if __name__ == "__main__":
     main()

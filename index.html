@@ -9,56 +9,65 @@
 </head>
 <body>
   <div class="app">
-    <header>
-      <div>
+    <header class="topbar">
+      <div class="brand">
         <div class="eyebrow">KANSAI EVENT SIGNAGE</div>
         <h1>関西のおすすめイベント</h1>
       </div>
-      <div class="clockbox">
-        <div id="clock">--:--</div>
-        <div id="date">----</div>
+      <div class="topbar-right">
+        <nav class="filters" aria-label="イベントフィルター">
+          <button class="filter active" data-filter="all">すべて</button>
+          <button class="filter" data-filter="today">今日</button>
+          <button class="filter" data-filter="weekend">今週末</button>
+          <button class="filter" data-filter="rail">鉄道</button>
+          <button class="filter" data-filter="tech">AI・IT</button>
+          <button class="filter" data-filter="anime">アニメ</button>
+          <button class="filter" data-filter="food">食・グルメ</button>
+          <button class="filter" data-filter="tourism">観光・展示</button>
+        </nav>
+        <div class="clockbox">
+          <div id="clock">--:--</div>
+          <div id="date">----</div>
+        </div>
       </div>
     </header>
 
-    <nav class="filters" aria-label="イベントフィルター">
-      <button class="filter active" data-filter="all">すべて</button>
-      <button class="filter" data-filter="today">今日</button>
-      <button class="filter" data-filter="weekend">今週末</button>
-      <button class="filter" data-filter="rail">鉄道</button>
-      <button class="filter" data-filter="tech">AI・IT</button>
-      <button class="filter" data-filter="anime">アニメ</button>
-      <button class="filter" data-filter="food">食・グルメ</button>
-      <button class="filter" data-filter="tourism">観光・展示</button>
-    </nav>
-
-    <main>
-      <section class="hero" id="hero">
-        <div class="hero-badge">TODAY'S PICK</div>
-        <div class="hero-content">
-          <div>
+    <main class="board">
+      <section class="hero-panel">
+        <div class="hero-image-wrap">
+          <img id="heroImage" class="hero-image" src="placeholder.svg" alt="注目イベント画像">
+          <div class="hero-overlay"></div>
+          <div class="hero-copy">
+            <div class="hero-badge">TODAY'S PICK</div>
             <div class="hero-meta" id="heroMeta">---</div>
             <h2 id="heroTitle">読み込み中...</h2>
             <p id="heroDesc"></p>
             <div class="hero-tags" id="heroTags"></div>
           </div>
-          <div class="scorebox">
+        </div>
+        <div class="hero-footer">
+          <div class="hero-scorebox">
             <span>おすすめ度</span>
             <strong id="heroScore">--</strong>
           </div>
+          <div class="hero-source" id="heroSource">情報元: --</div>
         </div>
       </section>
 
-      <section>
-        <div class="section-head">
-          <h3>イベント一覧</h3>
-          <div id="count">0件</div>
+      <section class="side-panel">
+        <div class="panel-head">
+          <h3 id="panelTitle">イベント一覧</h3>
+          <div class="panel-meta">
+            <span id="count">0件</span>
+            <span id="pageInfo">1 / 1</span>
+          </div>
         </div>
-        <div id="grid" class="grid"></div>
+        <div id="grid" class="card-grid"></div>
       </section>
     </main>
 
-    <footer>
-      <span>自動更新: 15分ごと</span>
+    <footer class="footer">
+      <span>フルHD 1画面表示 / 画像付き / 15分ごと自動更新</span>
       <span id="updated">最終更新: --</span>
     </footer>
   </div>
