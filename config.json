@@ -69,7 +69,19 @@
   "negative_keywords": {
     "乳幼児": -12,
     "ベビー": -10,
-    "道の駅": -30
+    "道の駅": -30,
+    "クラシックコンサート": -35,
+    "クラシック音楽": -35,
+    "オーケストラ": -30,
+    "交響曲": -28,
+    "管弦楽": -28,
+    "室内楽": -26,
+    "ピアノリサイタル": -28,
+    "ヴァイオリンリサイタル": -28,
+    "バイオリンリサイタル": -28,
+    "チェロリサイタル": -28,
+    "リサイタル": -18,
+    "吹奏楽コンサート": -20
   },
   "x_queries": [
     "(アニメ OR マンガ OR 漫画 OR 声優 OR コスプレ OR ゲーム) (大阪 OR 京都 OR 神戸) -is:retweet lang:ja",
@@ -172,7 +184,7 @@
     "期間限定ストア",
     "展覧"
   ],
-  "collection_version": 10,
+  "collection_version": 15,
   "collection_strategy": "Harukas DOM schedule parser v3 + existing dedicated collectors",
   "intex_search_months": 6,
   "priority_places": [
@@ -189,5 +201,41 @@
   "tagging_strategy": "strict high-confidence tags; title weighted x3; English abbreviations require token boundaries",
   "category_model": "multi-label",
   "category_strategy": "one event can belong to rail/anime/food/etc simultaneously",
-  "recommendation_version": 1
+  "recommendation_version": 1,
+  "preference_note": "クラシック音楽系は強めに減点。アニメ・ゲーム音楽など別の強い関心テーマと重なる場合は除外せず残す。",
+  "learning_storage": {
+    "primary_key": "kansaiEventSignagePrefs",
+    "backup_key": "kansaiEventSignagePrefsBackup",
+    "migration_from": [
+      "kansaiEventSignagePrefsV1",
+      "kansaiEventSignagePrefsV2"
+    ],
+    "note": "GitHub Pages更新やevents.json再収集では消えない。同一ブラウザ/同一originのlocalStorageに二重保存。"
+  },
+  "motorsports": {
+    "enabled": true,
+    "source": "JAFモータースポーツ 競技会カレンダー",
+    "disciplines": [
+      "レース",
+      "ラリー",
+      "ジムカーナ",
+      "ダートトライアル",
+      "ドリフト",
+      "サーキットトライアル",
+      "オートテスト",
+      "カート"
+    ],
+    "priority_areas": [
+      "大阪",
+      "兵庫",
+      "京都",
+      "滋賀",
+      "和歌山",
+      "三重"
+    ],
+    "excluded_area": [
+      "奈良"
+    ],
+    "category": "car"
+  }
 }

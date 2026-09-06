@@ -123,6 +123,7 @@ h1{
   height:100%;
   object-fit:cover;
   background:#212a35;
+  filter: brightness(1.12);
 }
 .hero-overlay{
   position:absolute;

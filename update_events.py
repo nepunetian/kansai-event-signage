@@ -19,6 +19,12 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Sa
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "ja,en;q=0.8"})
 
+JAF_MOTORSPORTS_URL = (
+    "https://motorsports.jaf.or.jp/calendar"
+    "?competitionDiscipline=all&heldDateFrom={held_from}&heldDateTo=all&feature=all"
+)
+
+
 WALKER_LIST_URLS = [
     "https://www.walkerplus.com/event_list/ar0700/",
     "https://www.walkerplus.com/event_list/ar0700/eg0127/",
@@ -155,6 +161,29 @@ def classify(text):
     return "tourism"
 
 
+
+def classical_penalty(text):
+    """
+    クラシック音楽系を強めに減点。
+    ただしアニメ・ゲーム・映画音楽など別の強い関心テーマがある場合は減点を弱める。
+    """
+    t = text or ""
+    classical = re.search(
+        r"クラシック(?:音楽|コンサート)?|オーケストラ|交響曲|管弦楽|室内楽|"
+        r"ピアノリサイタル|ヴァイオリンリサイタル|バイオリンリサイタル|"
+        r"チェロリサイタル|吹奏楽コンサート|リサイタル",
+        t, re.I
+    )
+    if not classical:
+        return 0
+
+    crossover = re.search(
+        r"アニメ|ゲーム|映画音楽|劇伴|サウンドトラック|声優|キャラクター",
+        t, re.I
+    )
+    return -10 if crossover else -32
+
+
 def score(text, category):
     base = {
         "rail": 72, "tech": 70, "anime": 72, "car": 72, "food": 68,
@@ -168,6 +197,9 @@ def score(text, category):
     for k, v in CONFIG.get("negative_keywords", {}).items():
         if k.lower() in low:
             base += v
+
+    # クラシック音楽系の文脈減点（クロスオーバーは弱め）
+    base += classical_penalty(text)
     return max(35, min(99, base))
 
 def make_tags(text, cat):
@@ -1854,6 +1886,325 @@ def collect_dedicated_listing_events(html, source):
         return dedicated_sevenpark(html, source)
     return []
 
+
+# -------------------------
+# JAFモータースポーツ 競技会カレンダー
+# -------------------------
+def _parse_jaf_date(text_value):
+    """
+    JAFカレンダー内の開催日表記を解析。
+    例:
+      2026年9月13日
+      2026/09/13
+      9月13日
+      9/13
+      9月12日～13日
+    """
+    t = re.sub(r"\s+", " ", text_value or "")
+    today = date.today()
+
+    # YYYY年M月D日 ～ (YYYY年)M月D日
+    m = re.search(
+        r"(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日"
+        r"(?:.{0,20}?(?:～|〜|~|-|→).{0,12}?(?:(20\d{2})年\s*)?(?:(\d{1,2})月\s*)?(\d{1,2})日)?",
+        t
+    )
+    if m:
+        y1, mo1, d1, y2, mo2, d2 = m.groups()
+        try:
+            sd = date(int(y1), int(mo1), int(d1))
+            if d2:
+                ed = date(int(y2 or y1), int(mo2 or mo1), int(d2))
+                if ed < sd:
+                    ed = date(int(y2 or y1)+1, int(mo2 or mo1), int(d2))
+            else:
+                ed = sd
+            return sd.isoformat(), ed.isoformat()
+        except Exception:
+            pass
+
+    # YYYY/M/D
+    m = re.search(
+        r"(20\d{2})[/.](\d{1,2})[/.](\d{1,2})"
+        r"(?:.{0,20}?(?:～|〜|~|-|→).{0,12}?(?:(20\d{2})[/.])?(?:(\d{1,2})[/.])?(\d{1,2}))?",
+        t
+    )
+    if m:
+        y1, mo1, d1, y2, mo2, d2 = m.groups()
+        try:
+            sd = date(int(y1), int(mo1), int(d1))
+            ed = date(int(y2 or y1), int(mo2 or mo1), int(d2 or d1))
+            if ed < sd:
+                ed = date(int(y2 or y1)+1, int(mo2 or mo1), int(d2 or d1))
+            return sd.isoformat(), ed.isoformat()
+        except Exception:
+            pass
+
+    # M月D日 ～ D日 / M/D
+    m = re.search(
+        r"(?<!\d)(\d{1,2})月\s*(\d{1,2})日"
+        r"(?:.{0,15}?(?:～|〜|~|-|→).{0,10}?(?:(\d{1,2})月\s*)?(\d{1,2})日)?",
+        t
+    )
+    if m:
+        mo1, d1, mo2, d2 = m.groups()
+        try:
+            y = today.year
+            sd = date(y, int(mo1), int(d1))
+            ed = date(y, int(mo2 or mo1), int(d2 or d1))
+            if ed < today - timedelta(days=90):
+                sd = date(y+1, int(mo1), int(d1))
+                ed = date(y+1, int(mo2 or mo1), int(d2 or d1))
+            if ed < sd:
+                ed = date(sd.year+1, int(mo2 or mo1), int(d2 or d1))
+            return sd.isoformat(), ed.isoformat()
+        except Exception:
+            pass
+
+    m = re.search(r"(?<!\d)(\d{1,2})/(\d{1,2})(?!\d)", t)
+    if m:
+        try:
+            mo, d = map(int, m.groups())
+            y = today.year
+            dt = date(y, mo, d)
+            if dt < today - timedelta(days=90):
+                dt = date(y+1, mo, d)
+            return dt.isoformat(), dt.isoformat()
+        except Exception:
+            pass
+
+    return None, None
+
+
+def _jaf_discipline(text_value):
+    t = text_value or ""
+    rules = [
+        ("ラリー", r"ラリー"),
+        ("ジムカーナ", r"ジムカーナ"),
+        ("ダートトライアル", r"ダートトライアル"),
+        ("ドリフト", r"ドリフト"),
+        ("サーキットトライアル", r"サーキットトライアル"),
+        ("オートテスト", r"オートテスト"),
+        ("カート", r"カート|Kart"),
+        ("レース", r"レース|Race"),
+    ]
+    for label, pat in rules:
+        if re.search(pat, t, re.I):
+            return label
+    return "モータースポーツ"
+
+
+def _jaf_region(text_value):
+    t = text_value or ""
+    # サイネージは大阪中心なので近畿圏を明示的に判定。
+    aliases = [
+        ("大阪府", "大阪"), ("大阪", "大阪"),
+        ("京都府", "京都"), ("京都", "京都"),
+        ("兵庫県", "兵庫"), ("兵庫", "兵庫"),
+        ("滋賀県", "滋賀"), ("滋賀", "滋賀"),
+        ("和歌山県", "和歌山"), ("和歌山", "和歌山"),
+        ("三重県", "三重"), ("三重", "三重"),
+        ("奈良県", "奈良"), ("奈良", "奈良"),
+    ]
+    for needle, area in aliases:
+        if needle in t:
+            return area
+    return area_from_text(t)
+
+
+def _jaf_event_from_block(block, source_url):
+    txt = re.sub(r"\s+", " ", block.get_text(" ", strip=True)).strip()
+    if len(txt) < 8:
+        return None
+
+    sd, ed = _parse_jaf_date(txt)
+    if not sd or (ed or sd) < date.today().isoformat():
+        return None
+
+    # 競技種目が明示されない一般ナビ等を避ける
+    if not re.search(
+        r"レース|ラリー|ジムカーナ|ダートトライアル|ドリフト|"
+        r"サーキットトライアル|オートテスト|カート|選手権|Cup|CUP|Rally|Race",
+        txt, re.I
+    ):
+        return None
+
+    title = ""
+    for tag in ("h2","h3","h4","h5","strong","b"):
+        node = block.find(tag)
+        if node:
+            cand = clean_event_title(node.get_text(" ", strip=True))
+            if 4 <= len(cand) <= 140:
+                title = cand
+                break
+
+    if not title:
+        # 日付・地域・種目を除いた比較的長い行をタイトル候補に
+        lines = [
+            clean_event_title(x)
+            for x in block.stripped_strings
+        ]
+        lines = [
+            x for x in lines
+            if 4 <= len(x) <= 140
+            and not re.fullmatch(r"\d{1,2}月\d{1,2}日.*", x)
+            and not re.fullmatch(r"20\d{2}[年/.].*", x)
+            and x not in ("レース","ラリー","ジムカーナ","ダートトライアル","ドリフト","サーキットトライアル","カート")
+        ]
+        if lines:
+            title = max(lines, key=len)
+
+    if not title:
+        return None
+
+    discipline = _jaf_discipline(txt)
+    area = _jaf_region(txt)
+
+    # 奈良は現在の個人向け対象外
+    if area == "奈良":
+        return None
+
+    # 会場名らしい語を抽出
+    venue = ""
+    vm = re.search(
+        r"(?:開催場所|会場|コース|サーキット)[：:\s]+(.{2,100}?)(?=\s(?:主催|開催日|種目|クラス|詳細|$))",
+        txt
+    )
+    if vm:
+        venue = vm.group(1).strip()
+
+    if not venue:
+        # 代表的な会場語
+        vm = re.search(
+            r"((?:鈴鹿|岡山国際|セントラル|名阪|舞洲|泉大津|堺|神戸|京都|大阪|三重)"
+            r".{0,35}?(?:サーキット|スポーツランド|コース|駐車場|会場))",
+            txt
+        )
+        if vm:
+            venue = vm.group(1).strip()
+
+    venue = venue or (area if area != "関西" else "JAF公認コース")
+
+    # 詳細リンク
+    link = block.find("a", href=True)
+    detail_url = urljoin("https://motorsports.jaf.or.jp", link["href"]) if link else source_url
+
+    full = f"{title} {discipline} {area} {venue} {txt}"
+    desc = f"{discipline}｜{txt}"[:190]
+
+    return {
+        "title": title[:110],
+        "start_date": sd,
+        "end_date": ed or sd,
+        "area": area,
+        "venue": venue,
+        "category": "car",
+        "categories": ["car"],
+        "score": min(99, max(78, score(full, "car") + 12)),
+        "tags": ["クルマ", "モータースポーツ", discipline][:3],
+        "description": desc,
+        "image_url": None,
+        "source": "JAFモータースポーツ",
+        "source_url": detail_url,
+    }
+
+
+def collect_jaf_motorsports():
+    """
+    JAF公式の競技会カレンダーから将来の競技会を取得。
+    まずHTML上のカード/行/リストを解析し、
+    見つからない場合はページ全体を日付近傍で分割してフォールバック解析。
+    """
+    held_from = date.today().strftime("%Y%m")
+    url = JAF_MOTORSPORTS_URL.format(held_from=held_from)
+
+    try:
+        html = fetch(url).text
+    except Exception as e:
+        print(f"[JAF Motorsports] fetch error: {e}", file=sys.stderr)
+        diag("JAFモータースポーツ", errors=1, note=f"fetch: {e}")
+        return []
+
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+    seen = set()
+
+    # カード/テーブル行/リスト項目を広く探索
+    candidates = []
+    for selector in [
+        "tr",
+        "article",
+        "li",
+        '[class*="calendar"]',
+        '[class*="event"]',
+        '[class*="competition"]',
+        '[class*="result"]',
+        '[class*="card"]',
+        '[class*="item"]',
+    ]:
+        try:
+            candidates.extend(soup.select(selector))
+        except Exception:
+            pass
+
+    # 重複DOMノード除去
+    unique_nodes = []
+    node_ids = set()
+    for node in candidates:
+        ident = id(node)
+        if ident in node_ids:
+            continue
+        node_ids.add(ident)
+        unique_nodes.append(node)
+
+    diag("JAFモータースポーツ", candidates=len(unique_nodes))
+
+    for block in unique_nodes:
+        try:
+            ev = _jaf_event_from_block(block, url)
+        except Exception:
+            ev = None
+        if not ev:
+            continue
+        key = (normalize_title(ev["title"])[:45], ev["start_date"], ev["venue"])
+        if key in seen:
+            continue
+        seen.add(key)
+        events.append(ev)
+
+    # DOMカードから取れなかった場合の本文フォールバック
+    if not events:
+        lines = [
+            re.sub(r"\s+", " ", x).strip()
+            for x in soup.stripped_strings
+        ]
+        for i, line in enumerate(lines):
+            if not re.search(r"(?:20\d{2}[年/.])?\d{1,2}(?:月|/)\d{1,2}", line):
+                continue
+
+            context = " ".join(lines[max(0, i-4):min(len(lines), i+8)])
+            if not re.search(
+                r"レース|ラリー|ジムカーナ|ダートトライアル|ドリフト|"
+                r"サーキットトライアル|カート|選手権|CUP|Cup",
+                context, re.I
+            ):
+                continue
+
+            # 仮DOMを作って共通処理へ
+            fake = BeautifulSoup(f"<div><h3>{html_lib.escape(lines[i+1] if i+1 < len(lines) else context[:80])}</h3><p>{html_lib.escape(context)}</p></div>", "html.parser").div
+            ev = _jaf_event_from_block(fake, url)
+            if not ev:
+                continue
+            key = (normalize_title(ev["title"])[:45], ev["start_date"], ev["venue"])
+            if key not in seen:
+                seen.add(key)
+                events.append(ev)
+
+    diag("JAFモータースポーツ", parsed=len(events), note=f"calendar: {url}")
+    print(f"[JAF Motorsports] parsed: {len(events)}")
+    return events
+
+
 # -------------------------
 # 汎用イベントサイト収集
 # Google検索のイベント表示で利用される Event JSON-LD を中心に解析
@@ -2449,6 +2800,7 @@ def apply_local_priority(events):
         "ATCトップ": 10,
         "インテックス大阪": 8,
         "インテックス大阪関連": 8,
+        "JAFモータースポーツ": 8,
         "なんばパークス": 8,
         "大阪観光局": 6,
         "LUCUA大阪": 4,
@@ -2649,6 +3001,7 @@ def dedupe(events):
 def main():
     events = []
     events.extend(collect_walker())
+    events.extend(collect_jaf_motorsports())
 
     intex_events = collect_intex_events()
     if intex_events:

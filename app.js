@@ -5,22 +5,79 @@ let pageIndex = 0;
 const CARDS_PER_PAGE = 6;
 const FALLBACK_IMAGE = 'placeholder.svg';
 
-const PREFS_KEY = 'kansaiEventSignagePrefsV1';
+const PREFS_KEY = 'kansaiEventSignagePrefs';
+const PREFS_BACKUP_KEY = 'kansaiEventSignagePrefsBackup';
+const LEGACY_PREF_KEYS = [
+  'kansaiEventSignagePrefsV1',
+  'kansaiEventSignagePrefsV2'
+];
+
+function safeParsePrefs(raw){
+  try{
+    const parsed = JSON.parse(raw || '{}');
+    if(parsed && typeof parsed === 'object'){
+      return {
+        votes: parsed.votes && typeof parsed.votes === 'object' ? parsed.votes : {},
+        updatedAt: Number(parsed.updatedAt || 0)
+      };
+    }
+  }catch(_){}
+  return {votes:{}, updatedAt:0};
+}
+
+function mergePrefs(a, b){
+  const result = {votes:{}, updatedAt:Math.max(a.updatedAt||0, b.updatedAt||0)};
+  const allKeys = new Set([
+    ...Object.keys(a.votes || {}),
+    ...Object.keys(b.votes || {})
+  ]);
+
+  allKeys.forEach(key=>{
+    const va = a.votes?.[key];
+    const vb = b.votes?.[key];
+    if(!va) result.votes[key] = vb;
+    else if(!vb) result.votes[key] = va;
+    else{
+      // より新しく投票された方を採用
+      result.votes[key] = Number(va.votedAt||0) >= Number(vb.votedAt||0) ? va : vb;
+    }
+  });
+  return result;
+}
 
 function loadPrefs(){
-  try{
-    const parsed = JSON.parse(localStorage.getItem(PREFS_KEY) || '{}');
-    return parsed && typeof parsed === 'object' ? {votes: parsed.votes || {}} : {votes:{}};
-  }catch(_){
-    return {votes:{}};
-  }
+  // 通常データ + バックアップを統合
+  let prefs = mergePrefs(
+    safeParsePrefs(localStorage.getItem(PREFS_KEY)),
+    safeParsePrefs(localStorage.getItem(PREFS_BACKUP_KEY))
+  );
+
+  // 旧バージョンの学習データも自動移行
+  LEGACY_PREF_KEYS.forEach(key=>{
+    prefs = mergePrefs(prefs, safeParsePrefs(localStorage.getItem(key)));
+  });
+
+  return prefs;
 }
 
 let userPrefs = loadPrefs();
 
 function savePrefs(){
+  userPrefs.updatedAt = Date.now();
+  const payload = JSON.stringify(userPrefs);
+
   try{
-    localStorage.setItem(PREFS_KEY, JSON.stringify(userPrefs));
+    // 同一オリジン内に2重保存。
+    // GitHub Pagesのファイル更新・events.json更新では消えない。
+    localStorage.setItem(PREFS_KEY, payload);
+    localStorage.setItem(PREFS_BACKUP_KEY, payload);
+
+    // 旧キーが存在する場合も同期して、v10〜v13からの往復でも保持
+    LEGACY_PREF_KEYS.forEach(key=>{
+      if(localStorage.getItem(key) !== null){
+        localStorage.setItem(key, payload);
+      }
+    });
   }catch(err){
     console.warn('学習データを保存できませんでした', err);
   }
@@ -236,18 +293,31 @@ function render(){
     return;
   }
 
-  heroIndex = heroIndex % list.length;
-  const hero = list[heroIndex];
+  // メイン表示はおすすめ上位5件だけをローテーション
+  const heroPool = list.slice(0, Math.min(5, list.length));
+  heroIndex = heroIndex % heroPool.length;
+  const hero = heroPool[heroIndex];
   setHero(hero);
 
-  const others = list.filter((_, idx) => idx !== heroIndex);
-  const totalPages = Math.max(1, Math.ceil(others.length / CARDS_PER_PAGE));
-  pageIndex = pageIndex % totalPages;
+  // サブ表示は6位以下だけ。メイン上位5件とは完全に分離する。
+  const subList = list.slice(5);
+  const totalPages = subList.length
+    ? Math.ceil(subList.length / CARDS_PER_PAGE)
+    : 0;
+
+  if(totalPages > 0){
+    pageIndex = pageIndex % totalPages;
+  }else{
+    pageIndex = 0;
+  }
+
   const start = pageIndex * CARDS_PER_PAGE;
-  const pageItems = others.slice(start, start + CARDS_PER_PAGE);
+  const pageItems = subList.slice(start, start + CARDS_PER_PAGE);
 
   $('#panelTitle').textContent = currentFilter === 'all' ? 'おすすめイベント' : '絞り込みイベント';
-  $('#pageInfo').textContent = `${pageIndex + 1} / ${totalPages}`;
+  $('#pageInfo').textContent = totalPages > 0
+    ? `${pageIndex + 1} / ${totalPages}`
+    : `0 / 0`;
 
   $('#grid').innerHTML = pageItems.length ? pageItems.map((e,i)=>`
     <article class="card ${i===0 ? 'featured' : ''}">
@@ -277,7 +347,7 @@ function render(){
         </div>
       </div>
     </article>
-  `).join('') : `<div class="empty">表示できるイベントがありません</div>`;
+  `).join('') : `<div class="empty">6位以下のイベントはありません</div>`;
 }
 
 function setHero(e){
@@ -364,8 +434,12 @@ if(resetLearning){
   resetLearning.addEventListener('click', ()=>{
     if(!learningCount()) return;
     if(confirm('いいね・バッドの学習内容をリセットしますか？')){
-      userPrefs = {votes:{}};
-      savePrefs();
+      userPrefs = {votes:{}, updatedAt:Date.now()};
+      try{
+        localStorage.removeItem(PREFS_KEY);
+        localStorage.removeItem(PREFS_BACKUP_KEY);
+        LEGACY_PREF_KEYS.forEach(key=>localStorage.removeItem(key));
+      }catch(_){}
       heroIndex = 0;
       pageIndex = 0;
       render();
