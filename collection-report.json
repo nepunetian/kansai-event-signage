@@ -33,9 +33,8 @@
     "sitemap_links": 0,
     "candidates": 0,
     "parsed": 0,
-    "errors": 1,
+    "errors": 0,
     "notes": [
-      "list: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
     ]
@@ -134,7 +133,7 @@
     "list_links": 12,
     "sitemap_links": 0,
     "candidates": 12,
-    "parsed": 8,
+    "parsed": 9,
     "errors": 0,
     "notes": [
       "sitemap https://www.animate.co.jp/sitemap_index.xml: HTTPError",
@@ -199,18 +198,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 16,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "dedicated: 16",
-      "listing fallback: 16"
+      "dedicated: 18",
+      "listing fallback: 18"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 128,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -221,7 +220,7 @@
     "list_links": 32,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 82,
+    "parsed": 83,
     "errors": 29,
     "notes": [
       "listing fallback: 46",
@@ -238,7 +237,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 218,
-    "generated_at": "2026-09-07T10:56:40.335089+09:00"
+    "final_events": 222,
+    "generated_at": "2026-09-07T12:34:47.537022+09:00"
   }
 }
