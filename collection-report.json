@@ -96,8 +96,8 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 84,
-    "candidates": 88,
+    "sitemap_links": 83,
+    "candidates": 87,
     "parsed": 51,
     "errors": 0,
     "notes": [
@@ -119,7 +119,7 @@
     "sitemap_links": 104,
     "candidates": 104,
     "parsed": 0,
-    "errors": 11,
+    "errors": 12,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -141,7 +141,7 @@
     "list_links": 12,
     "sitemap_links": 0,
     "candidates": 12,
-    "parsed": 9,
+    "parsed": 10,
     "errors": 0,
     "notes": [
       "sitemap https://www.animate.co.jp/sitemap_index.xml: HTTPError",
@@ -217,7 +217,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 126,
+    "parsed": 127,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 32,
+    "list_links": 31,
     "sitemap_links": 43,
-    "candidates": 67,
-    "parsed": 83,
+    "candidates": 66,
+    "parsed": 78,
     "errors": 29,
     "notes": [
-      "listing fallback: 46",
+      "listing fallback: 44",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 207,
-    "generated_at": "2026-09-07T16:58:08.595787+09:00"
+    "final_events": 204,
+    "generated_at": "2026-09-08T06:30:17.879680+09:00"
   }
 }
