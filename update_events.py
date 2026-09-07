@@ -19,6 +19,8 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Sa
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "ja,en;q=0.8"})
 
+JAF_PDF_LIST_URL = "https://motorsports.jaf.or.jp/calendar/pdf-list"
+
 JAF_MOTORSPORTS_URL = (
     "https://motorsports.jaf.or.jp/calendar"
     "?competitionDiscipline=all&heldDateFrom={held_from}&heldDateTo=all&feature=all"
@@ -1959,9 +1961,345 @@ def _jaf_clean_title(title_text):
     return " / ".join(lines[:3])[:110]
 
 
+
+def _jaf_pdf_discipline(label):
+    low = (label or "").lower()
+    if "race" in low or "レース" in low:
+        return "レース"
+    if "rally" in low or "ラリー" in low:
+        return "ラリー"
+    if "gymkhana" in low or "ジムカーナ" in low:
+        return "ジムカーナ"
+    if "dirt" in low or "ダート" in low:
+        return "ダートトライアル"
+    if "kart" in low or "カート" in low:
+        return "カート"
+    if "circuittrial" in low or "サーキットトライアル" in low:
+        return "サーキットトライアル"
+    if "drift" in low or "ドリフト" in low:
+        return "ドリフト"
+    if "autotest" in low or "オートテスト" in low:
+        return "オートテスト"
+    return "モータースポーツ"
+
+
+def _jaf_pdf_area_and_venue(block):
+    """
+    PDF版カレンダーには都道府県列がないため、
+    会場名から関西圏を判定する。奈良は個人向け収集から除外。
+    """
+    venue_map = [
+        # 三重
+        ("鈴鹿サーキット", "三重"),
+        ("SUZUKA CIRCUIT", "三重"),
+
+        # 兵庫
+        ("セントラルサーキット", "兵庫"),
+        ("CENTRAL CIRCUIT", "兵庫"),
+        ("神戸スポーツサーキット", "兵庫"),
+        ("宝塚カートフィールド", "兵庫"),
+
+        # 滋賀
+        ("グランスノー奥伊吹", "滋賀"),
+        ("奥伊吹モーターパーク", "滋賀"),
+        ("奥伊吹", "滋賀"),
+        ("琵琶湖スポーツランド", "滋賀"),
+
+        # 大阪
+        ("舞洲スポーツアイランド", "大阪"),
+        ("舞洲", "大阪"),
+        ("泉大津フェニックス", "大阪"),
+        ("堺カートランド", "大阪"),
+
+        # 京都
+        ("京都コスモスパーク", "京都"),
+        ("京都", "京都"),
+
+        # 和歌山
+        ("紀の川", "和歌山"),
+        ("和歌山", "和歌山"),
+
+        # 奈良は判定するが後段で除外
+        ("名阪スポーツランド", "奈良"),
+        ("名阪", "奈良"),
+    ]
+
+    upper = (block or "").upper()
+    for venue, area in venue_map:
+        if venue.upper() in upper:
+            # PDF本文中により長い会場表記があればそのまま拾う
+            candidates = [
+                line.strip()
+                for line in re.split(r"[\r\n]+", block or "")
+                if venue.upper() in line.upper()
+            ]
+            actual = candidates[-1] if candidates else venue
+            actual = re.sub(r"\s+", " ", actual).strip()
+            if len(actual) > 120:
+                actual = venue
+            return area, actual
+
+    # 都道府県名が本文に直接ある場合の保険
+    for area in ("大阪", "兵庫", "京都", "滋賀", "和歌山", "三重", "奈良"):
+        if area in (block or ""):
+            return area, area
+
+    return None, None
+
+
+def _jaf_pdf_extract_title(lines, first_rest, venue):
+    """
+    PDFの表は列が崩れる場合があるため、タイトルは行頭側を優先して復元。
+    オーガナイザーらしい語が出た時点で止める。
+    """
+    candidates = []
+    if first_rest:
+        candidates.append(first_rest.strip())
+
+    stop_re = re.compile(
+        r"(株式会社|有限会社|一般社団法人|クラブ|倶楽部|協会|委員会|"
+        r"モータースポーツクラブ|レーシングスポーツクラブ|"
+        r"^[A-E]{1,2}$|^格式$|^競技車両$|^開催場所$)",
+        re.I
+    )
+
+    for line in lines[1:6]:
+        s = re.sub(r"\s+", " ", line).strip()
+        if not s:
+            continue
+        if venue and venue in s:
+            break
+        if stop_re.search(s):
+            break
+        if re.fullmatch(r"[A-E]{1,2}", s):
+            break
+        candidates.append(s)
+        if len(" ".join(candidates)) >= 100:
+            break
+
+    title = re.sub(r"\s+", " ", " ".join(candidates)).strip(" ・")
+
+    # 1行目にオーガナイザーまで連結された場合はそこで切る
+    org_cut = re.search(
+        r"\s+(?=[^\s]{1,35}(?:株式会社|有限会社|一般社団法人|クラブ|倶楽部|協会|委員会))",
+        title
+    )
+    if org_cut:
+        title = title[:org_cut.start()].strip()
+
+    # 後ろに格式・車両記号が連結された場合を軽く除去
+    title = re.sub(
+        r"\s+[A-E]{1,2}\s+(?:N1|N2|NE|NR-A|SF|SFL|FIA-|GT\d|FJ|FR|FE).*$",
+        "",
+        title
+    ).strip()
+
+    return title[:110]
+
+
+def _jaf_parse_pdf_text(pdf_text, pdf_url, discipline):
+    """
+    pypdf抽出テキストを「日付で始まる1競技会ブロック」に分けて読む。
+    表の列位置には依存しない。
+    """
+    lines = [
+        re.sub(r"[ \t]+", " ", x).strip()
+        for x in (pdf_text or "").replace("〜", "～").splitlines()
+    ]
+
+    date_re = re.compile(
+        r"^(?P<m1>\d{1,2})月(?P<d1>\d{1,2})日"
+        r"(?:\s*～\s*(?:(?P<m2>\d{1,2})月)?(?P<d2>\d{1,2})日)?"
+        r"\s*(?P<rest>.*)$"
+    )
+
+    rows = []
+    current = None
+    for line in lines:
+        if not line:
+            continue
+        m = date_re.match(line)
+        if m:
+            if current:
+                rows.append(current)
+            current = {"match": m, "lines": [line]}
+        elif current:
+            # ページヘッダー/フッターは行に混ぜない
+            if re.search(r"JAF 国内モータースポーツカレンダー|開催日 競技会名|^\d+\s*/\s*\d+$", line):
+                continue
+            current["lines"].append(line)
+
+    if current:
+        rows.append(current)
+
+    events = []
+    year = date.today().year
+
+    for row in rows:
+        m = row["match"]
+        try:
+            m1 = int(m.group("m1"))
+            d1 = int(m.group("d1"))
+            sd = date(year, m1, d1)
+
+            if m.group("d2"):
+                m2 = int(m.group("m2") or m1)
+                d2 = int(m.group("d2"))
+                ed = date(year, m2, d2)
+                if ed < sd:
+                    ed = date(year + 1, m2, d2)
+            else:
+                ed = sd
+        except Exception:
+            continue
+
+        if ed < date.today():
+            continue
+
+        block = "\n".join(row["lines"])
+        area, venue = _jaf_pdf_area_and_venue(block)
+        if not area or not venue or not _jaf_allowed_area(area):
+            continue
+
+        title = _jaf_pdf_extract_title(row["lines"], m.group("rest"), venue)
+        if not title or is_contentless_event_entry({"title": title, "description": "", "venue": venue}):
+            continue
+
+        full = f"{title} {discipline} {area} {venue}"
+        major_bonus = 0
+        if re.search(
+            r"SUPER\s*GT|SUPER\s*FORMULA|スーパーフォーミュラ|"
+            r"SUZUKA|鈴鹿|全日本|FIA|GT\s*Challenge|1000km|グランプリ",
+            full, re.I
+        ):
+            major_bonus = 8
+
+        tags = ["クルマ", "モータースポーツ"]
+        if discipline not in tags:
+            tags.append(discipline)
+
+        events.append({
+            "title": title,
+            "start_date": sd.isoformat(),
+            "end_date": ed.isoformat(),
+            "area": area,
+            "venue": venue,
+            "category": "car",
+            "categories": ["car"],
+            "score": min(99, max(78, score(full, "car") + 10 + major_bonus)),
+            "tags": tags[:3],
+            "description": f"{discipline}｜{venue}｜JAF国内モータースポーツカレンダー",
+            "image_url": None,
+            "source": "JAFモータースポーツ",
+            "source_url": pdf_url,
+        })
+
+    return events, len(rows)
+
+
+def _collect_jaf_pdf_fallback():
+    """
+    JAFの検索ページがGitHub Actionsでは本文を返さない場合の本命フォールバック。
+    JAF公式「競技会カレンダー 一覧表（PDF）」から当年PDFを取得する。
+    """
+    try:
+        from pypdf import PdfReader
+    except Exception as e:
+        diag("JAFモータースポーツ", errors=1, note=f"PDF fallback: pypdf import error: {e}")
+        return []
+
+    year = date.today().year
+    try:
+        r = S.get(
+            JAF_PDF_LIST_URL,
+            timeout=35,
+            headers={
+                "User-Agent": UA,
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Language": "ja-JP,ja;q=0.9"
+            }
+        )
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception as e:
+        diag("JAFモータースポーツ", errors=1, note=f"PDF list fetch: {e}")
+        return []
+
+    pdfs = []
+    for a in soup.find_all("a", href=True):
+        href = a.get("href", "").strip()
+        label = re.sub(r"\s+", " ", a.get_text(" ", strip=True)).strip()
+        if ".pdf" not in href.lower():
+            continue
+        if str(year) not in href and str(year) not in label:
+            continue
+        pdf_url = urljoin(JAF_PDF_LIST_URL, href)
+        pdfs.append((label, pdf_url))
+
+    # 同じURLが複数現れる場合を整理
+    seen_urls = set()
+    pdfs = [
+        item for item in pdfs
+        if not (item[1] in seen_urls or seen_urls.add(item[1]))
+    ]
+
+    diag("JAFモータースポーツ", note=f"PDF fallback discovered: {len(pdfs)}")
+
+    events = []
+    total_rows = 0
+    for label, pdf_url in pdfs:
+        try:
+            pr = S.get(
+                pdf_url,
+                timeout=45,
+                headers={
+                    "User-Agent": UA,
+                    "Accept": "application/pdf,*/*",
+                    "Referer": JAF_PDF_LIST_URL,
+                }
+            )
+            pr.raise_for_status()
+
+            reader = PdfReader(BytesIO(pr.content))
+            pdf_text = "\n".join((page.extract_text() or "") for page in reader.pages)
+            discipline = _jaf_pdf_discipline(label + " " + pdf_url)
+
+            parsed, rows = _jaf_parse_pdf_text(pdf_text, pdf_url, discipline)
+            total_rows += rows
+            events.extend(parsed)
+            diag(
+                "JAFモータースポーツ",
+                note=f"PDF {discipline}: rows={rows}, kept={len(parsed)}"
+            )
+        except Exception as e:
+            diag("JAFモータースポーツ", errors=1, note=f"PDF error {pdf_url}: {type(e).__name__}")
+            continue
+
+    # dedupe
+    out = []
+    seen = set()
+    for e in events:
+        key = (
+            normalize_title(e.get("title", ""))[:60],
+            e.get("start_date", ""),
+            e.get("venue", "")
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(e)
+
+    diag(
+        "JAFモータースポーツ",
+        note=f"PDF fallback total rows={total_rows}, parsed={len(out)}"
+    )
+    print(f"[JAF Motorsports PDF] rows: {total_rows} / parsed: {len(out)}")
+    return out
+
+
 def collect_jaf_motorsports():
     """
-    JAF競技会カレンダー専用 v3。
+    JAF競技会カレンダー専用 v4。
     行頭やDOM classに依存せず、ページ本文を空白正規化して
     種目 → 日付 → 競技会名 → 開催場所 → 会場 → 格式
     の意味パターンとして抽出する。
@@ -2119,10 +2457,17 @@ def collect_jaf_motorsports():
             note="pattern0 diagnostics: " + json.dumps(keyword_hits, ensure_ascii=False)
         )
 
+    # GitHub Actions側では検索結果本文が空になることがある。
+    # HTMLで1件も取れなければ、JAF公式PDF一覧へ切り替える。
+    if not events:
+        pdf_events = _collect_jaf_pdf_fallback()
+        if pdf_events:
+            events = pdf_events
+
     diag(
         "JAFモータースポーツ",
         parsed=len(events),
-        note=f"semantic parser v3 / calendar: {url}"
+        note=f"semantic parser v4 + PDF fallback / calendar: {url}"
     )
     print(f"[JAF Motorsports] candidates: {len(matches)} / parsed: {len(events)}")
     return events
