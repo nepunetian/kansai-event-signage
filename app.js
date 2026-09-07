@@ -320,7 +320,7 @@ function render(){
     : `0 / 0`;
 
   $('#grid').innerHTML = pageItems.length ? pageItems.map((e,i)=>`
-    <article class="card ${i===0 ? 'featured' : ''}">
+    <article class="card">
       <div class="thumb-wrap">
         <img class="thumb" src="${escapeAttr(safeImage(e.image_url))}" alt="${escapeAttr(e.title)}" loading="lazy"
              onerror="this.onerror=null;this.src='${FALLBACK_IMAGE}'">
@@ -458,25 +458,70 @@ $$('.filter').forEach(btn=>{
   });
 });
 
-// 注目イベント切替
-setInterval(()=>{
+// スライド制御
+let heroTimer = null;
+let pageTimer = null;
+
+function advanceHero(){
   const list = getFilteredEvents();
-  if(list.length){
-    heroIndex = (heroIndex + 1) % list.length;
+  const heroCount = Math.min(5, list.length);
+  if(heroCount > 0){
+    heroIndex = (heroIndex + 1) % heroCount;
     render();
   }
-}, 12000);
+}
 
-// 一覧ページ切替
-setInterval(()=>{
+function advanceSubPage(){
   const list = getFilteredEvents();
-  const others = list.filter((_, idx) => idx !== heroIndex);
-  const totalPages = Math.max(1, Math.ceil(others.length / CARDS_PER_PAGE));
+  const subList = list.slice(5);
+  const totalPages = Math.ceil(subList.length / CARDS_PER_PAGE);
   if(totalPages > 1){
     pageIndex = (pageIndex + 1) % totalPages;
     render();
   }
-}, 16000);
+}
+
+function advanceWholeSlide(){
+  const list = getFilteredEvents();
+  if(!list.length) return;
+
+  // 手動の「次へ」は画面全体を1段進める。
+  // メイン: 上位5件の次候補
+  // サブ: 6位以下の次ページ
+  const heroCount = Math.min(5, list.length);
+  if(heroCount > 0){
+    heroIndex = (heroIndex + 1) % heroCount;
+  }
+
+  const subList = list.slice(5);
+  const totalPages = Math.ceil(subList.length / CARDS_PER_PAGE);
+  if(totalPages > 1){
+    pageIndex = (pageIndex + 1) % totalPages;
+  }else{
+    pageIndex = 0;
+  }
+
+  render();
+}
+
+function restartSlideTimers(){
+  if(heroTimer) clearInterval(heroTimer);
+  if(pageTimer) clearInterval(pageTimer);
+
+  heroTimer = setInterval(advanceHero, 12000);
+  pageTimer = setInterval(advanceSubPage, 16000);
+}
+
+const nextSlide = $('#nextSlide');
+if(nextSlide){
+  nextSlide.addEventListener('click', ()=>{
+    advanceWholeSlide();
+    // 手動操作した瞬間を起点に自動切替時間を数え直す
+    restartSlideTimers();
+  });
+}
+
+restartSlideTimers();
 
 setInterval(loadEvents, 15 * 60 * 1000);
 setInterval(updateClock, 1000);

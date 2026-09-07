@@ -253,9 +253,6 @@ h1{
   overflow:hidden;
   padding:10px;
 }
-.card.featured{
-  border-color:var(--accent);
-}
 .thumb-wrap{
   width:132px;
   height:100%;
@@ -447,4 +444,46 @@ h1{
   .hero-feedback .feedback-btn span{display:none}
   .learning-status{font-size:12px}
   .feedback-btn{padding:9px 11px}
+}
+
+
+/* v19: 手動で次のスライドへ */
+.next-slide-btn{
+  min-width:92px;
+  height:58px;
+  padding:0 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#18212b;
+  color:var(--text);
+  font-size:18px;
+  font-weight:800;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.next-slide-btn:hover,
+.next-slide-btn:focus-visible{
+  border-color:var(--accent);
+  background:#202b37;
+  outline:none;
+}
+.next-slide-btn:active{
+  transform:translateY(1px);
+}
+.next-slide-icon{
+  font-size:16px;
+  color:var(--accent);
+}
+@media (max-width:1500px){
+  .next-slide-btn{
+    min-width:64px;
+    padding:0 12px;
+  }
+  .next-slide-label{
+    display:none;
+  }
 }
