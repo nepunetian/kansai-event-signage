@@ -3,18 +3,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 0,
-    "errors": 6,
+    "parsed": 11,
+    "errors": 0,
     "notes": [
       "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
       "PDF fallback discovered: 6",
-      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/race_2026.pdf: NameError",
-      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/rally_2026.pdf: NameError",
-      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/gymkhana_2026.pdf: NameError",
-      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/circuittrial-drift-autotest_2026.pdf: NameError",
-      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/dirt-trial_2026.pdf: NameError",
-      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/racingkart_2026.pdf: NameError",
-      "PDF fallback total rows=0, parsed=0",
+      "PDF レース: rows=93, kept=4",
+      "PDF ラリー: rows=66, kept=4",
+      "PDF ジムカーナ: rows=0, kept=0",
+      "PDF サーキットトライアル: rows=0, kept=0",
+      "PDF ダートトライアル: rows=0, kept=0",
+      "PDF カート: rows=32, kept=3",
+      "PDF fallback total rows=191, parsed=11",
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
@@ -217,7 +217,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 128,
+    "parsed": 126,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -228,7 +228,7 @@
     "list_links": 32,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 82,
+    "parsed": 83,
     "errors": 29,
     "notes": [
       "listing fallback: 46",
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 195,
-    "generated_at": "2026-09-07T16:39:00.091226+09:00"
+    "final_events": 207,
+    "generated_at": "2026-09-07T16:58:08.595787+09:00"
   }
 }
