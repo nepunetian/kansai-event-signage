@@ -4,10 +4,18 @@
     "sitemap_links": 0,
     "candidates": 0,
     "parsed": 0,
-    "errors": 0,
+    "errors": 6,
     "notes": [
       "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
-      "semantic parser v3 / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
+      "PDF fallback discovered: 6",
+      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/race_2026.pdf: NameError",
+      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/rally_2026.pdf: NameError",
+      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/gymkhana_2026.pdf: NameError",
+      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/circuittrial-drift-autotest_2026.pdf: NameError",
+      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/dirt-trial_2026.pdf: NameError",
+      "PDF error https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/racingkart_2026.pdf: NameError",
+      "PDF fallback total rows=0, parsed=0",
+      "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
   "インテックス大阪専用": {
@@ -220,7 +228,7 @@
     "list_links": 32,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 83,
+    "parsed": 82,
     "errors": 29,
     "notes": [
       "listing fallback: 46",
@@ -237,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 196,
-    "generated_at": "2026-09-07T16:21:54.422681+09:00"
+    "final_events": 195,
+    "generated_at": "2026-09-07T16:39:00.091226+09:00"
   }
 }
