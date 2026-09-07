@@ -1961,21 +1961,10 @@ def _jaf_clean_title(title_text):
 
 def collect_jaf_motorsports():
     """
-    JAF競技会カレンダー専用 v2。
-
-    JAFは
-      RACE
-      レース
-      2026年 9 月 10 日 ( 木 ) ～ 9 月 13 日 ( 日 )
-      Intercontinental GT Challenge
-      第50回 SUZUKA 1000km
-      開催場所
-      鈴鹿サーキット フルコース
-      格式
-      ...
-    という構造でHTML本文に出力される。
-
-    DOMのclass名には依存せず、この意味構造を直接解析する。
+    JAF競技会カレンダー専用 v3。
+    行頭やDOM classに依存せず、ページ本文を空白正規化して
+    種目 → 日付 → 競技会名 → 開催場所 → 会場 → 格式
+    の意味パターンとして抽出する。
     """
     held_from = date.today().strftime("%Y%m")
     url = JAF_MOTORSPORTS_URL.format(held_from=held_from)
@@ -1991,25 +1980,18 @@ def collect_jaf_motorsports():
     for node in soup(["script","style","noscript","svg"]):
         node.decompose()
 
-    # 改行を残すことが重要
-    raw = soup.get_text("\n", strip=True)
-    raw = re.sub(r"[ \t\u3000]+", " ", raw)
-    raw = re.sub(r"\n{2,}", "\n", raw)
+    raw = re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
 
-    # 競技エントリ開始。
-    # JAFの英字種目名と日本語種目名をアンカーにする。
-    start_pat = re.compile(
-        r"(?m)^(?P<code>"
-        r"RACE|RALLY|GYMKHANA|DIRT TRIAL|DRIFT|CIRCUIT TRIAL|AUTO TEST|AUTOCROSS|HILL CLIMB|KART"
-        r")\s*$"
+    discipline_pat = (
+        r"(?P<code>"
+        r"RACE|RALLY|GYMKHANA|DIRT\s+TRIAL|DRIFT|CIRCUIT\s+TRIAL|"
+        r"AUTO\s+TEST|AUTOCROSS|HILL\s+CLIMB|KART"
+        r")\s+"
+        r"(?P<jp>レース|ラリー|ジムカーナ|ダートトライアル|ドリフト|"
+        r"サーキットトライアル|オートテスト|オートクロス|ヒルクライム|カート)"
     )
-    starts = list(start_pat.finditer(raw))
-    diag("JAFモータースポーツ", candidates=len(starts))
 
-    events = []
-    seen = set()
-
-    date_pat = re.compile(
+    date_pat = (
         r"(?P<year>20\d{2})年\s*"
         r"(?P<m1>\d{1,2})\s*月\s*"
         r"(?P<d1>\d{1,2})\s*日"
@@ -2022,25 +2004,38 @@ def collect_jaf_motorsports():
         r")?"
     )
 
-    for idx, sm in enumerate(starts):
-        end = starts[idx + 1].start() if idx + 1 < len(starts) else len(raw)
-        block = raw[sm.start():end].strip()
-        code = sm.group("code")
+    event_pat = re.compile(
+        discipline_pat
+        + r"\s+"
+        + date_pat
+        + r"\s+"
+        + r"(?P<title>.+?)"
+        + r"\s+開催場所\s+"
+        + r"(?P<venue>.+?)"
+        + r"\s+格式\s+",
+        re.I
+    )
 
-        dm = date_pat.search(block)
-        if not dm:
-            continue
+    matches = list(event_pat.finditer(raw))
+    diag("JAFモータースポーツ", candidates=len(matches))
+
+    events = []
+    seen = set()
+
+    for em in matches:
+        code = re.sub(r"\s+", " ", em.group("code")).upper()
+        jp = em.group("jp")
 
         try:
-            y1 = int(dm.group("year"))
-            m1 = int(dm.group("m1"))
-            d1 = int(dm.group("d1"))
+            y1 = int(em.group("year"))
+            m1 = int(em.group("m1"))
+            d1 = int(em.group("d1"))
             sd_obj = date(y1, m1, d1)
 
-            if dm.group("d2"):
-                y2 = int(dm.group("year2") or y1)
-                m2 = int(dm.group("m2") or m1)
-                d2 = int(dm.group("d2"))
+            if em.group("d2"):
+                y2 = int(em.group("year2") or y1)
+                m2 = int(em.group("m2") or m1)
+                d2 = int(em.group("d2"))
                 ed_obj = date(y2, m2, d2)
                 if ed_obj < sd_obj:
                     ed_obj = date(y2 + 1, m2, d2)
@@ -2052,55 +2047,47 @@ def collect_jaf_motorsports():
         if ed_obj < date.today():
             continue
 
-        # 日本語種目名：開始位置から日付までにある短い行
-        pre_date = block[len(code):dm.start()].strip()
-        jp_lines = [x.strip() for x in pre_date.splitlines() if x.strip()]
-        jp = jp_lines[0] if jp_lines else ""
-        discipline = _jaf_discipline_label(code, jp)
+        title = re.sub(r"\s+", " ", em.group("title")).strip(" ・")
+        venue = re.sub(r"\s+", " ", em.group("venue")).strip(" ・")
 
-        # 競技名：日付の後から「開催場所」まで
-        after_date = block[dm.end():]
-        if "開催場所" not in after_date:
-            continue
-        title_part, rest = after_date.split("開催場所", 1)
-        title = _jaf_clean_title(title_part)
-        if not title:
-            continue
+        if len(title) > 160:
+            parts = re.split(
+                r"(?=(?:20\d{2}年|第\d+戦|[A-Z][A-Za-z0-9 .&+-]{3,}\s(?:Rd\.?\d+|Round\s*\d+)))",
+                title
+            )
+            parts = [p.strip() for p in parts if p.strip()]
+            title = " / ".join(parts[:3])
+        title = title[:110]
+        venue = venue[:120]
 
-        # 会場：「開催場所」〜「格式」
-        venue = ""
-        if "格式" in rest:
-            venue = rest.split("格式", 1)[0].strip()
-        else:
-            venue = rest.splitlines()[0].strip() if rest.splitlines() else ""
-        venue = re.sub(r"\s+", " ", venue)[:120]
-        if not venue:
+        if not title or not venue:
             continue
 
-        area = _jaf_area(block, venue)
+        context_end = min(len(raw), em.end() + 500)
+        context = raw[em.start():context_end]
+        area = _jaf_area(context, venue)
 
-        # 大阪中心のため、関西＋三重のみ
         if not _jaf_allowed_area(area):
             continue
 
-        # 同じ会場・日付・タイトルは1件
+        discipline = _jaf_discipline_label(code, jp)
         key = (normalize_title(title)[:50], sd_obj.isoformat(), venue)
         if key in seen:
             continue
         seen.add(key)
 
+        major_bonus = 0
+        if re.search(
+            r"SUPER\s*GT|SUPER\s*FORMULA|スーパーフォーミュラ|"
+            r"SUZUKA|鈴鹿|全日本|国際|GT\s*Challenge|1000km",
+            context, re.I
+        ):
+            major_bonus = 8
+
         full = f"{title} {discipline} {area} {venue}"
         tags = ["クルマ", "モータースポーツ"]
         if discipline not in tags:
             tags.append(discipline)
-
-        # 鈴鹿など観戦価値が高い主要競技を少し優遇
-        major_bonus = 0
-        if re.search(
-            r"SUPER GT|スーパーフォーミュラ|SUZUKA|鈴鹿|全日本|国際|GT Challenge|1000km",
-            block, re.I
-        ):
-            major_bonus = 8
 
         events.append({
             "title": title,
@@ -2118,12 +2105,26 @@ def collect_jaf_motorsports():
             "source_url": url,
         })
 
+    if not matches:
+        keyword_hits = {
+            "RACE": len(re.findall(r"\bRACE\b", raw, re.I)),
+            "RALLY": len(re.findall(r"\bRALLY\b", raw, re.I)),
+            "GYMKHANA": len(re.findall(r"\bGYMKHANA\b", raw, re.I)),
+            "開催場所": raw.count("開催場所"),
+            "格式": raw.count("格式"),
+            "2026年": raw.count("2026年"),
+        }
+        diag(
+            "JAFモータースポーツ",
+            note="pattern0 diagnostics: " + json.dumps(keyword_hits, ensure_ascii=False)
+        )
+
     diag(
         "JAFモータースポーツ",
         parsed=len(events),
-        note=f"semantic parser v2 / calendar: {url}"
+        note=f"semantic parser v3 / calendar: {url}"
     )
-    print(f"[JAF Motorsports] parsed: {len(events)}")
+    print(f"[JAF Motorsports] candidates: {len(matches)} / parsed: {len(events)}")
     return events
 
 

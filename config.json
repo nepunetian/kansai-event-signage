@@ -184,7 +184,7 @@
     "期間限定ストア",
     "展覧"
   ],
-  "collection_version": 16,
+  "collection_version": 17,
   "collection_strategy": "Harukas DOM schedule parser v3 + existing dedicated collectors",
   "intex_search_months": 6,
   "priority_places": [
@@ -237,7 +237,7 @@
       "奈良"
     ],
     "category": "car",
-    "parser_version": 2,
-    "strategy": "JAF semantic text parser: discipline -> spaced Japanese date -> title -> venue"
+    "parser_version": 3,
+    "strategy": "robust whitespace-normalized semantic regex parser"
   }
 }
