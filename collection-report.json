@@ -6,7 +6,8 @@
     "parsed": 0,
     "errors": 0,
     "notes": [
-      "semantic parser v2 / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
+      "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
+      "semantic parser v3 / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
   "インテックス大阪専用": {
@@ -32,8 +33,9 @@
     "sitemap_links": 0,
     "candidates": 0,
     "parsed": 0,
-    "errors": 0,
+    "errors": 1,
     "notes": [
+      "list: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
     ]
@@ -73,13 +75,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 10,
+    "list_links": 11,
     "sitemap_links": 0,
-    "candidates": 10,
-    "parsed": 20,
+    "candidates": 11,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "listing fallback: 10",
+      "listing fallback: 11",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -197,18 +199,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 15,
+    "parsed": 16,
     "errors": 0,
     "notes": [
-      "dedicated: 15",
-      "listing fallback: 15"
+      "dedicated: 16",
+      "listing fallback: 16"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 127,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -216,13 +218,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 29,
+    "list_links": 32,
     "sitemap_links": 43,
-    "candidates": 65,
-    "parsed": 76,
+    "candidates": 67,
+    "parsed": 82,
     "errors": 29,
     "notes": [
-      "listing fallback: 41",
+      "listing fallback: 46",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -236,7 +238,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 215,
-    "generated_at": "2026-09-07T06:27:55.461738+09:00"
+    "final_events": 218,
+    "generated_at": "2026-09-07T10:56:40.335089+09:00"
   }
 }
