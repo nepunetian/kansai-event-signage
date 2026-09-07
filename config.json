@@ -81,7 +81,16 @@
     "バイオリンリサイタル": -28,
     "チェロリサイタル": -28,
     "リサイタル": -18,
-    "吹奏楽コンサート": -20
+    "吹奏楽コンサート": -20,
+    "寺院": -18,
+    "仏閣": -18,
+    "仏像": -20,
+    "御朱印": -18,
+    "写経": -20,
+    "座禅": -20,
+    "御開帳": -18,
+    "巡礼": -18,
+    "参拝": -14
   },
   "x_queries": [
     "(アニメ OR マンガ OR 漫画 OR 声優 OR コスプレ OR ゲーム) (大阪 OR 京都 OR 神戸) -is:retweet lang:ja",
@@ -184,7 +193,7 @@
     "期間限定ストア",
     "展覧"
   ],
-  "collection_version": 20,
+  "collection_version": 25,
   "collection_strategy": "Harukas DOM schedule parser v3 + existing dedicated collectors",
   "intex_search_months": 6,
   "priority_places": [
@@ -251,5 +260,6 @@
       "NEWS"
     ],
     "note": "一覧ページの見出しやナビゲーションをイベントとして誤取得したものを除外"
-  }
+  },
+  "tagging_note": "作品名・地域・会場/施設タイプを補助タグに追加。寺社系は個人向け推薦で減点。"
 }

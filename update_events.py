@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from io import BytesIO
 
 import json, os, re, sys, time, hashlib, mimetypes, xml.etree.ElementTree as ET, html as html_lib
 from datetime import date, datetime, timedelta, timezone
@@ -186,6 +187,30 @@ def classical_penalty(text):
     return -10 if crossover else -32
 
 
+
+def temple_shrine_penalty(text):
+    """
+    寺社・仏教系を個人向けおすすめでは強めに減点。
+    ただし、寺社が単なる会場名に入っているだけで他テーマが強い場合は弱める。
+    """
+    t = text or ""
+    temple = re.search(
+        r"寺院|神社|神宮|大社|仏閣|仏像|御朱印|写経|座禅|精進料理|"
+        r"寺宝|秘仏|本尊|法要|仏教|参拝|巡礼|御開帳|伽藍|僧侶|和尚",
+        t, re.I
+    )
+    if not temple:
+        return 0
+
+    strong_other = re.search(
+        r"アニメ|ゲーム|鉄道|モータースポーツ|サーキット|生成AI|ChatGPT|"
+        r"ガジェット|コラボカフェ|ポップアップ|物産展|グルメフェス|"
+        r"モーターショー|オートメッセ",
+        t, re.I
+    )
+    return -10 if strong_other else -28
+
+
 def score(text, category):
     base = {
         "rail": 72, "tech": 70, "anime": 72, "car": 72, "food": 68,
@@ -202,13 +227,122 @@ def score(text, category):
 
     # クラシック音楽系の文脈減点（クロスオーバーは弱め）
     base += classical_penalty(text)
+    base += temple_shrine_penalty(text)
     return max(35, min(99, base))
+
+def _clean_tag_value(value):
+    s = re.sub(r"\s+", " ", (value or "")).strip(" 　-–—|｜:：・,，。")
+    if not s:
+        return None
+    if len(s) > 22:
+        return None
+    if re.fullmatch(r"(イベント|キャンペーン|イベント情報|イベント一覧|開催中|開催予定)", s, re.I):
+        return None
+    return s
+
+
+def extract_rich_tags(event, evidence):
+    """
+    アニメ作品名・地域・会場/施設タイプなど、推薦学習に使える補助タグを作る。
+    """
+    title = event.get("title", "") or ""
+    venue = event.get("venue", "") or ""
+    area = event.get("area", "") or ""
+    t = evidence or ""
+    tags = []
+
+    def add(v):
+        v = _clean_tag_value(v)
+        if v and v not in tags:
+            tags.append(v)
+
+    # 地域タグ
+    area_map = {
+        "大阪": "大阪", "兵庫": "兵庫", "京都": "京都",
+        "滋賀": "滋賀", "和歌山": "和歌山", "三重": "三重",
+        "天王寺": "天王寺", "阿倍野": "阿倍野", "松原": "松原",
+        "天美": "天美", "梅田": "梅田", "なんば": "なんば",
+        "南港": "南港", "神戸": "神戸",
+    }
+    for key, label in area_map.items():
+        if key in area or key in venue or key in title:
+            add(label)
+
+    # 会場・施設種別
+    facility_rules = [
+        ("百貨店", r"百貨店|阪急うめだ本店|大丸|近鉄百貨店|高島屋"),
+        ("商業施設", r"ショッピングモール|商業施設|LUCUA|ルクア|グランフロント|なんばパークス|セブンパーク"),
+        ("展示場", r"インテックス|展示場|コンベンションセンター|メッセ"),
+        ("サーキット", r"サーキット|CIRCUIT"),
+        ("ホール", r"ホール|劇場|シアター"),
+        ("美術館", r"美術館"),
+        ("博物館", r"博物館|ミュージアム"),
+        ("カフェ", r"カフェ|CAFE"),
+        ("スタジアム", r"スタジアム|球場"),
+        ("公園", r"公園|パーク"),
+        ("駅", r"駅構内|駅前|駅ビル"),
+        ("寺社", r"寺院|神社|神宮|大社|仏閣"),
+    ]
+    for label, pat in facility_rules:
+        if re.search(pat, f"{venue} {t}", re.I):
+            add(label)
+
+    # アニメ・ゲーム作品名らしき語を抽出。
+    # 「TVアニメ『作品名』」「アニメ『作品名』」「『作品名』×○○」等を優先。
+    anime_context = re.search(
+        r"アニメ|マンガ|漫画|コミック|声優|ゲーム|キャラクター|アニメイト|"
+        r"コラボカフェ|オンリーショップ|ポップアップ",
+        t, re.I
+    )
+    if anime_context:
+        patterns = [
+            r"(?:TV\s*アニメ|アニメ|劇場版|ゲーム)\s*[『「](.{2,22}?)[』」]",
+            r"[『「](.{2,22}?)[』」]\s*(?:×|x|X|コラボ|POP[\s-]?UP|ポップアップ)",
+            r"(?:×|x|X)\s*[『「]?([^』」×xX]{2,22})[』」]?",
+        ]
+        for pat in patterns:
+            for m in re.finditer(pat, title, re.I):
+                cand = re.sub(
+                    r"\s*(?:コラボ|POP[\s-]?UP|ポップアップ|カフェ|イベント|フェア|展)$",
+                    "",
+                    m.group(1),
+                    flags=re.I
+                ).strip()
+                add(cand)
+                if len(tags) >= 4:
+                    break
+            if len(tags) >= 4:
+                break
+
+        # タイトル先頭に作品名らしき固有名があるケース
+        if len(tags) < 4:
+            m = re.match(
+                r"^(.{2,22}?)(?:\s*[×xX]\s*|コラボ|POP[\s-]?UP|ポップアップ|"
+                r"オンリーショップ|カフェ)",
+                title,
+                re.I
+            )
+            if m:
+                add(m.group(1))
+
+    # 会場固有名（施設タイプとは別に学習へ使う）
+    if venue:
+        v = re.sub(
+            r"\s*(?:店|会場|館|ホール|イベントスペース|催事場)$",
+            "",
+            venue
+        ).strip()
+        if 2 <= len(v) <= 18:
+            add(v)
+
+    return tags
+
 
 def make_tags(text, cat):
     """
     タグは高信頼キーワードだけ。
     主カテゴリタグ + 明確な副タグのみ付与する。
-    最大3個。
+    基本タグに加え、作品名・地域・施設種別も含め最大5個。
     """
     t = text or ""
     tags = []
@@ -291,7 +425,7 @@ def make_tags(text, cat):
     elif re.search(r"POP[\s-]?UP|ポップアップ", t, re.I) and "ポップアップ" not in tags:
         tags.append("ポップアップ")
 
-    return tags[:3]
+    return tags[:5]
 
 def extract_image_from_jsonld(ev):
     img = ev.get("image")
@@ -2272,7 +2406,7 @@ def _collect_jaf_pdf_fallback():
                 note=f"PDF {discipline}: rows={rows}, kept={len(parsed)}"
             )
         except Exception as e:
-            diag("JAFモータースポーツ", errors=1, note=f"PDF error {pdf_url}: {type(e).__name__}")
+            diag("JAFモータースポーツ", errors=1, note=f"PDF error {pdf_url}: {type(e).__name__}: {e}")
             continue
 
     # dedupe
@@ -3322,7 +3456,14 @@ def normalize_event_categories_and_tags(events):
             label = cat_label.get(c)
             if label and label not in tags:
                 tags.append(label)
-        e["tags"] = tags[:3]
+
+        # 作品名・地域・会場/施設タイプなどを追加。
+        # 主カテゴリタグは残しつつ最大5タグまで表示・学習に使う。
+        for tag in extract_rich_tags(e, evidence):
+            if tag not in tags:
+                tags.append(tag)
+
+        e["tags"] = tags[:5]
 
     return events
 
