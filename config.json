@@ -184,7 +184,7 @@
     "期間限定ストア",
     "展覧"
   ],
-  "collection_version": 17,
+  "collection_version": 20,
   "collection_strategy": "Harukas DOM schedule parser v3 + existing dedicated collectors",
   "intex_search_months": 6,
   "priority_places": [
@@ -239,5 +239,17 @@
     "category": "car",
     "parser_version": 3,
     "strategy": "robust whitespace-normalized semantic regex parser"
+  },
+  "contentless_event_filter": {
+    "enabled": true,
+    "examples": [
+      "EVENT&CAMPAIGN イベント&キャンペーン",
+      "イベント一覧",
+      "イベント情報",
+      "キャンペーン",
+      "TOPICS",
+      "NEWS"
+    ],
+    "note": "一覧ページの見出しやナビゲーションをイベントとして誤取得したものを除外"
   }
 }

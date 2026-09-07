@@ -2635,10 +2635,110 @@ def apply_priority_bonus(event):
 # -------------------------
 # 広告・セール・常設キャンペーン除外
 # -------------------------
+def is_contentless_event_entry(event):
+    """
+    一覧ページの見出し・ナビゲーションを誤ってイベントとして取得したものを除外する。
+
+    例:
+      EVENT&CAMPAIGN イベント&キャンペーン
+      EVENT
+      イベント一覧
+      イベント情報
+      キャンペーン
+      TOPICS
+      NEWS
+    """
+    title = re.sub(r"\s+", " ", (event.get("title", "") or "")).strip()
+    desc = re.sub(r"\s+", " ", (event.get("description", "") or "")).strip()
+    venue = re.sub(r"\s+", " ", (event.get("venue", "") or "")).strip()
+
+    # 記号・空白・全半角差をならして比較
+    normalized = title.lower()
+    normalized = normalized.replace("＆", "&").replace("・", "&").replace("／", "/")
+    normalized = re.sub(r"[\s|｜:：_\-–—]+", "", normalized)
+
+    exact_generic_titles = {
+        "event",
+        "events",
+        "eventinfo",
+        "eventinformation",
+        "eventcalendar",
+        "event&campaign",
+        "events&campaigns",
+        "campaign",
+        "campaigns",
+        "topics",
+        "topic",
+        "news",
+        "information",
+        "イベント",
+        "イベント一覧",
+        "イベント情報",
+        "イベントカレンダー",
+        "催し",
+        "催し一覧",
+        "催し情報",
+        "キャンペーン",
+        "キャンペーン一覧",
+        "イベント&キャンペーン",
+        "イベントキャンペーン",
+        "イベント情報&キャンペーン",
+        "イベント・キャンペーン",
+        "イベント/キャンペーン",
+        "トピックス",
+        "お知らせ",
+        "新着情報",
+    }
+    normalized_generic = {
+        re.sub(r"[\s|｜:：_\-–—]+", "", x.lower().replace("＆", "&").replace("・", "&").replace("／", "/"))
+        for x in exact_generic_titles
+    }
+
+    if normalized in normalized_generic:
+        return True
+
+    # 英日併記の見出し:
+    # "EVENT&CAMPAIGN イベント&キャンペーン" 等
+    if re.fullmatch(
+        r"(?:event(?:s)?(?:&campaigns?)?|eventinformation|eventinfo|topics?|news|information)"
+        r"(?:イベント(?:&?キャンペーン)?|イベント情報|キャンペーン|トピックス|お知らせ|新着情報)?",
+        normalized,
+        re.I
+    ):
+        return True
+
+    # 「イベント＆キャンペーン」等の見出し語しか含まないタイトル
+    words_only = re.sub(
+        r"(event|events|campaign|campaigns|information|info|topics?|news|"
+        r"イベント|キャンペーン|情報|一覧|トピックス|お知らせ|新着)",
+        "",
+        normalized,
+        flags=re.I
+    )
+    if not words_only:
+        return True
+
+    # タイトルが極端に短く、説明も実質見出しだけなら除外
+    generic_desc = re.sub(r"[\s|｜:：_\-–—&＆/／・]+", "", desc.lower())
+    if len(title) <= 6 and len(generic_desc) <= 18:
+        if re.search(r"イベント|event|催し|news|topics?|キャンペーン", title, re.I):
+            return True
+
+    # 会場名や日付だけがタイトルになった誤取得も除外
+    if re.fullmatch(r"(?:20\d{2}[年./-])?\d{1,2}[月./-]\d{1,2}日?", title):
+        return True
+
+    return False
+
+
 def is_noise_event(event):
     """
-    サイネージに不要な広告・単なるセール・常設キャンペーンを除外する。
+    サイネージに不要な広告・単なるセール・常設キャンペーン・
+    中身のない一覧見出しを除外する。
     """
+    if is_contentless_event_entry(event):
+        return True
+
     title = event.get("title", "") or ""
     desc = event.get("description", "") or ""
     venue = event.get("venue", "") or ""

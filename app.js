@@ -61,6 +61,7 @@ function loadPrefs(){
 }
 
 let userPrefs = loadPrefs();
+let lastVoteAction = null;
 
 function savePrefs(){
   userPrefs.updatedAt = Date.now();
@@ -106,8 +107,17 @@ function featureSnapshot(e){
 
 function setVote(e, value){
   const key = eventKey(e);
-  const old = userPrefs.votes[key];
-  // 同じボタンをもう一度押すと解除
+  const old = userPrefs.votes[key] ? {...userPrefs.votes[key]} : null;
+
+  lastVoteAction = {
+    key,
+    previous: old,
+    nextValue: value,
+    title: e.title || ''
+  };
+
+  // 同じ評価をもう一度押すと解除。
+  // 反対側を押すと 👍 ↔ 👎 を変更。
   if(old && old.value === value){
     delete userPrefs.votes[key];
   }else{
@@ -118,7 +128,42 @@ function setVote(e, value){
       votedAt: Date.now()
     };
   }
+
   savePrefs();
+  updateUndoVoteButton();
+  heroIndex = 0;
+  pageIndex = 0;
+  render();
+}
+
+function updateUndoVoteButton(){
+  const btn = $('#undoVote');
+  if(!btn) return;
+  btn.disabled = !lastVoteAction;
+  if(lastVoteAction){
+    btn.textContent = '↶ 直前の評価を戻す';
+    btn.title = lastVoteAction.title
+      ? `「${lastVoteAction.title}」の直前の評価を元に戻す`
+      : '直前の評価を元に戻す';
+  }else{
+    btn.textContent = '↶ 直前の評価を戻す';
+    btn.title = '';
+  }
+}
+
+function undoLastVote(){
+  if(!lastVoteAction) return;
+
+  const {key, previous} = lastVoteAction;
+  if(previous){
+    userPrefs.votes[key] = previous;
+  }else{
+    delete userPrefs.votes[key];
+  }
+
+  lastVoteAction = null;
+  savePrefs();
+  updateUndoVoteButton();
   heroIndex = 0;
   pageIndex = 0;
   render();
@@ -160,8 +205,43 @@ function preferenceBonus(e){
   return bonus;
 }
 
+function personalizedRawScore(e){
+  // 並び替え用。上限を設けず、元スコアと学習補正の差を保持する。
+  return Number(e.score || 0) + preferenceBonus(e);
+}
+
+function displayRecommendationScore(raw){
+  /*
+    表示用スコアは高得点帯を圧縮する。
+    以前は 99 で単純カットしていたため、上位イベントが大量に99になっていた。
+
+    目安:
+      raw 50  -> 50
+      raw 70  -> 70
+      raw 85  -> 81
+      raw 99  -> 91
+      raw 115 -> 95
+      raw 135 -> 98
+
+    99は極端に強い好みが積み重なった場合だけ。
+  */
+  const x = Number(raw || 0);
+
+  if(x <= 70) return Math.max(0, Math.round(x));
+  if(x <= 100){
+    return Math.round(70 + (x - 70) * (22 / 30)); // 70→92
+  }
+  if(x <= 120){
+    return Math.round(92 + (x - 100) * (4 / 20)); // 100→96
+  }
+  if(x <= 145){
+    return Math.round(96 + (x - 120) * (2 / 25)); // 120→98
+  }
+  return 99;
+}
+
 function personalizedScore(e){
-  return Math.max(0, Math.min(99, Number(e.score || 0) + preferenceBonus(e)));
+  return displayRecommendationScore(personalizedRawScore(e));
 }
 
 function learningCount(){
@@ -263,7 +343,7 @@ function getFilteredEvents(){
       return end >= today;
     })
     .filter(matches)
-    .sort((a,b)=>personalizedScore(b)-personalizedScore(a) || String(a.start_date).localeCompare(String(b.start_date)));
+    .sort((a,b)=>personalizedRawScore(b)-personalizedRawScore(a) || String(a.start_date).localeCompare(String(b.start_date)));
 }
 
 function escapeAttr(str){
@@ -429,12 +509,22 @@ document.addEventListener('click', (ev)=>{
   setVote(event, value);
 });
 
+const undoVote = $('#undoVote');
+if(undoVote){
+  undoVote.addEventListener('click', ()=>{
+    undoLastVote();
+  });
+}
+updateUndoVoteButton();
+
 const resetLearning = $('#resetLearning');
 if(resetLearning){
   resetLearning.addEventListener('click', ()=>{
     if(!learningCount()) return;
     if(confirm('いいね・バッドの学習内容をリセットしますか？')){
       userPrefs = {votes:{}, updatedAt:Date.now()};
+      lastVoteAction = null;
+      updateUndoVoteButton();
       try{
         localStorage.removeItem(PREFS_KEY);
         localStorage.removeItem(PREFS_BACKUP_KEY);
