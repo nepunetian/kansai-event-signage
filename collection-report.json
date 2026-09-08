@@ -48,14 +48,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 16,
+    "list_links": 17,
     "sitemap_links": 0,
-    "candidates": 16,
-    "parsed": 46,
+    "candidates": 17,
+    "parsed": 49,
     "errors": 0,
     "notes": [
-      "dedicated: 16",
-      "listing fallback: 31"
+      "dedicated: 17",
+      "listing fallback: 33"
     ]
   },
   "ATC": {
@@ -98,20 +98,20 @@
     "list_links": 38,
     "sitemap_links": 83,
     "candidates": 87,
-    "parsed": 51,
+    "parsed": 49,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 45",
+      "dedicated: 18",
+      "listing fallback: 43",
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 32,
+    "list_links": 29,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 17,
+    "errors": 16,
     "notes": []
   },
   "大丸梅田店": {
@@ -119,7 +119,7 @@
     "sitemap_links": 104,
     "candidates": 104,
     "parsed": 0,
-    "errors": 12,
+    "errors": 11,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -192,7 +192,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 55,
+    "list_links": 56,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 3,
@@ -206,11 +206,11 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 19,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 19"
+      "dedicated: 18",
+      "listing fallback: 18"
     ]
   },
   "Feel KOBE": {
@@ -228,7 +228,7 @@
     "list_links": 31,
     "sitemap_links": 43,
     "candidates": 66,
-    "parsed": 78,
+    "parsed": 77,
     "errors": 29,
     "notes": [
       "listing fallback: 44",
@@ -246,6 +246,6 @@
   },
   "TOTAL": {
     "final_events": 204,
-    "generated_at": "2026-09-08T06:30:17.879680+09:00"
+    "generated_at": "2026-09-09T06:29:25.874132+09:00"
   }
 }
