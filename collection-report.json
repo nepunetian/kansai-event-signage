@@ -96,9 +96,9 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 83,
-    "candidates": 87,
-    "parsed": 49,
+    "sitemap_links": 84,
+    "candidates": 88,
+    "parsed": 50,
     "errors": 0,
     "notes": [
       "dedicated: 18",
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 18,
+    "parsed": 19,
     "errors": 0,
     "notes": [
-      "dedicated: 18",
-      "listing fallback: 18"
+      "dedicated: 19",
+      "listing fallback: 19"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 127,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -228,7 +228,7 @@
     "list_links": 31,
     "sitemap_links": 43,
     "candidates": 66,
-    "parsed": 77,
+    "parsed": 79,
     "errors": 29,
     "notes": [
       "listing fallback: 44",
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 204,
-    "generated_at": "2026-09-09T06:29:25.874132+09:00"
+    "final_events": 209,
+    "generated_at": "2026-09-10T06:29:24.575480+09:00"
   }
 }
