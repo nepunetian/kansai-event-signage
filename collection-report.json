@@ -9,12 +9,12 @@
       "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
       "PDF fallback discovered: 6",
       "PDF レース: rows=93, kept=4",
-      "PDF ラリー: rows=66, kept=4",
+      "PDF ラリー: rows=67, kept=4",
       "PDF ジムカーナ: rows=0, kept=0",
       "PDF サーキットトライアル: rows=0, kept=0",
       "PDF ダートトライアル: rows=0, kept=0",
       "PDF カート: rows=32, kept=3",
-      "PDF fallback total rows=191, parsed=11",
+      "PDF fallback total rows=192, parsed=11",
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
@@ -48,14 +48,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 17,
+    "list_links": 18,
     "sitemap_links": 0,
-    "candidates": 17,
-    "parsed": 49,
+    "candidates": 18,
+    "parsed": 52,
     "errors": 0,
     "notes": [
-      "dedicated: 17",
-      "listing fallback: 33"
+      "dedicated: 18",
+      "listing fallback: 35"
     ]
   },
   "ATC": {
@@ -98,7 +98,7 @@
     "list_links": 38,
     "sitemap_links": 84,
     "candidates": 88,
-    "parsed": 50,
+    "parsed": 49,
     "errors": 0,
     "notes": [
       "dedicated: 18",
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 19,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 19"
+      "dedicated: 22",
+      "listing fallback: 22"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 128,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 31,
+    "list_links": 30,
     "sitemap_links": 43,
-    "candidates": 66,
-    "parsed": 79,
-    "errors": 29,
+    "candidates": 67,
+    "parsed": 83,
+    "errors": 30,
     "notes": [
-      "listing fallback: 44",
+      "listing fallback: 48",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 209,
-    "generated_at": "2026-09-10T06:29:24.575480+09:00"
+    "final_events": 210,
+    "generated_at": "2026-09-11T06:28:08.995466+09:00"
   }
 }
