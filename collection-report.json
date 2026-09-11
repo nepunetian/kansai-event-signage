@@ -48,24 +48,26 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 18,
+    "list_links": 0,
     "sitemap_links": 0,
-    "candidates": 18,
-    "parsed": 52,
-    "errors": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 1,
     "notes": [
-      "dedicated: 18",
-      "listing fallback: 35"
+      "list: HTTPSConnectionPool(host='www.atc-co.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.atc-co.com', port=443) at 0x7f2c6fd3d0d0>, 'Connection to www.atc-co.com timed out. (connect timeout=30)'))"
     ]
   },
   "ATC": {
     "list_links": 0,
-    "sitemap_links": 180,
-    "candidates": 180,
+    "sitemap_links": 0,
+    "candidates": 0,
     "parsed": 0,
-    "errors": 0,
+    "errors": 1,
     "notes": [
-      "sitemap https://www.atc-co.com/sitemap-index.xml: HTTPError"
+      "list: HTTPSConnectionPool(host='www.atc-co.com', port=443): Max retries exceeded with url: /event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.atc-co.com', port=443) at 0x7f2c6fd3d7f0>, 'Connection to www.atc-co.com timed out. (connect timeout=30)'))",
+      "sitemap https://www.atc-co.com/sitemap.xml: ConnectTimeout",
+      "sitemap https://www.atc-co.com/sitemap_index.xml: ConnectTimeout",
+      "sitemap https://www.atc-co.com/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "グランフロント大阪": {
@@ -96,9 +98,9 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 84,
-    "candidates": 88,
-    "parsed": 49,
+    "sitemap_links": 86,
+    "candidates": 90,
+    "parsed": 51,
     "errors": 0,
     "notes": [
       "dedicated: 18",
@@ -149,14 +151,16 @@
     ]
   },
   "大阪オートメッセ": {
-    "list_links": 1,
+    "list_links": 0,
     "sitemap_links": 0,
-    "candidates": 1,
+    "candidates": 0,
     "parsed": 0,
-    "errors": 0,
+    "errors": 1,
     "notes": [
-      "sitemap https://www.automesse.jp/sitemap_index.xml: HTTPError",
-      "sitemap https://www.automesse.jp/sitemap-index.xml: HTTPError"
+      "list: HTTPSConnectionPool(host='www.automesse.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.automesse.jp', port=443) at 0x7f2c6f7a1eb0>, 'Connection to www.automesse.jp timed out. (connect timeout=30)'))",
+      "sitemap https://www.automesse.jp/sitemap.xml: ConnectTimeout",
+      "sitemap https://www.automesse.jp/sitemap_index.xml: ConnectTimeout",
+      "sitemap https://www.automesse.jp/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "JR西日本": {
@@ -206,18 +210,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 22,
+    "parsed": 23,
     "errors": 0,
     "notes": [
-      "dedicated: 22",
-      "listing fallback: 22"
+      "dedicated: 23",
+      "listing fallback: 23"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 128,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -228,7 +232,7 @@
     "list_links": 30,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 83,
+    "parsed": 84,
     "errors": 30,
     "notes": [
       "listing fallback: 48",
@@ -245,7 +249,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 210,
-    "generated_at": "2026-09-11T06:28:08.995466+09:00"
+    "final_events": 195,
+    "generated_at": "2026-09-12T06:33:00.597131+09:00"
   }
 }
