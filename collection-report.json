@@ -48,36 +48,34 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 0,
+    "list_links": 19,
     "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
-    "errors": 1,
+    "candidates": 19,
+    "parsed": 55,
+    "errors": 0,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.atc-co.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.atc-co.com', port=443) at 0x7f2c6fd3d0d0>, 'Connection to www.atc-co.com timed out. (connect timeout=30)'))"
+      "dedicated: 19",
+      "listing fallback: 37"
     ]
   },
   "ATC": {
     "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
+    "sitemap_links": 180,
+    "candidates": 180,
     "parsed": 0,
-    "errors": 1,
+    "errors": 0,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.atc-co.com', port=443): Max retries exceeded with url: /event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.atc-co.com', port=443) at 0x7f2c6fd3d7f0>, 'Connection to www.atc-co.com timed out. (connect timeout=30)'))",
-      "sitemap https://www.atc-co.com/sitemap.xml: ConnectTimeout",
-      "sitemap https://www.atc-co.com/sitemap_index.xml: ConnectTimeout",
-      "sitemap https://www.atc-co.com/sitemap-index.xml: ConnectTimeout"
+      "sitemap https://www.atc-co.com/sitemap-index.xml: HTTPError"
     ]
   },
   "グランフロント大阪": {
-    "list_links": 10,
+    "list_links": 11,
     "sitemap_links": 0,
-    "candidates": 10,
-    "parsed": 20,
+    "candidates": 11,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "listing fallback: 10",
+      "listing fallback: 11",
       "sitemap https://www.grandfront-osaka.jp/sitemap.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap-index.xml: HTTPError"
@@ -98,9 +96,9 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 86,
-    "candidates": 90,
-    "parsed": 51,
+    "sitemap_links": 85,
+    "candidates": 89,
+    "parsed": 49,
     "errors": 0,
     "notes": [
       "dedicated: 18",
@@ -151,16 +149,14 @@
     ]
   },
   "大阪オートメッセ": {
-    "list_links": 0,
+    "list_links": 1,
     "sitemap_links": 0,
-    "candidates": 0,
+    "candidates": 1,
     "parsed": 0,
-    "errors": 1,
+    "errors": 0,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.automesse.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.automesse.jp', port=443) at 0x7f2c6f7a1eb0>, 'Connection to www.automesse.jp timed out. (connect timeout=30)'))",
-      "sitemap https://www.automesse.jp/sitemap.xml: ConnectTimeout",
-      "sitemap https://www.automesse.jp/sitemap_index.xml: ConnectTimeout",
-      "sitemap https://www.automesse.jp/sitemap-index.xml: ConnectTimeout"
+      "sitemap https://www.automesse.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.automesse.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "JR西日本": {
@@ -210,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 23,
+    "parsed": 21,
     "errors": 0,
     "notes": [
-      "dedicated: 23",
-      "listing fallback: 23"
+      "dedicated: 21",
+      "listing fallback: 21"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -249,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 195,
-    "generated_at": "2026-09-12T06:33:00.597131+09:00"
+    "final_events": 209,
+    "generated_at": "2026-09-13T06:29:04.766559+09:00"
   }
 }
