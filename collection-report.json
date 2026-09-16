@@ -98,11 +98,11 @@
     "list_links": 38,
     "sitemap_links": 86,
     "candidates": 90,
-    "parsed": 50,
+    "parsed": 51,
     "errors": 0,
     "notes": [
-      "dedicated: 18",
-      "listing fallback: 43",
+      "dedicated: 19",
+      "listing fallback: 44",
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
@@ -110,7 +110,7 @@
     "list_links": 31,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 1,
+    "parsed": 0,
     "errors": 16,
     "notes": []
   },
@@ -206,11 +206,11 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 20,
+    "parsed": 21,
     "errors": 0,
     "notes": [
-      "dedicated: 20",
-      "listing fallback: 20"
+      "dedicated: 21",
+      "listing fallback: 21"
     ]
   },
   "Feel KOBE": {
@@ -228,7 +228,7 @@
     "list_links": 32,
     "sitemap_links": 43,
     "candidates": 68,
-    "parsed": 82,
+    "parsed": 80,
     "errors": 30,
     "notes": [
       "listing fallback: 46",
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 214,
-    "generated_at": "2026-09-16T06:30:06.449220+09:00"
+    "final_events": 212,
+    "generated_at": "2026-09-17T06:31:03.269252+09:00"
   }
 }
