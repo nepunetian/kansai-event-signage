@@ -82,13 +82,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 10,
+    "list_links": 9,
     "sitemap_links": 0,
-    "candidates": 10,
-    "parsed": 20,
+    "candidates": 9,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "listing fallback: 10",
+      "listing fallback: 9",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -96,8 +96,8 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 86,
-    "candidates": 90,
+    "sitemap_links": 87,
+    "candidates": 91,
     "parsed": 51,
     "errors": 0,
     "notes": [
@@ -160,9 +160,9 @@
     ]
   },
   "JR西日本": {
-    "list_links": 29,
+    "list_links": 30,
     "sitemap_links": 0,
-    "candidates": 29,
+    "candidates": 30,
     "parsed": 0,
     "errors": 0,
     "notes": [
@@ -192,10 +192,10 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 56,
+    "list_links": 55,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 2,
+    "parsed": 3,
     "errors": 0,
     "notes": [
       "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 21,
+    "parsed": 24,
     "errors": 0,
     "notes": [
-      "dedicated: 21",
-      "listing fallback: 21"
+      "dedicated: 24",
+      "listing fallback: 24"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 131,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 32,
+    "list_links": 30,
     "sitemap_links": 43,
-    "candidates": 68,
-    "parsed": 80,
+    "candidates": 66,
+    "parsed": 74,
     "errors": 30,
     "notes": [
-      "listing fallback: 46",
+      "listing fallback: 42",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 212,
-    "generated_at": "2026-09-17T06:31:03.269252+09:00"
+    "final_events": 213,
+    "generated_at": "2026-09-18T06:30:10.304349+09:00"
   }
 }
