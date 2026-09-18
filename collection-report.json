@@ -48,14 +48,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 17,
+    "list_links": 18,
     "sitemap_links": 0,
-    "candidates": 17,
-    "parsed": 49,
+    "candidates": 18,
+    "parsed": 53,
     "errors": 0,
     "notes": [
-      "dedicated: 17",
-      "listing fallback: 33"
+      "dedicated: 19",
+      "listing fallback: 36"
     ]
   },
   "ATC": {
@@ -82,13 +82,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 9,
+    "list_links": 10,
     "sitemap_links": 0,
-    "candidates": 9,
-    "parsed": 18,
+    "candidates": 10,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "listing fallback: 9",
+      "listing fallback: 10",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -98,7 +98,7 @@
     "list_links": 38,
     "sitemap_links": 87,
     "candidates": 91,
-    "parsed": 51,
+    "parsed": 50,
     "errors": 0,
     "notes": [
       "dedicated: 19",
@@ -206,11 +206,11 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 24,
+    "parsed": 25,
     "errors": 0,
     "notes": [
-      "dedicated: 24",
-      "listing fallback: 24"
+      "dedicated: 25",
+      "listing fallback: 25"
     ]
   },
   "Feel KOBE": {
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 30,
+    "list_links": 32,
     "sitemap_links": 43,
-    "candidates": 66,
-    "parsed": 74,
+    "candidates": 68,
+    "parsed": 82,
     "errors": 30,
     "notes": [
-      "listing fallback: 42",
+      "listing fallback: 48",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 213,
-    "generated_at": "2026-09-18T06:30:10.304349+09:00"
+    "final_events": 214,
+    "generated_at": "2026-09-19T06:28:32.231855+09:00"
   }
 }
