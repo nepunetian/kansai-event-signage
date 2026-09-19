@@ -51,11 +51,11 @@
     "list_links": 18,
     "sitemap_links": 0,
     "candidates": 18,
-    "parsed": 53,
+    "parsed": 50,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 36"
+      "dedicated: 18",
+      "listing fallback: 34"
     ]
   },
   "ATC": {
@@ -98,11 +98,11 @@
     "list_links": 38,
     "sitemap_links": 87,
     "candidates": 91,
-    "parsed": 50,
+    "parsed": 52,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 44",
+      "dedicated: 20",
+      "listing fallback: 46",
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
@@ -195,7 +195,7 @@
     "list_links": 55,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 3,
+    "parsed": 2,
     "errors": 0,
     "notes": [
       "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 25,
+    "parsed": 28,
     "errors": 0,
     "notes": [
-      "dedicated: 25",
-      "listing fallback: 25"
+      "dedicated: 28",
+      "listing fallback: 28"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 130,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 32,
+    "list_links": 29,
     "sitemap_links": 43,
-    "candidates": 68,
-    "parsed": 82,
+    "candidates": 66,
+    "parsed": 75,
     "errors": 30,
     "notes": [
-      "listing fallback: 48",
+      "listing fallback: 44",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -246,6 +246,6 @@
   },
   "TOTAL": {
     "final_events": 214,
-    "generated_at": "2026-09-19T06:28:32.231855+09:00"
+    "generated_at": "2026-09-20T06:27:56.286314+09:00"
   }
 }
