@@ -3,19 +3,10 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 10,
-    "errors": 0,
+    "parsed": 0,
+    "errors": 1,
     "notes": [
-      "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
-      "PDF fallback discovered: 6",
-      "PDF レース: rows=93, kept=3",
-      "PDF ラリー: rows=67, kept=4",
-      "PDF ジムカーナ: rows=0, kept=0",
-      "PDF サーキットトライアル: rows=0, kept=0",
-      "PDF ダートトライアル: rows=0, kept=0",
-      "PDF カート: rows=32, kept=3",
-      "PDF fallback total rows=192, parsed=10",
-      "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
+      "fetch: 500 Server Error: Internal Server Error for url: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
   "インテックス大阪専用": {
@@ -48,14 +39,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 18,
+    "list_links": 17,
     "sitemap_links": 0,
-    "candidates": 18,
-    "parsed": 50,
+    "candidates": 17,
+    "parsed": 43,
     "errors": 0,
     "notes": [
-      "dedicated: 18",
-      "listing fallback: 34"
+      "dedicated: 17",
+      "listing fallback: 30"
     ]
   },
   "ATC": {
@@ -96,8 +87,8 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 87,
-    "candidates": 91,
+    "sitemap_links": 86,
+    "candidates": 90,
     "parsed": 52,
     "errors": 0,
     "notes": [
@@ -111,7 +102,7 @@
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 16,
+    "errors": 17,
     "notes": []
   },
   "大丸梅田店": {
@@ -192,7 +183,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 55,
+    "list_links": 57,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 2,
@@ -206,18 +197,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 28,
+    "parsed": 21,
     "errors": 0,
     "notes": [
-      "dedicated: 28",
-      "listing fallback: 28"
+      "dedicated: 21",
+      "listing fallback: 21"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -231,7 +222,7 @@
     "parsed": 75,
     "errors": 30,
     "notes": [
-      "listing fallback: 44",
+      "listing fallback: 42",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +236,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 214,
-    "generated_at": "2026-09-20T06:27:56.286314+09:00"
+    "final_events": 197,
+    "generated_at": "2026-09-21T06:28:05.144940+09:00"
   }
 }
