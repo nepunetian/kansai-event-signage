@@ -3,10 +3,19 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 0,
-    "errors": 1,
+    "parsed": 9,
+    "errors": 0,
     "notes": [
-      "fetch: 500 Server Error: Internal Server Error for url: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
+      "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
+      "PDF fallback discovered: 6",
+      "PDF レース: rows=93, kept=3",
+      "PDF ラリー: rows=67, kept=3",
+      "PDF ジムカーナ: rows=0, kept=0",
+      "PDF サーキットトライアル: rows=0, kept=0",
+      "PDF ダートトライアル: rows=0, kept=0",
+      "PDF カート: rows=32, kept=3",
+      "PDF fallback total rows=192, parsed=9",
+      "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
   "インテックス大阪専用": {
@@ -42,11 +51,11 @@
     "list_links": 17,
     "sitemap_links": 0,
     "candidates": 17,
-    "parsed": 43,
+    "parsed": 41,
     "errors": 0,
     "notes": [
       "dedicated: 17",
-      "listing fallback: 30"
+      "listing fallback: 29"
     ]
   },
   "ATC": {
@@ -89,11 +98,11 @@
     "list_links": 38,
     "sitemap_links": 86,
     "candidates": 90,
-    "parsed": 52,
+    "parsed": 50,
     "errors": 0,
     "notes": [
-      "dedicated: 20",
-      "listing fallback: 46",
+      "dedicated: 19",
+      "listing fallback: 44",
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
@@ -178,7 +187,7 @@
     "list_links": 15,
     "sitemap_links": 0,
     "candidates": 15,
-    "parsed": 3,
+    "parsed": 1,
     "errors": 0,
     "notes": []
   },
@@ -208,7 +217,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 130,
+    "parsed": 134,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -219,7 +228,7 @@
     "list_links": 29,
     "sitemap_links": 43,
     "candidates": 66,
-    "parsed": 75,
+    "parsed": 74,
     "errors": 30,
     "notes": [
       "listing fallback: 42",
@@ -236,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 197,
-    "generated_at": "2026-09-21T06:28:05.144940+09:00"
+    "final_events": 201,
+    "generated_at": "2026-09-22T06:29:32.087803+09:00"
   }
 }
