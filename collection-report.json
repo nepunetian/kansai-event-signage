@@ -48,13 +48,13 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 17,
+    "list_links": 16,
     "sitemap_links": 0,
-    "candidates": 17,
-    "parsed": 41,
+    "candidates": 16,
+    "parsed": 42,
     "errors": 0,
     "notes": [
-      "dedicated: 17",
+      "dedicated: 16",
       "listing fallback: 29"
     ]
   },
@@ -107,11 +107,11 @@
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 31,
+    "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 0,
-    "errors": 17,
+    "parsed": 1,
+    "errors": 16,
     "notes": []
   },
   "大丸梅田店": {
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 21,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "dedicated: 21",
-      "listing fallback: 21"
+      "dedicated: 20",
+      "listing fallback: 20"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 134,
+    "parsed": 131,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -227,8 +227,8 @@
   "京都観光Navi": {
     "list_links": 29,
     "sitemap_links": 43,
-    "candidates": 66,
-    "parsed": 74,
+    "candidates": 65,
+    "parsed": 72,
     "errors": 30,
     "notes": [
       "listing fallback: 42",
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 201,
-    "generated_at": "2026-09-22T06:29:32.087803+09:00"
+    "final_events": 199,
+    "generated_at": "2026-09-23T06:28:42.737003+09:00"
   }
 }
