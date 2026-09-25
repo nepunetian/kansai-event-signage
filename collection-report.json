@@ -51,11 +51,11 @@
     "list_links": 14,
     "sitemap_links": 0,
     "candidates": 14,
-    "parsed": 38,
+    "parsed": 39,
     "errors": 0,
     "notes": [
-      "dedicated: 14",
-      "listing fallback: 26"
+      "dedicated: 15",
+      "listing fallback: 27"
     ]
   },
   "ATC": {
@@ -96,9 +96,9 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 84,
-    "candidates": 88,
-    "parsed": 49,
+    "sitemap_links": 85,
+    "candidates": 89,
+    "parsed": 51,
     "errors": 0,
     "notes": [
       "dedicated: 19",
@@ -187,7 +187,7 @@
     "list_links": 15,
     "sitemap_links": 0,
     "candidates": 15,
-    "parsed": 1,
+    "parsed": 3,
     "errors": 0,
     "notes": []
   },
@@ -217,7 +217,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 128,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -228,10 +228,10 @@
     "list_links": 30,
     "sitemap_links": 43,
     "candidates": 66,
-    "parsed": 76,
+    "parsed": 74,
     "errors": 30,
     "notes": [
-      "listing fallback: 44",
+      "listing fallback: 42",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 205,
-    "generated_at": "2026-09-25T06:30:14.904862+09:00"
+    "final_events": 208,
+    "generated_at": "2026-09-26T06:30:23.823713+09:00"
   }
 }
