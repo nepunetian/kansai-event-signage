@@ -48,14 +48,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 14,
+    "list_links": 10,
     "sitemap_links": 0,
-    "candidates": 14,
-    "parsed": 39,
+    "candidates": 10,
+    "parsed": 28,
     "errors": 0,
     "notes": [
-      "dedicated: 15",
-      "listing fallback: 27"
+      "dedicated: 10",
+      "listing fallback: 19"
     ]
   },
   "ATC": {
@@ -98,7 +98,7 @@
     "list_links": 38,
     "sitemap_links": 85,
     "candidates": 89,
-    "parsed": 51,
+    "parsed": 50,
     "errors": 0,
     "notes": [
       "dedicated: 19",
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 24,
+    "parsed": 23,
     "errors": 0,
     "notes": [
-      "dedicated: 24",
-      "listing fallback: 24"
+      "dedicated: 23",
+      "listing fallback: 23"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 128,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 30,
+    "list_links": 27,
     "sitemap_links": 43,
-    "candidates": 66,
-    "parsed": 74,
+    "candidates": 62,
+    "parsed": 57,
     "errors": 30,
     "notes": [
-      "listing fallback: 42",
+      "listing fallback: 26",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 208,
-    "generated_at": "2026-09-26T06:30:23.823713+09:00"
+    "final_events": 190,
+    "generated_at": "2026-09-27T06:28:59.392245+09:00"
   }
 }
