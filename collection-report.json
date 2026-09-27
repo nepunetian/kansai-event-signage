@@ -48,14 +48,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 10,
+    "list_links": 7,
     "sitemap_links": 0,
-    "candidates": 10,
-    "parsed": 28,
+    "candidates": 7,
+    "parsed": 21,
     "errors": 0,
     "notes": [
-      "dedicated: 10",
-      "listing fallback: 19"
+      "dedicated: 7",
+      "listing fallback: 14"
     ]
   },
   "ATC": {
@@ -82,13 +82,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 10,
+    "list_links": 8,
     "sitemap_links": 0,
-    "candidates": 10,
-    "parsed": 20,
+    "candidates": 8,
+    "parsed": 16,
     "errors": 0,
     "notes": [
-      "listing fallback: 10",
+      "listing fallback: 8",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -187,7 +187,7 @@
     "list_links": 15,
     "sitemap_links": 0,
     "candidates": 15,
-    "parsed": 3,
+    "parsed": 1,
     "errors": 0,
     "notes": []
   },
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 23,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "dedicated: 23",
-      "listing fallback: 23"
+      "dedicated: 22",
+      "listing fallback: 22"
     ]
   },
   "Feel KOBE": {
-    "list_links": 30,
+    "list_links": 31,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 128,
+    "parsed": 127,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -227,11 +227,11 @@
   "京都観光Navi": {
     "list_links": 27,
     "sitemap_links": 43,
-    "candidates": 62,
-    "parsed": 57,
-    "errors": 30,
+    "candidates": 63,
+    "parsed": 59,
+    "errors": 31,
     "notes": [
-      "listing fallback: 26",
+      "listing fallback: 28",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 190,
-    "generated_at": "2026-09-27T06:28:59.392245+09:00"
+    "final_events": 183,
+    "generated_at": "2026-09-28T06:29:46.448906+09:00"
   }
 }
