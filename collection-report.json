@@ -3,18 +3,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 9,
+    "parsed": 8,
     "errors": 0,
     "notes": [
       "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
       "PDF fallback discovered: 6",
       "PDF レース: rows=93, kept=3",
-      "PDF ラリー: rows=67, kept=3",
+      "PDF ラリー: rows=67, kept=2",
       "PDF ジムカーナ: rows=0, kept=0",
       "PDF サーキットトライアル: rows=0, kept=0",
       "PDF ダートトライアル: rows=0, kept=0",
       "PDF カート: rows=32, kept=3",
-      "PDF fallback total rows=192, parsed=9",
+      "PDF fallback total rows=192, parsed=8",
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202609&heldDateTo=all&feature=all"
     ]
   },
@@ -82,13 +82,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 8,
+    "list_links": 10,
     "sitemap_links": 0,
-    "candidates": 8,
-    "parsed": 16,
+    "candidates": 10,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "listing fallback: 8",
+      "listing fallback: 10",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -192,7 +192,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 57,
+    "list_links": 56,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 2,
@@ -214,10 +214,10 @@
     ]
   },
   "Feel KOBE": {
-    "list_links": 31,
+    "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 127,
+    "parsed": 131,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 27,
+    "list_links": 33,
     "sitemap_links": 43,
-    "candidates": 63,
-    "parsed": 59,
+    "candidates": 69,
+    "parsed": 76,
     "errors": 31,
     "notes": [
-      "listing fallback: 28",
+      "listing fallback: 40",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 183,
-    "generated_at": "2026-09-28T06:29:46.448906+09:00"
+    "final_events": 192,
+    "generated_at": "2026-09-29T06:30:22.673623+09:00"
   }
 }
