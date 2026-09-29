@@ -96,9 +96,9 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 85,
-    "candidates": 89,
-    "parsed": 50,
+    "sitemap_links": 86,
+    "candidates": 90,
+    "parsed": 51,
     "errors": 0,
     "notes": [
       "dedicated: 19",
@@ -107,11 +107,11 @@
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 30,
+    "list_links": 29,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 0,
-    "errors": 16,
+    "parsed": 1,
+    "errors": 17,
     "notes": []
   },
   "大丸梅田店": {
@@ -192,7 +192,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 56,
+    "list_links": 54,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 2,
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 22,
+    "parsed": 24,
     "errors": 0,
     "notes": [
-      "dedicated: 22",
-      "listing fallback: 22"
+      "dedicated: 24",
+      "listing fallback: 24"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 131,
+    "parsed": 133,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -228,10 +228,10 @@
     "list_links": 33,
     "sitemap_links": 43,
     "candidates": 69,
-    "parsed": 76,
+    "parsed": 73,
     "errors": 31,
     "notes": [
-      "listing fallback: 40",
+      "listing fallback: 38",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 192,
-    "generated_at": "2026-09-29T06:30:22.673623+09:00"
+    "final_events": 193,
+    "generated_at": "2026-09-30T06:31:16.688282+09:00"
   }
 }
