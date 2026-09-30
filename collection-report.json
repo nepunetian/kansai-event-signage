@@ -48,14 +48,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 7,
+    "list_links": 6,
     "sitemap_links": 0,
-    "candidates": 7,
-    "parsed": 21,
+    "candidates": 6,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "dedicated: 7",
-      "listing fallback: 14"
+      "dedicated: 6",
+      "listing fallback: 12"
     ]
   },
   "ATC": {
@@ -82,13 +82,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 10,
+    "list_links": 9,
     "sitemap_links": 0,
-    "candidates": 10,
-    "parsed": 20,
+    "candidates": 9,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "listing fallback: 10",
+      "listing fallback: 9",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -98,11 +98,11 @@
     "list_links": 38,
     "sitemap_links": 86,
     "candidates": 90,
-    "parsed": 51,
+    "parsed": 50,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 44",
+      "dedicated: 17",
+      "listing fallback: 42",
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
@@ -111,7 +111,7 @@
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 1,
-    "errors": 17,
+    "errors": 16,
     "notes": []
   },
   "大丸梅田店": {
@@ -160,9 +160,9 @@
     ]
   },
   "JR西日本": {
-    "list_links": 29,
+    "list_links": 30,
     "sitemap_links": 0,
-    "candidates": 29,
+    "candidates": 30,
     "parsed": 0,
     "errors": 0,
     "notes": [
@@ -192,7 +192,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 54,
+    "list_links": 55,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 2,
@@ -206,18 +206,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 24,
+    "parsed": 26,
     "errors": 0,
     "notes": [
-      "dedicated: 24",
-      "listing fallback: 24"
+      "dedicated: 26",
+      "listing fallback: 26"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 133,
+    "parsed": 132,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 33,
+    "list_links": 32,
     "sitemap_links": 43,
     "candidates": 69,
-    "parsed": 73,
-    "errors": 31,
+    "parsed": 87,
+    "errors": 30,
     "notes": [
-      "listing fallback: 38",
+      "listing fallback: 50",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 193,
-    "generated_at": "2026-09-30T06:31:16.688282+09:00"
+    "final_events": 201,
+    "generated_at": "2026-10-01T06:33:16.101959+09:00"
   }
 }
