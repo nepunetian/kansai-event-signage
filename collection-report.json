@@ -98,7 +98,7 @@
     "list_links": 38,
     "sitemap_links": 88,
     "candidates": 92,
-    "parsed": 49,
+    "parsed": 47,
     "errors": 0,
     "notes": [
       "dedicated: 17",
@@ -118,8 +118,8 @@
     "list_links": 0,
     "sitemap_links": 104,
     "candidates": 104,
-    "parsed": 1,
-    "errors": 13,
+    "parsed": 0,
+    "errors": 14,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -192,10 +192,10 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 56,
+    "list_links": 57,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 4,
+    "parsed": 6,
     "errors": 0,
     "notes": [
       "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
@@ -206,11 +206,11 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 26,
+    "parsed": 27,
     "errors": 0,
     "notes": [
-      "dedicated: 26",
-      "listing fallback: 26"
+      "dedicated: 27",
+      "listing fallback: 27"
     ]
   },
   "Feel KOBE": {
@@ -245,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 199,
-    "generated_at": "2026-10-02T06:32:31.494129+09:00"
+    "final_events": 200,
+    "generated_at": "2026-10-03T06:31:26.181992+09:00"
   }
 }
