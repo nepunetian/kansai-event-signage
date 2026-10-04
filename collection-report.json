@@ -41,9 +41,8 @@
     "sitemap_links": 0,
     "candidates": 0,
     "parsed": 0,
-    "errors": 1,
+    "errors": 0,
     "notes": [
-      "list: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
     ]
@@ -97,8 +96,8 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 89,
-    "candidates": 93,
+    "sitemap_links": 88,
+    "candidates": 92,
     "parsed": 48,
     "errors": 0,
     "notes": [
@@ -207,11 +206,11 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 22,
+    "parsed": 23,
     "errors": 0,
     "notes": [
-      "dedicated: 22",
-      "listing fallback: 22"
+      "dedicated: 23",
+      "listing fallback: 23"
     ]
   },
   "Feel KOBE": {
@@ -229,10 +228,10 @@
     "list_links": 30,
     "sitemap_links": 43,
     "candidates": 67,
-    "parsed": 75,
+    "parsed": 80,
     "errors": 30,
     "notes": [
-      "listing fallback: 40",
+      "listing fallback: 46",
       "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
       "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
@@ -246,7 +245,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 199,
-    "generated_at": "2026-10-04T11:54:22.703528+09:00"
+    "final_events": 204,
+    "generated_at": "2026-10-05T06:44:44.932540+09:00"
   }
 }
