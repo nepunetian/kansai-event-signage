@@ -48,14 +48,14 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 12,
+    "list_links": 11,
     "sitemap_links": 0,
-    "candidates": 12,
-    "parsed": 36,
+    "candidates": 11,
+    "parsed": 33,
     "errors": 0,
     "notes": [
-      "dedicated: 12",
-      "listing fallback: 24"
+      "dedicated: 11",
+      "listing fallback: 22"
     ]
   },
   "ATC": {
@@ -96,8 +96,8 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 88,
-    "candidates": 92,
+    "sitemap_links": 87,
+    "candidates": 91,
     "parsed": 50,
     "errors": 0,
     "notes": [
@@ -217,7 +217,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 128,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 30,
+    "list_links": 27,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 204,
+    "parsed": 198,
     "errors": 0,
     "notes": [
-      "listing fallback: 36"
+      "listing fallback: 35"
     ]
   },
   "Peatix": {
@@ -244,6 +244,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-10-11T09:42:33.801365+09:00"
+    "generated_at": "2026-10-12T09:54:35.074027+09:00"
   }
 }
