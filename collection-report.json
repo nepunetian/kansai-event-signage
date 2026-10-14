@@ -98,7 +98,7 @@
     "list_links": 38,
     "sitemap_links": 87,
     "candidates": 91,
-    "parsed": 51,
+    "parsed": 50,
     "errors": 0,
     "notes": [
       "dedicated: 19",
@@ -107,11 +107,11 @@
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 28,
+    "list_links": 34,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 17,
+    "errors": 14,
     "notes": []
   },
   "大丸梅田店": {
@@ -119,7 +119,7 @@
     "sitemap_links": 104,
     "candidates": 104,
     "parsed": 0,
-    "errors": 13,
+    "errors": 14,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -228,10 +228,10 @@
     "list_links": 33,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 214,
+    "parsed": 210,
     "errors": 0,
     "notes": [
-      "listing fallback: 50"
+      "listing fallback: 48"
     ]
   },
   "Peatix": {
@@ -244,6 +244,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-10-13T11:42:46.503486+09:00"
+    "generated_at": "2026-10-14T09:24:38.696772+09:00"
   }
 }
