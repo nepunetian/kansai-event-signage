@@ -98,7 +98,7 @@
     "list_links": 38,
     "sitemap_links": 88,
     "candidates": 92,
-    "parsed": 52,
+    "parsed": 51,
     "errors": 0,
     "notes": [
       "dedicated: 20",
@@ -163,10 +163,9 @@
     "list_links": 29,
     "sitemap_links": 0,
     "candidates": 29,
-    "parsed": 2,
+    "parsed": 0,
     "errors": 0,
     "notes": [
-      "listing fallback: 2",
       "sitemap https://www.jr-odekake.net/sitemap.xml: HTTPError",
       "sitemap https://www.jr-odekake.net/sitemap_index.xml: HTTPError",
       "sitemap https://www.jr-odekake.net/sitemap-index.xml: HTTPError"
@@ -188,12 +187,12 @@
     "list_links": 15,
     "sitemap_links": 0,
     "candidates": 15,
-    "parsed": 3,
+    "parsed": 4,
     "errors": 0,
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 58,
+    "list_links": 57,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 6,
@@ -204,21 +203,21 @@
     ]
   },
   "セブンパーク天美": {
-    "list_links": 0,
+    "list_links": 3,
     "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 24,
+    "candidates": 3,
+    "parsed": 30,
     "errors": 0,
     "notes": [
-      "dedicated: 24",
-      "listing fallback: 24"
+      "dedicated: 27",
+      "listing fallback: 27"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 134,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -229,7 +228,7 @@
     "list_links": 33,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 217,
+    "parsed": 218,
     "errors": 0,
     "notes": [
       "listing fallback: 49"
@@ -245,6 +244,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-10-16T08:48:25.217699+09:00"
+    "generated_at": "2026-10-17T08:45:58.077996+09:00"
   }
 }
