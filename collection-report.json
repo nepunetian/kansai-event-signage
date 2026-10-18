@@ -51,11 +51,11 @@
     "list_links": 10,
     "sitemap_links": 0,
     "candidates": 10,
-    "parsed": 30,
+    "parsed": 28,
     "errors": 0,
     "notes": [
       "dedicated: 10",
-      "listing fallback: 20"
+      "listing fallback: 19"
     ]
   },
   "ATC": {
@@ -82,13 +82,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 12,
+    "list_links": 11,
     "sitemap_links": 0,
-    "candidates": 12,
-    "parsed": 24,
+    "candidates": 11,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "listing fallback: 12",
+      "listing fallback: 11",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -96,8 +96,8 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 88,
-    "candidates": 92,
+    "sitemap_links": 87,
+    "candidates": 91,
     "parsed": 51,
     "errors": 0,
     "notes": [
@@ -206,18 +206,18 @@
     "list_links": 4,
     "sitemap_links": 0,
     "candidates": 4,
-    "parsed": 32,
+    "parsed": 30,
     "errors": 0,
     "notes": [
-      "dedicated: 28",
-      "listing fallback: 28"
+      "dedicated: 26",
+      "listing fallback: 26"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 133,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 33,
+    "list_links": 29,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 221,
+    "parsed": 207,
     "errors": 0,
     "notes": [
-      "listing fallback: 52"
+      "listing fallback: 42"
     ]
   },
   "Peatix": {
@@ -244,6 +244,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-10-18T08:15:23.685680+09:00"
+    "generated_at": "2026-10-19T08:16:40.099602+09:00"
   }
 }
