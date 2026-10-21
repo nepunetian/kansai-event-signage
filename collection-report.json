@@ -48,26 +48,24 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 0,
+    "list_links": 12,
     "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 0,
-    "errors": 1,
+    "candidates": 12,
+    "parsed": 36,
+    "errors": 0,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.atc-co.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.atc-co.com', port=443) at 0x7fb3cea41e50>, 'Connection to www.atc-co.com timed out. (connect timeout=30)'))"
+      "dedicated: 14",
+      "listing fallback: 25"
     ]
   },
   "ATC": {
     "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
+    "sitemap_links": 180,
+    "candidates": 180,
     "parsed": 0,
-    "errors": 1,
+    "errors": 0,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.atc-co.com', port=443): Max retries exceeded with url: /event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.atc-co.com', port=443) at 0x7fb3cea43aa0>, 'Connection to www.atc-co.com timed out. (connect timeout=30)'))",
-      "sitemap https://www.atc-co.com/sitemap.xml: ConnectTimeout",
-      "sitemap https://www.atc-co.com/sitemap_index.xml: ConnectTimeout",
-      "sitemap https://www.atc-co.com/sitemap-index.xml: ConnectTimeout"
+      "sitemap https://www.atc-co.com/sitemap-index.xml: HTTPError"
     ]
   },
   "グランフロント大阪": {
@@ -98,22 +96,22 @@
   },
   "LUCUA大阪": {
     "list_links": 38,
-    "sitemap_links": 87,
-    "candidates": 91,
-    "parsed": 47,
+    "sitemap_links": 86,
+    "candidates": 90,
+    "parsed": 48,
     "errors": 0,
     "notes": [
-      "dedicated: 18",
-      "listing fallback: 41",
+      "dedicated: 19",
+      "listing fallback: 42",
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 34,
+    "list_links": 32,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 14,
+    "errors": 16,
     "notes": []
   },
   "大丸梅田店": {
@@ -121,7 +119,7 @@
     "sitemap_links": 104,
     "candidates": 104,
     "parsed": 0,
-    "errors": 15,
+    "errors": 14,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -151,16 +149,14 @@
     ]
   },
   "大阪オートメッセ": {
-    "list_links": 0,
+    "list_links": 1,
     "sitemap_links": 0,
-    "candidates": 0,
+    "candidates": 1,
     "parsed": 0,
-    "errors": 1,
+    "errors": 0,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.automesse.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.automesse.jp', port=443) at 0x7fb3cf0074d0>, 'Connection to www.automesse.jp timed out. (connect timeout=30)'))",
-      "sitemap https://www.automesse.jp/sitemap.xml: ConnectTimeout",
-      "sitemap https://www.automesse.jp/sitemap_index.xml: ConnectTimeout",
-      "sitemap https://www.automesse.jp/sitemap-index.xml: ConnectTimeout"
+      "sitemap https://www.automesse.jp/sitemap_index.xml: HTTPError",
+      "sitemap https://www.automesse.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "JR西日本": {
@@ -210,18 +206,18 @@
     "list_links": 4,
     "sitemap_links": 0,
     "candidates": 4,
-    "parsed": 30,
+    "parsed": 31,
     "errors": 0,
     "notes": [
-      "dedicated: 26",
-      "listing fallback: 26"
+      "dedicated: 27",
+      "listing fallback: 27"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 126,
+    "parsed": 125,
     "errors": 0,
     "notes": [
       "listing fallback: 30",
@@ -229,11 +225,11 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 32,
+    "list_links": 31,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 207,
-    "errors": 1,
+    "parsed": 209,
+    "errors": 0,
     "notes": [
       "listing fallback: 46"
     ]
@@ -248,6 +244,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-10-20T09:32:10.034113+09:00"
+    "generated_at": "2026-10-21T09:01:07.259732+09:00"
   }
 }
