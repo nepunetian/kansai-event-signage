@@ -3,18 +3,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 6,
+    "parsed": 5,
     "errors": 0,
     "notes": [
       "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
       "PDF fallback discovered: 6",
       "PDF レース: rows=92, kept=2",
-      "PDF ラリー: rows=69, kept=2",
+      "PDF ラリー: rows=69, kept=1",
       "PDF ジムカーナ: rows=0, kept=0",
       "PDF サーキットトライアル: rows=0, kept=0",
       "PDF ダートトライアル: rows=0, kept=0",
       "PDF カート: rows=32, kept=2",
-      "PDF fallback total rows=193, parsed=6",
+      "PDF fallback total rows=193, parsed=5",
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202610&heldDateTo=all&feature=all"
     ]
   },
@@ -41,8 +41,9 @@
     "sitemap_links": 0,
     "candidates": 0,
     "parsed": 0,
-    "errors": 0,
+    "errors": 1,
     "notes": [
+      "list: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
     ]
@@ -69,13 +70,13 @@
     ]
   },
   "グランフロント大阪": {
-    "list_links": 12,
+    "list_links": 0,
     "sitemap_links": 0,
-    "candidates": 12,
-    "parsed": 24,
-    "errors": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 1,
     "notes": [
-      "listing fallback: 12",
+      "list: 503 Server Error: Service Unavailable for url: https://www.grandfront-osaka.jp/event/",
       "sitemap https://www.grandfront-osaka.jp/sitemap.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap-index.xml: HTTPError"
@@ -95,15 +96,15 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 38,
+    "list_links": 0,
     "sitemap_links": 86,
-    "candidates": 90,
-    "parsed": 50,
-    "errors": 0,
+    "candidates": 86,
+    "parsed": 3,
+    "errors": 7,
     "notes": [
-      "dedicated: 20",
-      "listing fallback: 44",
-      "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
+      "list: HTTPSConnectionPool(host='www.lucua.jp', port=443): Read timed out. (read timeout=30)",
+      "sitemap https://www.lucua.jp/sitemap.xml: ReadTimeout",
+      "sitemap https://www.lucua.jp/sitemap-index.xml: ReadTimeout"
     ]
   },
   "阪急うめだ本店": {
@@ -111,7 +112,7 @@
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 16,
+    "errors": 17,
     "notes": []
   },
   "大丸梅田店": {
@@ -206,11 +207,11 @@
     "list_links": 3,
     "sitemap_links": 0,
     "candidates": 3,
-    "parsed": 20,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "dedicated: 17",
-      "listing fallback: 17"
+      "dedicated: 19",
+      "listing fallback: 19"
     ]
   },
   "Feel KOBE": {
@@ -220,18 +221,18 @@
     "parsed": 132,
     "errors": 0,
     "notes": [
-      "listing fallback: 30",
+      "listing fallback: 34",
       "sitemap https://www.feel-kobe.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "京都観光Navi": {
-    "list_links": 33,
+    "list_links": 34,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 199,
+    "parsed": 201,
     "errors": 0,
     "notes": [
-      "listing fallback: 40"
+      "listing fallback: 42"
     ]
   },
   "Peatix": {
@@ -244,6 +245,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-10-26T08:23:41.699507+09:00"
+    "generated_at": "2026-10-27T09:39:24.732600+09:00"
   }
 }
