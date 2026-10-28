@@ -18,16 +18,6 @@
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202610&heldDateTo=all&feature=all"
     ]
   },
-  "インテックス大阪専用": {
-    "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 9,
-    "errors": 0,
-    "notes": [
-      "dedicated total: 9"
-    ]
-  },
   "大阪観光局": {
     "list_links": 0,
     "sitemap_links": 2,
@@ -43,9 +33,10 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
-      "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7d5673169280>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
+      "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
+      "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "ATCトップ": {
@@ -96,23 +87,23 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 0,
-    "sitemap_links": 86,
-    "candidates": 86,
-    "parsed": 3,
-    "errors": 7,
+    "list_links": 38,
+    "sitemap_links": 85,
+    "candidates": 89,
+    "parsed": 51,
+    "errors": 0,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.lucua.jp', port=443): Read timed out. (read timeout=30)",
-      "sitemap https://www.lucua.jp/sitemap.xml: ReadTimeout",
-      "sitemap https://www.lucua.jp/sitemap-index.xml: ReadTimeout"
+      "dedicated: 20",
+      "listing fallback: 45",
+      "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 32,
+    "list_links": 31,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 17,
+    "errors": 16,
     "notes": []
   },
   "大丸梅田店": {
@@ -120,7 +111,7 @@
     "sitemap_links": 104,
     "candidates": 104,
     "parsed": 0,
-    "errors": 14,
+    "errors": 13,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -207,18 +198,18 @@
     "list_links": 3,
     "sitemap_links": 0,
     "candidates": 3,
-    "parsed": 22,
+    "parsed": 24,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 19"
+      "dedicated: 21",
+      "listing fallback: 21"
     ]
   },
   "Feel KOBE": {
     "list_links": 31,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 132,
+    "parsed": 136,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -229,7 +220,7 @@
     "list_links": 34,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 201,
+    "parsed": 200,
     "errors": 0,
     "notes": [
       "listing fallback: 42"
@@ -245,6 +236,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-10-27T09:39:24.732600+09:00"
+    "generated_at": "2026-10-28T09:42:37.725641+09:00"
   }
 }
