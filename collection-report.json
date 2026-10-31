@@ -9,12 +9,12 @@
       "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
       "PDF fallback discovered: 6",
       "PDF レース: rows=92, kept=2",
-      "PDF ラリー: rows=69, kept=1",
+      "PDF ラリー: rows=70, kept=1",
       "PDF ジムカーナ: rows=0, kept=0",
       "PDF サーキットトライアル: rows=0, kept=0",
       "PDF ダートトライアル: rows=0, kept=0",
       "PDF カート: rows=32, kept=2",
-      "PDF fallback total rows=193, parsed=5",
+      "PDF fallback total rows=194, parsed=5",
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202610&heldDateTo=all&feature=all"
     ]
   },
@@ -35,14 +35,14 @@
     "notes": []
   },
   "ATCトップ": {
-    "list_links": 8,
+    "list_links": 15,
     "sitemap_links": 0,
-    "candidates": 8,
-    "parsed": 21,
+    "candidates": 15,
+    "parsed": 42,
     "errors": 0,
     "notes": [
-      "dedicated: 7",
-      "listing fallback: 14"
+      "dedicated: 14",
+      "listing fallback: 28"
     ]
   },
   "ATC": {
@@ -83,9 +83,9 @@
   },
   "LUCUA大阪": {
     "list_links": 14,
-    "sitemap_links": 63,
-    "candidates": 63,
-    "parsed": 71,
+    "sitemap_links": 62,
+    "candidates": 62,
+    "parsed": 70,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -172,17 +172,18 @@
     "list_links": 15,
     "sitemap_links": 0,
     "candidates": 15,
-    "parsed": 4,
+    "parsed": 5,
     "errors": 0,
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 54,
+    "list_links": 56,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 3,
+    "parsed": 10,
     "errors": 0,
     "notes": [
+      "listing fallback: 6",
       "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.nankai.co.jp/sitemap-index.xml: HTTPError"
     ]
@@ -191,18 +192,18 @@
     "list_links": 3,
     "sitemap_links": 0,
     "candidates": 3,
-    "parsed": 24,
+    "parsed": 25,
     "errors": 0,
     "notes": [
-      "dedicated: 21",
-      "listing fallback: 21"
+      "dedicated: 22",
+      "listing fallback: 22"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 132,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -210,13 +211,16 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 34,
-    "sitemap_links": 180,
-    "candidates": 180,
-    "parsed": 195,
-    "errors": 0,
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 0,
+    "errors": 1,
     "notes": [
-      "listing fallback: 40"
+      "list: 403 Client Error: Forbidden for url: https://ja.kyoto.travel/event/",
+      "sitemap https://ja.kyoto.travel/sitemap.xml: HTTPError",
+      "sitemap https://ja.kyoto.travel/sitemap_index.xml: HTTPError",
+      "sitemap https://ja.kyoto.travel/sitemap-index.xml: HTTPError"
     ]
   },
   "Peatix": {
@@ -228,7 +232,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 280,
-    "generated_at": "2026-10-30T10:08:21.914773+09:00"
+    "final_events": 156,
+    "generated_at": "2026-10-31T09:51:13.157403+09:00"
   }
 }
