@@ -15,7 +15,7 @@
       "PDF ダートトライアル: rows=0, kept=0",
       "PDF カート: rows=32, kept=2",
       "PDF fallback total rows=194, parsed=5",
-      "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202610&heldDateTo=all&feature=all"
+      "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202611&heldDateTo=all&feature=all"
     ]
   },
   "大阪観光局": {
@@ -35,14 +35,14 @@
     "notes": []
   },
   "ATCトップ": {
-    "list_links": 15,
+    "list_links": 14,
     "sitemap_links": 0,
-    "candidates": 15,
-    "parsed": 42,
+    "candidates": 14,
+    "parsed": 39,
     "errors": 0,
     "notes": [
-      "dedicated: 14",
-      "listing fallback: 28"
+      "dedicated: 13",
+      "listing fallback: 26"
     ]
   },
   "ATC": {
@@ -69,22 +69,22 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 11,
+    "list_links": 10,
     "sitemap_links": 0,
-    "candidates": 11,
-    "parsed": 22,
+    "candidates": 10,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "listing fallback: 11",
+      "listing fallback: 10",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
     ]
   },
   "LUCUA大阪": {
-    "list_links": 14,
-    "sitemap_links": 62,
-    "candidates": 62,
+    "list_links": 13,
+    "sitemap_links": 59,
+    "candidates": 59,
     "parsed": 70,
     "errors": 0,
     "notes": [
@@ -180,7 +180,7 @@
     "list_links": 56,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 10,
+    "parsed": 9,
     "errors": 0,
     "notes": [
       "listing fallback: 6",
@@ -192,18 +192,18 @@
     "list_links": 3,
     "sitemap_links": 0,
     "candidates": 3,
-    "parsed": 25,
+    "parsed": 23,
     "errors": 0,
     "notes": [
-      "dedicated: 22",
-      "listing fallback: 22"
+      "dedicated: 20",
+      "listing fallback: 20"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 130,
+    "parsed": 131,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -232,7 +232,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 156,
-    "generated_at": "2026-10-31T09:51:13.157403+09:00"
+    "final_events": 151,
+    "generated_at": "2026-11-01T09:11:57.680645+09:00"
   }
 }
