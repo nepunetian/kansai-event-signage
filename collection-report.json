@@ -38,11 +38,11 @@
     "list_links": 14,
     "sitemap_links": 0,
     "candidates": 14,
-    "parsed": 39,
+    "parsed": 36,
     "errors": 0,
     "notes": [
-      "dedicated: 13",
-      "listing fallback: 26"
+      "dedicated: 12",
+      "listing fallback: 24"
     ]
   },
   "ATC": {
@@ -69,20 +69,20 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 10,
+    "list_links": 7,
     "sitemap_links": 0,
-    "candidates": 10,
-    "parsed": 20,
+    "candidates": 7,
+    "parsed": 14,
     "errors": 0,
     "notes": [
-      "listing fallback: 10",
+      "listing fallback: 7",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
     ]
   },
   "LUCUA大阪": {
-    "list_links": 13,
+    "list_links": 12,
     "sitemap_links": 59,
     "candidates": 59,
     "parsed": 70,
@@ -104,7 +104,7 @@
     "sitemap_links": 104,
     "candidates": 104,
     "parsed": 0,
-    "errors": 13,
+    "errors": 14,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -189,21 +189,21 @@
     ]
   },
   "セブンパーク天美": {
-    "list_links": 3,
+    "list_links": 1,
     "sitemap_links": 0,
-    "candidates": 3,
-    "parsed": 23,
+    "candidates": 1,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "dedicated: 20",
-      "listing fallback: 20"
+      "dedicated: 21",
+      "listing fallback: 21"
     ]
   },
   "Feel KOBE": {
-    "list_links": 30,
+    "list_links": 32,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 131,
+    "parsed": 134,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -232,7 +232,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 151,
-    "generated_at": "2026-11-01T09:11:57.680645+09:00"
+    "final_events": 149,
+    "generated_at": "2026-11-02T09:47:07.386658+09:00"
   }
 }
