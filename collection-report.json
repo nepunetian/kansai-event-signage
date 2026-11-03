@@ -69,22 +69,22 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 7,
+    "list_links": 8,
     "sitemap_links": 0,
-    "candidates": 7,
-    "parsed": 14,
+    "candidates": 8,
+    "parsed": 16,
     "errors": 0,
     "notes": [
-      "listing fallback: 7",
+      "listing fallback: 8",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
     ]
   },
   "LUCUA大阪": {
-    "list_links": 12,
-    "sitemap_links": 59,
-    "candidates": 59,
+    "list_links": 14,
+    "sitemap_links": 60,
+    "candidates": 60,
     "parsed": 70,
     "errors": 0,
     "notes": [
@@ -177,7 +177,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 56,
+    "list_links": 55,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 9,
@@ -192,18 +192,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 22,
+    "parsed": 23,
     "errors": 0,
     "notes": [
-      "dedicated: 21",
-      "listing fallback: 21"
+      "dedicated: 22",
+      "listing fallback: 22"
     ]
   },
   "Feel KOBE": {
-    "list_links": 32,
+    "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 134,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -232,7 +232,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 149,
-    "generated_at": "2026-11-02T09:47:07.386658+09:00"
+    "final_events": 151,
+    "generated_at": "2026-11-03T12:00:29.364141+09:00"
   }
 }
