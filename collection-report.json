@@ -82,7 +82,7 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 14,
+    "list_links": 12,
     "sitemap_links": 60,
     "candidates": 60,
     "parsed": 70,
@@ -92,7 +92,7 @@
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 31,
+    "list_links": 29,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
@@ -180,7 +180,7 @@
     "list_links": 55,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 9,
+    "parsed": 10,
     "errors": 0,
     "notes": [
       "listing fallback: 6",
@@ -203,7 +203,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 130,
+    "parsed": 131,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -232,7 +232,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 151,
-    "generated_at": "2026-11-03T12:00:29.364141+09:00"
+    "final_events": 149,
+    "generated_at": "2026-11-04T10:25:40.293106+09:00"
   }
 }
