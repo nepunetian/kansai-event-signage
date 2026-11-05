@@ -82,10 +82,10 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 12,
-    "sitemap_links": 60,
-    "candidates": 60,
-    "parsed": 70,
+    "list_links": 14,
+    "sitemap_links": 62,
+    "candidates": 62,
+    "parsed": 72,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -180,10 +180,9 @@
     "list_links": 55,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 10,
+    "parsed": 3,
     "errors": 0,
     "notes": [
-      "listing fallback: 6",
       "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.nankai.co.jp/sitemap-index.xml: HTTPError"
     ]
@@ -233,6 +232,6 @@
   },
   "TOTAL": {
     "final_events": 149,
-    "generated_at": "2026-11-04T10:25:40.293106+09:00"
+    "generated_at": "2026-11-05T10:33:59.333052+09:00"
   }
 }

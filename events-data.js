@@ -309,7 +309,7 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.gfo-sc.jp/files/20261020/fc5a9eb5a9444b9b42dad5f75574284c5444541d.jpeg"
   },
   {
-    "title": "『無職転生　～蛇足編～』完結記念オンリーショップ",
+    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
     "start_date": "2026-10-24",
     "end_date": "2026-11-29",
     "area": "大阪",
@@ -319,16 +319,16 @@ window.EVENT_DATA = [
     "tags": [
       "アニメ・ゲーム",
       "大阪",
-      "『無職転生 ～蛇足編～』完結記念"
+      "『崩壊：スターレイル』星神★アッハ 実装記念"
     ],
-    "description": "＜池袋本店＞2026年11月28日(土)・11月29日(日)入場整理券　先着配布のお知らせ2026年11月28日(土)・11月29日(日)のオンリーショップ会場へのご入場につきましては、安全上の都合の為、LINEアプリを使用した入場整理券の配布をおこないます。該当日の入場には整理券が必要となりますので注意事項をご確認のうえ、入場整理券を取",
-    "image_url": "images/f02ce1c8af9b2eed3c.webp",
+    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
+    "image_url": "images/25bec4ac93c1261377.webp",
     "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/51764/",
+    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
     "categories": [
       "anime"
     ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1793150678-36ab9272a7e884aac02e3f4ae44d032e.jpg"
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792062501-2ca7ac54361dbb1888b6fe00765c0f03-1920x1356.jpg"
   },
   {
     "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
@@ -355,6 +355,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
   },
   {
+    "title": "『無職転生　～蛇足編～』完結記念オンリーショップ",
+    "start_date": "2026-10-24",
+    "end_date": "2026-11-29",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪",
+      "『無職転生 ～蛇足編～』完結記念"
+    ],
+    "description": "＜池袋本店＞2026年11月28日(土)・11月29日(日)入場整理券　先着配布のお知らせ2026年11月28日(土)・11月29日(日)のオンリーショップ会場へのご入場につきましては、安全上の都合の為、LINEアプリを使用した入場整理券の配布をおこないます。該当日の入場には整理券が必要となりますので注意事項をご確認のうえ、入場整理券を取",
+    "image_url": "images/f02ce1c8af9b2eed3c.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/51764/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1793150678-36ab9272a7e884aac02e3f4ae44d032e.jpg"
+  },
+  {
     "title": "TVアニメ『ヒカルの碁』25周年記念オンリーショップ～盤上絵巻～byスタジオぴえろストア",
     "start_date": "2026-10-24",
     "end_date": "2026-11-29",
@@ -378,28 +400,6 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1790661403-92f7d267817276a1a25507330fa622ba.jpg"
-  },
-  {
-    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
-    "start_date": "2026-10-24",
-    "end_date": "2026-11-29",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪",
-      "『崩壊：スターレイル』星神★アッハ 実装記念"
-    ],
-    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
-    "image_url": "images/25bec4ac93c1261377.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792062501-2ca7ac54361dbb1888b6fe00765c0f03-1920x1356.jpg"
   },
   {
     "title": "文字化化 Star Wandering オンリーショップ",
@@ -467,27 +467,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/09/1788416028-28366aaba7c175da75836ab4e66fa584.jpg"
   },
   {
-    "title": "光文社アニメイトBLフェア～動物園デート編～",
-    "start_date": "2026-10-24",
-    "end_date": "2026-11-29",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪"
-    ],
-    "description": "開催期間：2026年8月29日(土)～2026年9月13日(日)開催店舗：渋谷店応援店舗：池袋本店、仙台店、札幌店、名古屋店、秋葉原店、横浜ビブレ店、大阪日本橋店、京都店、福岡パルコ店、広島店、通販",
-    "image_url": "images/91fa64f0538531a640.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/46191/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/06/1782190119-2f6a1765f01b52d039da6fdf13643864-1920x1356.jpg"
-  },
-  {
     "title": "『ホロライブプロダクション ART JAM!!!フェア in animate』オンリーショップ",
     "start_date": "2026-10-24",
     "end_date": "2026-11-29",
@@ -507,6 +486,27 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/07/1785319197-055be28c5925abdf76416544542fe651.jpg"
+  },
+  {
+    "title": "光文社アニメイトBLフェア～動物園デート編～",
+    "start_date": "2026-10-24",
+    "end_date": "2026-11-29",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪"
+    ],
+    "description": "開催期間：2026年8月29日(土)～2026年9月13日(日)開催店舗：渋谷店応援店舗：池袋本店、仙台店、札幌店、名古屋店、秋葉原店、横浜ビブレ店、大阪日本橋店、京都店、福岡パルコ店、広島店、通販",
+    "image_url": "images/91fa64f0538531a640.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/46191/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/06/1782190119-2f6a1765f01b52d039da6fdf13643864-1920x1356.jpg"
   },
   {
     "title": "細田守の原点/展(大阪)",
@@ -631,6 +631,32 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/36/l/610536.jpg"
   },
   {
+    "title": "「神戸・灘ラーメンスタンプラリー」灘区内各所 2026年11月4日（水） ~2027年1月31日（日） ラーメン激戦区として知られる六甲道エリアをはじめ、多くのラーメン店が集まる灘区で、「神戸・灘ラーメンスタンプラリー」",
+    "start_date": "2026-11-04",
+    "end_date": "2027-01-31",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tech",
+    "score": 99,
+    "tags": [
+      "AI・IT",
+      "ガジェット",
+      "クルマ",
+      "食・グルメ",
+      "兵庫"
+    ],
+    "description": "開催中 「神戸・灘ラーメンスタンプラリー」灘区内各所 2026年11月4日（水） ~2027年1月31日（日） ラーメン激戦区として知られる六甲道エリアをはじめ、多くのラーメン店が集まる灘区で、「神戸・灘ラーメンスタンプラリー」が開催されます。区内の対象店舗32店で飲食し、店内の二次元コードをスマートフォンで読み取るとスタンプを集められる",
+    "image_url": "images/fc6d48c3b985bf5d40.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38751/",
+    "categories": [
+      "tech",
+      "car",
+      "food"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kobe-nada-ramen-stamp-rally-01-724x1024.jpg"
+  },
+  {
     "title": "深煎り処 お珈琲屋 凩(こがらし)",
     "start_date": "2026-11-05",
     "end_date": "2026-11-05",
@@ -677,6 +703,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.gfo-sc.jp/files/20261027/93e19e12915c8b9977046679598d27b58c0106b5.jpg"
+  },
+  {
+    "title": "極メロンパン",
+    "start_date": "2026-11-06",
+    "end_date": "2026-11-06",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1階 マツモトキヨシ前（無印良品側）",
+    "category": "food",
+    "score": 99,
+    "tags": [
+      "食・グルメ",
+      "パン",
+      "大阪",
+      "天美",
+      "商業施設"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 極メロンパン EVENT | イベント 掲載日：2026/11/4 ※画像をクリックすると拡大表示されます 食べる 極メロン",
+    "image_url": "images/7b12052b9e1abe9354.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014040",
+    "categories": [
+      "food"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014040/img_3sa6apog3bac4.jpg"
   },
   {
     "title": "「旧居留地テラスデイズ」旧居留地 2026年11月6日（金） ~2026年11月7日（土） 神戸旧居留地エリアでの豊かな過ごし方を提案する社会実験として、昨年初めて開催された「旧居留地テラスデイズ」。昨年の好評を受け、今",
@@ -773,28 +823,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5920-file.jpg"
   },
   {
-    "title": "11月8日・14日「岸和田城下町 秋のうまいもんフェスタと城あかり」を開催します！",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-08",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "food",
-    "score": 99,
-    "tags": [
-      "食・グルメ",
-      "フェス",
-      "大阪"
-    ],
-    "description": "グルメ カルチャー 海 11月8日・14日「岸和田城下町 秋のうまいもんフェスタと城あかり」を開催します！ 和泉シティプラザほかで「第48回和泉商工フェスタ」開催 N.KLASS中百舌鳥における３周年スクラッチイベントを開催！ カルチャー 泉ヶ丘の市民文化祭「GAOフェス2026」開催！ 海 「磯の浦マーケットVol.10」が11月7日（",
-    "image_url": "images/18038d6e17913faf14.jpg",
-    "source": "南海電鉄",
-    "source_url": "https://www.nankai.co.jp/community/natts/event/1108_kishiwada_autumnfestival/",
-    "categories": [
-      "food"
-    ],
-    "original_image_url": "https://www.nankai.co.jp/community/natts/api/wp-content/uploads/2026/10/35511789d360c12a651dc3c93b5007c6-scaled.jpg"
-  },
-  {
     "title": "【中村ゆりか】1st Full Album『PiNK MOON』リリース記念イベント 11/7(土) in 大阪・天美",
     "start_date": "2026-11-07",
     "end_date": "2026-11-07",
@@ -867,28 +895,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013960/img_3s6unkl86ug48.png"
   },
   {
-    "title": "11月8日・14日「岸和田城下町 秋のうまいもんフェスタと城あかり」を開催します！",
-    "start_date": "2026-11-08",
-    "end_date": "2026-11-08",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "大阪"
-    ],
-    "description": "11月8日・14日「岸和田城下町 秋のうまいもんフェスタと城あかり」を開催します！ | 南大阪・和歌山のおでかけ情報 Natts(ナッツ) 企業情報 IR情報 採用情報 よくあるご質問 Language English 繁体中文 简体中文 한국 English 日本語 English 簡体中文 繁体中文 한국 検索 キーワードで検索 検索",
-    "image_url": "images/3d6a4c4538fd54edc5.jpg",
-    "source": "南海電鉄",
-    "source_url": "https://www.nankai.co.jp/community/natts/event/1108_kishiwada_autumnfestival/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.nankai.co.jp/community/natts/api/wp-content/uploads/2026/10/35511789d360c12a651dc3c93b5007c6-scaled.jpg?param=261030001208"
-  },
-  {
     "title": "【Girls2】2026年11月11日リリースNEW EP『EASY』リリースイベント11/8（日）[大阪府]セブンパーク天美決定！",
     "start_date": "2026-11-08",
     "end_date": "2026-11-08",
@@ -933,29 +939,6 @@ window.EVENT_DATA = [
       "food"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/index01.png"
-  },
-  {
-    "title": "「第3回 須喜磨祭（すきまさい）」名谷駅前広場 2026年11月8日（日） ~2026年11月8日（日） 地域のつながりから生まれたお祭り「第3回 須喜磨祭（すきまさい）」が開催されます🎈 子ども向けのゲームやワークショ",
-    "start_date": "2026-11-08",
-    "end_date": "2026-11-08",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "フェス",
-      "兵庫",
-      "駅"
-    ],
-    "description": "ップ、音楽など、幅広い世代が楽しめる企画が予定されています。子どもたちがお小遣いで気軽に遊べるよう、ゲームやワークショップはできる限り低価格に。運営スタッフも全員ボランティアで、地域への思いが詰まったお祭りです。 今年はテーマソングも制作され、各音楽配信サービスで配信中。地域の人たちと一緒に楽しめるお祭りに、参加してみてはいかがでしょうか",
-    "image_url": "images/322f6a49f1827aabf6.png",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38336/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/9d720ca3e6fd5cfff2e508739b26cf65-1-773x1024.png"
   },
   {
     "title": "焼きたてデニッシュ専門店DANESE",
@@ -2288,30 +2271,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014027/img_3qd5rt66ebs4k.jpg"
   },
   {
-    "title": "ベビーカステラ 和蘭陀焼き",
-    "start_date": "2026-12-04",
-    "end_date": "2026-12-04",
-    "area": "大阪",
-    "venue": "セブンパーク天美 1階マツモトキヨシ前(ロフト側)",
-    "category": "tourism",
-    "score": 85,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント ベビーカステラ 和蘭陀焼き EVENT | イベント 掲載日：2026/11/4 ※画像をクリックすると拡大表示されます 食",
-    "image_url": "images/796b234503718a371e.jpg",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100013705",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013705/img_3r43cotmlomc4.jpg"
-  },
-  {
     "title": "有馬の秘宝と月への舟　第２章",
     "start_date": "2026-07-01",
     "end_date": "2026-12-31",
@@ -2473,6 +2432,29 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/62/l/614462.jpg"
   },
   {
+    "title": "ここにあるかも、わたしのクリスマス。 LUCUA osaka CHRISTMAS 2026",
+    "start_date": "2026-11-04",
+    "end_date": "2026-12-25",
+    "area": "大阪",
+    "venue": "LUCUA osaka",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設",
+      "LUCUA osaka"
+    ],
+    "description": "イベント紹介  今年はどう過ごす？みんなのクリスマスツリー            期間      2026/11/4（水）～12/25（金）              会場      ルクア イーレ3F 出入口      クリスマスの過ごし方は、人それぞれ。いろんな過ごし方が描かれたオーナメントの中",
+    "image_url": "images/ab6930b56264638fe6.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/xmas2026.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-4857-file.jpg"
+  },
+  {
     "title": "テント ポップアップショップ",
     "start_date": "2026-11-06",
     "end_date": "2026-11-15",
@@ -2517,6 +2499,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5048-file.png"
+  },
+  {
+    "title": "クリンクルクリンクルクリンクル ポップアップショップ",
+    "start_date": "2026-11-12",
+    "end_date": "2026-11-18",
+    "area": "大阪",
+    "venue": "ルクア 3F イベントスペース",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "ポップアップ",
+      "大阪",
+      "商業施設",
+      "クリンクルクリンクルクリンクル"
+    ],
+    "description": "その時々に感じる感覚を、素直に自由に魔法をかけるように表現。自分らしく纏える、愛に溢れた服を提案します。【instagram】 : https://www.instagram.com/crinkle.official/",
+    "image_url": "images/da391af65aa9b96a60.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/p-1956080.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5833-file.jpg"
   },
   {
     "title": "自分なりの型がきっと見つかる「まゆげ道場」イベントを開催！",
