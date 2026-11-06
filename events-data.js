@@ -331,52 +331,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792062501-2ca7ac54361dbb1888b6fe00765c0f03-1920x1356.jpg"
   },
   {
-    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
-    "start_date": "2026-10-24",
-    "end_date": "2026-11-29",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "ポップアップ",
-      "大阪",
-      "ちみけもますこっと",
-      "『ちみけもますこっと』"
-    ],
-    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
-    "image_url": "images/edbeb2aee6831a3610.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
-  },
-  {
-    "title": "『無職転生　～蛇足編～』完結記念オンリーショップ",
-    "start_date": "2026-10-24",
-    "end_date": "2026-11-29",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪",
-      "『無職転生 ～蛇足編～』完結記念"
-    ],
-    "description": "＜池袋本店＞2026年11月28日(土)・11月29日(日)入場整理券　先着配布のお知らせ2026年11月28日(土)・11月29日(日)のオンリーショップ会場へのご入場につきましては、安全上の都合の為、LINEアプリを使用した入場整理券の配布をおこないます。該当日の入場には整理券が必要となりますので注意事項をご確認のうえ、入場整理券を取",
-    "image_url": "images/f02ce1c8af9b2eed3c.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/51764/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1793150678-36ab9272a7e884aac02e3f4ae44d032e.jpg"
-  },
-  {
     "title": "TVアニメ『ヒカルの碁』25周年記念オンリーショップ～盤上絵巻～byスタジオぴえろストア",
     "start_date": "2026-10-24",
     "end_date": "2026-11-29",
@@ -402,6 +356,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1790661403-92f7d267817276a1a25507330fa622ba.jpg"
   },
   {
+    "title": "『無職転生　～蛇足編～』完結記念オンリーショップ",
+    "start_date": "2026-10-24",
+    "end_date": "2026-11-29",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪",
+      "『無職転生 ～蛇足編～』完結記念"
+    ],
+    "description": "＜池袋本店＞2026年11月28日(土)・11月29日(日)入場整理券　先着配布のお知らせ2026年11月28日(土)・11月29日(日)のオンリーショップ会場へのご入場につきましては、安全上の都合の為、LINEアプリを使用した入場整理券の配布をおこないます。該当日の入場には整理券が必要となりますので注意事項をご確認のうえ、入場整理券を取",
+    "image_url": "images/f02ce1c8af9b2eed3c.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/51764/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1793150678-36ab9272a7e884aac02e3f4ae44d032e.jpg"
+  },
+  {
     "title": "文字化化 Star Wandering オンリーショップ",
     "start_date": "2026-10-24",
     "end_date": "2026-11-29",
@@ -422,6 +398,30 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2027/10/1791443132-fa4a7d3a358e0430a0c2f322876269d1-1920x1353.jpg"
+  },
+  {
+    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
+    "start_date": "2026-10-24",
+    "end_date": "2026-11-29",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "ポップアップ",
+      "大阪",
+      "ちみけもますこっと",
+      "『ちみけもますこっと』"
+    ],
+    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
+    "image_url": "images/edbeb2aee6831a3610.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
   },
   {
     "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
@@ -607,30 +607,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/c702e4069aa9db811f6e5cfbcdc69b6d-1.jpg"
   },
   {
-    "title": "スワップミート in 花博公園スペシャル（11月）",
-    "start_date": "2026-11-03",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "花博記念公園鶴見緑地　ハナミズキホールおよび付属展示場",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "展示場",
-      "ホール",
-      "公園"
-    ],
-    "description": "花の万博会場だった花博記念公園鶴見緑地で行われるフリマ。プロ・アマチュア問わずの誰でも参加できるフリマなので、お買い得な商品や、思わぬ掘り出し物にも出会えるかも。駅からも近く、周辺には駐車場もあり。広場に花と緑があふれ、年齢問わず、たくさんの人が訪れる。手荷物出店は屋内開催もあり",
-    "image_url": "images/691ba76caa573951bf.jpg",
-    "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0727e610536/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/36/l/610536.jpg"
-  },
-  {
     "title": "「神戸・灘ラーメンスタンプラリー」灘区内各所 2026年11月4日（水） ~2027年1月31日（日） ラーメン激戦区として知られる六甲道エリアをはじめ、多くのラーメン店が集まる灘区で、「神戸・灘ラーメンスタンプラリー」",
     "start_date": "2026-11-04",
     "end_date": "2027-01-31",
@@ -655,30 +631,6 @@ window.EVENT_DATA = [
       "food"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kobe-nada-ramen-stamp-rally-01-724x1024.jpg"
-  },
-  {
-    "title": "深煎り処 お珈琲屋 凩(こがらし)",
-    "start_date": "2026-11-05",
-    "end_date": "2026-11-05",
-    "area": "大阪",
-    "venue": "セブンパーク天美 屋外 Sora Park",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 深煎り処 お珈琲屋 凩(こがらし) EVENT | イベント 掲載日：2026/11/3 ※画像をクリックすると拡大表示され",
-    "image_url": "images/b72bb0a17062920915.png",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100014034",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014034/img_3qh8agq9v5s00.png"
   },
   {
     "title": "ツヅレ｜刺繍アクセサリー POP-UP | イベント | グランフロント大阪",
@@ -729,29 +681,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014040/img_3sa6apog3bac4.jpg"
   },
   {
-    "title": "「旧居留地テラスデイズ」旧居留地 2026年11月6日（金） ~2026年11月7日（土） 神戸旧居留地エリアでの豊かな過ごし方を提案する社会実験として、昨年初めて開催された「旧居留地テラスデイズ」。昨年の好評を受け、今",
-    "start_date": "2026-11-06",
-    "end_date": "2026-11-07",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "food",
-    "score": 99,
-    "tags": [
-      "食・グルメ",
-      "パン",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "年も開催いたします。 2年目となる今年は、仲町通を舞台に、街並みに調和するテラス席が並びます。コーヒーショップを中心に、ワインブースやベーカリーも出店。 淹れたてのコーヒーやワイン、パンなどを楽しみながら、開放感あふれる空間で、神戸旧居留地ならではの街の魅力をゆったりと味わうひとときをお届けします。 エリア： 食 景観、体験 三宮・元町",
-    "image_url": "images/64f352a400c8aa8fc6.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38708/",
-    "categories": [
-      "food"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/cfcc99c4c14e7ac4b828863aeabb82e1-1024x1024.jpg"
-  },
-  {
     "title": "パッといろは#64　みんなでお！絵描き研究所×生成AI～鏡の館の、ふしぎのきみへ　うつしかがみ編～ | イベント | グランフロント大阪",
     "start_date": "2026-11-07",
     "end_date": "2026-11-07",
@@ -774,6 +703,29 @@ window.EVENT_DATA = [
       "tech"
     ],
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261014/64398faed06a73c8a085e21058dc1d259d1c63e5.jpeg"
+  },
+  {
+    "title": "レゴ®ブロックでひらめきを楽しむクリスマス ～サンタクロースのプレゼント工場～ | イベント | グランフロント大阪",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-08",
+    "area": "大阪",
+    "venue": "開催場所 うめきた広場メインスペース",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設",
+      "開催場所 うめきた広場メインスペース"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/9f749a95b772fcdc23.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5816/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261029/60b997d7bdce370977ef0ea69b951afed27fbb01.jpg"
   },
   {
     "title": "信州みやだむら市(いち) | イベント | グランフロント大阪",
@@ -1660,28 +1612,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.hankyu.co.jp/area_info/machigatari/assets/D_KgiapR_Z27EuVG.png"
   },
   {
-    "title": "【12/19(土)・20(日)】ムラマツフルート点検会&試奏会開催！ | イベント | グランフロント大阪",
-    "start_date": "2026-12-19",
-    "end_date": "2026-12-20",
-    "area": "大阪",
-    "venue": "開催場所 島村楽器クラシック / 北館 5F",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "商業施設"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/065fb385aae067eae6.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5722/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.gfo-sc.jp/files/20260905/c6d86d90663dfa70860668a033b6afbb9168c29e.jpg"
-  },
-  {
     "title": "今宮戎",
     "start_date": "2027-01-09",
     "end_date": "2027-01-09",
@@ -1772,30 +1702,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/KC_KV_daimaru_kobe_square-1024x1024.jpg"
   },
   {
-    "title": "酒井藍一日署長による交通安全キャンペーン",
-    "start_date": "2026-11-05",
-    "end_date": "2026-11-05",
-    "area": "大阪",
-    "venue": "セブンパーク天美 1F AMAMI STADIUM",
-    "category": "tourism",
-    "score": 95,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 酒井藍一日署長による交通安全キャンペーン EVENT | イベント 掲載日：2026/10/21 ※画像をクリックすると拡大",
-    "image_url": "images/22aa00c7b858519a57.jpg",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100013961",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013961/img_3s74u9nd9eg4w.jpg"
-  },
-  {
     "title": "かほなんと学ぶ！特殊詐欺サバイバル大作戦！ ＠セブンパーク天美",
     "start_date": "2026-11-21",
     "end_date": "2026-11-21",
@@ -1866,6 +1772,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014006/img_3pzqui0sa98gc.png"
+  },
+  {
+    "title": "大河ドラマ「豊臣兄弟！」展",
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-27",
+    "area": "大阪",
+    "venue": "セブンパーク天美 ・内容が変更になる場合がございます。あらかじめご了承ください。 日程 2026/11/27(金) 〜 2026/12/01(火)",
+    "category": "tourism",
+    "score": 95,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 大河ドラマ「豊臣兄弟！」展 EVENT | イベント 掲載日：2026/11/5 ※画像をクリックすると拡大表示されます 見",
+    "image_url": "images/d863ffe0dc85aff178.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014045",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014045/img_3sae9mwbdlwkk.jpg"
   },
   {
     "title": "【11月】防音の無料相談会・体験会を開催中！ | イベント | グランフロント大阪",
@@ -2782,6 +2712,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/39/l/615039.jpg"
   },
   {
+    "title": "瑠璃光院の紅葉",
+    "start_date": "2026-10-01",
+    "end_date": "2026-12-13",
+    "area": "京都",
+    "venue": "瑠璃光院",
+    "category": "tourism",
+    "score": 71,
+    "tags": [
+      "イベント",
+      "京都",
+      "瑠璃光院"
+    ],
+    "description": "平安貴族や武士たちに「やすらぎ」の郷として愛されてきた「八瀬」の地にあり、大正末から昭和の初めにかけての大改築で、自然を借景とした名庭を造営された。修学院・大原の豊かな自然と数寄屋造りの建物や名庭がおりなす四季折々の表情は見事で、特に紅に染まる秋には見事な紅葉が楽しめる。2026",
+    "image_url": "images/9708666963ebc1039d.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0726e416761/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/61/l/416761_1.jpg"
+  },
+  {
     "title": "出会える西宮の文化財2026",
     "start_date": "2026-10-24",
     "end_date": "2026-12-13",
@@ -3039,7 +2991,7 @@ window.EVENT_DATA = [
       "兵庫",
       "神戸"
     ],
-    "description": "語会」が開催されています。笑いを共有するひとときを通じて、人と人とのつながりを育み、地域の活性化につなげることを目指した取り組みです。 第4回となる今回は、神戸市における新たな文化・伝統芸能の拠点である喜楽館を会場に開催されます。 出演するのは、江戸古典落語の次代を担う実力派として高い評価を受ける柳家三三さんと、同大学卒業生で若手人気落語",
+    "description": "開催中 「第4回神戸山手落語会 ”柳の下に青葉”？」神戸新開地・喜楽館 2026年11月6日（金） ~2026年11月6日（金） 関西国際大学では、若い世代や地域の人々が本物の伝統芸能をライブで体験できる機会として、「神戸山手落語会」が開催されています。笑いを共有するひとときを通じて、人と人とのつながりを育み、地域の活性化につなげることを",
     "image_url": "images/a246c9a26c59948ae0.jpg",
     "source": "Feel KOBE",
     "source_url": "https://www.feel-kobe.jp/event/38118/",
@@ -3247,6 +3199,28 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/7fd37cb7e705b67c119cbd96b12da06a-1-1024x414.jpg"
+  },
+  {
+    "title": "「旧居留地テラスデイズ」旧居留地 2026年11月6日（金） ~2026年11月7日（土） 神戸旧居留地エリアでの豊かな過ごし方を提案する社会実験として、昨年初めて開催された「旧居留地テラスデイズ」。昨年の好評を受け、今",
+    "start_date": "2026-11-06",
+    "end_date": "2026-11-07",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "開催中 「旧居留地テラスデイズ」旧居留地 2026年11月6日（金） ~2026年11月7日（土） 神戸旧居留地エリアでの豊かな過ごし方を提案する社会実験として、昨年初めて開催された「旧居留地テラスデイズ」。昨年の好評を受け、今年も開催いたします。 2年目となる今年は、仲町通を舞台に、街並みに調和するテラス席が並びます。コーヒーショップを",
+    "image_url": "images/64f352a400c8aa8fc6.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38708/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/cfcc99c4c14e7ac4b828863aeabb82e1-1024x1024.jpg"
   },
   {
     "title": "「スポGOMI2026 in 神戸ウォーターフロント」 2026年11月7日（土） ~2026年11月7日（土） ～神戸の海辺から、未来をきれいに～ 「スポGOMI」とは、予め定められたエリアで、制限時間内にチームワーク",

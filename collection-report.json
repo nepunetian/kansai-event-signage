@@ -31,8 +31,12 @@
     "sitemap_links": 0,
     "candidates": 0,
     "parsed": 0,
-    "errors": 0,
-    "notes": []
+    "errors": 1,
+    "notes": [
+      "list: 403 Client Error: Forbidden for url: https://intex-osaka.com/jp/event/",
+      "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
+      "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
+    ]
   },
   "ATCトップ": {
     "list_links": 14,
@@ -145,9 +149,9 @@
     ]
   },
   "JR西日本": {
-    "list_links": 30,
+    "list_links": 29,
     "sitemap_links": 0,
-    "candidates": 30,
+    "candidates": 29,
     "parsed": 0,
     "errors": 0,
     "notes": [
@@ -191,18 +195,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 23,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "dedicated: 22",
-      "listing fallback: 22"
+      "dedicated: 21",
+      "listing fallback: 21"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 131,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -231,7 +235,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 149,
-    "generated_at": "2026-11-05T10:33:59.333052+09:00"
+    "final_events": 148,
+    "generated_at": "2026-11-06T10:37:02.240806+09:00"
   }
 }
