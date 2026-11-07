@@ -42,11 +42,11 @@
     "list_links": 14,
     "sitemap_links": 0,
     "candidates": 14,
-    "parsed": 36,
+    "parsed": 39,
     "errors": 0,
     "notes": [
-      "dedicated: 12",
-      "listing fallback: 24"
+      "dedicated: 13",
+      "listing fallback: 26"
     ]
   },
   "ATC": {
@@ -181,7 +181,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 55,
+    "list_links": 52,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 3,
@@ -195,18 +195,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 22,
+    "parsed": 23,
     "errors": 0,
     "notes": [
-      "dedicated: 21",
-      "listing fallback: 21"
+      "dedicated: 22",
+      "listing fallback: 22"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 131,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -235,7 +235,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 148,
-    "generated_at": "2026-11-06T10:37:02.240806+09:00"
+    "final_events": 151,
+    "generated_at": "2026-11-07T09:59:27.769216+09:00"
   }
 }
