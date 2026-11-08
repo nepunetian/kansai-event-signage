@@ -42,11 +42,11 @@
     "list_links": 14,
     "sitemap_links": 0,
     "candidates": 14,
-    "parsed": 39,
+    "parsed": 33,
     "errors": 0,
     "notes": [
-      "dedicated: 13",
-      "listing fallback: 26"
+      "dedicated: 11",
+      "listing fallback: 22"
     ]
   },
   "ATC": {
@@ -86,7 +86,7 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 14,
+    "list_links": 13,
     "sitemap_links": 62,
     "candidates": 62,
     "parsed": 72,
@@ -108,7 +108,7 @@
     "sitemap_links": 104,
     "candidates": 104,
     "parsed": 0,
-    "errors": 14,
+    "errors": 15,
     "notes": [
       "sitemap https://www.daimaru.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.daimaru.co.jp/sitemap-index.xml: HTTPError"
@@ -195,18 +195,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 23,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "dedicated: 22",
-      "listing fallback: 22"
+      "dedicated: 17",
+      "listing fallback: 17"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 131,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -235,7 +235,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 151,
-    "generated_at": "2026-11-07T09:59:27.769216+09:00"
+    "final_events": 142,
+    "generated_at": "2026-11-08T09:38:35.116227+09:00"
   }
 }
