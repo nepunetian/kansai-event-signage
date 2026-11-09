@@ -39,9 +39,9 @@
     ]
   },
   "ATCトップ": {
-    "list_links": 14,
+    "list_links": 12,
     "sitemap_links": 0,
-    "candidates": 14,
+    "candidates": 12,
     "parsed": 33,
     "errors": 0,
     "notes": [
@@ -60,36 +60,36 @@
     ]
   },
   "グランフロント大阪": {
-    "list_links": 12,
+    "list_links": 11,
     "sitemap_links": 0,
-    "candidates": 12,
-    "parsed": 24,
+    "candidates": 11,
+    "parsed": 22,
     "errors": 0,
     "notes": [
-      "listing fallback: 12",
+      "listing fallback: 11",
       "sitemap https://www.grandfront-osaka.jp/sitemap.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "なんばパークス": {
-    "list_links": 8,
+    "list_links": 7,
     "sitemap_links": 0,
-    "candidates": 8,
-    "parsed": 16,
+    "candidates": 7,
+    "parsed": 14,
     "errors": 0,
     "notes": [
-      "listing fallback: 8",
+      "listing fallback: 7",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
     ]
   },
   "LUCUA大阪": {
-    "list_links": 13,
-    "sitemap_links": 62,
-    "candidates": 62,
-    "parsed": 72,
+    "list_links": 11,
+    "sitemap_links": 61,
+    "candidates": 61,
+    "parsed": 71,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -195,18 +195,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 18,
+    "parsed": 17,
     "errors": 0,
     "notes": [
-      "dedicated: 17",
-      "listing fallback: 17"
+      "dedicated: 16",
+      "listing fallback: 16"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 130,
+    "parsed": 131,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -235,7 +235,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 142,
-    "generated_at": "2026-11-08T09:38:35.116227+09:00"
+    "final_events": 138,
+    "generated_at": "2026-11-09T09:55:20.065272+09:00"
   }
 }
