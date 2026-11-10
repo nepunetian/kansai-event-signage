@@ -33,20 +33,21 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: 403 Client Error: Forbidden for url: https://intex-osaka.com/jp/event/",
-      "sitemap https://www.intex-osaka.com/sitemap_index.xml: HTTPError",
-      "sitemap https://www.intex-osaka.com/sitemap-index.xml: HTTPError"
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x770509945670>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
+      "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
+      "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "ATCトップ": {
-    "list_links": 12,
+    "list_links": 13,
     "sitemap_links": 0,
-    "candidates": 12,
-    "parsed": 33,
+    "candidates": 13,
+    "parsed": 36,
     "errors": 0,
     "notes": [
-      "dedicated: 11",
-      "listing fallback: 22"
+      "dedicated: 12",
+      "listing fallback: 24"
     ]
   },
   "ATC": {
@@ -86,10 +87,10 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 11,
-    "sitemap_links": 61,
-    "candidates": 61,
-    "parsed": 71,
+    "list_links": 12,
+    "sitemap_links": 63,
+    "candidates": 63,
+    "parsed": 79,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -100,7 +101,7 @@
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 16,
+    "errors": 18,
     "notes": []
   },
   "大丸梅田店": {
@@ -181,7 +182,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 52,
+    "list_links": 54,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 3,
@@ -195,18 +196,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 17,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "dedicated: 16",
-      "listing fallback: 16"
+      "dedicated: 17",
+      "listing fallback: 17"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 131,
+    "parsed": 127,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -235,7 +236,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 138,
-    "generated_at": "2026-11-09T09:55:20.065272+09:00"
+    "final_events": 149,
+    "generated_at": "2026-11-10T12:41:22.815440+09:00"
   }
 }

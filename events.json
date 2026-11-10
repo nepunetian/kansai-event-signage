@@ -457,52 +457,6 @@
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5920-file.jpg"
   },
   {
-    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "ポップアップ",
-      "大阪",
-      "ちみけもますこっと",
-      "『ちみけもますこっと』"
-    ],
-    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
-    "image_url": "images/b07a2ec9e6a1760ff2.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
-  },
-  {
-    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪",
-      "『崩壊：スターレイル』星神★アッハ 実装記念"
-    ],
-    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
-    "image_url": "images/593281922a9d75a58a.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792062501-2ca7ac54361dbb1888b6fe00765c0f03-1920x1356.jpg"
-  },
-  {
     "title": "TVアニメ『ヒカルの碁』25周年記念オンリーショップ～盤上絵巻～byスタジオぴえろストア",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -550,6 +504,28 @@
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2027/10/1791443132-fa4a7d3a358e0430a0c2f322876269d1-1920x1353.jpg"
   },
   {
+    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪",
+      "『崩壊：スターレイル』星神★アッハ 実装記念"
+    ],
+    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
+    "image_url": "images/593281922a9d75a58a.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792062501-2ca7ac54361dbb1888b6fe00765c0f03-1920x1356.jpg"
+  },
+  {
     "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -569,6 +545,30 @@
       "anime"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/08/1788160713-86deda233612248ccfdc008550338e77.jpg"
+  },
+  {
+    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "ポップアップ",
+      "大阪",
+      "ちみけもますこっと",
+      "『ちみけもますこっと』"
+    ],
+    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
+    "image_url": "images/b07a2ec9e6a1760ff2.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
   },
   {
     "title": "鮫升コモリ アニメイトオンリーショップ ～むっしゅ先生描き下ろし「恋するアフタースクール」～",
@@ -912,30 +912,6 @@
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013938/img_3qh8bk5xma2o8.jpg"
   },
   {
-    "title": "「第3回北神戸Happy Bake à la mode」ベルスト鈴蘭台3Fすずらん広場 2026年11月14日（土） ~2026年11月15日（日） 神戸電鉄鈴蘭台駅に直結するベルスト鈴蘭台で、「北神戸Happy Bak",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-15",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "food",
-    "score": 99,
-    "tags": [
-      "食・グルメ",
-      "スイーツ",
-      "パン",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "e à la mode」が開催されます。 3回目となる今回は、神戸在住のスイーツ＆パンライター・いなだみほがセレクトした、北区・阪神間を中心とするベーカリーやパティスリー34店舗が、2日間にわたって集まります。 各店舗では、神戸市北区の特産品を使ったイベント限定のパンやお菓子が販売されます。いなだみほのスペシャルブースには、パンと一緒に楽",
-    "image_url": "images/e4a5c4347db94b2a98.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38471/",
-    "categories": [
-      "food"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kitakobe-happy-bake-alamode-01-724x1024.jpg"
-  },
-  {
     "title": "パッといろは#65 VRプレイグラウンド18 〜紅葉も良いけどVR狩りに行こうよう〜 | イベント | グランフロント大阪",
     "start_date": "2026-11-15",
     "end_date": "2026-11-15",
@@ -1246,6 +1222,30 @@
       "rail"
     ],
     "original_image_url": "https://www.hankyu.co.jp/images/ogp/logo.png"
+  },
+  {
+    "title": "未来のサステナブルな暮らしの体感フェア ～エコで安心な住まいづくり～",
+    "start_date": "2026-11-22",
+    "end_date": "2026-11-22",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1F KANDA前",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 未来のサステナブルな暮らしの体感フェア ～エコで安心な住まいづくり～ EVENT | イベント 掲載日：2026/11/9 ",
+    "image_url": "images/4d2fd3a919b6d6a2aa.png",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014005",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014005/img_3s8ahxl2gge8g.png"
   },
   {
     "title": "(火) 介護DX、何から始める？～ケアプラン連携×介護情報基盤×介護テクノロジー～",
@@ -1816,6 +1816,28 @@
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5054-file.jpg"
   },
   {
+    "title": "(金)～11.15(日) OSAKA R6 MAJOR",
+    "start_date": "2026-11-13",
+    "end_date": "2026-11-13",
+    "area": "大阪",
+    "venue": "ATC",
+    "category": "tourism",
+    "score": 91,
+    "tags": [
+      "イベント",
+      "大阪",
+      "ATC"
+    ],
+    "description": "2026.11.13(金)～11.15(日) OSAKA R6 MAJOR",
+    "image_url": "images/0369f826d7a42e7524.png",
+    "source": "ATC",
+    "source_url": "https://www.atc-co.com/event/osaka-6-major/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/OsakaMajor_SoldOut_1920x1080-560x315.png"
+  },
+  {
     "title": "(日) ものづくりワークショップ2026「クリスマスガーランドをつくりましょう」",
     "start_date": "2026-11-15",
     "end_date": "2026-11-15",
@@ -2217,30 +2239,6 @@
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/566aa0764c99018935f0ef9c09d45279-724x1024.jpg"
   },
   {
-    "title": "「すまの自然を体感するイベント」奥須磨公園・名谷駅 2026年11月22日（日） ~2026年11月22日（日） 須磨の自然や歴史にふれる「すまの自然を体感するイベント」が、11月22日に開催されます。 奥須磨公園を会場",
-    "start_date": "2026-11-22",
-    "end_date": "2026-11-22",
-    "area": "兵庫",
-    "venue": "奥須磨公園ちびっこ広場（解散場所も同じです） 内容：須磨の自然を体感できる「風でとぶ種工作、べっこう飴、焼きマシュマロ、レイメイキング、昆虫食、どんぐりコロコロ等」と「自然観察会」",
-    "category": "tourism",
-    "score": 77,
-    "tags": [
-      "イベント",
-      "フェス",
-      "兵庫",
-      "公園",
-      "寺社"
-    ],
-    "description": "に、風でとぶ種工作やべっこう飴、焼きマシュマロ、レイメイキング、どんぐりを使った体験などを楽しめる「奥須磨公園フェスティバル」と、名谷駅から白川周辺を歩きながら自然や歴史をめぐる「摂津と播磨の国境＆白川の歴史と自然周遊」の2コースが用意されています。 Aコースでは自然観察会、Bコースでは野草茶や柑橘類の食味体験のほか、国境石碑や神社などを",
-    "image_url": "images/4540edf94869ff88cc.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/37833/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/ec620fc517aed62d0a8765769f8b97ea-1-769x1024.jpg"
-  },
-  {
     "title": "アトモス ポップアップショップ",
     "start_date": "2026-07-25",
     "end_date": "2026-11-15",
@@ -2263,29 +2261,6 @@
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-3551-file.jpg"
-  },
-  {
-    "title": "米原ネコ展",
-    "start_date": "2026-10-01",
-    "end_date": "2026-11-09",
-    "area": "滋賀",
-    "venue": "青岸寺",
-    "category": "exhibition",
-    "score": 74,
-    "tags": [
-      "展示",
-      "特別展",
-      "滋賀",
-      "青岸寺"
-    ],
-    "description": "米原市の青岸寺を会場に、市内で活動するアーティストによる猫をテーマとした企画展「米原ネコ展」を開催。米原市在住の水彩画家・村上ゆたか氏や切り絵作家・早川鉄兵氏をはじめとする5組のアーティストが製作した個性あふれるネコの作品が展示される。作品の一部は後日 米原市ふるさと納税の返礼品",
-    "image_url": "images/08b44d45371f0289d7.jpg",
-    "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0725e614462/",
-    "categories": [
-      "exhibition"
-    ],
-    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/62/l/614462.jpg"
   },
   {
     "title": "ここにあるかも、わたしのクリスマス。 LUCUA osaka CHRISTMAS 2026",
@@ -2356,6 +2331,205 @@
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5031-file.jpg"
+  },
+  {
+    "title": "エクミール ポップアップショップ",
+    "start_date": "2026-11-17",
+    "end_date": "2026-11-24",
+    "area": "大阪",
+    "venue": "ルクア イーレ 4F イベントホールsPACE",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "ポップアップ",
+      "大阪",
+      "商業施設",
+      "ホール"
+    ],
+    "description": "ecmile.（エクミール）は、「可愛いと思って選んだものが、たまたま人や社会にやさしい選択だった」を目指すファッションブランド。リボンを象徴に、甘さや遊び心を詰め込んだコレクションと、素材を生かした一点ものを展開しています。ecmile.の世界をお楽しみください。【公式オンラインストア】：http",
+    "image_url": "images/191173ef1dccc93315.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/topic_3.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5873-file.jpg"
+  },
+  {
+    "title": "スクール はずし場　第二期",
+    "start_date": "2026-12-05",
+    "end_date": "2026-12-05",
+    "area": "大阪",
+    "venue": "ルクア イーレ ルクア イーレ 9F　特別会議室",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "image_url": "images/feffe704629551adc9.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/hazushi2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "スクール はずし場　第二期",
+    "start_date": "2026-12-06",
+    "end_date": "2026-12-06",
+    "area": "大阪",
+    "venue": "ルクア イーレ ルクア イーレ 9F　特別会議室",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "image_url": "images/434d891ffd4547516a.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/hazushi2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "スクール はずし場　第二期",
+    "start_date": "2027-01-09",
+    "end_date": "2027-01-09",
+    "area": "大阪",
+    "venue": "ルクア イーレ ルクア イーレ 9F　特別会議室",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "image_url": "images/665be518a37e019a22.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/hazushi2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "スクール はずし場　第二期",
+    "start_date": "2027-01-23",
+    "end_date": "2027-01-23",
+    "area": "大阪",
+    "venue": "ルクア イーレ ルクア イーレ 9F　特別会議室",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "image_url": "images/7ed571f372b3d7beab.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/hazushi2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "スクール はずし場　第二期",
+    "start_date": "2027-02-06",
+    "end_date": "2027-02-06",
+    "area": "大阪",
+    "venue": "ルクア イーレ ルクア イーレ 9F　特別会議室",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "image_url": "images/723c80780968fb3396.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/hazushi2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "スクール はずし場　第二期",
+    "start_date": "2027-02-20",
+    "end_date": "2027-02-20",
+    "area": "大阪",
+    "venue": "ルクア イーレ ルクア イーレ 9F　特別会議室",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "image_url": "images/93b73f3f19474a321c.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/hazushi2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "スクール はずし場　第二期",
+    "start_date": "2027-03-06",
+    "end_date": "2027-03-06",
+    "area": "大阪",
+    "venue": "ルクア イーレ ルクア イーレ 9F　特別会議室",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "image_url": "images/b8fbe0e9b3725ef5e3.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/hazushi2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "OSAKA R6 MAJOR",
+    "start_date": "2026-11-13",
+    "end_date": "2026-11-13",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "tourism",
+    "score": 72,
+    "tags": [
+      "イベント",
+      "大阪"
+    ],
+    "description": "2026.11.13(金)～11.15(日) OSAKA R6 MAJOR",
+    "image_url": "images/16ce9cdc5a75cc14d2.png",
+    "source": "ATCトップ",
+    "source_url": "https://www.atc-co.com/event/osaka-6-major/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/OsakaMajor_SoldOut_1920x1080-560x315.png"
   },
   {
     "title": "ものづくりワークショップ2026「クリスマスガーランドをつくりましょう」",
@@ -2616,27 +2790,6 @@
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kobe-umiakari-01-724x1024.png"
   },
   {
-    "title": "「スタジオ レターアーツ 作品展 2026」GALLERY北野坂 2026年11月20日（金） ~2026年11月24日（火） カリグラフィーから立体作品まで、文字を使ったさまざまな表現に出会える「スタジオ レターアーツ",
-    "start_date": "2026-11-20",
-    "end_date": "2026-11-24",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "exhibition",
-    "score": 69,
-    "tags": [
-      "展示",
-      "兵庫"
-    ],
-    "description": "作品展 2026」が、GALLERY北野坂で開催されます。 会場には、受講生と講師4名による約70点の作品が並びます。 講師は清水裕子さん、岡本真樹子さん、東井裕子さん、小川百合さん。 手書きならではの美しさや、文字を生かした多彩な作品を楽しめる展示会です。 エリア： アート 北野・新神戸",
-    "image_url": "images/2b666bb759cf020032.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38387/",
-    "categories": [
-      "exhibition"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/SLA2026_1.jpg"
-  },
-  {
     "title": "如意輪寺　菊まつり",
     "start_date": "2026-11-01",
     "end_date": "2026-11-22",
@@ -2769,28 +2922,6 @@
       "tourism"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/sugata-wo-keshita-senpai-wo-oe-01-1024x683.png"
-  },
-  {
-    "title": "「神戸須磨・多井畑地区 里地里山再生・活動体験会」多井畑西地区交流広場 2026年11月22日（日） ~2026年11月22日（日） 神戸市須磨区の多井畑地区で、「神戸須磨・多井畑地区 里地里山再生・活動体験会」が開催さ",
-    "start_date": "2026-11-22",
-    "end_date": "2026-11-22",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 61,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "れます。まちの近くに残る自然の中で、里山の再生活動を体験できます。 全4回にわたって竹を伐採して運び出し、DIYで資材置き場や小物を作ります。 道具の貸し出しや専門家による技術サポートもあり、初めての方でも参加できます。 エリア： 自然 景観、体験 須磨・垂水",
-    "image_url": "images/78e93f89c26545705c.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38475/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/tainohata-satoyama-taikenkai-01-730x1024.jpg"
   },
   {
     "title": "「有馬温泉 太閤の湯殿館（資料館）企画展」 2026年3月19日（木） ~2026年11月10日（火） 神戸市立太閤の湯殿館では、有馬温泉の歴史を紹介し、湯山遺跡発掘調査で発見された、蒸し風呂、岩風呂遺構等が展示されてい",
@@ -2993,6 +3124,51 @@
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/7fd37cb7e705b67c119cbd96b12da06a-1-1024x414.jpg"
   },
   {
+    "title": "「秋のバラ観賞会」神戸市立須磨離宮公園 2026年10月24日（土） ~2026年12月6日（日） 神戸市立須磨離宮公園で、2026年10月24日から12月6日まで「秋のバラ観賞会」が開催されます。 約300種4000株",
+    "start_date": "2026-10-24",
+    "end_date": "2026-12-06",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸",
+      "公園"
+    ],
+    "description": "開催中 「秋のバラ観賞会」神戸市立須磨離宮公園 2026年10月24日（土） ~2026年12月6日（日） 神戸市立須磨離宮公園で、2026年10月24日から12月6日まで「秋のバラ観賞会」が開催されます。 約300種4000株のバラが育つ園内では、秋になると約200種3000株が花を咲かせます。「王侯貴族のバラ園」や「世界殿堂入りバラ園",
+    "image_url": "images/5452e2c1dc6ee5399d.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38567/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/suma-rikyu-aki-no-bara-03.jpg"
+  },
+  {
+    "title": "「【1日1室限定】豚まん気分になれる！老祥記111周年記念コンセプトルーム」ホテル北野プラザ六甲荘 2026年11月1日（日） ~2027年2月28日（日） 神戸・南京町で長く愛されている豚饅頭の老舗「老祥記」の創業11",
+    "start_date": "2026-11-01",
+    "end_date": "2027-02-28",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "開催中 「【1日1室限定】豚まん気分になれる！老祥記111周年記念コンセプトルーム」ホテル北野プラザ六甲荘 2026年11月1日（日） ~2027年2月28日（日） 神戸・南京町で長く愛されている豚饅頭の老舗「老祥記」の創業111周年を記念して、神戸・北野のホテル北野プラザ六甲荘に、1日1室限定のコンセプトルームが登場します。 テーマは「",
+    "image_url": "images/dce7f017e75a5fdccf.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38667/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/rokkoso-roshoki-concept-room-01-1024x768.jpg"
+  },
+  {
     "title": "「神戸クリスマスマーケット2026-古城のクリスマス-」神戸布引ハーブ園／ロープウェイ 2026年11月7日（土） ~2026年12月28日（月） 神戸布引ハーブ園／ロープウェイで、「神戸クリスマスマーケット2026-古",
     "start_date": "2026-11-07",
     "end_date": "2026-12-28",
@@ -3013,6 +3189,51 @@
       "tourism"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kobe-christmas-market-2026-01-1024x683.jpg"
+  },
+  {
+    "title": "「もみじ観賞会&ルミエール2026」神戸市立須磨離宮公園 2026年11月7日（土） ~2026年12月6日（日） 須磨離宮公園では、もみじの小径や和風庭園を中心に、約600本のイロハモミジやメタセコイア・ラクウショウ・",
+    "start_date": "2026-11-07",
+    "end_date": "2026-12-06",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸",
+      "公園"
+    ],
+    "description": "開催中 「もみじ観賞会&ルミエール2026」神戸市立須磨離宮公園 2026年11月7日（土） ~2026年12月6日（日） 須磨離宮公園では、もみじの小径や和風庭園を中心に、約600本のイロハモミジやメタセコイア・ラクウショウ・カツラ・モミジバフウなどが色づく時期にあわせて、もみじ観賞会が開催されます。 期間中は、和室でのお抹茶や茶会、和",
+    "image_url": "images/64154bf73ba338de74.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38649/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/suma-rikyu-momiji-lumiere-01.jpg"
+  },
+  {
+    "title": "「羊の年賀状撮影会」神戸市立六甲山牧場 2026年11月7日（土） ~2026年11月28日（土） 六甲山牧場で、羊たちと一緒に年賀状用の写真を撮影できる「羊の年賀状撮影会」が開催されます。 2027年は未年（ひつじ年）",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-28",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "開催中 「羊の年賀状撮影会」神戸市立六甲山牧場 2026年11月7日（土） ~2026年11月28日（土） 六甲山牧場で、羊たちと一緒に年賀状用の写真を撮影できる「羊の年賀状撮影会」が開催されます。 2027年は未年（ひつじ年）。新年のご挨拶にぴったりな、かわいい羊たちと一緒に記念写真を撮影できるイベントです。 撮影はスタッフが行ってくれ",
+    "image_url": "images/f78134b552705a7c8b.png",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38877/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/803c92b08a58677a73d6cf05445c846b-1-1024x724.png"
   },
   {
     "title": "住吉大社 新嘗祭",
@@ -3039,6 +3260,52 @@
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/31/l/598331.jpg"
   },
   {
+    "title": "愛のカタチ 幻の春画《稚児草紙》",
+    "start_date": "2026-09-19",
+    "end_date": "2027-01-17",
+    "area": "京都",
+    "venue": "福田美術館",
+    "category": "exhibition",
+    "score": 49,
+    "tags": [
+      "展示",
+      "美術",
+      "京都",
+      "美術館",
+      "福田美術"
+    ],
+    "description": "福田美術館初となる春画展。愛と欲望、人が人を求める切実な感情を描いた「春画」の世界を紹介する。本邦初公開となる《稚児草紙》は、14世紀初頭に制作されたとされる、稚児と僧侶の親密な関係を描く絵巻で、長らく実在のみが知られてきた「幻の春画」である。日本最古級の春画《小柴垣草紙》の模写",
+    "image_url": "images/e790553b1395358392.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0726e605281/",
+    "categories": [
+      "exhibition"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/81/l/605281.jpg"
+  },
+  {
+    "title": "大収穫祭IN九度山",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-15",
+    "area": "和歌山",
+    "venue": "道の駅「柿の郷くどやま」芝生広場",
+    "category": "tourism",
+    "score": 48,
+    "tags": [
+      "イベント",
+      "和歌山",
+      "道の駅「柿の郷くどやま」芝生広場"
+    ],
+    "description": "富有柿をはじめ地元農産物の直販、会場を盛り上げる多彩なステージイベント、フリーマーケット等、見所たくさんの秋の祭典。九度山町の姉妹都市・長野県上田市からは信州上田りんごがやってくる。九度山の富有柿、信州りんごは絶品。",
+    "image_url": "images/aa8c21528772d5ebef.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0730e617419/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/19/l/617419.jpg"
+  },
+  {
     "title": "やぶ紅葉まつり",
     "start_date": "2026-11-07",
     "end_date": "2026-11-29",
@@ -3060,29 +3327,6 @@
       "tourism"
     ],
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/16/l/612216.jpg"
-  },
-  {
-    "title": "万呂須佐神社例祭（万呂の獅子舞）",
-    "start_date": "2026-11-22",
-    "end_date": "2026-11-23",
-    "area": "和歌山",
-    "venue": "万呂須佐神社",
-    "category": "tourism",
-    "score": 40,
-    "tags": [
-      "イベント",
-      "和歌山",
-      "寺社",
-      "万呂須佐神社"
-    ],
-    "description": "万呂須佐神社の祭礼に奉納される獅子舞は、寝獅子や花の舞に登場する天狗がハナという竹の幣、お多福が陽物型の棒を持つのが特色で、両者が獅子の周囲で踊ったりとびはねたり、あるいは思わしげな所作をしたりする。田辺市指定無形民俗文化財。",
-    "image_url": "images/e6e742841a78e2cddd.jpg",
-    "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0730e617420/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/20/l/617420.jpg"
   },
   {
     "title": "「北野謎解きウォーク 〜ホームズからの手紙〜」北野山本通、一宮神社周辺 2026年9月12日（土） ~2026年11月30日（月） 「北野謎解きウォーク〜ホームズからの手紙〜」は、神戸・北野の街を舞台にした街歩き型の謎解",
