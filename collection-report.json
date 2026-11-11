@@ -33,7 +33,7 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x770509945670>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x77ee0386f770>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
@@ -74,13 +74,13 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 7,
+    "list_links": 8,
     "sitemap_links": 0,
-    "candidates": 7,
-    "parsed": 14,
+    "candidates": 8,
+    "parsed": 16,
     "errors": 0,
     "notes": [
-      "listing fallback: 7",
+      "listing fallback: 8",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
@@ -88,20 +88,20 @@
   },
   "LUCUA大阪": {
     "list_links": 12,
-    "sitemap_links": 63,
-    "candidates": 63,
-    "parsed": 79,
+    "sitemap_links": 62,
+    "candidates": 62,
+    "parsed": 78,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
     ]
   },
   "阪急うめだ本店": {
-    "list_links": 29,
+    "list_links": 27,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 0,
-    "errors": 18,
+    "errors": 16,
     "notes": []
   },
   "大丸梅田店": {
@@ -182,7 +182,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 54,
+    "list_links": 53,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 3,
@@ -196,18 +196,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 18,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "dedicated: 17",
-      "listing fallback: 17"
+      "dedicated: 19",
+      "listing fallback: 19"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 127,
+    "parsed": 128,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -237,6 +237,6 @@
   },
   "TOTAL": {
     "final_events": 149,
-    "generated_at": "2026-11-10T12:41:22.815440+09:00"
+    "generated_at": "2026-11-11T10:24:09.179107+09:00"
   }
 }

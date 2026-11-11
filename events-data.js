@@ -120,28 +120,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/76/l/612276.jpg"
   },
   {
-    "title": "怪々YOKAI(ヨウカイ)祭 2026",
-    "start_date": "2026-09-12",
-    "end_date": "2026-11-29",
-    "area": "京都",
-    "venue": "太秦映画村",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "京都",
-      "太秦映画村"
-    ],
-    "description": "太秦映画村で開催される和製ハロウィンイベント。2026年は「踊ろ!!おどろしい！」をテーマに、ダンスを織り交ぜた躍動感あふれる百鬼夜行を楽しめる。また妖怪おねえさん、妖怪おにいさん、映画村のキャラクターかちん太が登場する参加型ダンスプログラムをはじめ、妖怪との特別な触れ合いができ",
-    "image_url": "images/ba16d74807db22299c.jpg",
-    "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0726e160721/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/21/l/160721_3.jpg"
-  },
-  {
     "title": "「特別展「水木しげる 魂の漫画展」」神戸ファッション美術館 2026年9月12日（土） ~2026年11月29日（日） 『ゲゲゲの鬼太郎』などで知られる漫画家・水木しげるの画業を紹介する特別展「水木しげる 魂の漫画展」が",
     "start_date": "2026-09-12",
     "end_date": "2026-11-29",
@@ -457,6 +435,50 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5920-file.jpg"
   },
   {
+    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪",
+      "『崩壊：スターレイル』星神★アッハ 実装記念"
+    ],
+    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
+    "image_url": "images/593281922a9d75a58a.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792062501-2ca7ac54361dbb1888b6fe00765c0f03-1920x1356.jpg"
+  },
+  {
+    "title": "文字化化 Star Wandering オンリーショップ",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪",
+      "文字化化 Star Wandering"
+    ],
+    "description": "期間中、オンリーショップ・応援店開催店舗にて『文字化化』対象グッズをご購入2,200円(税込)毎に、「インスタントフォト風カード（全6種）」を1枚プレゼント！※特典はお選びいただけません。※特典は無くなり次第終了となります。",
+    "image_url": "images/9d32ca8136f48ac5ba.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/50917/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2027/10/1791443132-fa4a7d3a358e0430a0c2f322876269d1-1920x1353.jpg"
+  },
+  {
     "title": "TVアニメ『ヒカルの碁』25周年記念オンリーショップ～盤上絵巻～byスタジオぴえろストア",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -482,71 +504,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1790661403-92f7d267817276a1a25507330fa622ba.jpg"
   },
   {
-    "title": "文字化化 Star Wandering オンリーショップ",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪",
-      "文字化化 Star Wandering"
-    ],
-    "description": "期間中、オンリーショップ・応援店開催店舗にて『文字化化』対象グッズをご購入2,200円(税込)毎に、「インスタントフォト風カード（全6種）」を1枚プレゼント！※特典はお選びいただけません。※特典は無くなり次第終了となります。",
-    "image_url": "images/9d32ca8136f48ac5ba.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/50917/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2027/10/1791443132-fa4a7d3a358e0430a0c2f322876269d1-1920x1353.jpg"
-  },
-  {
-    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪",
-      "『崩壊：スターレイル』星神★アッハ 実装記念"
-    ],
-    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
-    "image_url": "images/593281922a9d75a58a.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792062501-2ca7ac54361dbb1888b6fe00765c0f03-1920x1356.jpg"
-  },
-  {
-    "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪"
-    ],
-    "description": "◆開催期間　2026年10月17日(土)～2026年11月3日(火)開催店舗：渋谷店◆開催期間　2026年11月14日(土)～2026年11月29日(日)開催店舗：名古屋店◆開催期間　2026年12月5日(土)～2026年12月20日(日)開催店舗：大阪日本橋店",
-    "image_url": "images/0d5dab3ac464ebc65b.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/47487/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/08/1788160713-86deda233612248ccfdc008550338e77.jpg"
-  },
-  {
     "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -569,6 +526,27 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
+  },
+  {
+    "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪"
+    ],
+    "description": "◆開催期間　2026年10月17日(土)～2026年11月3日(火)開催店舗：渋谷店◆開催期間　2026年11月14日(土)～2026年11月29日(日)開催店舗：名古屋店◆開催期間　2026年12月5日(土)～2026年12月20日(日)開催店舗：大阪日本橋店",
+    "image_url": "images/0d5dab3ac464ebc65b.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/47487/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/08/1788160713-86deda233612248ccfdc008550338e77.jpg"
   },
   {
     "title": "鮫升コモリ アニメイトオンリーショップ ～むっしゅ先生描き下ろし「恋するアフタースクール」～",
@@ -1291,30 +1269,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/dc5164964bc501a04c64a48724c6c-560x792.jpg"
   },
   {
-    "title": "ときどき",
-    "start_date": "2026-11-26",
-    "end_date": "2026-11-26",
-    "area": "大阪",
-    "venue": "セブンパーク天美 1F マツモトキヨシ前（ロフト側）",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント ときどき EVENT | イベント 掲載日：2026/10/26 ※画像をクリックすると拡大表示されます 買う・食べる とき",
-    "image_url": "images/af62fef49dc03da1de.jpg",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100013903",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013903/img_3s4gitagrvmso.jpg"
-  },
-  {
     "title": "とりすけのカステラ工房",
     "start_date": "2026-11-26",
     "end_date": "2026-11-26",
@@ -1339,6 +1293,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013853/img_3s1y4jcpackkk.jpg"
   },
   {
+    "title": "ときどき",
+    "start_date": "2026-11-26",
+    "end_date": "2026-11-26",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1F マツモトキヨシ前（ロフト側）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント ときどき EVENT | イベント 掲載日：2026/10/26 ※画像をクリックすると拡大表示されます 買う・食べる とき",
+    "image_url": "images/af62fef49dc03da1de.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100013903",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013903/img_3s4gitagrvmso.jpg"
+  },
+  {
     "title": "2026年 鈴鹿選手権シリーズ 第5戦 KART RACE IN SUZUKA 2026年 地方カート選手権 FS-125 / X30部門 第5戦",
     "start_date": "2026-11-28",
     "end_date": "2026-11-29",
@@ -1359,6 +1337,30 @@ window.EVENT_DATA = [
     "image_url": "",
     "source": "JAFモータースポーツ",
     "source_url": "https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/racingkart_2026.pdf"
+  },
+  {
+    "title": "前田大翔 LIVE TOUR 2026 -be your light- | イベント | グランフロント大阪",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "大阪",
+    "venue": "開催場所 北館４F　ナレッジシアター",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設",
+      "ホール",
+      "開催場所 北館４F ナレッジシアター"
+    ],
+    "description": "前田大翔",
+    "image_url": "images/6e2cea393042db3f11.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5836/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261110/250fd8a5111291cae3bad86e60cc6d4eca49dcd8.jpeg"
   },
   {
     "title": "『無職転生　～蛇足編～』完結記念オンリーショップ",
@@ -1516,28 +1518,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.gfo-sc.jp/files/20260905/c6d86d90663dfa70860668a033b6afbb9168c29e.jpg"
   },
   {
-    "title": "「Grand Santa Parade in UMEKITA」2026 | イベント | グランフロント大阪",
-    "start_date": "2026-12-22",
-    "end_date": "2026-12-22",
-    "area": "大阪",
-    "venue": "開催場所 グランフロント大阪、グラングリーン大阪各所",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "商業施設"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/8f44d14b7ecfe51292.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5829/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20261106/53d3492334e47dbc1e55f755a5ff2cd0e9a86cbf.jpeg"
-  },
-  {
     "title": "今宮戎",
     "start_date": "2027-01-09",
     "end_date": "2027-01-09",
@@ -1627,29 +1607,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/index01.png"
   },
   {
-    "title": "「～KAWAII LAB.衣装展～ KAWAII CLOSET in 大丸神戸店」 2026年10月28日（水） ~2026年11月10日（火） 2026年4月に大丸東京店で開催した『～KAWAII LAB. 衣装展～ ",
-    "start_date": "2026-10-28",
-    "end_date": "2026-11-10",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 96,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "神戸",
-      "百貨店"
-    ],
-    "description": "開催中 「～KAWAII LAB.衣装展～ KAWAII CLOSET in 大丸神戸店」 2026年10月28日（水） ~2026年11月10日（火） 2026年4月に大丸東京店で開催した『～KAWAII LAB. 衣装展～ KAWAII CLOSET』が大丸神戸店にて開催されます。 FRUITS ZIPPER、CANDY TUNE、S",
-    "image_url": "images/b876c6ab48fe4f6732.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38138/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/KC_KV_daimaru_kobe_square-1024x1024.jpg"
-  },
-  {
     "title": "かほなんと学ぶ！特殊詐欺サバイバル大作戦！ ＠セブンパーク天美",
     "start_date": "2026-11-21",
     "end_date": "2026-11-21",
@@ -1696,6 +1653,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014049/HP_10801350_A_1007.jpg"
+  },
+  {
+    "title": "和風生餃子はっしん 生餃子販売",
+    "start_date": "2026-11-21",
+    "end_date": "2026-11-21",
+    "area": "大阪",
+    "venue": "セブンパーク天美 １F ライフ前まったら広場",
+    "category": "tourism",
+    "score": 95,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 和風生餃子はっしん 生餃子販売 EVENT | イベント 掲載日：2026/11/10 ※画像をクリックすると拡大表示されま",
+    "image_url": "images/a70ec982e9b5677a3a.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014080",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014080/img_3s0xh9ykyugwo.jpg"
   },
   {
     "title": "天使のクリームカステラ",
@@ -1768,6 +1749,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.gfo-sc.jp/files/20260830/46be1226e452a389f543240b5d2600a9e4dcfbcf.png"
   },
   {
+    "title": "ガチャガチャ展 in 大阪",
+    "start_date": "2026-12-03",
+    "end_date": "2027-01-12",
+    "area": "大阪",
+    "venue": "なんばスカイオ 7Fコンベンションホール",
+    "category": "exhibition",
+    "score": 94,
+    "tags": [
+      "展示",
+      "大阪",
+      "なんば",
+      "ホール",
+      "なんばスカイオ 7Fコンベンション"
+    ],
+    "description": "国内屈指のメーカーやクリエイターによる珠玉の品々が一堂に展示される「ガチャガチャ展」。日本のカルチャーとも言うべきガチャガチャの魅力が詰まった展覧会。",
+    "image_url": "images/7be97f599143acfd9c.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0727e620734/",
+    "categories": [
+      "exhibition"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/34/l/620734.jpg"
+  },
+  {
     "title": "第11回 六甲山のキノコ展 in 森林植物園",
     "start_date": "2026-09-06",
     "end_date": "2026-12-18",
@@ -1790,30 +1795,6 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/91/l/605791.jpg"
-  },
-  {
-    "title": "マルテ ポップアップショップ",
-    "start_date": "2026-10-30",
-    "end_date": "2026-11-10",
-    "area": "大阪",
-    "venue": "ルクア 3F イベントスペース",
-    "category": "tourism",
-    "score": 92,
-    "tags": [
-      "イベント",
-      "ポップアップ",
-      "大阪",
-      "商業施設",
-      "マルテ"
-    ],
-    "description": "OSAKA POP UP STORE2026年10月30日（金）〜11月10日（火）の12日間、ルクア3Fにて、MARTE POP UP STOREを開催いたします。sahara・SYKIAをはじめ、Ruh Dhan・ILANIS・ELLA CANTARIAなど、MARTEがセレクトする幅広いライン",
-    "image_url": "images/08aaeb61d18686f65e.jpg",
-    "source": "LUCUA大阪",
-    "source_url": "https://www.lucua.jp/topics/p-1955660.html",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5054-file.jpg"
   },
   {
     "title": "(金)～11.15(日) OSAKA R6 MAJOR",
@@ -2125,6 +2106,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/68/l/604068.jpg"
   },
   {
+    "title": "ベビーカステラ 和蘭陀焼き",
+    "start_date": "2026-12-04",
+    "end_date": "2026-12-04",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1階マツモトキヨシ前(ロフト側)",
+    "category": "tourism",
+    "score": 85,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント ベビーカステラ 和蘭陀焼き EVENT | イベント 掲載日：2026/11/11 ※画像をクリックすると拡大表示されます ",
+    "image_url": "images/796b234503718a371e.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100013705",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013705/img_3r43cotmlomc4.jpg"
+  },
+  {
     "title": "遊びと学びのワークショップ 『小さなお子さまから楽しめるものづくり体験♪』",
     "start_date": "2026-11-22",
     "end_date": "2026-11-22",
@@ -2189,6 +2194,28 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/92/l/610692.jpg"
+  },
+  {
+    "title": "「みんなのAWA-YA meets 神戸」デザイン・クリエイティブセンター神戸（KIITO） 2026年11月12日（木） ~2026年11月18日（水） 牛乳石鹸の「赤箱」でおなじみのCOWブランドによる体験型イベント",
+    "start_date": "2026-11-12",
+    "end_date": "2026-11-18",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 79,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "「みんなのAWA-YA meets 神戸」が、デザイン・クリエイティブセンター神戸（KIITO）で開催されます。 2018年に京都で始まった「赤箱AWA-YA」は、福岡や横浜、下北沢など全国各地で開かれ、累計4.8万人以上が来場してきました。神戸での開催は今回が初めてで、関西での開催は約3年ぶりとなります。 会場には、歴代の赤箱パッケージ",
+    "image_url": "images/ce1ea24c19a8dfc5d5.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38824/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/awaya-meets-kobe-1.jpg"
   },
   {
     "title": "「暮らしを描く －ちいさきものはみなうつくし－」神戸ゆかりの美術館 2026年9月21日（月） ~2026年11月23日（月） 画家たちが自分自身や身近な人々のささやかな日常に目を向け、暮らしの中に美を見出そうとした作品",
@@ -2924,29 +2951,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/sugata-wo-keshita-senpai-wo-oe-01-1024x683.png"
   },
   {
-    "title": "「有馬温泉 太閤の湯殿館（資料館）企画展」 2026年3月19日（木） ~2026年11月10日（火） 神戸市立太閤の湯殿館では、有馬温泉の歴史を紹介し、湯山遺跡発掘調査で発見された、蒸し風呂、岩風呂遺構等が展示されてい",
-    "start_date": "2026-03-19",
-    "end_date": "2026-11-10",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "exhibition",
-    "score": 59,
-    "tags": [
-      "展示",
-      "特別展",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "開催中 「有馬温泉 太閤の湯殿館（資料館）企画展」 2026年3月19日（木） ~2026年11月10日（火） 神戸市立太閤の湯殿館では、有馬温泉の歴史を紹介し、湯山遺跡発掘調査で発見された、蒸し風呂、岩風呂遺構等が展示されています。 このたび、大河ドラマ「豊臣兄弟！」の放送を機に、発掘調査の様子を紹介したパネル展示や、湯山遺跡関連の出土",
-    "image_url": "images/6674f23fbca0fc00bd.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/35375/",
-    "categories": [
-      "exhibition"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/g15_web-1024x683.jpg"
-  },
-  {
     "title": "「Curators in Panic 2～横尾忠則展 学芸員危機２髪？」横尾忠則現代美術館 2026年9月19日（土） ~2026年12月27日（日） 本展は、2021年に開催した展覧会「Curators in Pani",
     "start_date": "2026-09-19",
     "end_date": "2026-12-27",
@@ -3260,30 +3264,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/31/l/598331.jpg"
   },
   {
-    "title": "愛のカタチ 幻の春画《稚児草紙》",
-    "start_date": "2026-09-19",
-    "end_date": "2027-01-17",
-    "area": "京都",
-    "venue": "福田美術館",
-    "category": "exhibition",
-    "score": 49,
-    "tags": [
-      "展示",
-      "美術",
-      "京都",
-      "美術館",
-      "福田美術"
-    ],
-    "description": "福田美術館初となる春画展。愛と欲望、人が人を求める切実な感情を描いた「春画」の世界を紹介する。本邦初公開となる《稚児草紙》は、14世紀初頭に制作されたとされる、稚児と僧侶の親密な関係を描く絵巻で、長らく実在のみが知られてきた「幻の春画」である。日本最古級の春画《小柴垣草紙》の模写",
-    "image_url": "images/e790553b1395358392.jpg",
-    "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0726e605281/",
-    "categories": [
-      "exhibition"
-    ],
-    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/81/l/605281.jpg"
-  },
-  {
     "title": "大収穫祭IN九度山",
     "start_date": "2026-11-14",
     "end_date": "2026-11-15",
@@ -3374,6 +3354,30 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://www.walkerplus.com/asset/images/common/no_image_spot.jpg"
+  },
+  {
+    "title": "「県美シネマクラシック映画「エデンの東」」兵庫県立美術館 2026年11月13日（金） ~2026年11月13日（金） 兵庫県立美術館のKOBELCOミュージアムホールで、「県美シネマクラシック映画「エデンの東」」が上映",
+    "start_date": "2026-11-13",
+    "end_date": "2026-11-13",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "exhibition",
+    "score": 38,
+    "tags": [
+      "展示",
+      "美術",
+      "兵庫",
+      "ホール",
+      "美術館"
+    ],
+    "description": "されます。 ジェームス・ディーンのデビュー作として知られる名作です。クライマックスシーンでのディーンの即興演技は、映画史に残る名演として記憶され、その後の俳優たちに大きな影響を与えました。作品はアカデミー賞4部門にノミネートされるなど高く評価され、ディーン自身も主演男優賞にノミネートされましたが、それを知ることなく世を去りました。",
+    "image_url": "images/f996f103b2cdcb8627.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38916/",
+    "categories": [
+      "exhibition"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kenbi-cinema-eden-1-724x1024.jpg"
   },
   {
     "title": "平城遷都－「飛鳥・藤原の宮都」から平城へ－",
