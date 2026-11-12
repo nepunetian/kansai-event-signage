@@ -33,7 +33,7 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x77ee0386f770>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x727d9f3ff1a0>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
@@ -87,10 +87,10 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 12,
-    "sitemap_links": 62,
-    "candidates": 62,
-    "parsed": 78,
+    "list_links": 14,
+    "sitemap_links": 64,
+    "candidates": 64,
+    "parsed": 79,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -182,7 +182,7 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 53,
+    "list_links": 52,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 3,
@@ -196,18 +196,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 20,
+    "parsed": 21,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 19"
+      "dedicated: 20",
+      "listing fallback: 20"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 128,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -236,7 +236,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 149,
-    "generated_at": "2026-11-11T10:24:09.179107+09:00"
+    "final_events": 151,
+    "generated_at": "2026-11-12T11:25:04.238986+09:00"
   }
 }
