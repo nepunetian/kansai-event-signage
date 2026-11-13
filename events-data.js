@@ -435,6 +435,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5920-file.jpg"
   },
   {
+    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "ポップアップ",
+      "大阪",
+      "ちみけもますこっと",
+      "『ちみけもますこっと』"
+    ],
+    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
+    "image_url": "images/b07a2ec9e6a1760ff2.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
+  },
+  {
     "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -504,30 +528,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2027/10/1791443132-fa4a7d3a358e0430a0c2f322876269d1-1920x1353.jpg"
   },
   {
-    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "ポップアップ",
-      "大阪",
-      "ちみけもますこっと",
-      "『ちみけもますこっと』"
-    ],
-    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
-    "image_url": "images/b07a2ec9e6a1760ff2.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
-  },
-  {
     "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -571,27 +571,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/09/1788416028-28366aaba7c175da75836ab4e66fa584.jpg"
   },
   {
-    "title": "『ホロライブプロダクション ART JAM!!!フェア in animate』オンリーショップ",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪"
-    ],
-    "description": "＞＞フェア詳細はこちら＞＞Gallery D.N.A.詳細はこちら",
-    "image_url": "images/2ea858457a60fb8fba.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/46916/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/07/1785319197-055be28c5925abdf76416544542fe651.jpg"
-  },
-  {
     "title": "光文社アニメイトBLフェア～動物園デート編～",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -613,27 +592,25 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/06/1782190119-2f6a1765f01b52d039da6fdf13643864-1920x1356.jpg"
   },
   {
-    "title": "みんなで遊ぼう #Open MUJIでつながるボドゲ。 WeWork Japan ボードゲームサークルの愉快な仲間たちと共に | イベント | グランフロント大阪",
-    "start_date": "2026-11-12",
-    "end_date": "2026-11-12",
+    "title": "『ホロライブプロダクション ART JAM!!!フェア in animate』オンリーショップ",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
     "area": "大阪",
-    "venue": "開催場所 無印良品 / 北館 4F",
+    "venue": "大阪",
     "category": "anime",
     "score": 99,
     "tags": [
       "アニメ・ゲーム",
-      "大阪",
-      "商業施設",
-      "開催場所 無印良品 / 北館 4F"
+      "大阪"
     ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/ac713184083289e86a.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5823/",
+    "description": "＞＞フェア詳細はこちら＞＞Gallery D.N.A.詳細はこちら",
+    "image_url": "images/2ea858457a60fb8fba.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/46916/",
     "categories": [
       "anime"
     ],
-    "original_image_url": "https://www.gfo-sc.jp/files/20261102/f70adcb2024a214434406d63f71670ccb96463d4.jpg"
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/07/1785319197-055be28c5925abdf76416544542fe651.jpg"
   },
   {
     "title": "〈MONCLER〉POP UP STORE | イベント | グランフロント大阪",
@@ -1057,6 +1034,54 @@ window.EVENT_DATA = [
     "source_url": "https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/race_2026.pdf"
   },
   {
+    "title": "カデュネ ポップアップショップ",
+    "start_date": "2026-11-20",
+    "end_date": "2026-11-29",
+    "area": "大阪",
+    "venue": "ルクア イーレ 5F ニアユー",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "ポップアップ",
+      "大阪",
+      "商業施設",
+      "カデュネ"
+    ],
+    "description": "「CADUNE」とは「clair de lune = 月光」の俗語。月の満ち欠けによって様々な影響を受けている私達。日々、心地よいと感じるものを自ら選び自分に素直に生きることの大切さ。それは引力にも似た魅力を引き出す。という意味を持ちます。モダンで洗練されたデザインでありながら、自然に寄り添うように",
+    "image_url": "images/b278e464aa4297064d.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/p-1956117.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5844-file.jpg"
+  },
+  {
+    "title": "ヨウ/アノイ/ステイニ ポップアップショップ",
+    "start_date": "2026-11-20",
+    "end_date": "2026-11-24",
+    "area": "大阪",
+    "venue": "ルクア イーレ 3F エスカレーター横イベントスペース",
+    "category": "food",
+    "score": 99,
+    "tags": [
+      "食・グルメ",
+      "カレー",
+      "ポップアップ",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "発色・使い心地・処方にこだわるYEAU、機能美を追求するANOI、自然界の表情を宿すsteiniの3ブランドによる合同POP UPを展開。",
+    "image_url": "images/c723d384ed3e2e6881.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/p-1955717.html",
+    "categories": [
+      "food"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5066-file.jpg"
+  },
+  {
     "title": "わたあめちゃん",
     "start_date": "2026-11-20",
     "end_date": "2026-11-20",
@@ -1316,6 +1341,29 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013903/img_3s4gitagrvmso.jpg"
   },
   {
+    "title": "おうちスンドゥブのススメ\t\t\t\t\t\t\t\t\t\t\t | イベント | グランフロント大阪",
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-28",
+    "area": "大阪",
+    "venue": "開催場所 うめきた広場メインスペース",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設",
+      "開催場所 うめきた広場メインスペース"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/95dfb4fbec05695499.png",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5834/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261110/5dac11212b5e5109c8aa8f12bef2135ae4fb2380.png"
+  },
+  {
     "title": "2026年 鈴鹿選手権シリーズ 第5戦 KART RACE IN SUZUKA 2026年 地方カート選手権 FS-125 / X30部門 第5戦",
     "start_date": "2026-11-28",
     "end_date": "2026-11-29",
@@ -1541,6 +1589,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014084/img_3sbv6fb35nac0.jpg"
+  },
+  {
+    "title": "阪南大学赤井ゼミPresents プロジェクションマッピング Merry Christmas！",
+    "start_date": "2026-12-19",
+    "end_date": "2026-12-19",
+    "area": "大阪",
+    "venue": "セブンパーク天美 ：屋外 南西側外壁 ※雨天、強風の場合は中止する場合があります。 日程 2026/12/19(土)",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 阪南大学赤井ゼミPresents プロジェクションマッピング Merry Christmas！ EVENT | イベント 掲",
+    "image_url": "images/b69b16f0985c9932a2.png",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014093",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014093/img_3sc1q7voqqm8c.png"
   },
   {
     "title": "今宮戎",
@@ -2041,27 +2113,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/35/l/618435.jpg"
   },
   {
-    "title": "第123回赤穂義士祭",
-    "start_date": "2026-12-14",
-    "end_date": "2026-12-14",
-    "area": "兵庫",
-    "venue": "赤穂城跡、お城通り、いきつぎ広場周辺など",
-    "category": "tourism",
-    "score": 89,
-    "tags": [
-      "イベント",
-      "兵庫"
-    ],
-    "description": "毎年12月14日は、赤穂義士討ち入りにちなんだ赤穂義士祭が盛大に行われる。討ち入り装束の義士行列や参勤交代を再現した大名行列、忠臣蔵名場面を車上で再現した山車等が市中を練り歩く忠臣蔵パレードは義士祭最大の目玉だ。",
-    "image_url": "images/18ae9d1705a748ee2f.jpg",
-    "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0728e614728/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/28/l/614728.jpg"
-  },
-  {
     "title": "中之島公園をボートでぐるっと巡る「水上さんぽガイドツアー」",
     "start_date": "2026-08-15",
     "end_date": "2026-11-15",
@@ -2407,6 +2458,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5077-file.jpg"
+  },
+  {
+    "title": "ゾーイ ポップアップショップ",
+    "start_date": "2026-11-20",
+    "end_date": "2026-11-24",
+    "area": "大阪",
+    "venue": "ルクア 3F イベントスペース",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "ポップアップ",
+      "大阪",
+      "商業施設",
+      "ゾーイ"
+    ],
+    "description": "端正で、センシュアル。いつの時代も色褪せない、オーセンティックなワードローブを提案する「ZOE」。今季の新しい表情となるシンセティックスウェードやレザーの構築的なアウター、そしてシグネチャーであるパワーショルダージャケットのエレガントなセットアップを軸に展開します。滑らかな肌触りと高い保温性を備えた",
+    "image_url": "images/88f35424003a3d38c1.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/p-1956106.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5838-file.jpg"
   },
   {
     "title": "スクール はずし場　第二期",
@@ -3358,6 +3433,29 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/16/l/612216.jpg"
   },
   {
+    "title": "万呂須佐神社例祭（万呂の獅子舞）",
+    "start_date": "2026-11-22",
+    "end_date": "2026-11-23",
+    "area": "和歌山",
+    "venue": "万呂須佐神社",
+    "category": "tourism",
+    "score": 40,
+    "tags": [
+      "イベント",
+      "和歌山",
+      "寺社",
+      "万呂須佐神社"
+    ],
+    "description": "万呂須佐神社の祭礼に奉納される獅子舞は、寝獅子や花の舞に登場する天狗がハナという竹の幣、お多福が陽物型の棒を持つのが特色で、両者が獅子の周囲で踊ったりとびはねたり、あるいは思わしげな所作をしたりする。田辺市指定無形民俗文化財。",
+    "image_url": "images/e6e742841a78e2cddd.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0730e617420/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/20/l/617420.jpg"
+  },
+  {
     "title": "「北野謎解きウォーク 〜ホームズからの手紙〜」北野山本通、一宮神社周辺 2026年9月12日（土） ~2026年11月30日（月） 「北野謎解きウォーク〜ホームズからの手紙〜」は、神戸・北野の街を舞台にした街歩き型の謎解",
     "start_date": "2026-09-12",
     "end_date": "2026-11-30",
@@ -3419,7 +3517,7 @@ window.EVENT_DATA = [
       "ホール",
       "美術館"
     ],
-    "description": "されます。 ジェームス・ディーンのデビュー作として知られる名作です。クライマックスシーンでのディーンの即興演技は、映画史に残る名演として記憶され、その後の俳優たちに大きな影響を与えました。作品はアカデミー賞4部門にノミネートされるなど高く評価され、ディーン自身も主演男優賞にノミネートされましたが、それを知ることなく世を去りました。",
+    "description": "開催中 「県美シネマクラシック映画「エデンの東」」兵庫県立美術館 2026年11月13日（金） ~2026年11月13日（金） 兵庫県立美術館のKOBELCOミュージアムホールで、「県美シネマクラシック映画「エデンの東」」が上映されます。 ジェームス・ディーンのデビュー作として知られる名作です。クライマックスシーンでのディーンの即興演技は",
     "image_url": "images/f996f103b2cdcb8627.jpg",
     "source": "Feel KOBE",
     "source_url": "https://www.feel-kobe.jp/event/38916/",
