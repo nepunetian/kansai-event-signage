@@ -33,7 +33,7 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7998aaeeba40>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x72ed7e981ee0>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
@@ -43,11 +43,11 @@
     "list_links": 13,
     "sitemap_links": 0,
     "candidates": 13,
-    "parsed": 36,
+    "parsed": 33,
     "errors": 0,
     "notes": [
-      "dedicated: 12",
-      "listing fallback: 24"
+      "dedicated: 11",
+      "listing fallback: 22"
     ]
   },
   "ATC": {
@@ -61,13 +61,13 @@
     ]
   },
   "グランフロント大阪": {
-    "list_links": 11,
+    "list_links": 10,
     "sitemap_links": 0,
-    "candidates": 11,
-    "parsed": 22,
+    "candidates": 10,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "listing fallback: 11",
+      "listing fallback: 10",
       "sitemap https://www.grandfront-osaka.jp/sitemap.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap-index.xml: HTTPError"
@@ -150,9 +150,9 @@
     ]
   },
   "JR西日本": {
-    "list_links": 31,
+    "list_links": 30,
     "sitemap_links": 0,
-    "candidates": 31,
+    "candidates": 30,
     "parsed": 0,
     "errors": 0,
     "notes": [
@@ -207,7 +207,7 @@
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 130,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -236,7 +236,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 155,
-    "generated_at": "2026-11-13T10:58:34.108003+09:00"
+    "final_events": 150,
+    "generated_at": "2026-11-14T10:36:16.421599+09:00"
   }
 }
