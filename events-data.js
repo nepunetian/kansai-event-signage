@@ -70,30 +70,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.hankyu.co.jp/area_info/osarunogeorge-hankyu2026/img/ogp.png"
   },
   {
-    "title": "「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」阪神高速沿線各所 2026年8月22日（土） ~2027年3月21日（日） 阪神高速沿線で実際に神戸や大阪を巡って謎を解く体験型のゲームイベント「リアル謎",
-    "start_date": "2026-08-22",
-    "end_date": "2027-03-21",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "ゲーム",
-      "大阪",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "開催中 「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」阪神高速沿線各所 2026年8月22日（土） ~2027年3月21日（日） 阪神高速沿線で実際に神戸や大阪を巡って謎を解く体験型のゲームイベント「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」が開催されます。 謎解きキットを片手に3つのコースからチ",
-    "image_url": "images/2a10f488af1200e12b.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/37553/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/94359dbe-72dc-4939-bbf9-1d72faa8201a-725x1024.jpg"
-  },
-  {
     "title": "「京阪電車×響け！ユーフォニアム2026 秋」コラボカフェ",
     "start_date": "2026-09-01",
     "end_date": "2026-12-20",
@@ -435,6 +411,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5920-file.jpg"
   },
   {
+    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "ポップアップ",
+      "大阪",
+      "ちみけもますこっと",
+      "『ちみけもますこっと』"
+    ],
+    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
+    "image_url": "images/b07a2ec9e6a1760ff2.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
+  },
+  {
     "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -477,30 +477,6 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2027/10/1791443132-fa4a7d3a358e0430a0c2f322876269d1-1920x1353.jpg"
-  },
-  {
-    "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "ポップアップ",
-      "大阪",
-      "ちみけもますこっと",
-      "『ちみけもますこっと』"
-    ],
-    "description": "『ちみけもますこっと』だらけのオンリーショップが開催！",
-    "image_url": "images/b07a2ec9e6a1760ff2.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/52348/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
   },
   {
     "title": "TVアニメ『ヒカルの碁』25周年記念オンリーショップ～盤上絵巻～byスタジオぴえろストア",
@@ -682,6 +658,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/24/l/615324.jpg"
   },
   {
+    "title": "第2回キッチンカーグランプリin滋賀県希望が丘文化公園",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-29",
+    "area": "滋賀",
+    "venue": "滋賀県希望が丘文化公園",
+    "category": "food",
+    "score": 99,
+    "tags": [
+      "食・グルメ",
+      "カレー",
+      "滋賀",
+      "公園",
+      "滋賀県希望が丘文化公園"
+    ],
+    "description": "前回大好評だった「第2回キッチンカーグランプリin滋賀県希望が丘文化公園」を今年も開催！1日28台のキッチンカーが集まり、第1週と第2週で出店店舗やメニューが入れ替わる。カレー、ステーキ、牛タン、バーガー、たこ焼きなどの食事系から、クレープやベビーカステラ、ドリンクまで多彩なグル",
+    "image_url": "images/0c84981c9593d41970.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0725e618204/",
+    "categories": [
+      "food"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/04/l/618204.jpg"
+  },
+  {
     "title": "西日本 グラベルラリーツアー 2026 第4戦",
     "start_date": "2026-11-14",
     "end_date": "2026-11-15",
@@ -723,100 +723,6 @@ window.EVENT_DATA = [
     "image_url": "",
     "source": "JAFモータースポーツ",
     "source_url": "https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/racingkart_2026.pdf"
-  },
-  {
-    "title": "(土)～12.06(日) Anime WORLD TRIGGER Exhibition “REBOOT”",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-14",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "ATC"
-    ],
-    "description": "2026.11.14(土)～12.06(日) Anime WORLD TRIGGER Exhibition “REBOOT”",
-    "image_url": "images/2cf22698cc7283278d.jpg",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/world-trigger-exhibition/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/mv-560x396.jpg"
-  },
-  {
-    "title": "しまね移住フェア＆暮らしマルシェ2026in大阪 | イベント | グランフロント大阪",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-14",
-    "area": "大阪",
-    "venue": "開催場所 ナレッジキャピタルコングレコンベンションセンター",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "マルシェ",
-      "大阪",
-      "商業施設",
-      "展示場"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/1fea61984ae6624029.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5818/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20261030/6c272666f85c225a49f9fc2c957d918c77dad090.jpeg"
-  },
-  {
-    "title": "大石昌良「嗚呼、素晴らしき日常」発売記念フリーライブ＠セブンパーク天美",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-14",
-    "area": "大阪",
-    "venue": "セブンパーク天美 から、ご覧ください。 ＜整理券案内＞ イベント当日、会場内の特設カウンターにて、対象商品をご購入頂いたお客様に「優先観覧エリア入場整理券」と「特典会参加券」をお渡しいたします。 配布",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 大石昌良「嗚呼、素晴らしき日常」発売記念フリーライブ＠セブンパーク天美 EVENT | イベント 掲載日：2026/10/5",
-    "image_url": "images/acc24efb20d4bb3243.jpg",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100013832",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013832/Oishi_mainA2026_KAW3108_30.jpg"
-  },
-  {
-    "title": "ベビーカステラ販売 カステラのきもち大阪店",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-14",
-    "area": "大阪",
-    "venue": "セブンパーク天美 1階マツモトキヨシ前(ロフト側)",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント ベビーカステラ販売 カステラのきもち大阪店 EVENT | イベント 掲載日：2026/10/27 ※画像をクリックすると拡",
-    "image_url": "images/af9411633d0b4b030c.jpg",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100013938",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013938/img_3qh8bk5xma2o8.jpg"
   },
   {
     "title": "「第3回北神戸Happy Bake à la mode」ベルスト鈴蘭台3Fすずらん広場 2026年11月14日（土） ~2026年11月15日（日） 神戸電鉄鈴蘭台駅に直結するベルスト鈴蘭台で、「北神戸Happy Bak",
@@ -1249,6 +1155,27 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014005/img_3s8ahxl2gge8g.png"
   },
   {
+    "title": "ONDO LAND",
+    "start_date": "2026-11-23",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "うめきたグリーンプレイス1F-3F 緑辺の丘前",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪"
+    ],
+    "description": "公共空間やユニークベニューを舞台に、その場所の記憶や空気感と響き合う音楽体験を提供する「ONDO LAND」が、大阪のローカルコミュニティ2組とコラボする音楽イベントを11月23日（月・祝）、うめきたグリーンプレイス「緑辺の丘」で開催します。JR大阪駅に近接する開かれた場所で、普段クラブや音楽イベン",
+    "image_url": "images/a3b45d6dc6e424e7a8.png",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/ondo_land.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-6086-file.png"
+  },
+  {
     "title": "(火) 介護DX、何から始める？～ケアプラン連携×介護情報基盤×介護テクノロジー～",
     "start_date": "2026-11-24",
     "end_date": "2026-11-24",
@@ -1292,30 +1219,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/dc5164964bc501a04c64a48724c6c-560x792.jpg"
   },
   {
-    "title": "とりすけのカステラ工房",
-    "start_date": "2026-11-26",
-    "end_date": "2026-11-26",
-    "area": "大阪",
-    "venue": "セブンパーク天美 1F マツモトキヨシ前(無印良品側)",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント とりすけのカステラ工房 EVENT | イベント 掲載日：2026/11/4 ※画像をクリックすると拡大表示されます 買う・",
-    "image_url": "images/5ac57fd1d50d7feb50.jpg",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100013853",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013853/img_3s1y4jcpackkk.jpg"
-  },
-  {
     "title": "ときどき",
     "start_date": "2026-11-26",
     "end_date": "2026-11-26",
@@ -1338,6 +1241,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013903/img_3s4gitagrvmso.jpg"
+  },
+  {
+    "title": "とりすけのカステラ工房",
+    "start_date": "2026-11-26",
+    "end_date": "2026-11-26",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1F マツモトキヨシ前(無印良品側)",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント とりすけのカステラ工房 EVENT | イベント 掲載日：2026/11/4 ※画像をクリックすると拡大表示されます 買う・",
+    "image_url": "images/5ac57fd1d50d7feb50.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100013853",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013853/img_3s1y4jcpackkk.jpg"
   },
   {
     "title": "おうちスンドゥブのススメ\t\t\t\t\t\t\t\t\t\t\t | イベント | グランフロント大阪",
@@ -1544,6 +1471,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.hankyu.co.jp/area_info/machigatari/assets/D_KgiapR_Z27EuVG.png"
   },
   {
+    "title": "【12/19(土)・20(日)】ムラマツフルート点検会&試奏会開催！ | イベント | グランフロント大阪",
+    "start_date": "2026-12-19",
+    "end_date": "2026-12-20",
+    "area": "大阪",
+    "venue": "開催場所 島村楽器クラシック / 北館 5F",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/065fb385aae067eae6.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5722/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.gfo-sc.jp/files/20260905/c6d86d90663dfa70860668a033b6afbb9168c29e.jpg"
+  },
+  {
     "title": "マッキーといっしょに MERRY CHRISTMAS！",
     "start_date": "2026-12-19",
     "end_date": "2026-12-19",
@@ -1590,6 +1539,29 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014093/img_3sc1q7voqqm8c.png"
+  },
+  {
+    "title": "GREATER NAMBA FESTIVAL FINAL PARTY by FUZION PARK",
+    "start_date": "2026-12-24",
+    "end_date": "2026-12-24",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "rail",
+    "score": 99,
+    "tags": [
+      "鉄道",
+      "食・グルメ",
+      "大阪"
+    ],
+    "description": "グルメ 2026年12月24日（木）観光列車「GRAN 天空 」Xmas 特別運行します 和歌山のサイクリング・観光の魅力を体験できるイベントを開催します！ ハイキング カルチャー 令和9年 狭山池ウォーキング「池底ツアー」を開催します。 グルメ カルチャー 大阪•なんばに全国から蒸留家が集結！ 夜空に煌めく‟バブルスターナイト”開催",
+    "image_url": "images/82c2ee4e8fc85098d9.jpg",
+    "source": "南海電鉄",
+    "source_url": "https://www.nankai.co.jp/community/natts/event/greater-namba-festival-final-party/",
+    "categories": [
+      "rail",
+      "food"
+    ],
+    "original_image_url": "https://www.nankai.co.jp/community/natts/api/wp-content/uploads/2026/11/GNF.jpg"
   },
   {
     "title": "今宮戎",
@@ -2003,27 +1975,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/POPGAKUEN_19-560x792.jpg"
   },
   {
-    "title": "Anime WORLD TRIGGER Exhibition “REBOOT”",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-14",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 90,
-    "tags": [
-      "イベント",
-      "大阪"
-    ],
-    "description": "2026.11.14(土)～12.06(日) Anime WORLD TRIGGER Exhibition “REBOOT”",
-    "image_url": "images/11c5542c890f5905f4.jpg",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/world-trigger-exhibition/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/mv-560x396.jpg"
-  },
-  {
     "title": "TOTTEI PARK イルミナイト －AUTUMN LEAVES－",
     "start_date": "2026-09-01",
     "end_date": "2026-11-30",
@@ -2161,6 +2112,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013705/img_3r43cotmlomc4.jpg"
   },
   {
+    "title": "M-1感情爆発展",
+    "start_date": "2026-11-21",
+    "end_date": "2026-12-06",
+    "area": "大阪",
+    "venue": "ルクア 9F LUCUAホール",
+    "category": "tourism",
+    "score": 82,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設",
+      "ホール",
+      "ルクア 9F LUCUA"
+    ],
+    "description": "2001年から始まった、M-1グランプリ。結成年数、15年以内。2010年までは10年以内。​そして、決勝の漫才、4分以内。あえて制限を設けることで、漫才師たちはその瞬間に人生を賭けた。​そして、数々のドラマが生まれた。緊張、恐怖、覚悟、嫉妬、喜び、トラウマ、執念、興奮。M-1グランプリだからこそ爆",
+    "image_url": "images/90483c014e82f5624a.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/p-1956113.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5841-file.jpg"
+  },
+  {
     "title": "遊びと学びのワークショップ 『小さなお子さまから楽しめるものづくり体験♪』",
     "start_date": "2026-11-22",
     "end_date": "2026-11-22",
@@ -2271,6 +2246,28 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kurashi-wo-egaku_01-724x1024.png"
+  },
+  {
+    "title": "「オープンカスタムス2026」神戸税関 2026年11月15日（日） ~2026年11月15日（日） 神戸税関本関で「オープンカスタムス2026」が開催されます。 特別企画として、島根県の伝統芸能「石見神楽」が上演され、",
+    "start_date": "2026-11-15",
+    "end_date": "2026-11-15",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "anime",
+    "score": 75,
+    "tags": [
+      "アニメ・ゲーム",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "開催中 「オープンカスタムス2026」神戸税関 2026年11月15日（日） ~2026年11月15日（日） 神戸税関本関で「オープンカスタムス2026」が開催されます。 特別企画として、島根県の伝統芸能「石見神楽」が上演され、迫力ある大蛇（おろち）の舞を間近で見ることができます。 このほか、キャラクターグリーティングや麻薬探知犬のデモン",
+    "image_url": "images/ab4a04a99fc1bccb02.png",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38680/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/open-customs-2026-01-709x1024.png"
   },
   {
     "title": "アトモス ポップアップショップ",
@@ -2451,7 +2448,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/feffe704629551adc9.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2473,7 +2470,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/434d891ffd4547516a.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2495,7 +2492,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/665be518a37e019a22.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2517,7 +2514,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/7ed571f372b3d7beab.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2539,7 +2536,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/723c80780968fb3396.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2561,7 +2558,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/93b73f3f19474a321c.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2583,7 +2580,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/b8fbe0e9b3725ef5e3.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",

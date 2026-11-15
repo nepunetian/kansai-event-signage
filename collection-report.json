@@ -33,7 +33,7 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x72ed7e981ee0>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x75b369abe570>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
@@ -43,11 +43,11 @@
     "list_links": 13,
     "sitemap_links": 0,
     "candidates": 13,
-    "parsed": 33,
+    "parsed": 30,
     "errors": 0,
     "notes": [
-      "dedicated: 11",
-      "listing fallback: 22"
+      "dedicated: 10",
+      "listing fallback: 20"
     ]
   },
   "ATC": {
@@ -87,10 +87,10 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 18,
-    "sitemap_links": 68,
-    "candidates": 68,
-    "parsed": 82,
+    "list_links": 20,
+    "sitemap_links": 70,
+    "candidates": 70,
+    "parsed": 84,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -182,12 +182,13 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 51,
+    "list_links": 52,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 3,
+    "parsed": 9,
     "errors": 0,
     "notes": [
+      "listing fallback: 6",
       "sitemap https://www.nankai.co.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.nankai.co.jp/sitemap-index.xml: HTTPError"
     ]
@@ -196,19 +197,19 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 22,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "dedicated: 21",
-      "listing fallback: 21"
+      "dedicated: 19",
+      "listing fallback: 19"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 130,
-    "errors": 0,
+    "parsed": 131,
+    "errors": 1,
     "notes": [
       "listing fallback: 34",
       "sitemap https://www.feel-kobe.jp/sitemap-index.xml: HTTPError"
@@ -237,6 +238,6 @@
   },
   "TOTAL": {
     "final_events": 150,
-    "generated_at": "2026-11-14T10:36:16.421599+09:00"
+    "generated_at": "2026-11-15T10:11:25.634602+09:00"
   }
 }
