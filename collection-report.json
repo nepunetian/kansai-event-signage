@@ -3,18 +3,18 @@
     "list_links": 0,
     "sitemap_links": 0,
     "candidates": 0,
-    "parsed": 5,
+    "parsed": 3,
     "errors": 0,
     "notes": [
       "pattern0 diagnostics: {\"RACE\": 0, \"RALLY\": 0, \"GYMKHANA\": 0, \"開催場所\": 0, \"格式\": 4, \"2026年\": 0}",
       "PDF fallback discovered: 6",
       "PDF レース: rows=92, kept=2",
-      "PDF ラリー: rows=70, kept=1",
+      "PDF ラリー: rows=70, kept=0",
       "PDF ジムカーナ: rows=0, kept=0",
       "PDF サーキットトライアル: rows=0, kept=0",
       "PDF ダートトライアル: rows=0, kept=0",
-      "PDF カート: rows=32, kept=2",
-      "PDF fallback total rows=194, parsed=5",
+      "PDF カート: rows=32, kept=1",
+      "PDF fallback total rows=194, parsed=3",
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202611&heldDateTo=all&feature=all"
     ]
   },
@@ -33,21 +33,21 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x75b369abe570>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x789239821a30>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "ATCトップ": {
-    "list_links": 13,
+    "list_links": 11,
     "sitemap_links": 0,
-    "candidates": 13,
-    "parsed": 30,
+    "candidates": 11,
+    "parsed": 27,
     "errors": 0,
     "notes": [
-      "dedicated: 10",
-      "listing fallback: 20"
+      "dedicated: 9",
+      "listing fallback: 18"
     ]
   },
   "ATC": {
@@ -74,23 +74,23 @@
     ]
   },
   "なんばパークス": {
-    "list_links": 12,
+    "list_links": 10,
     "sitemap_links": 0,
-    "candidates": 12,
-    "parsed": 24,
+    "candidates": 10,
+    "parsed": 20,
     "errors": 0,
     "notes": [
-      "listing fallback: 12",
+      "listing fallback: 10",
       "sitemap https://nambaparks.com/sitemap.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap_index.xml: HTTPError",
       "sitemap https://nambaparks.com/sitemap-index.xml: HTTPError"
     ]
   },
   "LUCUA大阪": {
-    "list_links": 20,
-    "sitemap_links": 70,
-    "candidates": 70,
-    "parsed": 84,
+    "list_links": 17,
+    "sitemap_links": 68,
+    "candidates": 68,
+    "parsed": 82,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -209,7 +209,7 @@
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 131,
-    "errors": 1,
+    "errors": 0,
     "notes": [
       "listing fallback: 34",
       "sitemap https://www.feel-kobe.jp/sitemap-index.xml: HTTPError"
@@ -237,7 +237,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 150,
-    "generated_at": "2026-11-15T10:11:25.634602+09:00"
+    "final_events": 142,
+    "generated_at": "2026-11-16T10:09:45.055238+09:00"
   }
 }
