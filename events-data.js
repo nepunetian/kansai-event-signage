@@ -94,6 +94,29 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/94359dbe-72dc-4939-bbf9-1d72faa8201a-725x1024.jpg"
   },
   {
+    "title": "なまら楽しい！北海道フェア",
+    "start_date": "2026-09-01",
+    "end_date": "2026-11-30",
+    "area": "大阪",
+    "venue": "ホテル日航大阪",
+    "category": "food",
+    "score": 99,
+    "tags": [
+      "食・グルメ",
+      "ラーメン",
+      "大阪",
+      "ホテル日航大阪"
+    ],
+    "description": "北海道をテーマにしたランチ、ディナーブッフェ。北海道産モッツアレラチーズのカプレーゼや、北海道ポテトのニョッキ、北海道産牛もも肉のソテーなど、北海道の食材を使用したブッフェ料理のほか、ランチでは北海道産の海の幸を使った月替わりの一品料理やご当地ラーメン、ディナーではシェフが目の前",
+    "image_url": "images/50ec525dbdbf4c18c6.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0727e413727/",
+    "categories": [
+      "food"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/27/l/413727_4.jpg"
+  },
+  {
     "title": "「京阪電車×響け！ユーフォニアム2026 秋」コラボカフェ",
     "start_date": "2026-09-01",
     "end_date": "2026-12-20",
@@ -361,6 +384,27 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/c702e4069aa9db811f6e5cfbcdc69b6d-1.jpg"
   },
   {
+    "title": "中之島ウエスト・冬ものがたり2026",
+    "start_date": "2026-11-03",
+    "end_date": "2026-12-25",
+    "area": "大阪",
+    "venue": "中之島ウエストエリア～福島港(ほたるまち港)北側",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪"
+    ],
+    "description": "15年目を迎える「中之島ウエスト・冬ものがたり2026」。水都大阪に広がる水辺のまち「中之島ウエスト」を舞台に、今年は光の輪でつながるエリア一体の魅力を体感できる、多彩なプログラムを展開する。12月11日(金)から始まるメインプログラムは、ほたるまち港北～福島浜緑道を舞台に、「中",
+    "image_url": "images/15d077aa88e6713f84.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0727e20240/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/40/l/20240_7.jpg"
+  },
+  {
     "title": "「神戸・灘ラーメンスタンプラリー」灘区内各所 2026年11月4日（水） ~2027年1月31日（日） ラーメン激戦区として知られる六甲道エリアをはじめ、多くのラーメン店が集まる灘区で、「神戸・灘ラーメンスタンプラリー」",
     "start_date": "2026-11-04",
     "end_date": "2027-01-31",
@@ -525,6 +569,27 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
   },
   {
+    "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪"
+    ],
+    "description": "◆開催期間　2026年10月17日(土)～2026年11月3日(火)開催店舗：渋谷店◆開催期間　2026年11月14日(土)～2026年11月29日(日)開催店舗：名古屋店◆開催期間　2026年12月5日(土)～2026年12月20日(日)開催店舗：大阪日本橋店",
+    "image_url": "images/0d5dab3ac464ebc65b.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/47487/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/08/1788160713-86deda233612248ccfdc008550338e77.jpg"
+  },
+  {
     "title": "TVアニメ『ヒカルの碁』25周年記念オンリーショップ～盤上絵巻～byスタジオぴえろストア",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -548,27 +613,6 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1790661403-92f7d267817276a1a25507330fa622ba.jpg"
-  },
-  {
-    "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪"
-    ],
-    "description": "◆開催期間　2026年10月17日(土)～2026年11月3日(火)開催店舗：渋谷店◆開催期間　2026年11月14日(土)～2026年11月29日(日)開催店舗：名古屋店◆開催期間　2026年12月5日(土)～2026年12月20日(日)開催店舗：大阪日本橋店",
-    "image_url": "images/0d5dab3ac464ebc65b.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/47487/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/08/1788160713-86deda233612248ccfdc008550338e77.jpg"
   },
   {
     "title": "鮫升コモリ アニメイトオンリーショップ ～むっしゅ先生描き下ろし「恋するアフタースクール」～",
@@ -616,6 +660,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.gfo-sc.jp/files/20261111/0674d66ba3e2b8e5566f3fbfe3bdf897bbc9d2d3.jpeg"
   },
   {
+    "title": "11/13(金)より開催！巡回展 オゼキの岐阜提灯「伝統工芸から生まれた 光の彫刻、AKARI」［大阪店］ | イベント | グランフロント大阪",
+    "start_date": "2026-11-13",
+    "end_date": "2026-12-06",
+    "area": "大阪",
+    "venue": "開催場所 カリモク６０ / 南館 5F",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/1658a553577d48e4d8.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5848/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.gfo-sc.jp/files/20261112/b17010eabf0beaf375d140c2e797b5c6bb88f5e5.jpg"
+  },
+  {
     "title": "観覧無料！なんばエリアの冬の風物詩！ 15回目を迎え、通天閣が初参加！約100万球のLEDで彩る「なんば光旅」を開催 （2026年11月13日(金)～2027年2月14日(日)） ・11/13～12/25 通天閣がクリス",
     "start_date": "2026-11-13",
     "end_date": "2026-12-25",
@@ -638,30 +704,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.nankai.co.jp/sites/default/files/2022-06/img-logo_0.jpg"
   },
   {
-    "title": "第2回キッチンカーグランプリin滋賀県希望が丘文化公園",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-29",
-    "area": "滋賀",
-    "venue": "滋賀県希望が丘文化公園",
-    "category": "food",
-    "score": 99,
-    "tags": [
-      "食・グルメ",
-      "カレー",
-      "滋賀",
-      "公園",
-      "滋賀県希望が丘文化公園"
-    ],
-    "description": "前回大好評だった「第2回キッチンカーグランプリin滋賀県希望が丘文化公園」を今年も開催！1日28台のキッチンカーが集まり、第1週と第2週で出店店舗やメニューが入れ替わる。カレー、ステーキ、牛タン、バーガー、たこ焼きなどの食事系から、クレープやベビーカステラ、ドリンクまで多彩なグル",
-    "image_url": "images/0c84981c9593d41970.jpg",
-    "source": "ウォーカープラス",
-    "source_url": "https://www.walkerplus.com/event/ar0725e618204/",
-    "categories": [
-      "food"
-    ],
-    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/04/l/618204.jpg"
-  },
-  {
     "title": "「無差別格闘流 修行の旅 有馬に『らんま1/2』が来た」有馬温泉 2026年11月14日（土） ~2026年12月27日（日） TVアニメ「らんま1/2」と有馬温泉のコラボイベント「無差別格闘流 修行の旅 有馬に『らんま",
     "start_date": "2026-11-14",
     "end_date": "2026-12-27",
@@ -682,30 +724,6 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/192f306d732f843f4c49d71bc5c18d36-1024x575.png"
-  },
-  {
-    "title": "譜久村聖 2ndシングル発売記念 ミニライブ＆一言お話し会イベント（11/16 セブンパーク天美）のお知らせ",
-    "start_date": "2026-11-16",
-    "end_date": "2026-11-16",
-    "area": "大阪",
-    "venue": "セブンパーク天美",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "天美",
-      "商業施設",
-      "公園"
-    ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 譜久村聖 2ndシングル発売記念 ミニライブ＆一言お話し会イベント（11/16 セブンパーク天美）のお知らせ EVENT |",
-    "image_url": "images/1f2780b378c58d6673.jpg",
-    "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100013782",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013782/img_3rytov4r9j284.jpg"
   },
   {
     "title": "(水) アクセラレーションプログラムの仕掛け人が語る！ XRゲームのつくり方 企画から開発、世界へ届けるまで",
@@ -802,6 +820,28 @@ window.EVENT_DATA = [
     "image_url": "",
     "source": "JAFモータースポーツ",
     "source_url": "https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/race_2026.pdf"
+  },
+  {
+    "title": "11/20　11月生まれのお誕生日会【全年齢】【ボーネルンド】 | イベント | グランフロント大阪",
+    "start_date": "2026-11-20",
+    "end_date": "2026-11-20",
+    "area": "大阪",
+    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/237d083bce70f8d297.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5849/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20260912/ee148da2f501e4eba7e112b58218b889fd26ec08.jpeg"
   },
   {
     "title": "カデュネ ポップアップショップ",
@@ -1155,6 +1195,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261110/5dac11212b5e5109c8aa8f12bef2135ae4fb2380.png"
   },
   {
+    "title": "11/27　おはなし会【ベビー】【ボーネルンド】 | イベント | グランフロント大阪",
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-27",
+    "area": "大阪",
+    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/39698871938085f6eb.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5851/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261114/7bf8f9c2e13cad38c4dcc67fb6995cb75ff0fea5.jpeg"
+  },
+  {
     "title": "2026年 鈴鹿選手権シリーズ 第5戦 KART RACE IN SUZUKA 2026年 地方カート選手権 FS-125 / X30部門 第5戦",
     "start_date": "2026-11-28",
     "end_date": "2026-11-29",
@@ -1225,6 +1287,27 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014047/HP_10801350_B_1007.jpg"
   },
   {
+    "title": "おトクなきっぷ",
+    "start_date": "2026-12-01",
+    "end_date": "2026-12-01",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "rail",
+    "score": 99,
+    "tags": [
+      "鉄道",
+      "大阪"
+    ],
+    "description": "南海電鉄の鉄道情報。列車運行状況、ダイヤ検索、路線図、関西空港アクセスガイド、特急券、お得なきっぷ、バリアフリー情報などをご紹介しています。",
+    "image_url": "images/95295a11c55f78e727.jpg",
+    "source": "南海電鉄",
+    "source_url": "https://www.nankai.co.jp/traffic/otoku",
+    "categories": [
+      "rail"
+    ],
+    "original_image_url": "https://www.nankai.co.jp/sites/default/files/2022-06/img-logo_0.jpg"
+  },
+  {
     "title": "チェロ大展示会開催！　12/4(金)～6(日) | イベント | グランフロント大阪",
     "start_date": "2026-12-04",
     "end_date": "2026-12-06",
@@ -1291,6 +1374,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014086/img_3sc0dw1ypmasg.jpg"
+  },
+  {
+    "title": "SHOW-WAと大人の乾杯キャンペーン 開催記念イベント",
+    "start_date": "2026-12-12",
+    "end_date": "2026-12-12",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1F AMAMI STADIUM",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント SHOW-WAと大人の乾杯キャンペーン 開催記念イベント EVENT | イベント 掲載日：2026/11/17 ※画像をク",
+    "image_url": "images/919dfbd2cf00c00278.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014085",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014085/261109_SBxSHOWWA_Evbnr_life840x350.jpg"
   },
   {
     "title": "ベビーカステラ販売 カステラのきもち大阪店",
@@ -1360,26 +1467,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.hankyu.co.jp/area_info/machigatari/assets/D_KgiapR_Z27EuVG.png"
   },
   {
-    "title": "【12/19(土)・20(日)】ムラマツフルート点検会&試奏会開催！ | イベント | グランフロント大阪",
-    "start_date": "2026-12-19",
-    "end_date": "2026-12-20",
+    "title": "スイーツポケット《卵丸(らんまる)》",
+    "start_date": "2026-12-17",
+    "end_date": "2026-12-17",
     "area": "大阪",
-    "venue": "開催場所 島村楽器クラシック / 北館 5F",
-    "category": "tourism",
+    "venue": "セブンパーク天美 1階マツモトキヨシ前(ロフト側)",
+    "category": "food",
     "score": 99,
     "tags": [
-      "イベント",
+      "食・グルメ",
+      "スイーツ",
       "大阪",
+      "天美",
       "商業施設"
     ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/065fb385aae067eae6.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5722/",
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント スイーツポケット《卵丸(らんまる)》 EVENT | イベント 掲載日：2026/11/17 ※画像をクリックすると拡大表示",
+    "image_url": "images/7871a8f32b103c6df9.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100013959",
     "categories": [
-      "tourism"
+      "food"
     ],
-    "original_image_url": "https://www.gfo-sc.jp/files/20260905/c6d86d90663dfa70860668a033b6afbb9168c29e.jpg"
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013959/img_3s6uh002e6asc.jpg"
   },
   {
     "title": "マッキーといっしょに MERRY CHRISTMAS！",
@@ -1428,30 +1537,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014093/img_3sc1q7voqqm8c.png"
-  },
-  {
-    "title": "MUSIC BUSKER IN UMEKITA AWARD Vol.12 | イベント | グランフロント大阪",
-    "start_date": "2026-12-20",
-    "end_date": "2026-12-20",
-    "area": "大阪",
-    "venue": "開催場所 うめきたSHIPホール",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "商業施設",
-      "ホール",
-      "開催場所 うめきたSHIP"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/2dc58ca4020802a5a4.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5839/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20251111/8638bd440a02742cffe7782c21fbc30399d251d1.jpg"
   },
   {
     "title": "GREATER NAMBA FESTIVAL FINAL PARTY by FUZION PARK",
@@ -2083,7 +2168,7 @@ window.EVENT_DATA = [
       "商業施設",
       "LUCUA osaka"
     ],
-    "description": "イベント紹介  今年はどう過ごす？みんなのクリスマスツリー            期間      2026/11/4（水）～12/25（金）              会場      ルクア イーレ3F 出入口      クリスマスの過ごし方は、人それぞれ。いろんな過ごし方が描かれたオーナメントの中",
+    "description": "イベント紹介  今年はどう過ごす？みんなのクリスマスツリー            期間      2026/11/4（水）～12/25（金）              会場      ルクア イーレ 3F 出入口      クリスマスの過ごし方は、人それぞれ。いろんな過ごし方が描かれたオーナメントの",
     "image_url": "images/ab6930b56264638fe6.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/xmas2026.html",
@@ -2189,6 +2274,29 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5838-file.jpg"
   },
   {
+    "title": "ソリ型オブジェ製作 ワークショップ",
+    "start_date": "2026-11-21",
+    "end_date": "2026-11-21",
+    "area": "大阪",
+    "venue": "ルクア イーレ 7F　店舗横スペース",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設",
+      "ルクア イーレ 7F 店舗横スペース"
+    ],
+    "description": "クリスマスシーズンに合わせ、アドベントカレンダーをイメージした小さなソリ型オブジェを制作するワークショップです。溝の入った木板を水で軽く濡らしてヒーターで温め、曲げ加工を施し、曲げた形に合わせた板をサイドから貼り合わせて小さなソリを作ります。クリスマスに合わせた日付をスタンプで押した小さな紙箱を乗せ",
+    "image_url": "images/b8687ecb31d4ab2999.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/topic_6.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-6128-file.jpg"
+  },
+  {
     "title": "スクール はずし場　第二期",
     "start_date": "2026-12-05",
     "end_date": "2026-12-05",
@@ -2231,6 +2339,28 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
+  },
+  {
+    "title": "未来の自分に手紙を送る「クリスマスの手紙屋さん」イベント開催",
+    "start_date": "2026-12-12",
+    "end_date": "2026-12-13",
+    "area": "大阪",
+    "venue": "ルクア イーレ 4F イベントスペース「sPACE」",
+    "category": "tourism",
+    "score": 74,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "開催内容1年後の自分に宛ててお手紙が送れるお店です。書いた手紙は約1年後に、ご記入いただいた住所に届きます。 2026年もあとわずか。「今年はどんな1年だった？」「来年はどうしたい？」と聞かれることが増える季節ですが、別に答えを出さなくても大丈夫です。少し立ち止まって、今の自分を振り返ったり、1年後",
+    "image_url": "images/38348320a8b39f786f.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/topic_2.html",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5887-file.jpg"
   },
   {
     "title": "スクール はずし場　第二期",
@@ -2448,28 +2578,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/POPGAKUEN_19-560x792.jpg"
   },
   {
-    "title": "「阪急沿線 観光まちあるき2026」 2026年4月1日（水） ~2027年3月31日（水） 阪急沿線の観光スポットや隠れた名所をめぐるウォーキングイベント。 神戸市の様々なエリアを巡るツアーやコースが用意されており、ま",
-    "start_date": "2026-04-01",
-    "end_date": "2027-03-31",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 71,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "開催中 「阪急沿線 観光まちあるき2026」 2026年4月1日（水） ~2027年3月31日（水） 阪急沿線の観光スポットや隠れた名所をめぐるウォーキングイベント。 神戸市の様々なエリアを巡るツアーやコースが用意されており、まだ知らない沿線の魅力を楽しむことができます。 ウォーキングアプリaruku&で参加するコースでは、神戸市にあるミ",
-    "image_url": "images/b6ffc74f2bf9dda512.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/36265/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/dab045d5d99dbdb62ee008fcfc80e302-1-1024x634.jpg"
-  },
-  {
     "title": "平岡八幡宮　花の天井秋の特別拝観",
     "start_date": "2026-09-18",
     "end_date": "2026-11-30",
@@ -2626,9 +2734,9 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/14/l/614614.jpg"
   },
   {
-    "title": "「紙フェスKOBE」大丸神戸店 2026年11月12日（木） ~2026年11月16日（月） マスキングテープやシール、便箋など、紙もの好きには見逃せない「紙フェスKOBE 2026」📒 会場には、さまざまな紙雑貨や文房",
-    "start_date": "2026-11-12",
-    "end_date": "2026-11-16",
+    "title": "「風見鶏の館 オリーブフェスタ」 2026年11月7日（土） ~2026年11月30日（月） 神戸とオリーブの関わりは深く、その歴史は明治時代まで遡ります。かつて神戸にあった「阿利襪園（オリーブ園）」は、日本のオリーブ栽",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-30",
     "area": "兵庫",
     "venue": "兵庫",
     "category": "tourism",
@@ -2637,17 +2745,16 @@ window.EVENT_DATA = [
       "イベント",
       "フェス",
       "兵庫",
-      "神戸",
-      "百貨店"
+      "神戸"
     ],
-    "description": "開催中 「紙フェスKOBE」大丸神戸店 2026年11月12日（木） ~2026年11月16日（月） マスキングテープやシール、便箋など、紙もの好きには見逃せない「紙フェスKOBE 2026」📒 会場には、さまざまな紙雑貨や文房具が並び、紙ならではの質感やデザインを楽しめます。オリジナルのメモ帳作りや活版印刷などのワークショップも実施され",
-    "image_url": "images/ba30bdf1ebd838bb45.jpg",
+    "description": "開催中 「風見鶏の館 オリーブフェスタ」 2026年11月7日（土） ~2026年11月30日（月） 神戸とオリーブの関わりは深く、その歴史は明治時代まで遡ります。かつて神戸にあった「阿利襪園（オリーブ園）」は、日本のオリーブ栽培の発祥地の一つとされています。本フェスタでは、重要文化財「風見鶏の館」を舞台に、オリーブの歴史的・文化的価値を",
+    "image_url": "images/605cff7f7163a7f0fb.png",
     "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38334/",
+    "source_url": "https://www.feel-kobe.jp/event/39045/",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/566aa0764c99018935f0ef9c09d45279-724x1024.jpg"
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kazamidori-olive-festa-1024x762.png"
   },
   {
     "title": "如意輪寺　菊まつり",
@@ -2715,27 +2822,6 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kamen-rider-shizen-no-chikara_01-1024x768.jpg"
-  },
-  {
-    "title": "「Suma豊かな海プロジェクト2026」須磨海岸（須磨海岸中央広場〜須磨駅南側エリア） 2026年3月13日（金） ~2027年3月14日（日）",
-    "start_date": "2027-03-13",
-    "end_date": "2027-03-14",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 63,
-    "tags": [
-      "イベント",
-      "兵庫"
-    ],
-    "description": "開催中 「Suma豊かな海プロジェクト2026」須磨海岸（須磨海岸中央広場〜須磨駅南側エリア） 2026年3月13日（金） ~2027年3月14日（日） エリア： 須磨・垂水",
-    "image_url": "images/d53e87704419e09ec4.png",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/35364/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/200009081569b28142d82c9-1-724x1024.png"
   },
   {
     "title": "「メリケンミュージックナイツ」メリケンパーク 2026年6月11日（木） ~2027年3月26日（金） 「メリケンパークを音楽の力で盛り上げる」をコンセプトに、年間を通じて、誰もが気軽に音楽コンテンツ等を楽しめるイベント",
@@ -2983,6 +3069,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/suma-rikyu-aki-no-bara-03.jpg"
   },
   {
+    "title": "「秋めく相楽宴2026」神戸市立相楽園 2026年10月30日（金） ~2026年12月6日（日） 神戸市立相楽園では、紅葉の色づき始めから見頃を迎える時期にあわせて、「秋めく相楽宴2026」が開催されます。 期間中は、",
+    "start_date": "2026-10-30",
+    "end_date": "2026-12-06",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "開催中 「秋めく相楽宴2026」神戸市立相楽園 2026年10月30日（金） ~2026年12月6日（日） 神戸市立相楽園では、紅葉の色づき始めから見頃を迎える時期にあわせて、「秋めく相楽宴2026」が開催されます。 期間中は、日本庭園を舞台にした手づくり作品展「第44回相楽市～あいたのしむいち～」や、旧小寺家厩舎前での秋宵コンサート、ジ",
+    "image_url": "images/a6672b678ba21289f8.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38829/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/akimeku-sorakuen2026-1.jpg"
+  },
+  {
     "title": "「【1日1室限定】豚まん気分になれる！老祥記111周年記念コンセプトルーム」ホテル北野プラザ六甲荘 2026年11月1日（日） ~2027年2月28日（日） 神戸・南京町で長く愛されている豚饅頭の老舗「老祥記」の創業11",
     "start_date": "2026-11-01",
     "end_date": "2027-02-28",
@@ -3003,6 +3111,28 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/rokkoso-roshoki-concept-room-01-1024x768.jpg"
+  },
+  {
+    "title": "「神戸三田プレミアム・アウトレット ウィンターイルミネーション」 2026年11月6日（金） ~2027年2月24日（水） 神戸三田プレミアム・アウトレットで、「Snowy Ribbon Story」をテーマにしたクリス",
+    "start_date": "2026-11-06",
+    "end_date": "2027-02-24",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "開催中 「神戸三田プレミアム・アウトレット ウィンターイルミネーション」 2026年11月6日（金） ~2027年2月24日（水） 神戸三田プレミアム・アウトレットで、「Snowy Ribbon Story」をテーマにしたクリスマスイルミネーションが実施されます。 クリスマスプレゼントを彩るリボンをモチーフに、訪れる人々の想いやつながりを",
+    "image_url": "images/81574ce8b421a97b6b.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38773/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kobe-sanda-premium-outlets-winter-illumination-01-881x1024.jpg"
   },
   {
     "title": "「神戸クリスマスマーケット2026-古城のクリスマス-」神戸布引ハーブ園／ロープウェイ 2026年11月7日（土） ~2026年12月28日（月） 神戸布引ハーブ園／ロープウェイで、「神戸クリスマスマーケット2026-古",
