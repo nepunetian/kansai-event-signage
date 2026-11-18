@@ -33,7 +33,7 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x730b66f7dc10>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7e23e71d9e20>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
@@ -61,13 +61,13 @@
     ]
   },
   "グランフロント大阪": {
-    "list_links": 11,
+    "list_links": 12,
     "sitemap_links": 0,
-    "candidates": 11,
-    "parsed": 22,
+    "candidates": 12,
+    "parsed": 24,
     "errors": 0,
     "notes": [
-      "listing fallback: 11",
+      "listing fallback: 12",
       "sitemap https://www.grandfront-osaka.jp/sitemap.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap_index.xml: HTTPError",
       "sitemap https://www.grandfront-osaka.jp/sitemap-index.xml: HTTPError"
@@ -87,10 +87,10 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 19,
-    "sitemap_links": 70,
-    "candidates": 70,
-    "parsed": 84,
+    "list_links": 18,
+    "sitemap_links": 69,
+    "candidates": 69,
+    "parsed": 83,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -182,10 +182,10 @@
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 52,
+    "list_links": 53,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 10,
+    "parsed": 11,
     "errors": 0,
     "notes": [
       "listing fallback: 6",
@@ -197,11 +197,11 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 21,
+    "parsed": 24,
     "errors": 0,
     "notes": [
-      "dedicated: 20",
-      "listing fallback: 20"
+      "dedicated: 23",
+      "listing fallback: 23"
     ]
   },
   "Feel KOBE": {
@@ -237,7 +237,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 148,
-    "generated_at": "2026-11-17T12:57:51.386334+09:00"
+    "final_events": 152,
+    "generated_at": "2026-11-18T12:03:55.328478+09:00"
   }
 }

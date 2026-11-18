@@ -70,30 +70,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.hankyu.co.jp/area_info/osarunogeorge-hankyu2026/img/ogp.png"
   },
   {
-    "title": "「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」阪神高速沿線各所 2026年8月22日（土） ~2027年3月21日（日） 阪神高速沿線で実際に神戸や大阪を巡って謎を解く体験型のゲームイベント「リアル謎",
-    "start_date": "2026-08-22",
-    "end_date": "2027-03-21",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "ゲーム",
-      "大阪",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "開催中 「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」阪神高速沿線各所 2026年8月22日（土） ~2027年3月21日（日） 阪神高速沿線で実際に神戸や大阪を巡って謎を解く体験型のゲームイベント「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」が開催されます。 謎解きキットを片手に3つのコースからチ",
-    "image_url": "images/2a10f488af1200e12b.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/37553/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/94359dbe-72dc-4939-bbf9-1d72faa8201a-725x1024.jpg"
-  },
-  {
     "title": "なまら楽しい！北海道フェア",
     "start_date": "2026-09-01",
     "end_date": "2026-11-30",
@@ -455,30 +431,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.gfo-sc.jp/files/20261027/93e19e12915c8b9977046679598d27b58c0106b5.jpg"
   },
   {
-    "title": "DUOMART OSAKA ポップアップショップ",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-17",
-    "area": "大阪",
-    "venue": "ルクア 9F LUCUAホール",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "ポップアップ",
-      "大阪",
-      "商業施設",
-      "ホール"
-    ],
-    "description": "世界で人気の語学学習アプリ「Duolingo（デュオリンゴ）」のコンビニ型ポップアップストア「DUOMART OSAKA」が関西初開催！会場では、人気キャラクターのオリジナルグッズをはじめ、海外限定・大阪限定アイテムが登場します。さらに、ミニゲームやキャラクターグリーティング、館内を巡るスタンプラリ",
-    "image_url": "images/8f526882dda0c55016.jpg",
-    "source": "LUCUA大阪",
-    "source_url": "https://www.lucua.jp/topics/topic_4.html",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5920-file.jpg"
-  },
-  {
     "title": "呪術廻戦 ファントムパレード 幻影夜行本舗 3rd anniversary POP UP STORE",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -569,27 +521,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1792395671-907ca24390cb64d9617bf691a7f05898-1920x1356.jpg"
   },
   {
-    "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪"
-    ],
-    "description": "◆開催期間　2026年10月17日(土)～2026年11月3日(火)開催店舗：渋谷店◆開催期間　2026年11月14日(土)～2026年11月29日(日)開催店舗：名古屋店◆開催期間　2026年12月5日(土)～2026年12月20日(日)開催店舗：大阪日本橋店",
-    "image_url": "images/0d5dab3ac464ebc65b.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/47487/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/08/1788160713-86deda233612248ccfdc008550338e77.jpg"
-  },
-  {
     "title": "TVアニメ『ヒカルの碁』25周年記念オンリーショップ～盤上絵巻～byスタジオぴえろストア",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -613,6 +544,27 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1790661403-92f7d267817276a1a25507330fa622ba.jpg"
+  },
+  {
+    "title": "「怪獣8号 THE GAME」 1st Anniversary オンリーショップ in アニメイト",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪"
+    ],
+    "description": "◆開催期間　2026年10月17日(土)～2026年11月3日(火)開催店舗：渋谷店◆開催期間　2026年11月14日(土)～2026年11月29日(日)開催店舗：名古屋店◆開催期間　2026年12月5日(土)～2026年12月20日(日)開催店舗：大阪日本橋店",
+    "image_url": "images/0d5dab3ac464ebc65b.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/47487/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/08/1788160713-86deda233612248ccfdc008550338e77.jpg"
   },
   {
     "title": "鮫升コモリ アニメイトオンリーショップ ～むっしゅ先生描き下ろし「恋するアフタースクール」～",
@@ -799,6 +751,31 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261016/24c1574607fb154f1010c242b535bbffccdd056c.png"
   },
   {
+    "title": "京都鉄道博物館で2200系観光列車「天空」特別展示",
+    "start_date": "2026-11-19",
+    "end_date": "2026-11-30",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "rail",
+    "score": 99,
+    "tags": [
+      "鉄道",
+      "展示",
+      "大阪",
+      "京都",
+      "博物館"
+    ],
+    "description": "ニュースリリース 運輸 京都鉄道博物館で2200系観光列車「天空」特別展示 2026年11月09日 【お詫び】 11月19日（木）～30日（月）に開催を予定しておりました「2200系観光列車『天空』特別展示」につきましては、車両の回送が困難となったため、開催を中止することとなりました。 なお、「GRAN 天空」PRイベント ・南海電鉄「G",
+    "image_url": "images/3958e5861485b60382.jpg",
+    "source": "南海電鉄",
+    "source_url": "https://www.nankai.co.jp/news/261109.html",
+    "categories": [
+      "rail",
+      "exhibition"
+    ],
+    "original_image_url": "https://www.nankai.co.jp/sites/default/files/2022-06/img-logo_0.jpg"
+  },
+  {
     "title": "2026年 全日本スーパーフォーミュラ選手権 第11戦 第12戦 第25回 JAFグランプリ",
     "start_date": "2026-11-20",
     "end_date": "2026-11-22",
@@ -820,6 +797,29 @@ window.EVENT_DATA = [
     "image_url": "",
     "source": "JAFモータースポーツ",
     "source_url": "https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/race_2026.pdf"
+  },
+  {
+    "title": "Evergreen Forest Piano | イベント | グランフロント大阪",
+    "start_date": "2026-11-20",
+    "end_date": "2026-11-27",
+    "area": "大阪",
+    "venue": "開催場所 ナレッジプラザ",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設",
+      "開催場所 ナレッジプラザ"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/4aca294e0a8a613e14.png",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5855/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261118/214a1007fce8b624ee6e94ba8eee0a7f7063472c.png"
   },
   {
     "title": "11/20　11月生まれのお誕生日会【全年齢】【ボーネルンド】 | イベント | グランフロント大阪",
@@ -966,6 +966,30 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/03/l/606903.jpg"
+  },
+  {
+    "title": "アニメイトカフェ出張版 〖 ＴＶアニメ「らんま1/2」〗",
+    "start_date": "2026-11-21",
+    "end_date": "2026-11-21",
+    "area": "大阪",
+    "venue": "セブンパーク天美 屋外 Ennichi Park",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪",
+      "天美",
+      "商業施設",
+      "カフェ"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント アニメイトカフェ出張版 〖 ＴＶアニメ「らんま1/2」〗 EVENT | イベント 掲載日：2026/11/17 ※画像をク",
+    "image_url": "images/02b27b27f82bb2b4c8.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014125",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014125/img_3sd1qe180xq8o.jpg"
   },
   {
     "title": "スマイルゼミ体験会",
@@ -1172,6 +1196,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100013853/img_3s1y4jcpackkk.jpg"
   },
   {
+    "title": "11/27　おはなし会【ベビー】【ボーネルンド】 | イベント | グランフロント大阪",
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-27",
+    "area": "大阪",
+    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/39698871938085f6eb.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5851/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261114/7bf8f9c2e13cad38c4dcc67fb6995cb75ff0fea5.jpeg"
+  },
+  {
     "title": "おうちスンドゥブのススメ\t\t\t\t\t\t\t\t\t\t\t | イベント | グランフロント大阪",
     "start_date": "2026-11-27",
     "end_date": "2026-11-28",
@@ -1193,28 +1239,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261110/5dac11212b5e5109c8aa8f12bef2135ae4fb2380.png"
-  },
-  {
-    "title": "11/27　おはなし会【ベビー】【ボーネルンド】 | イベント | グランフロント大阪",
-    "start_date": "2026-11-27",
-    "end_date": "2026-11-27",
-    "area": "大阪",
-    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "商業施設"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/39698871938085f6eb.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5851/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20261114/7bf8f9c2e13cad38c4dcc67fb6995cb75ff0fea5.jpeg"
   },
   {
     "title": "2026年 鈴鹿選手権シリーズ 第5戦 KART RACE IN SUZUKA 2026年 地方カート選手権 FS-125 / X30部門 第5戦",
@@ -1285,6 +1309,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014047/HP_10801350_B_1007.jpg"
+  },
+  {
+    "title": "ハンドメイドEXPOinセブンパーク天美vol.1",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "大阪",
+    "venue": "セブンパーク天美 平面駐車場(特設会場)",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント ハンドメイドEXPOinセブンパーク天美vol.1 EVENT | イベント 掲載日：2026/11/17 ※画像をクリック",
+    "image_url": "images/26f660d97a06ad1760.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014130",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014130/img_3sd8kzolqois8.jpg"
   },
   {
     "title": "おトクなきっぷ",
@@ -1539,7 +1587,7 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014093/img_3sc1q7voqqm8c.png"
   },
   {
-    "title": "GREATER NAMBA FESTIVAL FINAL PARTY by FUZION PARK",
+    "title": "「第19回大阪狭山市産業まつり」開催！",
     "start_date": "2026-12-24",
     "end_date": "2026-12-24",
     "area": "大阪",
@@ -1551,15 +1599,39 @@ window.EVENT_DATA = [
       "食・グルメ",
       "大阪"
     ],
-    "description": "グルメ 2026年12月24日（木）観光列車「GRAN 天空 」Xmas 特別運行します 和歌山のサイクリング・観光の魅力を体験できるイベントを開催します！ ハイキング カルチャー 令和9年 狭山池ウォーキング「池底ツアー」を開催します。 グルメ カルチャー 大阪•なんばに全国から蒸留家が集結！ 夜空に煌めく‟バブルスターナイト”開催",
-    "image_url": "images/82c2ee4e8fc85098d9.jpg",
+    "description": "カルチャー 堺のMAG.で13人の作家展「NS ART PROJECT」開催！ GREATER NAMBA FESTIVAL FINAL PARTY by FUZION PARK グルメ 2026年12月24日（木）観光列車「GRAN 天空 」Xmas 特別運行します 和歌山のサイクリング・観光の魅力を体験できるイベントを開催します！ ハ",
+    "image_url": "images/9491b48247ffbe2949.png",
     "source": "南海電鉄",
-    "source_url": "https://www.nankai.co.jp/community/natts/event/greater-namba-festival-final-party/",
+    "source_url": "https://www.nankai.co.jp/community/natts/event/1128_sayama_sangyoumatsuri/",
     "categories": [
       "rail",
       "food"
     ],
-    "original_image_url": "https://www.nankai.co.jp/community/natts/api/wp-content/uploads/2026/11/GNF.jpg"
+    "original_image_url": "https://www.nankai.co.jp/community/natts/api/wp-content/uploads/2026/11/cfa804d15c666eab055f742e3be06c2c.png"
+  },
+  {
+    "title": "ヤクルト腸活まつり",
+    "start_date": "2026-12-28",
+    "end_date": "2026-12-28",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1F AMAMI STADIUM、1F GOOD SOUND COFFEE横",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント ヤクルト腸活まつり EVENT | イベント 掲載日：2026/11/18 Ⓒ 2026 堺ヤクルト販売株式会社 ※画像をク",
+    "image_url": "images/51f879584f6be65421.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014133",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014133/img_3sdf79bsekkk8.jpg"
   },
   {
     "title": "今宮戎",
@@ -2309,7 +2381,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/feffe704629551adc9.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2331,7 +2403,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/434d891ffd4547516a.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2375,7 +2447,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/665be518a37e019a22.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2397,7 +2469,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/7ed571f372b3d7beab.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2419,7 +2491,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/723c80780968fb3396.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2441,7 +2513,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/93b73f3f19474a321c.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2463,7 +2535,7 @@ window.EVENT_DATA = [
       "大阪",
       "商業施設"
     ],
-    "description": "「スクール はずし場」の第二期ってどんなもの？どんな先生たちが教えてくれるの？気になる方は、プロジェクトメンバーの対談動画を下記より確認ください！対談動画      第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
+    "description": "第一期の様子第一期の様子第一期の様子第一期の様子第一期の様子                    1/5",
     "image_url": "images/b8fbe0e9b3725ef5e3.jpg",
     "source": "LUCUA大阪",
     "source_url": "https://www.lucua.jp/topics/hazushi2.html",
@@ -2824,28 +2896,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kamen-rider-shizen-no-chikara_01-1024x768.jpg"
   },
   {
-    "title": "「メリケンミュージックナイツ」メリケンパーク 2026年6月11日（木） ~2027年3月26日（金） 「メリケンパークを音楽の力で盛り上げる」をコンセプトに、年間を通じて、誰もが気軽に音楽コンテンツ等を楽しめるイベント",
-    "start_date": "2026-06-11",
-    "end_date": "2027-03-26",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 61,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "公園"
-    ],
-    "description": "開催中 「メリケンミュージックナイツ」メリケンパーク 2026年6月11日（木） ~2027年3月26日（金） 「メリケンパークを音楽の力で盛り上げる」をコンセプトに、年間を通じて、誰もが気軽に音楽コンテンツ等を楽しめるイベント。プロミュージシャンによる音楽ライブをお楽しみください。 エリア： 景観、体験 音楽 メリケンパーク・ハーバーラ",
-    "image_url": "images/0df6fc41d471fbb6fd.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/36478/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/4a35f9263d3f072529ff3f52222505e1-1.jpeg"
-  },
-  {
     "title": "「姿を消した先輩を追え 〜神戸から始まる物語〜」神戸市周辺 2026年9月18日（金） ~2027年5月31日（月） 没入型謎解き体験「姿を消した先輩を追え〜神戸から始まる物語〜」が開催されます。 「姿を消した記者を追え",
     "start_date": "2026-09-18",
     "end_date": "2027-05-31",
@@ -2914,6 +2964,54 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/tove-to-moomin-ten-01-795x1024.jpg"
+  },
+  {
+    "title": "「神戸北野異人館街鳥瞰図2026 1st period 発表展」神戸北野美術館 2026年11月3日（火） ~2026年11月30日（月） 青山大介氏による『神戸北野異人館街鳥瞰図2026』の第一期作品や原画が展示されま",
+    "start_date": "2026-11-03",
+    "end_date": "2026-11-30",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "exhibition",
+    "score": 59,
+    "tags": [
+      "展示",
+      "美術",
+      "兵庫",
+      "神戸",
+      "美術館"
+    ],
+    "description": "開催中 「神戸北野異人館街鳥瞰図2026 1st period 発表展」神戸北野美術館 2026年11月3日（火） ~2026年11月30日（月） 青山大介氏による『神戸北野異人館街鳥瞰図2026』の第一期作品や原画が展示されます。 風見鶏の館や神戸北野美術館などを、独自の視点と緻密なペンワークで描き出した作品が並びます。 神戸市中央区南",
+    "image_url": "images/509392019623835b74.png",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/39090/",
+    "categories": [
+      "exhibition"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/90f8c2c66643057e887a285d2ff0a8ed.png"
+  },
+  {
+    "title": "「或る猫飼いのささやかな祝宴」神戸ファッション美術館 2026年11月18日（水） ~2026年11月22日（日） 神戸ファッション美術館で、陶芸家の南 公二と日本画家の福元 章子による二人展「宴計画 2026【或る猫飼",
+    "start_date": "2026-11-18",
+    "end_date": "2026-11-22",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "exhibition",
+    "score": 59,
+    "tags": [
+      "展示",
+      "美術",
+      "兵庫",
+      "神戸",
+      "美術館"
+    ],
+    "description": "開催中 「或る猫飼いのささやかな祝宴」神戸ファッション美術館 2026年11月18日（水） ~2026年11月22日（日） 神戸ファッション美術館で、陶芸家の南 公二と日本画家の福元 章子による二人展「宴計画 2026【或る猫飼いのささやかな祝宴】」を開催！ ファッションをテーマに、陶のマリオネットやオブジェ、ブローチなどのアクセサリー、",
+    "image_url": "images/1437c2cb5c24470fcd.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38547/",
+    "categories": [
+      "exhibition"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/5313a2dbb4ae77cf270702c783f71627-1-730x1024.jpg"
   },
   {
     "title": "PICK UP おすすめイベント",
