@@ -453,28 +453,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/11/1792730040-536cfc9851746defd176e42494927165-1920x1355.jpg"
   },
   {
-    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-23",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "大阪",
-      "『崩壊：スターレイル』星神★アッハ 実装記念"
-    ],
-    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
-    "image_url": "images/a6e809f89f6d6fe976.webp",
-    "source": "アニメイト大阪日本橋",
-    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1794546155-beb7e287e8c7b1c81cba603c17b57339-1920x1356.jpg"
-  },
-  {
     "title": "文字化化 Star Wandering オンリーショップ",
     "start_date": "2026-11-07",
     "end_date": "2026-11-23",
@@ -495,6 +473,28 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://www.animate.co.jp/assets/uploads/2027/10/1791443132-fa4a7d3a358e0430a0c2f322876269d1-1920x1353.jpg"
+  },
+  {
+    "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-23",
+    "area": "大阪",
+    "venue": "大阪",
+    "category": "anime",
+    "score": 99,
+    "tags": [
+      "アニメ・ゲーム",
+      "大阪",
+      "『崩壊：スターレイル』星神★アッハ 実装記念"
+    ],
+    "description": "▽池袋本店 7F NORTH2026年11月13日(金)～2026年11月23日(月・祝)▽仙台店、大阪日本橋店2026年11月13日(金)～2026年11月29日(日)",
+    "image_url": "images/a6e809f89f6d6fe976.webp",
+    "source": "アニメイト大阪日本橋",
+    "source_url": "https://www.animate.co.jp/onlyshop/49802/",
+    "categories": [
+      "anime"
+    ],
+    "original_image_url": "https://www.animate.co.jp/assets/uploads/2026/10/1794546155-beb7e287e8c7b1c81cba603c17b57339-1920x1356.jpg"
   },
   {
     "title": "『ちみけもますこっと』POP UP SHOP in アニメイト",
@@ -678,79 +678,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/192f306d732f843f4c49d71bc5c18d36-1024x575.png"
   },
   {
-    "title": "(水) アクセラレーションプログラムの仕掛け人が語る！ XRゲームのつくり方 企画から開発、世界へ届けるまで",
-    "start_date": "2026-11-18",
-    "end_date": "2026-11-18",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tech",
-    "score": 99,
-    "tags": [
-      "AI・IT",
-      "XR",
-      "アニメ・ゲーム",
-      "大阪",
-      "Rゲームのつくり方 企画から開発、世界へ届け"
-    ],
-    "description": "2026.11.18(水) アクセラレーションプログラムの仕掛け人が語る！ XRゲームのつくり方 企画から開発、世界へ届けるまで",
-    "image_url": "images/bc4fa61004250732f8.jpg",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/%e3%82%a2%e3%82%af%e3%82%bb%e3%83%a9%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e4%bb%95%e6%8e%9b%e3%81%91%e4%ba%ba%e3%81%8c%e8%aa%9e%e3%82%8b/",
-    "categories": [
-      "tech",
-      "anime"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/XRgame-developmentseminar_other-01-560x296.jpg"
-  },
-  {
-    "title": "アクセラレーションプログラムの仕掛け人が語る！ XRゲームのつくり方 企画から開発、世界へ届けるまで",
-    "start_date": "2026-11-18",
-    "end_date": "2026-11-18",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tech",
-    "score": 99,
-    "tags": [
-      "AI・IT",
-      "XR",
-      "アニメ・ゲーム",
-      "大阪",
-      "Rゲームのつくり方 企画から開発、世界へ届け"
-    ],
-    "description": "2026.11.18(水) アクセラレーションプログラムの仕掛け人が語る！ XRゲームのつくり方 企画から開発、世界へ届けるまで",
-    "image_url": "images/fc0009e9b09592b0aa.jpg",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/%e3%82%a2%e3%82%af%e3%82%bb%e3%83%a9%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e4%bb%95%e6%8e%9b%e3%81%91%e4%ba%ba%e3%81%8c%e8%aa%9e%e3%82%8b/",
-    "categories": [
-      "tech",
-      "anime"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/XRgame-developmentseminar_other-01-560x296.jpg"
-  },
-  {
-    "title": "SaaS Showroom 2026 | イベント | グランフロント大阪",
-    "start_date": "2026-11-18",
-    "end_date": "2026-11-18",
-    "area": "大阪",
-    "venue": "開催場所 グランフロント大阪 北館 B2階　コングレコンベンションセンター",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "商業施設",
-      "展示場"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/2e7ccf7b6568056312.png",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5792/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20261016/24c1574607fb154f1010c242b535bbffccdd056c.png"
-  },
-  {
     "title": "京都鉄道博物館で2200系観光列車「天空」特別展示",
     "start_date": "2026-11-19",
     "end_date": "2026-11-30",
@@ -776,6 +703,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.nankai.co.jp/sites/default/files/2022-06/img-logo_0.jpg"
   },
   {
+    "title": "【新店舗OPENのお知らせ】3F ラーメン魁力屋",
+    "start_date": "2026-11-19",
+    "end_date": "2026-11-19",
+    "area": "大阪",
+    "venue": "セブンパーク天美 3F",
+    "category": "food",
+    "score": 99,
+    "tags": [
+      "食・グルメ",
+      "ラーメン",
+      "大阪",
+      "天美",
+      "商業施設"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 【新店舗OPENのお知らせ】3F ラーメン魁力屋 EVENT | イベント 掲載日：2026/11/19 ※画像をクリックす",
+    "image_url": "images/85b0ea8c63d1f299d8.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014134",
+    "categories": [
+      "food"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014134/img_3sdfnydgj9k4g.jpg"
+  },
+  {
     "title": "2026年 全日本スーパーフォーミュラ選手権 第11戦 第12戦 第25回 JAFグランプリ",
     "start_date": "2026-11-20",
     "end_date": "2026-11-22",
@@ -799,6 +750,28 @@ window.EVENT_DATA = [
     "source_url": "https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/race_2026.pdf"
   },
   {
+    "title": "11/20　11月生まれのお誕生日会【全年齢】【ボーネルンド】 | イベント | グランフロント大阪",
+    "start_date": "2026-11-20",
+    "end_date": "2026-11-20",
+    "area": "大阪",
+    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/237d083bce70f8d297.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5849/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20260912/ee148da2f501e4eba7e112b58218b889fd26ec08.jpeg"
+  },
+  {
     "title": "Evergreen Forest Piano | イベント | グランフロント大阪",
     "start_date": "2026-11-20",
     "end_date": "2026-11-27",
@@ -820,28 +793,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261118/214a1007fce8b624ee6e94ba8eee0a7f7063472c.png"
-  },
-  {
-    "title": "11/20　11月生まれのお誕生日会【全年齢】【ボーネルンド】 | イベント | グランフロント大阪",
-    "start_date": "2026-11-20",
-    "end_date": "2026-11-20",
-    "area": "大阪",
-    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "商業施設"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/237d083bce70f8d297.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5849/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20260912/ee148da2f501e4eba7e112b58218b889fd26ec08.jpeg"
   },
   {
     "title": "カデュネ ポップアップショップ",
@@ -1241,6 +1192,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261110/5dac11212b5e5109c8aa8f12bef2135ae4fb2380.png"
   },
   {
+    "title": "一般財団法人アジア太平洋研究所　2026年度APIRフォーラム「中間選挙後の米国の通商政策と対アジア戦略の米国の通商政策と対アジア戦略～今後の展望と日本企業への影響～」 | イベント | グランフロント大阪",
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-27",
+    "area": "大阪",
+    "venue": "開催場所 グランフロント大阪 北館 タワーC 8階 カンファレンスルーム RoomC05",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/0301972a0a38b2f859.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5856/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261118/3ffa13282657c1ed0b90685207516a4d0aee71ba.jpeg"
+  },
+  {
     "title": "2026年 鈴鹿選手権シリーズ 第5戦 KART RACE IN SUZUKA 2026年 地方カート選手権 FS-125 / X30部門 第5戦",
     "start_date": "2026-11-28",
     "end_date": "2026-11-29",
@@ -1587,27 +1560,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014093/img_3sc1q7voqqm8c.png"
   },
   {
-    "title": "「第19回大阪狭山市産業まつり」開催！",
+    "title": "和歌山県eスポーツフェスタ「きら★スポ」2026開催のお知らせ",
     "start_date": "2026-12-24",
     "end_date": "2026-12-24",
-    "area": "大阪",
+    "area": "和歌山",
     "venue": "大阪",
     "category": "rail",
     "score": 99,
     "tags": [
       "鉄道",
+      "フェス",
+      "アニメ・ゲーム",
       "食・グルメ",
       "大阪"
     ],
-    "description": "カルチャー 堺のMAG.で13人の作家展「NS ART PROJECT」開催！ GREATER NAMBA FESTIVAL FINAL PARTY by FUZION PARK グルメ 2026年12月24日（木）観光列車「GRAN 天空 」Xmas 特別運行します 和歌山のサイクリング・観光の魅力を体験できるイベントを開催します！ ハ",
-    "image_url": "images/9491b48247ffbe2949.png",
+    "description": "カルチャー 和歌山県eスポーツフェスタ「きら★スポ」2026開催のお知らせ 「第19回大阪狭山市産業まつり」開催！ カルチャー 堺のMAG.で13人の作家展「NS ART PROJECT」開催！ GREATER NAMBA FESTIVAL FINAL PARTY by FUZION PARK グルメ 2026年12月24日（木）観光列車",
+    "image_url": "images/006acffe494ad0efd2.jpg",
     "source": "南海電鉄",
-    "source_url": "https://www.nankai.co.jp/community/natts/event/1128_sayama_sangyoumatsuri/",
+    "source_url": "https://www.nankai.co.jp/community/natts/event/1122_wakayama_esportsfesta/",
     "categories": [
       "rail",
+      "anime",
       "food"
     ],
-    "original_image_url": "https://www.nankai.co.jp/community/natts/api/wp-content/uploads/2026/11/cfa804d15c666eab055f742e3be06c2c.png"
+    "original_image_url": "https://www.nankai.co.jp/community/natts/api/wp-content/uploads/2026/11/011202f80e5af49d4243d2c819d62b98-scaled.jpg"
   },
   {
     "title": "ヤクルト腸活まつり",
@@ -1891,26 +1867,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/91/l/605791.jpg"
   },
   {
-    "title": "(水) 中国展開セミナー＆マッチング ー介護保険制度の全国展開へ待ったなし！ 中国市場で求められる日本のシルバー商材とはー",
-    "start_date": "2026-11-18",
-    "end_date": "2026-11-18",
+    "title": "ヘイップ バティチュード ポップアップショップ",
+    "start_date": "2026-11-26",
+    "end_date": "2026-12-07",
     "area": "大阪",
-    "venue": "ATC",
+    "venue": "ルクア 3F イベントスペース",
     "category": "tourism",
-    "score": 91,
+    "score": 92,
     "tags": [
       "イベント",
+      "ポップアップ",
       "大阪",
-      "ATC"
+      "商業施設",
+      "ヘイップ バティチュード"
     ],
-    "description": "2026.11.18(水) 中国展開セミナー＆マッチング ー介護保険制度の全国展開へ待ったなし！ 中国市場で求められる日本のシルバー商材とはー",
-    "image_url": "images/efc1b432817e8498ac.jpg",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/age1118/",
+    "description": "韓国と日本の感性を融合し、モダンで遊び心のあるヘアアクセサリーを提案する「heyep」と、ミニマルなフォルムをベースに、素材・機能性・クラフトマンシップを追求するバッグブランド「Beautitude」によるPOP UPを開催。今シーズンの新作をはじめ、それぞれのブランドの世界観を映したアイテムを幅広",
+    "image_url": "images/b252db6df757e866d6.jpg",
+    "source": "LUCUA大阪",
+    "source_url": "https://www.lucua.jp/topics/p-1956122.html",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/d96bef7fb5a1e219fd38d62dc596dc61-3_ページ_1-560x920.jpg"
+    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5849-file.jpg"
   },
   {
     "title": "(土) 健康講座「長寿国日本～高齢者の生活は？～」",
@@ -2181,28 +2159,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/51/l/607251.jpg"
   },
   {
-    "title": "「みんなのAWA-YA meets 神戸」デザイン・クリエイティブセンター神戸（KIITO） 2026年11月12日（木） ~2026年11月18日（水） 牛乳石鹸の「赤箱」でおなじみのCOWブランドによる体験型イベント",
-    "start_date": "2026-11-12",
-    "end_date": "2026-11-18",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 79,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "開催中 「みんなのAWA-YA meets 神戸」デザイン・クリエイティブセンター神戸（KIITO） 2026年11月12日（木） ~2026年11月18日（水） 牛乳石鹸の「赤箱」でおなじみのCOWブランドによる体験型イベント「みんなのAWA-YA meets 神戸」が、デザイン・クリエイティブセンター神戸（KIITO）で開催されます。",
-    "image_url": "images/ce1ea24c19a8dfc5d5.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/38824/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/awaya-meets-kobe-1.jpg"
-  },
-  {
     "title": "「暮らしを描く －ちいさきものはみなうつくし－」神戸ゆかりの美術館 2026年9月21日（月） ~2026年11月23日（月） 画家たちが自分自身や身近な人々のささやかな日常に目を向け、暮らしの中に美を見出そうとした作品",
     "start_date": "2026-09-21",
     "end_date": "2026-11-23",
@@ -2248,30 +2204,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-4857-file.jpg"
-  },
-  {
-    "title": "クリンクルクリンクルクリンクル ポップアップショップ",
-    "start_date": "2026-11-12",
-    "end_date": "2026-11-18",
-    "area": "大阪",
-    "venue": "ルクア 3F イベントスペース",
-    "category": "tourism",
-    "score": 74,
-    "tags": [
-      "イベント",
-      "ポップアップ",
-      "大阪",
-      "商業施設",
-      "クリンクルクリンクルクリンクル"
-    ],
-    "description": "その時々に感じる感覚を、素直に自由に魔法をかけるように表現。自分らしく纏える、愛に溢れた服を提案します。【instagram】 : https://www.instagram.com/crinkle.official/",
-    "image_url": "images/da391af65aa9b96a60.jpg",
-    "source": "LUCUA大阪",
-    "source_url": "https://www.lucua.jp/topics/p-1956080.html",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5833-file.jpg"
   },
   {
     "title": "エクミール ポップアップショップ",
@@ -2543,27 +2475,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
-  },
-  {
-    "title": "中国展開セミナー＆マッチング ー介護保険制度の全国展開へ待ったなし！ 中国市場で求められる日本のシルバー商材とはー",
-    "start_date": "2026-11-18",
-    "end_date": "2026-11-18",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 72,
-    "tags": [
-      "イベント",
-      "大阪"
-    ],
-    "description": "2026.11.18(水) 中国展開セミナー＆マッチング ー介護保険制度の全国展開へ待ったなし！ 中国市場で求められる日本のシルバー商材とはー",
-    "image_url": "images/2a9fe00d8f763df81a.jpg",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/age1118/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/d96bef7fb5a1e219fd38d62dc596dc61-3_ページ_1-560x920.jpg"
   },
   {
     "title": "健康講座「長寿国日本～高齢者の生活は？～」",
@@ -3322,6 +3233,28 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/96d95f406514e49a744a1450cb1247b2.jpg"
+  },
+  {
+    "title": "「高校生ホテル2026（神戸市立神港橘高等学校×ホテル北野プラザ六甲荘）」 2026年11月19日（木） ~2026年11月20日（金） 神戸市立神港橘高等学校の生徒14名が、ホテル北野プラザ六甲荘で1泊2日のホテル運営",
+    "start_date": "2026-11-19",
+    "end_date": "2026-11-20",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "兵庫",
+      "神戸"
+    ],
+    "description": "開催中 「高校生ホテル2026（神戸市立神港橘高等学校×ホテル北野プラザ六甲荘）」 2026年11月19日（木） ~2026年11月20日（金） 神戸市立神港橘高等学校の生徒14名が、ホテル北野プラザ六甲荘で1泊2日のホテル運営に取り組みます。 11月20日の「ホテルの日」に合わせて毎年開催されている企画で、今年で8回目を迎えます。 生徒",
+    "image_url": "images/f473b6737180601867.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/39011/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/7f1bfc22115f17059db612cfe1983419.jpg"
   },
   {
     "title": "住吉大社 新嘗祭",

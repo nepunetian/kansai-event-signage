@@ -33,21 +33,21 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7e23e71d9e20>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7e2104001cd0>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "ATCトップ": {
-    "list_links": 11,
+    "list_links": 9,
     "sitemap_links": 0,
-    "candidates": 11,
-    "parsed": 27,
+    "candidates": 9,
+    "parsed": 21,
     "errors": 0,
     "notes": [
-      "dedicated: 9",
-      "listing fallback: 18"
+      "dedicated: 7",
+      "listing fallback: 14"
     ]
   },
   "ATC": {
@@ -88,9 +88,9 @@
   },
   "LUCUA大阪": {
     "list_links": 18,
-    "sitemap_links": 69,
-    "candidates": 69,
-    "parsed": 83,
+    "sitemap_links": 70,
+    "candidates": 70,
+    "parsed": 84,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -197,18 +197,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 24,
+    "parsed": 25,
     "errors": 0,
     "notes": [
-      "dedicated: 23",
-      "listing fallback: 23"
+      "dedicated: 24",
+      "listing fallback: 24"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 128,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -237,7 +237,7 @@
     "notes": []
   },
   "TOTAL": {
-    "final_events": 152,
-    "generated_at": "2026-11-18T12:03:55.328478+09:00"
+    "final_events": 149,
+    "generated_at": "2026-11-19T11:41:00.935012+09:00"
   }
 }
