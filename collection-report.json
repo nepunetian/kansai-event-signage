@@ -33,21 +33,21 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7854e5ab8980>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x79260f2e5580>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "ATCトップ": {
-    "list_links": 11,
+    "list_links": 8,
     "sitemap_links": 0,
-    "candidates": 11,
-    "parsed": 27,
+    "candidates": 8,
+    "parsed": 18,
     "errors": 0,
     "notes": [
-      "dedicated: 9",
-      "listing fallback: 18"
+      "dedicated: 6",
+      "listing fallback: 12"
     ]
   },
   "ATC": {
@@ -87,10 +87,10 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 19,
-    "sitemap_links": 71,
-    "candidates": 71,
-    "parsed": 85,
+    "list_links": 18,
+    "sitemap_links": 70,
+    "candidates": 70,
+    "parsed": 84,
     "errors": 0,
     "notes": [
       "sitemap https://www.lucua.jp/sitemap-index.xml: HTTPError"
@@ -196,18 +196,18 @@
     "list_links": 2,
     "sitemap_links": 0,
     "candidates": 2,
-    "parsed": 25,
+    "parsed": 19,
     "errors": 0,
     "notes": [
-      "dedicated: 23",
-      "listing fallback: 23"
+      "dedicated: 17",
+      "listing fallback: 17"
     ]
   },
   "Feel KOBE": {
     "list_links": 31,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 129,
+    "parsed": 125,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -215,13 +215,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 33,
+    "list_links": 34,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 193,
-    "errors": 4,
+    "parsed": 181,
+    "errors": 5,
     "notes": [
-      "listing fallback: 52"
+      "listing fallback: 44"
     ]
   },
   "Peatix": {
@@ -234,6 +234,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-11-21T11:40:09.875785+09:00"
+    "generated_at": "2026-11-22T10:51:14.221417+09:00"
   }
 }
