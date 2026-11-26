@@ -18,6 +18,16 @@
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202611&heldDateTo=all&feature=all"
     ]
   },
+  "インテックス大阪専用": {
+    "list_links": 0,
+    "sitemap_links": 0,
+    "candidates": 0,
+    "parsed": 1,
+    "errors": 0,
+    "notes": [
+      "dedicated total: 1"
+    ]
+  },
   "大阪観光局": {
     "list_links": 0,
     "sitemap_links": 2,
@@ -33,7 +43,7 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x75b755d91100>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7865f9a9bef0>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
@@ -177,12 +187,12 @@
     "list_links": 15,
     "sitemap_links": 0,
     "candidates": 15,
-    "parsed": 5,
-    "errors": 0,
+    "parsed": 3,
+    "errors": 1,
     "notes": []
   },
   "南海電鉄": {
-    "list_links": 53,
+    "list_links": 54,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 4,
@@ -196,18 +206,18 @@
     "list_links": 1,
     "sitemap_links": 0,
     "candidates": 1,
-    "parsed": 20,
+    "parsed": 21,
     "errors": 0,
     "notes": [
-      "dedicated: 19",
-      "listing fallback: 19"
+      "dedicated: 20",
+      "listing fallback: 20"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 127,
+    "parsed": 131,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -215,13 +225,13 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 34,
+    "list_links": 33,
     "sitemap_links": 180,
     "candidates": 180,
     "parsed": 198,
     "errors": 0,
     "notes": [
-      "listing fallback: 48"
+      "listing fallback: 46"
     ]
   },
   "Peatix": {
@@ -234,6 +244,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-11-25T13:29:35.948545+09:00"
+    "generated_at": "2026-11-26T12:52:06.952840+09:00"
   }
 }
