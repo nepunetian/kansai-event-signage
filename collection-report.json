@@ -18,16 +18,6 @@
       "semantic parser v4 + PDF fallback / calendar: https://motorsports.jaf.or.jp/calendar?competitionDiscipline=all&heldDateFrom=202611&heldDateTo=all&feature=all"
     ]
   },
-  "インテックス大阪専用": {
-    "list_links": 0,
-    "sitemap_links": 0,
-    "candidates": 0,
-    "parsed": 1,
-    "errors": 0,
-    "notes": [
-      "dedicated total: 1"
-    ]
-  },
   "大阪観光局": {
     "list_links": 0,
     "sitemap_links": 2,
@@ -43,21 +33,21 @@
     "parsed": 0,
     "errors": 1,
     "notes": [
-      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7865f9a9bef0>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
+      "list: HTTPSConnectionPool(host='www.intex-osaka.com', port=443): Max retries exceeded with url: /jp/event/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.intex-osaka.com', port=443) at 0x7e8ca5e5d160>, 'Connection to www.intex-osaka.com timed out. (connect timeout=30)'))",
       "sitemap https://www.intex-osaka.com/sitemap.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap_index.xml: ConnectTimeout",
       "sitemap https://www.intex-osaka.com/sitemap-index.xml: ConnectTimeout"
     ]
   },
   "ATCトップ": {
-    "list_links": 5,
+    "list_links": 6,
     "sitemap_links": 0,
-    "candidates": 5,
-    "parsed": 12,
+    "candidates": 6,
+    "parsed": 16,
     "errors": 0,
     "notes": [
-      "dedicated: 4",
-      "listing fallback: 8"
+      "dedicated: 6",
+      "listing fallback: 11"
     ]
   },
   "ATC": {
@@ -97,9 +87,9 @@
     ]
   },
   "LUCUA大阪": {
-    "list_links": 14,
-    "sitemap_links": 67,
-    "candidates": 67,
+    "list_links": 13,
+    "sitemap_links": 66,
+    "candidates": 66,
     "parsed": 81,
     "errors": 0,
     "notes": [
@@ -149,9 +139,9 @@
     ]
   },
   "大阪オートメッセ": {
-    "list_links": 1,
+    "list_links": 6,
     "sitemap_links": 0,
-    "candidates": 1,
+    "candidates": 6,
     "parsed": 0,
     "errors": 0,
     "notes": [
@@ -188,7 +178,7 @@
     "sitemap_links": 0,
     "candidates": 15,
     "parsed": 3,
-    "errors": 1,
+    "errors": 0,
     "notes": []
   },
   "南海電鉄": {
@@ -203,21 +193,21 @@
     ]
   },
   "セブンパーク天美": {
-    "list_links": 1,
+    "list_links": 2,
     "sitemap_links": 0,
-    "candidates": 1,
-    "parsed": 21,
+    "candidates": 2,
+    "parsed": 25,
     "errors": 0,
     "notes": [
-      "dedicated: 20",
-      "listing fallback: 20"
+      "dedicated: 23",
+      "listing fallback: 23"
     ]
   },
   "Feel KOBE": {
     "list_links": 30,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 131,
+    "parsed": 129,
     "errors": 0,
     "notes": [
       "listing fallback: 34",
@@ -225,10 +215,10 @@
     ]
   },
   "京都観光Navi": {
-    "list_links": 33,
+    "list_links": 32,
     "sitemap_links": 180,
     "candidates": 180,
-    "parsed": 198,
+    "parsed": 197,
     "errors": 0,
     "notes": [
       "listing fallback: 46"
@@ -244,6 +234,6 @@
   },
   "TOTAL": {
     "final_events": 280,
-    "generated_at": "2026-11-26T12:52:06.952840+09:00"
+    "generated_at": "2026-11-27T13:04:09.144223+09:00"
   }
 }
