@@ -1,5 +1,52 @@
 window.EVENT_DATA = [
   {
+    "title": "世界遺産仁和寺貸切拝観と茶の湯・料理の饗宴",
+    "start_date": "2026-03-01",
+    "end_date": "2026-12-29",
+    "area": "京都",
+    "venue": "総本山 仁和寺",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "総本山 仁和寺"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/67f61ddd2dc236107b.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15947",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15947-1.jpg"
+  },
+  {
+    "title": "京都大学花山天文台日曜公開【京都大学 花山天文台】",
+    "start_date": "2026-03-20",
+    "end_date": "2026-12-06",
+    "area": "京都",
+    "venue": "京都大学 花山天文台 (京都市山科区)",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/95e74a9846395ff993.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=13724",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/13724-1.jpg"
+  },
+  {
     "title": "ãã«ã¯ã¢å¤§éªã§ãå©ç¨ããã ãã¾ããå¤§éªå¸ãã¬ãã¢ã ä»ååå¸2026",
     "start_date": "2026-06-26",
     "end_date": "2027-01-15",
@@ -21,76 +68,27 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-3524-file.jpg"
   },
   {
-    "title": "第61回京の冬の旅ポスター撮影地で紐解く茶道文化とその精神",
+    "title": "京都マラソン2027　～みんなが主役～",
     "start_date": "2026-07-10",
     "end_date": "2026-12-31",
     "area": "京都",
-    "venue": "宝鏡寺ほか",
+    "venue": "京都",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社",
-      "宝鏡寺ほか"
+      "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/6477ab4576ac14b26b.jpg",
+    "image_url": "images/afb3b9f25fcc1a0d52.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15948",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15944",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15948-1.jpg"
-  },
-  {
-    "title": "～毎月21日は「漬物の日」！～京のどぼ漬体験教室",
-    "start_date": "2026-07-10",
-    "end_date": "2026-12-20",
-    "area": "京都",
-    "venue": "京つけもの大安　本店",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "京つけもの大安 本"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/792736b8d6194c9aee.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15892",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15892-1.jpg"
-  },
-  {
-    "title": "京の職人が伝える工芸体験・水引細工【職人制作のお土産付】",
-    "start_date": "2026-07-10",
-    "end_date": "2026-12-20",
-    "area": "京都",
-    "venue": "水引工房　結丸",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "水引工房 結丸"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/1ad8d29db5ae2523c9.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15883",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15883-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15944-1.jpg"
   },
   {
     "title": "ハルカス300×名探偵コナン 衝空の晴天台(ハルカス)",
@@ -114,30 +112,6 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/42/l/604942.jpg"
-  },
-  {
-    "title": "京都府立陶板名画の庭 秋の夜間特別開園（SPECIAL NIGHT OPENING）",
-    "start_date": "2026-07-28",
-    "end_date": "2026-12-20",
-    "area": "京都",
-    "venue": "陶版名画の庭",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "陶版名画の庭"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/8a729754be9f36eca1.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15870",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15870-1.jpg"
   },
   {
     "title": "おさるのジョージ×阪急電車 コラボレーション 特設ホームページ | ラッピング列車「おさるのジョージ号」",
@@ -166,51 +140,52 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.hankyu.co.jp/area_info/osarunogeorge-hankyu2026/img/ogp.png"
   },
   {
-    "title": "＜終了しました＞ Nishijin Jazz Salon",
-    "start_date": "2026-07-31",
-    "end_date": "2027-07-26",
+    "title": "京都府立府民ホール アルティ『和管洋弦の奏で』篠笛×ヴァイオリン",
+    "start_date": "2026-08-21",
+    "end_date": "2026-12-15",
     "area": "京都",
-    "venue": "西陣紋彩組（京都市北区紫野中柏野町4 - 1 7）",
+    "venue": "京都府立府民ホールアルティ",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
+      "ホール",
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/a6c8ea41e9ef82aa41.png",
+    "image_url": "images/03925e8b0935519db8.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15889",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15374",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15889-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15374-1.png"
   },
   {
-    "title": "「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」阪神高速沿線各所 2026年8月22日（土） ~2027年3月21日（日） 阪神高速沿線で実際に神戸や大阪を巡って謎を解く体験型のゲームイベント「リアル謎",
-    "start_date": "2026-08-22",
-    "end_date": "2027-03-21",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "anime",
+    "title": "＜終了しました＞ ECCLUSIUSTICUS – Jazz sci-fi【CLUB METRO】",
+    "start_date": "2026-08-21",
+    "end_date": "2026-12-15",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
     "score": 99,
     "tags": [
-      "アニメ・ゲーム",
-      "ゲーム",
-      "大阪",
-      "兵庫",
-      "神戸"
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
     ],
-    "description": "開催中 「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」阪神高速沿線各所 2026年8月22日（土） ~2027年3月21日（日） 阪神高速沿線で実際に神戸や大阪を巡って謎を解く体験型のゲームイベント「リアル謎解きゲーム×阪神高速おでかけパス 謎めきロード2026」が開催されます。 謎解きキットを片手に3つのコースからチ",
-    "image_url": "images/2a10f488af1200e12b.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/37553/",
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/cede4f222482464a74.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15816",
     "categories": [
-      "anime"
+      "tourism"
     ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/94359dbe-72dc-4939-bbf9-1d72faa8201a-725x1024.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15816-1.jpg"
   },
   {
     "title": "「京阪電車×響け！ユーフォニアム2026 秋」コラボカフェ",
@@ -239,11 +214,35 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/76/l/612276.jpg"
   },
   {
-    "title": "佐々木幸男・山木康世　関西ぶらり旅【都雅都雅】",
-    "start_date": "2026-09-01",
-    "end_date": "2026-12-24",
+    "title": "上野通明　J.S.バッハ：無伴奏チェロ組曲全曲演奏会【京都コンサートホール　アンサンブルホールムラタ】",
+    "start_date": "2026-09-05",
+    "end_date": "2026-12-20",
     "area": "京都",
-    "venue": "ライブハウス 都雅都雅（トガトガ）",
+    "venue": "京都コンサートホール　アンサンブルホールムラタ",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "ホール",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/206b6d52a3a4b47f5f.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=14327",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/14327-1.jpg"
+  },
+  {
+    "title": "HYPER GAL × SPEEDER-X【CLUB METRO】",
+    "start_date": "2026-09-05",
+    "end_date": "2026-12-20",
+    "area": "京都",
+    "venue": "CLUB METRO",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -251,39 +250,40 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "ライブハウス 都雅都雅（トガトガ）"
+      "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/8a20fa398d6caae016.jpg",
+    "image_url": "images/d607082d6c43a955e0.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16005",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15986",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/16005-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15986-1.jpg"
   },
   {
-    "title": "＜終了しました＞ 京都伏見「耳祭り」2026【藤澤山 寳厳院 大光寺】",
+    "title": "～毎月21日は「漬物の日」！～京のどぼ漬体験教室",
     "start_date": "2026-09-05",
-    "end_date": "2027-01-28",
+    "end_date": "2026-12-28",
     "area": "京都",
-    "venue": "大光寺（京都府京都市伏見区伯耆町1−1）",
+    "venue": "京つけもの大安　本店",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社"
+      "寺社",
+      "京つけもの大安 本"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/e4c593c19abeca95dc.png",
+    "image_url": "images/3e69fe9ba09d5a1abe.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15890",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15892",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15890-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15892-1.jpg"
   },
   {
     "title": "「特別展「水木しげる 魂の漫画展」」神戸ファッション美術館 2026年9月12日（土） ~2026年11月29日（日） 『ゲゲゲの鬼太郎』などで知られる漫画家・水木しげるの画業を紹介する特別展「水木しげる 魂の漫画展」が",
@@ -334,6 +334,78 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_event.jpg"
   },
   {
+    "title": "京都ハンナリーズ12月13日(日)神戸ストークス戦【にっしんでんきアリーナ京都】",
+    "start_date": "2026-09-12",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "神戸",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/917198b186f2c54758.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15917",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15917-1.jpg"
+  },
+  {
+    "title": "佐々木幸男・山木康世　関西ぶらり旅【都雅都雅】",
+    "start_date": "2026-09-15",
+    "end_date": "2027-02-01",
+    "area": "京都",
+    "venue": "ライブハウス 都雅都雅（トガトガ）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "ライブハウス 都雅都雅（トガトガ）"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/566dbafd3f50c7c318.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16005",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/16005-1.jpg"
+  },
+  {
+    "title": "＜終了しました＞ BASEMENT【CLUB METRO】",
+    "start_date": "2026-09-15",
+    "end_date": "2027-02-01",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/968e2c689269457cf1.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15963",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15963-1.jpg"
+  },
+  {
     "title": "「灘の酒蔵謎解き探訪2026」 2026年9月17日（木） ~2027年2月28日（日） 「灘の酒蔵謎解き探訪」は、日本酒・食文化・街並みなど、灘の魅力を楽しみながら巡る体験型イベントです。 参加者は旅人探偵「たぬき探偵",
     "start_date": "2026-09-17",
     "end_date": "2027-02-28",
@@ -356,9 +428,9 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/nada-shuzo-nazotoki-tanbou2026-01-724x1024.jpg"
   },
   {
-    "title": "DIAMONDS ARE FOREVER presents MOCKNOMY Ⅱ【CLUB METRO】",
+    "title": "Redhair Rosy presents dip. 12 2026-27 COUNTDOWN【CLUB METRO】",
     "start_date": "2026-09-17",
-    "end_date": "2027-01-19",
+    "end_date": "2027-03-07",
     "area": "京都",
     "venue": "CLUB METRO",
     "category": "tourism",
@@ -371,18 +443,18 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/24f5bd06bbfc994917.jpg",
+    "image_url": "images/587a9771f466f30412.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15812",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15987",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15812-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15987-1.png"
   },
   {
     "title": "クリスマスチャリティコンサートVol.17 聖夜の響き～メサイアとミュージカル～【京都市立京都堀川音楽高等学校　音楽ホール】",
-    "start_date": "2026-09-17",
-    "end_date": "2027-03-07",
+    "start_date": "2026-09-19",
+    "end_date": "2027-01-17",
     "area": "京都",
     "venue": "京都市立京都堀川音楽高等学校　音楽ホール",
     "category": "tourism",
@@ -395,109 +467,13 @@ window.EVENT_DATA = [
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/f996fe10689e73ed30.png",
+    "image_url": "images/94e3f590ca3428fd66.png",
     "source": "京都観光Navi",
     "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16030",
     "categories": [
       "tourism"
     ],
     "original_image_url": "https://ja.kyoto.travel/resource/event/16030-1.png"
-  },
-  {
-    "title": "Takashi Mori electric drum solo performance & installation “TOLERANCE” 〜ミクロン単位の精密さで構築される、音と写真の冷徹な境界線〜【CLUB MET",
-    "start_date": "2026-09-17",
-    "end_date": "2027-03-07",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/0b17a1d304000f8bd7.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15809",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15809-1.jpg"
-  },
-  {
-    "title": "DJ KRUSH “TOKYØHUM” JAPAN TOUR 2026 in Kyoto【CLUB METRO】",
-    "start_date": "2026-09-19",
-    "end_date": "2026-12-20",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/af2e6a1106e926a069.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15971",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15971-1.jpg"
-  },
-  {
-    "title": "the ONEMAN show “ヤンス”【CLUB METRO】",
-    "start_date": "2026-09-19",
-    "end_date": "2026-12-06",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/ac9087e3448f730a9c.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15972",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15972-1.jpg"
-  },
-  {
-    "title": "The Return Of Cosmic Ritual Featuring Joaquin Joe Claussell -Counter Culture Side Club Special-【CLUB METRO】",
-    "start_date": "2026-09-19",
-    "end_date": "2026-12-20",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/292b566a0e36d08f90.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15886",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15886-1.jpg"
   },
   {
     "title": "＜終了しました＞ DOG RUN【CLUB METRO】",
@@ -524,30 +500,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15820-1.jpg"
   },
   {
-    "title": "TAKKYU ISHINO IN KYOTO METRO【CLUB METRO】",
-    "start_date": "2026-09-19",
-    "end_date": "2027-01-17",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/c0e6e112df3e576180.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15811",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15811-1.jpg"
-  },
-  {
     "title": "本ズワイ蟹・マルズワイガニ食べ比べ＆ローストビーフ食べ放題",
     "start_date": "2026-10-01",
     "end_date": "2027-03-31",
@@ -571,28 +523,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/15/l/561315_1.jpg"
   },
   {
-    "title": "COSMIC LUST【CLUB METRO】",
+    "title": "つなぐ ～雪と梅の宴～",
     "start_date": "2026-10-01",
-    "end_date": "2026-11-30",
+    "end_date": "2026-12-28",
     "area": "京都",
-    "venue": "CLUB METRO",
+    "venue": "京都駅ビル  駅前広場（ホテルグランヴィア京都前）",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社",
-      "CLUB METRO"
+      "駅",
+      "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/f4bd2b03b1c2e309e1.png",
+    "image_url": "images/6691f00b56abbe82f6.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15985",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15950",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15985-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15950-1.jpg"
   },
   {
     "title": "2026年度秋季特別展「『原爆の図』～未来に向けてともに考える場として～」【立命館大学国際平和ミュージアム】",
@@ -619,6 +571,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15881-1.png"
   },
   {
+    "title": "「咆哮」【CLUB METRO】",
+    "start_date": "2026-10-01",
+    "end_date": "2026-11-30",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/c80465179a2ecc8d70.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15810",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15810-1.png"
+  },
+  {
     "title": "10/2(金)より直営店限定ショップリミテッド Kチェア「タープグリーン復刻モデル」発売 | イベント | グランフロント大阪",
     "start_date": "2026-10-02",
     "end_date": "2026-11-30",
@@ -641,11 +617,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.gfo-sc.jp/files/20260926/d97591e58b3131ec6cb517303a3dca61413471c3.jpg"
   },
   {
-    "title": "仁和寺霊宝館秋季名宝展【仁和寺】",
-    "start_date": "2026-10-03",
-    "end_date": "2026-11-29",
+    "title": "金剛流特別企画 幽玄な舞台芸術 能楽体験・公演鑑賞",
+    "start_date": "2026-10-02",
+    "end_date": "2026-12-06",
     "area": "京都",
-    "venue": "仁和寺霊宝館",
+    "venue": "金剛能楽堂",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -653,16 +629,16 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "仁和寺霊宝"
+      "金剛能楽堂"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/90f0409c16098e2e0f.png",
+    "image_url": "images/68c07559a829b4159b.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=4810",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15865",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/4810-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15865-1.jpg"
   },
   {
     "title": "田能村直入と近代京都の南画—自然のアンビエンス【京都文化博物館】",
@@ -689,35 +665,34 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15607-1.jpg"
   },
   {
-    "title": "MICHAEL MONROE JAPAN TOUR 2026【CLUB METRO】",
-    "start_date": "2026-10-03",
-    "end_date": "2026-12-06",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/65d964d62b4d9a7a63.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15562",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15562-1.jpg"
-  },
-  {
-    "title": "Redhair Rosy presents dip. 12 2026-27 COUNTDOWN【CLUB METRO】",
+    "title": "ドイツのクリスマスマーケット WEIHNACHTSMARKT【ゲーテ・インスティトゥート・ヴィラ鴨川】",
     "start_date": "2026-10-03",
     "end_date": "2026-11-29",
     "area": "京都",
-    "venue": "CLUB METRO",
+    "venue": "ゲーテ・インスティトゥート・ヴィラ鴨川",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/93eaff9048948787c7.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=10939",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/10939-1.png"
+  },
+  {
+    "title": "昭和ヒットSONG大作戦！【ライブハウスEN-LAB】",
+    "start_date": "2026-10-03",
+    "end_date": "2027-02-28",
+    "area": "京都",
+    "venue": "ライブハウスEN-LAB",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -725,19 +700,66 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "CLUB METRO"
+      "ライブハウスEN-LAB"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/5ae949cfce27f8180e.png",
+    "image_url": "images/17696008b4c0e5b162.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15987",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15667",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15987-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15667-1.png"
   },
   {
-    "title": "＜終了しました＞ BASEMENT【CLUB METRO】",
+    "title": "京都ハンナリーズ12月16日(水)群馬クレインサンダーズ戦【にっしんでんきアリーナ京都】",
+    "start_date": "2026-10-03",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/0886f4dda607086e9d.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16027",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/16027-1.jpg"
+  },
+  {
+    "title": "こと九条ねぎ奉納祭【上賀茂神社】",
+    "start_date": "2026-10-03",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "上賀茂神社",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "上賀茂神社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/6648b916f8c0d6c29c.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15989",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15989-1.jpg"
+  },
+  {
+    "title": "＜終了しました＞ SOILFUNKNESS【CLUB METRO】",
     "start_date": "2026-10-03",
     "end_date": "2026-12-06",
     "area": "京都",
@@ -752,18 +774,64 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/086b2982e7185c02bc.jpg",
+    "image_url": "images/2645b43ddd6a1365de.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15963",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15969",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15963-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15969-1.jpg"
+  },
+  {
+    "title": "＜終了しました＞ 京都ハンナリーズ11月18日(水)信州ブレイブウォリアーズ戦【にっしんでんきアリーナ京都】",
+    "start_date": "2026-10-03",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/9b60972ea9a9b3c3c1.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15914",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15914-1.jpg"
+  },
+  {
+    "title": "＜終了しました＞ 京都ハンナリーズ11月13日(金)茨城ロボッツ戦【にっしんでんきアリーナ京都】",
+    "start_date": "2026-10-03",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/5be3b4cba6ccfab86d.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15913",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15913-1.jpg"
   },
   {
     "title": "＜終了しました＞ 満方魚の風景画展【京町家ぎゃらりぃ董（とう）】",
-    "start_date": "2026-10-03",
-    "end_date": "2027-02-28",
+    "start_date": "2026-10-05",
+    "end_date": "2026-12-25",
     "area": "京都",
     "venue": "京町家ぎゃらりぃ董（とう） ー暮らしの文化展示館Japanー",
     "category": "tourism",
@@ -775,7 +843,7 @@ window.EVENT_DATA = [
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/7fded03526b66b3075.png",
+    "image_url": "images/988ab1e765a134387a.png",
     "source": "京都観光Navi",
     "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15891",
     "categories": [
@@ -784,56 +852,9 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15891-1.png"
   },
   {
-    "title": "＜終了しました＞ 木育学校『里山文化祭』【京都大学 フィールド科学教育研究センター上賀茂試験地】",
-    "start_date": "2026-10-03",
-    "end_date": "2026-11-29",
-    "area": "京都",
-    "venue": "京都大学 フィールド科学教育研究センター上賀茂試験地",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/9cdc94c2a602cf2024.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15882",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15882-1.png"
-  },
-  {
-    "title": "＜終了しました＞ 第34回　洛中らくご会　古今亭文菊【大江能楽堂】",
-    "start_date": "2026-10-03",
-    "end_date": "2027-02-28",
-    "area": "京都",
-    "venue": "大江能楽堂",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "大江能楽堂"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/7af49f92c5510f4df2.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15834",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15834-1.png"
-  },
-  {
-    "title": "＜終了しました＞ MOVE ムーブ【CLUB METRO】",
-    "start_date": "2026-10-03",
-    "end_date": "2026-11-29",
+    "title": "U-zhaan×環ROY×鎮座DOPENESS Oneman Live in Kyoto【CLUB METRO】",
+    "start_date": "2026-10-05",
+    "end_date": "2026-12-25",
     "area": "京都",
     "venue": "CLUB METRO",
     "category": "tourism",
@@ -846,13 +867,13 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/6f4d734f922c383f30.jpg",
+    "image_url": "images/2ec4c3fa752e8946a0.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15818",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15808",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15818-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15808-1.jpg"
   },
   {
     "title": "特別展　源氏物語　王朝のかがやき【京都国立博物館】",
@@ -879,30 +900,79 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/14808-1.jpg"
   },
   {
-    "title": "京都ハンナリーズ12月16日(水)群馬クレインサンダーズ戦【にっしんでんきアリーナ京都】",
-    "start_date": "2026-10-09",
-    "end_date": "2027-03-31",
+    "title": "＜終了しました＞ DoitJAZZ! 20th Anniversary meets Mendel【CLUB METRO】",
+    "start_date": "2026-10-06",
+    "end_date": "2026-11-29",
     "area": "京都",
-    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
+    "venue": "CLUB METRO",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社"
+      "寺社",
+      "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/afad6830670ad46ae8.jpg",
+    "image_url": "images/333ee0e7ee3a7bd36e.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16027",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15814",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/16027-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15814-1.jpg"
   },
   {
-    "title": "0番線と夜明け前 2ndアルバム「出町柳アイロニー」レコ発ツアー【CLUB METRO】",
+    "title": "京の逸品物語展示会 in 玄想庵",
+    "start_date": "2026-10-09",
+    "end_date": "2027-03-31",
+    "area": "京都",
+    "venue": "玄想庵",
+    "category": "exhibition",
+    "score": 99,
+    "tags": [
+      "展示",
+      "フェス",
+      "京都",
+      "寺社",
+      "玄想庵"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/1cecf577202b309806.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16013",
+    "categories": [
+      "exhibition"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/16013-1.png"
+  },
+  {
+    "title": "デュオ・ムジョー “trans- 1+1”【京都芸術センター】",
+    "start_date": "2026-10-09",
+    "end_date": "2026-12-13",
+    "area": "京都",
+    "venue": "京都芸術センター",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "京都芸術センター"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/c53beaa5aef0e935ba.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15884",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15884-1.jpg"
+  },
+  {
+    "title": "＜終了しました＞ MOVE ムーブ【CLUB METRO】",
     "start_date": "2026-10-09",
     "end_date": "2026-12-13",
     "area": "京都",
@@ -917,37 +987,13 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/4b7159924903806ea6.jpg",
+    "image_url": "images/d21b98cfbcb86e8d46.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15973",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15818",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15973-1.jpg"
-  },
-  {
-    "title": "京都ハンナリーズ12月11日(金)神戸ストークス戦【にっしんでんきアリーナ京都】",
-    "start_date": "2026-10-09",
-    "end_date": "2027-03-31",
-    "area": "京都",
-    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "神戸",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/4f699c7a964b3d3a71.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15916",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15916-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15818-1.jpg"
   },
   {
     "title": "ENLIGHTENMENT JAPAN(エンライトメント ジャパン)",
@@ -975,33 +1021,32 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/01/l/612701.jpg"
   },
   {
-    "title": "Penguinmarket Records 20th Anniversary",
+    "title": "＜終了しました＞ 京都伏見「耳祭り」2026【藤澤山 寳厳院 大光寺】",
     "start_date": "2026-10-10",
-    "end_date": "2026-12-14",
+    "end_date": "2026-11-30",
     "area": "京都",
-    "venue": "CLUB METRO",
+    "venue": "大光寺（京都府京都市伏見区伯耆町1−1）",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社",
-      "CLUB METRO"
+      "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/44b2d8de3b822e1d43.jpg",
+    "image_url": "images/0cf26bebc21e474085.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15563",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15890",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15563-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15890-1.png"
   },
   {
-    "title": "＜終了しました＞ ECCLUSIUSTICUS – Jazz sci-fi【CLUB METRO】",
+    "title": "TAKKYU ISHINO IN KYOTO METRO【CLUB METRO】",
     "start_date": "2026-10-10",
-    "end_date": "2026-12-14",
+    "end_date": "2026-12-13",
     "area": "京都",
     "venue": "CLUB METRO",
     "category": "tourism",
@@ -1014,13 +1059,13 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/df79488f1f578eee33.jpg",
+    "image_url": "images/ca695956e81003b292.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15816",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15811",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15816-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15811-1.jpg"
   },
   {
     "title": "伝統行事イベント一覧",
@@ -1046,31 +1091,7 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_event.jpg"
   },
   {
-    "title": "【無料公開】きもの文化実演ショー2026【東本願寺 視聴覚ホール】",
-    "start_date": "2026-10-12",
-    "end_date": "2026-11-30",
-    "area": "京都",
-    "venue": "東本願寺「視聴覚ホール」",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "ホール",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/83cc05c5fe124eec53.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15789",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15789-1.jpg"
-  },
-  {
-    "title": "＜終了しました＞ SOILFUNKNESS【CLUB METRO】",
+    "title": "DJ KRUSH “TOKYØHUM” JAPAN TOUR 2026 in Kyoto【CLUB METRO】",
     "start_date": "2026-10-15",
     "end_date": "2026-12-20",
     "area": "京都",
@@ -1085,37 +1106,13 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/79cb8c47d19b20c8a1.jpg",
+    "image_url": "images/dd07413ddb5e99c715.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15969",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15971",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15969-1.jpg"
-  },
-  {
-    "title": "第35回　洛中らくご会　隅田川馬石【本妙寺】",
-    "start_date": "2026-10-15",
-    "end_date": "2026-12-20",
-    "area": "京都",
-    "venue": "本妙寺",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "本妙寺"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/e23f1be2539531aa70.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15833",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15833-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15971-1.jpg"
   },
   {
     "title": "京セラギャラリー2026年秋季特別展「トラバース：ピカソ『347シリーズ』と現代作家たち」",
@@ -1143,7 +1140,7 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15689-1.jpg"
   },
   {
-    "title": "DEN-EN 2nd year anniversary × DJ Masda【CLUB METRO】",
+    "title": "Penguinmarket Records 20th Anniversary",
     "start_date": "2026-10-16",
     "end_date": "2026-11-28",
     "area": "京都",
@@ -1158,40 +1155,16 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/f58dcfe3524c7eb6e3.jpg",
+    "image_url": "images/6aeaaae171eb3c0926.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15984",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15563",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15984-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15563-1.jpg"
   },
   {
-    "title": "東 亮汰＆髙木竜馬 デュオ･リサイタル【京都コンサートホール】",
-    "start_date": "2026-10-16",
-    "end_date": "2026-11-28",
-    "area": "京都",
-    "venue": "京都コンサートホール 小ホール",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "ホール",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/83e9fafdc7715aba59.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15787",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15787-1.jpg"
-  },
-  {
-    "title": "「咆哮」【CLUB METRO】",
+    "title": "＜終了しました＞ WE LOVE KYOTO【CLUB METRO】",
     "start_date": "2026-10-17",
     "end_date": "2027-06-20",
     "area": "京都",
@@ -1206,13 +1179,13 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/a73ac7855dc6af6881.png",
+    "image_url": "images/487faa9e6bc666e2ac.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15810",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15815",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15810-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15815-1.jpg"
   },
   {
     "title": "『エヴァンゲリオン』30周年記念展「ALL OF EVANGELION」(大阪)",
@@ -1239,54 +1212,31 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/18/l/610718_1.jpg"
   },
   {
-    "title": "京都府立府民ホール アルティ『和管洋弦の奏で』篠笛×ヴァイオリン",
-    "start_date": "2026-10-20",
-    "end_date": "2027-02-14",
-    "area": "京都",
-    "venue": "京都府立府民ホールアルティ",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "ホール",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/250e5314cc9dfbfbda.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15374",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15374-1.png"
-  },
-  {
-    "title": "ドイツのクリスマスマーケット WEIHNACHTSMARKT【ゲーテ・インスティトゥート・ヴィラ鴨川】",
+    "title": "ブリュワーズナイト 感謝祭 in SVB京都",
     "start_date": "2026-10-23",
-    "end_date": "2026-12-21",
+    "end_date": "2026-12-06",
     "area": "京都",
-    "venue": "ゲーテ・インスティトゥート・ヴィラ鴨川",
+    "venue": "スプリングバレーブルワリー京都2F",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社"
+      "寺社",
+      "スプリングバレーブルワリー京都2F"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/23d9f7e1be331b81d0.png",
+    "image_url": "images/b3e56d95ac4fc6443e.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=10939",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15958",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/10939-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15958-1.png"
   },
   {
-    "title": "京都ハンナリーズ12月13日(日)神戸ストークス戦【にっしんでんきアリーナ京都】",
+    "title": "京都ハンナリーズ12月5日(土)広島ドラゴンフライズ戦【にっしんでんきアリーナ京都】",
     "start_date": "2026-10-23",
     "end_date": "2026-12-06",
     "area": "京都",
@@ -1297,17 +1247,16 @@ window.EVENT_DATA = [
       "イベント",
       "フェス",
       "京都",
-      "神戸",
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/3df025558a52913f17.jpg",
+    "image_url": "images/0b6124618f8ab0788d.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15917",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15915",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15917-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15915-1.jpg"
   },
   {
     "title": "秋の京都にぴったりの栗を味わうアフターヌーンティー&パフェ【シックスセンシズ 京都　シーズナルダイニング「Sekki（節気）】",
@@ -1333,6 +1282,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15896-1.jpg"
   },
   {
+    "title": "＜終了しました＞ 炉開きの季節に味わう「白小豆粟ぜんざい」【有斐斎弘道館】",
+    "start_date": "2026-10-23",
+    "end_date": "2026-12-06",
+    "area": "京都",
+    "venue": "有斐斎弘道館",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "有斐斎弘道"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/a784fd7fc38c3bc064.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15876",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15876-1.jpg"
+  },
+  {
     "title": "リアル脱出ゲーム×名探偵コナン「疾風の追走(ハイウェイ)からの脱出」(大阪)",
     "start_date": "2026-10-24",
     "end_date": "2026-12-13",
@@ -1355,30 +1328,6 @@ window.EVENT_DATA = [
       "anime"
     ],
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/33/l/614233.jpg"
-  },
-  {
-    "title": "＜終了しました＞ ärk【CLUB METRO】",
-    "start_date": "2026-10-24",
-    "end_date": "2027-01-17",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/2ec81a740f4b9c4abe.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15813",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15813-1.jpg"
   },
   {
     "title": "細田守の原点/展(大阪)",
@@ -1406,7 +1355,7 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/42/l/608142.jpg"
   },
   {
-    "title": "＜終了しました＞ CLUB80’s -look back on the 90’s-【CLUB METRO】",
+    "title": "0番線と夜明け前 2ndアルバム「出町柳アイロニー」レコ発ツアー【CLUB METRO】",
     "start_date": "2026-10-31",
     "end_date": "2026-12-20",
     "area": "京都",
@@ -1421,37 +1370,36 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/194acbe6e762abc60a.jpg",
+    "image_url": "images/5afb7593bbb9162b00.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15817",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15973",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15817-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15973-1.jpg"
   },
   {
-    "title": "＜終了しました＞ DoitJAZZ! 20th Anniversary meets Mendel【CLUB METRO】",
+    "title": "伝統産業の日２０２７",
     "start_date": "2026-10-31",
-    "end_date": "2026-12-20",
+    "end_date": "2026-12-06",
     "area": "京都",
-    "venue": "CLUB METRO",
+    "venue": "岡崎・東山・四条烏丸・京都駅周辺ほか市内一円",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社",
-      "CLUB METRO"
+      "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/c1a6da338a8c29110f.jpg",
+    "image_url": "images/35851c231c67b9e771.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15814",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15908",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15814-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15908-1.jpg"
   },
   {
     "title": "「神戸フランスパンびより2026秋」神戸市内 2026年11月1日（日） ~2026年11月30日（月） 神戸のパン文化を楽しむイベント「神戸フランスパンびより2026秋」が、11月に開催されます🥖 「味わう・知る・つな",
@@ -1479,51 +1427,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/c702e4069aa9db811f6e5cfbcdc69b6d-1.jpg"
   },
   {
-    "title": "京都マラソン2027　～みんなが主役～",
+    "title": "泉涌寺 大根焚き（だいこんだき）【御寺 泉涌寺】",
     "start_date": "2026-11-01",
-    "end_date": "2027-03-31",
+    "end_date": "2026-11-30",
     "area": "京都",
-    "venue": "京都",
+    "venue": "御寺 泉涌寺",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社"
+      "寺社",
+      "御寺 泉涌寺"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/07c20d86d855d0bec9.jpg",
+    "image_url": "images/7709e43c7b1d1147c7.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15944",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15962",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15944-1.jpg"
-  },
-  {
-    "title": "『嵐山に ごみは あらしまへん』スタンプラリー",
-    "start_date": "2026-11-01",
-    "end_date": "2026-11-30",
-    "area": "京都",
-    "venue": "嵐山商店街",
-    "category": "car",
-    "score": 99,
-    "tags": [
-      "クルマ",
-      "モータースポーツ",
-      "フェス",
-      "京都",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/fb57621eb71f25a6cd.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15869",
-    "categories": [
-      "car"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15869-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15962-1.jpg"
   },
   {
     "title": "『崩壊：スターレイル』星神★アッハ　実装記念オンリーショップ",
@@ -1731,11 +1656,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15666-1.png"
   },
   {
-    "title": "開業150周年記念！京都駅おしごと体験～世界のお客様をおもてなしする駅員さんになろう～",
+    "title": "霊山歴史館学芸員による講演＆館内ツアー",
     "start_date": "2026-11-02",
     "end_date": "2026-11-29",
     "area": "京都",
-    "venue": "京都駅",
+    "venue": "霊山歴史館",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -1743,16 +1668,16 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "京都駅"
+      "霊山歴史"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/c8f49fa038e1709d7c.jpg",
+    "image_url": "images/f969dde230808c2111.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15949",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15919",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15949-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15919-1.jpg"
   },
   {
     "title": "中之島ウエスト・冬ものがたり2026",
@@ -1799,6 +1724,54 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15990-1.png"
   },
   {
+    "title": "BONG BROS RECORDS PRESENTS BORN FREE 15th ANNIVERSARY【CLUB METRO】",
+    "start_date": "2026-11-03",
+    "end_date": "2026-12-20",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/9dce7893aa9b257bd7.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15975",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15975-1.jpg"
+  },
+  {
+    "title": "＜終了しました＞ DIAMONDS ARE FOREVER presents MOCKNOMY Ⅱ【CLUB METRO】",
+    "start_date": "2026-11-03",
+    "end_date": "2026-12-20",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/6b54216ead27e39578.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15812",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15812-1.jpg"
+  },
+  {
     "title": "「神戸・灘ラーメンスタンプラリー」灘区内各所 2026年11月4日（水） ~2027年1月31日（日） ラーメン激戦区として知られる六甲道エリアをはじめ、多くのラーメン店が集まる灘区で、「神戸・灘ラーメンスタンプラリー」",
     "start_date": "2026-11-04",
     "end_date": "2027-01-31",
@@ -1823,6 +1796,54 @@ window.EVENT_DATA = [
       "food"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/kobe-nada-ramen-stamp-rally-01-724x1024.jpg"
+  },
+  {
+    "title": "＜終了しました＞ 第34回　洛中らくご会　古今亭文菊【大江能楽堂】",
+    "start_date": "2026-11-04",
+    "end_date": "2027-01-13",
+    "area": "京都",
+    "venue": "大江能楽堂",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "大江能楽堂"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/9259473ff5a7274529.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15834",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15834-1.png"
+  },
+  {
+    "title": "＜終了しました＞ CLUB80’s -look back on the 90’s-【CLUB METRO】",
+    "start_date": "2026-11-04",
+    "end_date": "2027-01-13",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/af7d51ee9de70c14c3.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15817",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15817-1.jpg"
   },
   {
     "title": "ツヅレ｜刺繍アクセサリー POP-UP | イベント | グランフロント大阪",
@@ -1894,30 +1915,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.gfo-sc.jp/files/20261112/b17010eabf0beaf375d140c2e797b5c6bb88f5e5.jpg"
   },
   {
-    "title": "梅小路公園紅葉まつり（ライトアップ）",
-    "start_date": "2026-11-13",
-    "end_date": "2026-11-29",
-    "area": "京都",
-    "venue": "梅小路公園「朱雀の庭」",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "公園",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/5ce2328f69dce15444.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=3731",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/3731-1.jpg"
-  },
-  {
     "title": "特別公開イベント一覧",
     "start_date": "2026-11-13",
     "end_date": "2026-11-29",
@@ -1963,28 +1960,27 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/192f306d732f843f4c49d71bc5c18d36-1024x575.png"
   },
   {
-    "title": "＜終了しました＞ 炉開きの季節に味わう「白小豆粟ぜんざい」【有斐斎弘道館】",
+    "title": "琵琶LIVE & 試奏体験【メルキュール京都ステーション】",
     "start_date": "2026-11-15",
     "end_date": "2027-11-13",
     "area": "京都",
-    "venue": "有斐斎弘道館",
+    "venue": "メルキュール京都ステーション地下一階ラウンジ",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社",
-      "有斐斎弘道"
+      "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/0ec679ee8521960081.jpg",
+    "image_url": "images/195fe9cd9f95339c95.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15876",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15910",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15876-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15910-1.jpg"
   },
   {
     "title": "sibasi kyoto｜Terry Riley － Moments from the Sound Current –【光明院】",
@@ -2036,11 +2032,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.nankai.co.jp/sites/default/files/2022-06/img-logo_0.jpg"
   },
   {
-    "title": "泉涌寺 大根焚き（だいこんだき）【御寺 泉涌寺】",
+    "title": "仁和寺霊宝館秋季名宝展【仁和寺】",
     "start_date": "2026-11-19",
     "end_date": "2026-12-06",
     "area": "京都",
-    "venue": "御寺 泉涌寺",
+    "venue": "仁和寺霊宝館",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -2048,16 +2044,40 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "御寺 泉涌寺"
+      "仁和寺霊宝"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/dc0305715d47cfbd6b.jpg",
+    "image_url": "images/56b854133792beca4f.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15962",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=4810",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15962-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/4810-1.png"
+  },
+  {
+    "title": "梅小路公園紅葉まつり（ライトアップ）",
+    "start_date": "2026-11-19",
+    "end_date": "2026-12-06",
+    "area": "京都",
+    "venue": "梅小路公園「朱雀の庭」",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "公園",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/045686fdb114239b4c.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=3731",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/3731-1.jpg"
   },
   {
     "title": "小倉山二尊院 JTB限定 夜間貸切ライトアップ【小倉山 二尊院】",
@@ -2084,30 +2104,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15841-1.png"
   },
   {
-    "title": "大阪ストリートピアノフェスティバル「Evergreen Forest Piano」が登場！ | イベント | グランフロント大阪",
-    "start_date": "2026-11-20",
-    "end_date": "2026-11-27",
-    "area": "大阪",
-    "venue": "開催場所 ナレッジプラザ",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "大阪",
-      "商業施設",
-      "開催場所 ナレッジプラザ"
-    ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/4a9ae053f73412c6bb.png",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5855/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20261118/214a1007fce8b624ee6e94ba8eee0a7f7063472c.png"
-  },
-  {
     "title": "カデュネ ポップアップショップ",
     "start_date": "2026-11-20",
     "end_date": "2026-11-29",
@@ -2132,34 +2128,34 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5844-file.jpg"
   },
   {
-    "title": "琵琶LIVE & 試奏体験【メルキュール京都ステーション】",
+    "title": "京都ゲームホリデー【ゼスト御池・QUESTION】",
     "start_date": "2026-11-20",
-    "end_date": "2027-02-26",
+    "end_date": "2026-12-13",
     "area": "京都",
-    "venue": "メルキュール京都ステーション地下一階ラウンジ",
-    "category": "tourism",
+    "venue": "ゼスト御池（河原町広場、御幸町広場）、QUESTION",
+    "category": "anime",
     "score": 99,
     "tags": [
-      "イベント",
+      "アニメ・ゲーム",
       "フェス",
       "京都",
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/d73415ebb13de956d1.jpg",
+    "image_url": "images/41ea078247355fcc25.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15910",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15959",
     "categories": [
-      "tourism"
+      "anime"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15910-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15959-1.png"
   },
   {
-    "title": "世界遺産仁和寺貸切拝観と茶の湯・料理の饗宴",
+    "title": "開業150周年記念！京都駅おしごと体験～世界のお客様をおもてなしする駅員さんになろう～",
     "start_date": "2026-11-20",
     "end_date": "2026-12-06",
     "area": "京都",
-    "venue": "総本山 仁和寺",
+    "venue": "京都駅",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -2167,19 +2163,19 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "総本山 仁和寺"
+      "京都駅"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/f55b7c615771c817ff.jpg",
+    "image_url": "images/7e961222c4b826b0a7.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15947",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15949",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15947-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15949-1.jpg"
   },
   {
-    "title": "京都ハンナリーズ12月5日(土)広島ドラゴンフライズ戦【にっしんでんきアリーナ京都】",
+    "title": "京都ハンナリーズ12月11日(金)神戸ストークス戦【にっしんでんきアリーナ京都】",
     "start_date": "2026-11-20",
     "end_date": "2027-02-26",
     "area": "京都",
@@ -2190,16 +2186,64 @@ window.EVENT_DATA = [
       "イベント",
       "フェス",
       "京都",
+      "神戸",
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/ec7a94ffa40a5657dc.jpg",
+    "image_url": "images/f6f7f42fdc1e9f1826.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15915",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15916",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15915-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15916-1.jpg"
+  },
+  {
+    "title": "＜終了しました＞ 木育学校『里山文化祭』【京都大学 フィールド科学教育研究センター上賀茂試験地】",
+    "start_date": "2026-11-20",
+    "end_date": "2027-02-26",
+    "area": "京都",
+    "venue": "京都大学 フィールド科学教育研究センター上賀茂試験地",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/e670c14978debddb8f.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15882",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15882-1.png"
+  },
+  {
+    "title": "京の職人が伝える工芸体験・水引細工【職人制作のお土産付】",
+    "start_date": "2026-11-20",
+    "end_date": "2026-12-06",
+    "area": "京都",
+    "venue": "水引工房　結丸",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "水引工房 結丸"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/e77e5bd27391f68fe7.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15883",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15883-1.jpg"
   },
   {
     "title": "あきのしんぜんこうじてん 令和８年「秋の新善光寺展」【一條殿 新善光寺】",
@@ -2251,100 +2295,51 @@ window.EVENT_DATA = [
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/09/l/618309.jpg"
   },
   {
-    "title": "上野通明　J.S.バッハ：無伴奏チェロ組曲全曲演奏会【京都コンサートホール　アンサンブルホールムラタ】",
+    "title": "映画村文化体験プログラム「文楽」【太秦映画村】",
     "start_date": "2026-11-21",
-    "end_date": "2027-01-31",
+    "end_date": "2026-11-29",
     "area": "京都",
-    "venue": "京都コンサートホール　アンサンブルホールムラタ",
+    "venue": "太秦映画村内「御池町屋」",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "ホール",
+      "寺社",
+      "太秦映画村内「御池町屋」"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/b521499e479c16aef1.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16010",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/16010-1.png"
+  },
+  {
+    "title": "＜終了しました＞ Nishijin Jazz Salon",
+    "start_date": "2026-11-21",
+    "end_date": "2026-12-26",
+    "area": "京都",
+    "venue": "西陣紋彩組（京都市北区紫野中柏野町4 - 1 7）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/d05fac481c34d24b50.jpg",
+    "image_url": "images/f0291621fc9dd65a55.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=14327",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15889",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/14327-1.jpg"
-  },
-  {
-    "title": "京の逸品物語展示会 in 玄想庵",
-    "start_date": "2026-11-21",
-    "end_date": "2027-01-11",
-    "area": "京都",
-    "venue": "玄想庵",
-    "category": "exhibition",
-    "score": 99,
-    "tags": [
-      "展示",
-      "フェス",
-      "京都",
-      "寺社",
-      "玄想庵"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/fa59293f055994026e.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16013",
-    "categories": [
-      "exhibition"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/16013-1.png"
-  },
-  {
-    "title": "BONG BROS RECORDS PRESENTS BORN FREE 15th ANNIVERSARY【CLUB METRO】",
-    "start_date": "2026-11-21",
-    "end_date": "2027-01-31",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/6e141d2869277496b5.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15975",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15975-1.jpg"
-  },
-  {
-    "title": "東福茶宴【東福寺　本坊庭園】",
-    "start_date": "2026-11-21",
-    "end_date": "2027-01-11",
-    "area": "京都",
-    "venue": "東福寺　本坊庭園（方丈）",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "東福寺 本坊庭園（方丈）"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/b504ca1d14b85e0bfb.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15968",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15968-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15889-1.png"
   },
   {
     "title": "北欧展 - STYLE WINTER 2026 -【WAKASA＆CO. KYOTO 京都四条店】",
@@ -2370,35 +2365,34 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15875-1.png"
   },
   {
-    "title": "木村 大×アンドリュー･ヨーク ギターコンサート【京都コンサートホール】",
-    "start_date": "2026-11-21",
-    "end_date": "2027-01-31",
-    "area": "京都",
-    "venue": "京都コンサートホール 小ホール",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "ホール",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/c344591951fcbc1e1f.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15788",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15788-1.jpg"
-  },
-  {
-    "title": "昭和ヒットSONG大作戦！【ライブハウスEN-LAB】",
+    "title": "山本義博 琳派・RINPA 作陶展【京町家のギャラリー「玄想庵」】",
     "start_date": "2026-11-25",
     "end_date": "2026-11-29",
     "area": "京都",
-    "venue": "ライブハウスEN-LAB",
+    "venue": "京都",
+    "category": "car",
+    "score": 99,
+    "tags": [
+      "クルマ",
+      "モータースポーツ",
+      "京都",
+      "ホール"
+    ],
+    "description": "アート／音楽／劇場 2026年11月25日（水）〜11月29日（日） 山本義博 琳派・RINPA 作陶展【京町家のギャラリー「玄想庵」】 #雨の日も楽しめる #アート #市内中心部",
+    "image_url": "images/b1a6f5b17cf09e4d0f.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15783",
+    "categories": [
+      "car"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15783-1.png"
+  },
+  {
+    "title": "京都府立陶板名画の庭 秋の夜間特別開園（SPECIAL NIGHT OPENING）",
+    "start_date": "2026-11-25",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "陶版名画の庭",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -2406,88 +2400,16 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "ライブハウスEN-LAB"
+      "陶版名画の庭"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/97ecd25ff76a15deca.png",
+    "image_url": "images/42a68754e471029892.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15667",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15870",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15667-1.png"
-  },
-  {
-    "title": "デュオ・ムジョー “trans- 1+1”【京都芸術センター】",
-    "start_date": "2026-11-25",
-    "end_date": "2026-11-29",
-    "area": "京都",
-    "venue": "京都芸術センター",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "京都芸術センター"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/be1da426f449766caa.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15884",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15884-1.jpg"
-  },
-  {
-    "title": "第36回　洛中らくご会　橘家圓太郎【本妙寺】",
-    "start_date": "2026-11-25",
-    "end_date": "2026-11-29",
-    "area": "京都",
-    "venue": "本妙寺",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "本妙寺"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/ee84f97d3908d8b141.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15832",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15832-1.png"
-  },
-  {
-    "title": "＜終了しました＞ Connected Underground with Kiyo Nakamura (Club About / from Nagoya), Adricted (Positive / from Argent",
-    "start_date": "2026-11-25",
-    "end_date": "2026-11-29",
-    "area": "京都",
-    "venue": "CLUB METRO",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "CLUB METRO"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/71941f994796ee8dcc.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15819",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15819-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15870-1.jpg"
   },
   {
     "title": "企画展「小栗忠順の生きた時代 小栗と勝海舟」【霊山歴史館】",
@@ -2514,26 +2436,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/16007-1.jpg"
   },
   {
-    "title": "11/27　親子でふれあうボールあそび【ベビー】【ボーネルンド】 | イベント | グランフロント大阪",
-    "start_date": "2026-11-27",
-    "end_date": "2026-11-27",
-    "area": "大阪",
-    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
+    "title": "＜終了しました＞ Connected Underground with Kiyo Nakamura (Club About / from Nagoya), Adricted (Positive / from Argent",
+    "start_date": "2026-11-26",
+    "end_date": "2027-05-09",
+    "area": "京都",
+    "venue": "CLUB METRO",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
-      "大阪",
-      "商業施設"
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
     ],
-    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
-    "image_url": "images/d4fe0d900925e56cd3.jpg",
-    "source": "グランフロント大阪",
-    "source_url": "https://www.grandfront-osaka.jp/event/5851/",
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/c7b741b1477f600bf1.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15819",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://www.grandfront-osaka.jp/files/20261114/7bf8f9c2e13cad38c4dcc67fb6995cb75ff0fea5.jpeg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15819-1.jpg"
   },
   {
     "title": "おうちスンドゥブのススメ\t\t\t\t\t\t\t\t\t\t\t | イベント | グランフロント大阪",
@@ -2557,30 +2481,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261110/5dac11212b5e5109c8aa8f12bef2135ae4fb2380.png"
-  },
-  {
-    "title": "ピアノ四重奏団 アンサンブル・ラロ ～ウィーンの情熱～【京都コンサートホール】",
-    "start_date": "2026-11-27",
-    "end_date": "2026-11-29",
-    "area": "京都",
-    "venue": "京都コンサートホール　大ホール",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "ホール",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/90806a92e77808ca13.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15489",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15489-1.jpg"
   },
   {
     "title": "京都劇場バックステージツアー 「劇場の裏側お見せします　45ミニッツ」",
@@ -2655,7 +2555,7 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_event.jpg"
   },
   {
-    "title": "HYPER GAL × SPEEDER-X【CLUB METRO】",
+    "title": "COSMIC LUST【CLUB METRO】",
     "start_date": "2026-11-27",
     "end_date": "2026-11-28",
     "area": "京都",
@@ -2670,18 +2570,18 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/0f09cddc6c9c1bb32b.jpg",
+    "image_url": "images/78459b4c333bb9ccb7.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15986",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15985",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15986-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15985-1.png"
   },
   {
-    "title": "＜終了しました＞ WE LOVE KYOTO【CLUB METRO】",
+    "title": "the ONEMAN show “ヤンス”【CLUB METRO】",
     "start_date": "2026-11-27",
-    "end_date": "2026-11-29",
+    "end_date": "2026-11-28",
     "area": "京都",
     "venue": "CLUB METRO",
     "category": "tourism",
@@ -2694,13 +2594,61 @@ window.EVENT_DATA = [
       "CLUB METRO"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/efa68b1fb78b61ddfd.jpg",
+    "image_url": "images/5a8837fe22b3aa9d15.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15815",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15972",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15815-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15972-1.jpg"
+  },
+  {
+    "title": "The Return Of Cosmic Ritual Featuring Joaquin Joe Claussell -Counter Culture Side Club Special-【CLUB METRO】",
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-28",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/9ecdadb2398f5ab8d4.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15886",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15886-1.jpg"
+  },
+  {
+    "title": "第35回　洛中らくご会　隅田川馬石【本妙寺】",
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-28",
+    "area": "京都",
+    "venue": "本妙寺",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "本妙寺"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/6c92dccae270e46f38.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15833",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15833-1.png"
   },
   {
     "title": "2026年 鈴鹿選手権シリーズ 第5戦 KART RACE IN SUZUKA 2026年 地方カート選手権 FS-125 / X30部門 第5戦",
@@ -2747,6 +2695,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261110/250fd8a5111291cae3bad86e60cc6d4eca49dcd8.jpeg"
+  },
+  {
+    "title": "関西ゼロカーボン・アクションフェス！\t\t\t\t\t\t\t\t\t\t\t | イベント | グランフロント大阪",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "大阪",
+    "venue": "開催場所 北館１F ナレッジプラザ",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "大阪",
+      "商業施設",
+      "開催場所 北館１F ナレッジプラザ"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/367c0175425ae6ce32.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5858/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261119/8eb117cd5596ec481a3a9651859398204a28421b.jpg"
   },
   {
     "title": "はなまるおばけのハッピーはなまるくじ！（抽選会）",
@@ -2887,6 +2859,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15910-1.jpg"
   },
   {
+    "title": "秋深まる一乗寺で、薬用植物と紅葉を楽しむひととき＜京都市左京区＞【京都薬用植物園】",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "武田薬品工業株式会社　京都薬用植物園",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "武田薬品工業株式会社 京都薬用植物園"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/a89c572678d1e3438d.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15439",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15439-1.jpg"
+  },
+  {
     "title": "まち歩き／ツアー／体験イベント一覧",
     "start_date": "2026-11-28",
     "end_date": "2026-11-29",
@@ -2910,11 +2906,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_event.jpg"
   },
   {
-    "title": "＜終了しました＞ 京都ハンナリーズ11月18日(水)信州ブレイブウォリアーズ戦【にっしんでんきアリーナ京都】",
+    "title": "京都大学花山天文台土曜公開【京都大学 花山天文台】",
     "start_date": "2026-11-28",
     "end_date": "2026-11-29",
     "area": "京都",
-    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
+    "venue": "京都大学 花山天文台 (京都市山科区)",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -2924,13 +2920,13 @@ window.EVENT_DATA = [
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/ccb9510843ab0b5af1.jpg",
+    "image_url": "images/66c180de54b59b3964.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15914",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=13725",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15914-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/13725-1.jpg"
   },
   {
     "title": "-笠置の秋を丸ごと楽しむ！- 笠置もみじ祭り",
@@ -2955,6 +2951,29 @@ window.EVENT_DATA = [
       "food"
     ],
     "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/26/l/619426.jpg"
+  },
+  {
+    "title": "ともいき（共生）フェスティバル2026",
+    "start_date": "2026-11-29",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "京都文教学園宇治キャンパス",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "京都文教学園宇治キャンパス"
+    ],
+    "description": "京都文教学園宇治キャンパスで「こどもが主役！家族で楽しむ！」イベントを開催。当日は、高校生や大学生、行政、地域企業、地域団体が出店する80以上のブースが勢ぞろい。工作や学びブース、食・スポーツ体験、あそび体験、美味しいキッチンカーなど、一日中楽しめる内容となっている。家族みんなで",
+    "image_url": "images/d26a052a954d337be8.jpg",
+    "source": "ウォーカープラス",
+    "source_url": "https://www.walkerplus.com/event/ar0726e624174/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/74/l/624174.jpg"
   },
   {
     "title": "【イベント】みらいたうんへようこそ！ ～親子で楽しく学べるSDGs～",
@@ -3002,6 +3021,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.nankai.co.jp/sites/default/files/2022-06/img-logo_0.jpg"
   },
   {
+    "title": "DEN-EN 2nd year anniversary × DJ Masda【CLUB METRO】",
+    "start_date": "2026-12-01",
+    "end_date": "2027-11-30",
+    "area": "京都",
+    "venue": "CLUB METRO",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "CLUB METRO"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/b7b99f12da08f9eeb3.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15984",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15984-1.jpg"
+  },
+  {
     "title": "Rêve de Noël  ―夜につむぐ、クリスマスの夢―【ランデヴーギャラリー&カフェ】",
     "start_date": "2026-12-01",
     "end_date": "2026-12-27",
@@ -3024,6 +3067,54 @@ window.EVENT_DATA = [
       "car"
     ],
     "original_image_url": "https://ja.kyoto.travel/resource/event/15928-1.jpg"
+  },
+  {
+    "title": "第36回　洛中らくご会　橘家圓太郎【本妙寺】",
+    "start_date": "2026-12-01",
+    "end_date": "2027-11-30",
+    "area": "京都",
+    "venue": "本妙寺",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "本妙寺"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/9cbead5df68710d83b.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15832",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15832-1.png"
+  },
+  {
+    "title": "日産大阪 アンテナショップ OPEN",
+    "start_date": "2026-12-03",
+    "end_date": "2026-12-03",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1F 久世福商店前",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 日産大阪 アンテナショップ OPEN EVENT | イベント 掲載日：2026/11/27 ※画像をクリックすると拡大表示",
+    "image_url": "images/dbce657ff46a33192f.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014191",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014191/img_3sflsypzvzmsg.jpg"
   },
   {
     "title": "時を超えて愛される、美しいアンティーク＆ヴィンテージカップの世界【ル・ノーブル京都四条本店】",
@@ -3118,28 +3209,6 @@ window.EVENT_DATA = [
     "source_url": "https://motorsports.jaf.or.jp/-/media/1/3375/3383/3398/4464/race_2026.pdf"
   },
   {
-    "title": "(土) タンゴディオサ四重奏団コンサート Tango Diosa Quartet Concert",
-    "start_date": "2026-12-05",
-    "end_date": "2026-12-05",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "ATC"
-    ],
-    "description": "2026.12.05(土) タンゴディオサ四重奏団コンサート Tango Diosa Quartet Concert",
-    "image_url": "images/9723d0e14c090da4a1.jpg",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/tango-diosa-quartet-concert/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/ATC_Tango_Diosa_flyer-1-560x792.jpg"
-  },
-  {
     "title": "【ONE N’ ONLY】2026年12月5日(土)開催 リリースイベント＠大阪・セブンパーク天美 特典会内容についてのご案内",
     "start_date": "2026-12-05",
     "end_date": "2026-12-05",
@@ -3186,30 +3255,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://ja.kyoto.travel/resource/event/16014-1.png"
-  },
-  {
-    "title": "京町家で出会う、和ろうそくと清水焼の茶道体験",
-    "start_date": "2026-12-05",
-    "end_date": "2026-12-12",
-    "area": "京都",
-    "venue": "京都「aeru gojo」",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "京都「aeru gojo」"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/3224f0da699a85f68a.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15823",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15823-1.png"
   },
   {
     "title": "鎌谷徹太郎「虚実の閾」【両足院】",
@@ -3260,6 +3305,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15873-1.jpg"
   },
   {
+    "title": "【めちゃトク祭】nanaco10倍キャンペーン",
+    "start_date": "2026-12-07",
+    "end_date": "2026-12-07",
+    "area": "大阪",
+    "venue": "セブンパーク天美 各店",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 【めちゃトク祭】nanaco10倍キャンペーン EVENT | イベント 掲載日：2026/11/27 ※画像をクリックする",
+    "image_url": "images/195e94647739bcb087.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014175/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014175/img_3sfl0oj4wq68s.jpg"
+  },
+  {
     "title": "FLAMENCORAZÓN×PEPE DE PURA Special LIVE | イベント | グランフロント大阪",
     "start_date": "2026-12-10",
     "end_date": "2026-12-10",
@@ -3282,6 +3351,28 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.grandfront-osaka.jp/files/20261107/191f3f39ea4b6941924b1fbbceccd54457e77b3e.jpg"
+  },
+  {
+    "title": "12/10　親子でふれあうボールあそび【ベビー】【ボーネルンド】 | イベント | グランフロント大阪",
+    "start_date": "2026-12-10",
+    "end_date": "2026-12-10",
+    "area": "大阪",
+    "venue": "開催場所 北館3階　ボーネルンドあそびのせかい",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "大阪",
+      "商業施設"
+    ],
+    "description": "グランフロント大阪の公式サイト。グランフロント大阪のワクワクするイベント情報を是非チェックしてください。",
+    "image_url": "images/99902dbc5e4827e9f9.jpg",
+    "source": "グランフロント大阪",
+    "source_url": "https://www.grandfront-osaka.jp/event/5869/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.grandfront-osaka.jp/files/20261114/7bf8f9c2e13cad38c4dcc67fb6995cb75ff0fea5.jpeg"
   },
   {
     "title": "【めちゃトク祭】AMAZING PREMIUM セブンパーク天美限定商品券販売会",
@@ -3590,6 +3681,29 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014093/img_3sc1q7voqqm8c.png"
   },
   {
+    "title": "幕末維新殉難志士慰霊祭",
+    "start_date": "2026-12-19",
+    "end_date": "2026-12-20",
+    "area": "京都",
+    "venue": "霊明神社（京都市東山区清閑寺霊山町25）",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/b5ae592e42f52497d4.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16035",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/16035-1.jpg"
+  },
+  {
     "title": "ギア ハッピーシーズン（年末年始の写真撮影タイム）【ギア専用劇場】",
     "start_date": "2026-12-19",
     "end_date": "2027-01-17",
@@ -3610,28 +3724,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://ja.kyoto.travel/resource/event/15920-1.jpg"
-  },
-  {
-    "title": "(日) christmas at yours Live2026 ~with Strings~",
-    "start_date": "2026-12-20",
-    "end_date": "2026-12-20",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "大阪",
-      "ATC"
-    ],
-    "description": "2026.12.20(日) christmas at yours Live2026 ~with Strings~",
-    "image_url": "images/18fb832c86f391c8e9.jpg",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/christmas-at-yours-live2026/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/IMG_1086-560x793.jpeg"
   },
   {
     "title": "クリスマスナイト•スカイランタン in KYOTO【東本願寺前 お東さん広場】",
@@ -3730,35 +3822,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014133/img_3sdf79bsekkk8.jpg"
   },
   {
-    "title": "マインドフルネス禅庭体験　―庭への探求と砂紋づくり【顕本法華宗 総本山 妙満寺】",
+    "title": "銭湯スイッチ。〜湯上がりの風と、歩く京都〜【QUESTION（コミュニティ・バンク京信）】",
     "start_date": "2026-12-29",
     "end_date": "2027-01-04",
     "area": "京都",
-    "venue": "顕本法華宗 総本山 妙満寺",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "顕本法華宗 総本山 妙満寺"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/c0083e87588da7e060.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15921",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15921-1.jpg"
-  },
-  {
-    "title": "京都大学花山天文台土曜公開【京都大学 花山天文台】",
-    "start_date": "2026-12-29",
-    "end_date": "2027-01-04",
-    "area": "京都",
-    "venue": "京都大学 花山天文台 (京都市山科区)",
+    "venue": "QUESTION（コミュニティ・バンク京信）1階HIROBA・4階Community Steps（京都市中京区河原町通御池下る下丸屋町390-2）、ゼスト御池河原町広場（京都市中京",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -3768,13 +3836,36 @@ window.EVENT_DATA = [
       "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/1a5ea9d481bbb196fe.jpg",
+    "image_url": "images/f90ba9851eb7a0ceb9.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=13725",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15822",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/13725-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15822-1.png"
+  },
+  {
+    "title": "”妖怪文化研究家” 河野隼也プロデュース　嵐電ウォークツアー『怪々歴史探訪』",
+    "start_date": "2026-12-29",
+    "end_date": "2027-01-04",
+    "area": "京都",
+    "venue": "北野天満宮、大将軍八神社、仁和寺、太秦映画村",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/3aa758ba22eebd7099.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15295",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15295-1.jpg"
   },
   {
     "title": "手びねりとスタンプで楽しむ、陶芸家に学ぶお皿づくり【廻窯舎】【大丸京都店】",
@@ -3799,29 +3890,6 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://ja.kyoto.travel/resource/event/16016-1.png"
-  },
-  {
-    "title": "京都ゲームホリデー【ゼスト御池・QUESTION】",
-    "start_date": "2026-12-29",
-    "end_date": "2027-01-04",
-    "area": "京都",
-    "venue": "ゼスト御池（河原町広場、御幸町広場）、QUESTION",
-    "category": "anime",
-    "score": 99,
-    "tags": [
-      "アニメ・ゲーム",
-      "フェス",
-      "京都",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/77ba0487d999becff1.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15959",
-    "categories": [
-      "anime"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15959-1.png"
   },
   {
     "title": "「京の冬の旅」数珠巡礼",
@@ -3871,35 +3939,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15951-1.png"
   },
   {
-    "title": "つなぐ ～雪と梅の宴～",
+    "title": "第61回京の冬の旅ポスター撮影地で紐解く茶道文化とその精神",
     "start_date": "2026-12-29",
     "end_date": "2027-01-04",
     "area": "京都",
-    "venue": "京都駅ビル  駅前広場（ホテルグランヴィア京都前）",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "駅",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/ed6b65aebb3e9a2fe0.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15950",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15950-1.jpg"
-  },
-  {
-    "title": "霊山歴史館学芸員による講演＆館内ツアー",
-    "start_date": "2026-12-29",
-    "end_date": "2027-01-04",
-    "area": "京都",
-    "venue": "霊山歴史館",
+    "venue": "宝鏡寺ほか",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -3907,39 +3951,40 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "霊山歴史"
+      "宝鏡寺ほか"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/526e532fa0b456474d.jpg",
+    "image_url": "images/6505af52bb8870d2bb.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15919",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15948",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15919-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15948-1.jpg"
   },
   {
-    "title": "伝統産業の日２０２７",
+    "title": "＜終了しました＞ マインドフルネス禅庭体験　―庭への探求と砂紋づくり【顕本法華宗 総本山 妙満寺】",
     "start_date": "2026-12-29",
     "end_date": "2027-01-04",
     "area": "京都",
-    "venue": "岡崎・東山・四条烏丸・京都駅周辺ほか市内一円",
+    "venue": "顕本法華宗 総本山 妙満寺",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社"
+      "寺社",
+      "顕本法華宗 総本山 妙満寺"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/448f78efe1e77aeca6.jpg",
+    "image_url": "images/662935c96409647b64.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15908",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15921",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15908-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15921-1.jpg"
   },
   {
     "title": "＜終了しました＞ ペーパークラフトワークショップ　時をかさねる文様　―小袖雛形本からつくる京の意匠―【京都府立京都学・歴彩館】",
@@ -3964,6 +4009,54 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://ja.kyoto.travel/resource/event/15907-1.jpg"
+  },
+  {
+    "title": "『嵐山に ごみは あらしまへん』スタンプラリー",
+    "start_date": "2026-12-29",
+    "end_date": "2027-01-04",
+    "area": "京都",
+    "venue": "嵐山商店街",
+    "category": "car",
+    "score": 99,
+    "tags": [
+      "クルマ",
+      "モータースポーツ",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/1c052fde403e69720f.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15869",
+    "categories": [
+      "car"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15869-1.jpg"
+  },
+  {
+    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ひがしほんがんじ ごえいどうもん 「京の冬の旅」非公開文化財特別公開　東本願寺 御影堂門",
+    "start_date": "2026-12-29",
+    "end_date": "2027-01-03",
+    "area": "京都",
+    "venue": "下京区烏丸通七条上ル",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "下京区烏丸通七条上ル"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/fe3f01672e0177118b.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15861",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15861-1.jpg"
   },
   {
     "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　とうじ ごじゅうのとう 「京の冬の旅」非公開文化財特別公開　東寺 五重塔",
@@ -4014,78 +4107,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15860-1.jpg"
   },
   {
-    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ひがしほんがんじ ごえいどうもん 「京の冬の旅」非公開文化財特別公開　東本願寺 御影堂門",
-    "start_date": "2026-12-29",
-    "end_date": "2027-01-03",
-    "area": "京都",
-    "venue": "下京区烏丸通七条上ル",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "下京区烏丸通七条上ル"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/fe3f01672e0177118b.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15861",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15861-1.jpg"
-  },
-  {
-    "title": "金剛流特別企画 幽玄な舞台芸術 能楽体験・公演鑑賞",
-    "start_date": "2026-12-29",
-    "end_date": "2027-01-04",
-    "area": "京都",
-    "venue": "金剛能楽堂",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "金剛能楽堂"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/8f96e7fdc1e3a405cc.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15865",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15865-1.jpg"
-  },
-  {
-    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ろくおういん 「京の冬の旅」非公開文化財特別公開　鹿王院",
-    "start_date": "2026-12-29",
-    "end_date": "2027-01-03",
-    "area": "京都",
-    "venue": "右京区嵯峨北堀町24",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "右京区嵯峨北堀町24"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/90861d958245b46fbc.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15858",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15858-1.jpg"
-  },
-  {
     "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　にんなじ みえどう 「京の冬の旅」非公開文化財特別公開　仁和寺 御影堂",
     "start_date": "2026-12-29",
     "end_date": "2027-01-03",
@@ -4110,11 +4131,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15859-1.jpg"
   },
   {
-    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　どんけいん≪きゅうたけのごしょ≫ 「京の冬の旅」非公開文化財特別公開　曇華院≪旧竹御所≫",
+    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ろくおういん 「京の冬の旅」非公開文化財特別公開　鹿王院",
     "start_date": "2026-12-29",
     "end_date": "2027-01-03",
     "area": "京都",
-    "venue": "右京区嵯峨北堀町25",
+    "venue": "右京区嵯峨北堀町24",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -4122,16 +4143,16 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "右京区嵯峨北堀町25"
+      "右京区嵯峨北堀町24"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/cfdfcf597fb65aa582.jpg",
+    "image_url": "images/90861d958245b46fbc.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15857",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15858",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15857-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15858-1.jpg"
   },
   {
     "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　きたのてんまんぐう ほうもつでん 「京の冬の旅」非公開文化財特別公開　北野天満宮 宝物殿",
@@ -4182,6 +4203,29 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15853-1.jpg"
   },
   {
+    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ひがしむきかんのんじ 「京の冬の旅」非公開文化財特別公開　東向観音寺",
+    "start_date": "2026-12-29",
+    "end_date": "2027-01-03",
+    "area": "京都",
+    "venue": "上京区今小路通御前通西入上る観音寺門前町863",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/504748f65f5d3bf66b.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15856",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15856-1.jpg"
+  },
+  {
     "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ほうきょうじ≪きゅうどどのごしょ≫ 「京の冬の旅」非公開文化財特別公開　宝鏡寺≪旧百々御所≫",
     "start_date": "2026-12-29",
     "end_date": "2027-01-03",
@@ -4206,27 +4250,52 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15854-1.jpg"
   },
   {
-    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ひがしむきかんのんじ 「京の冬の旅」非公開文化財特別公開　東向観音寺",
+    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　どんけいん≪きゅうたけのごしょ≫ 「京の冬の旅」非公開文化財特別公開　曇華院≪旧竹御所≫",
     "start_date": "2026-12-29",
     "end_date": "2027-01-03",
     "area": "京都",
-    "venue": "上京区今小路通御前通西入上る観音寺門前町863",
+    "venue": "右京区嵯峨北堀町25",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社"
+      "寺社",
+      "右京区嵯峨北堀町25"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/504748f65f5d3bf66b.jpg",
+    "image_url": "images/cfdfcf597fb65aa582.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15856",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15857",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15856-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15857-1.jpg"
+  },
+  {
+    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ちおんいん さんもん 「京の冬の旅」非公開文化財特別公開　知恩院 三門",
+    "start_date": "2026-12-29",
+    "end_date": "2027-01-03",
+    "area": "京都",
+    "venue": "東山区林下町400",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "東山区林下町400"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/fa134e369d5fd2e776.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15850",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15850-1.jpg"
   },
   {
     "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ちおんいん おおほうじょう・こほうじょう・ほうじょうていえん 「京の冬の旅」非公開文化財特別公開　知恩院 大方丈・小方丈・方丈庭園",
@@ -4277,30 +4346,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15852-1.jpg"
   },
   {
-    "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい　ちおんいん さんもん 「京の冬の旅」非公開文化財特別公開　知恩院 三門",
-    "start_date": "2026-12-29",
-    "end_date": "2027-01-03",
-    "area": "京都",
-    "venue": "東山区林下町400",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "東山区林下町400"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/fa134e369d5fd2e776.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15850",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15850-1.jpg"
-  },
-  {
     "title": "きょうのふゆのたび　ひこうかいぶんかざいとくべつこうかい れいかんじ≪きゅうたにのごしょ≫ 「京の冬の旅」非公開文化財特別公開　霊鑑寺≪旧谷の御所≫",
     "start_date": "2026-12-29",
     "end_date": "2027-01-03",
@@ -4325,6 +4370,30 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15848-1.jpg"
   },
   {
+    "title": "京町家で出会う、和ろうそくと清水焼の茶道体験",
+    "start_date": "2026-12-29",
+    "end_date": "2027-01-04",
+    "area": "京都",
+    "venue": "京都「aeru gojo」",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都",
+      "寺社",
+      "京都「aeru gojo」"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/4250869327a7529036.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15823",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15823-1.png"
+  },
+  {
     "title": "季節の行事",
     "start_date": "2027-01-01",
     "end_date": "2027-02-15",
@@ -4347,28 +4416,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_season-01.jpg"
   },
   {
-    "title": "魯山人の宇宙 魂を刳る美がほしい【美術館「えき」KYOTO】",
-    "start_date": "2027-01-02",
-    "end_date": "2027-01-25",
+    "title": "新春の日本庭園で楽しむ お正月特別ガイドと特別茶菓子（2027）【無鄰菴】",
+    "start_date": "2027-01-01",
+    "end_date": "2027-01-03",
     "area": "京都",
-    "venue": "美術館「えき」KYOTO",
-    "category": "exhibition",
+    "venue": "無鄰菴",
+    "category": "tourism",
     "score": 99,
     "tags": [
-      "展示",
-      "美術",
+      "イベント",
       "フェス",
       "京都",
-      "美術館"
+      "寺社",
+      "無鄰菴"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/9de501c8ed3ee5342b.jpg",
+    "image_url": "images/41921c9b809b3e99af.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15981",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16039",
     "categories": [
-      "exhibition"
+      "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15981-1.jpg"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/16039-1.jpg"
   },
   {
     "title": "特別公開　和束谷の開拓者―原山古墳被葬者の実像―【京都国立博物館】",
@@ -4393,6 +4462,30 @@ window.EVENT_DATA = [
       "exhibition"
     ],
     "original_image_url": "https://ja.kyoto.travel/resource/event/15980-1.jpg"
+  },
+  {
+    "title": "魯山人の宇宙 魂を刳る美がほしい【美術館「えき」KYOTO】",
+    "start_date": "2027-01-02",
+    "end_date": "2027-01-25",
+    "area": "京都",
+    "venue": "美術館「えき」KYOTO",
+    "category": "exhibition",
+    "score": 99,
+    "tags": [
+      "展示",
+      "美術",
+      "フェス",
+      "京都",
+      "美術館"
+    ],
+    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
+    "image_url": "images/9de501c8ed3ee5342b.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15981",
+    "categories": [
+      "exhibition"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15981-1.jpg"
   },
   {
     "title": "前進座京都初春特別公演　山田洋次監督書き下ろし  お久文七恋元結【京都劇場】",
@@ -4650,56 +4743,9 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_season-03.jpg"
   },
   {
-    "title": "＜終了しました＞ 京都ハンナリーズ11月13日(金)茨城ロボッツ戦【にっしんでんきアリーナ京都】",
-    "start_date": "2027-03-20",
-    "end_date": "2027-03-22",
-    "area": "京都",
-    "venue": "にっしんでんきアリーナ京都（京都市体育館）",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/c5efdd196f66580e39.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15913",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15913-1.jpg"
-  },
-  {
-    "title": "全日本トライアル選手権第8戦 City Trial Japan大会（City Trial Japan 2026 in Kyoto）【岡崎公園】",
-    "start_date": "2027-03-20",
-    "end_date": "2027-03-22",
-    "area": "京都",
-    "venue": "岡崎公園（平安神宮前）",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "公園",
-      "寺社"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/a31b491d0f045d5b7d.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15911",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15911-1.jpg"
-  },
-  {
     "title": "きき酒師と酒蔵代表と楽しむ特別な昼のひととき【齊藤酒造株式会社】",
-    "start_date": "2027-04-01",
-    "end_date": "2027-05-09",
+    "start_date": "2027-03-31",
+    "end_date": "2027-04-01",
     "area": "京都",
     "venue": "齊藤酒造株式会社",
     "category": "tourism",
@@ -4712,7 +4758,7 @@ window.EVENT_DATA = [
       "齊藤酒造株式会社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/6f5c6b9e922d010aea.png",
+    "image_url": "images/4ba78d0103cdc5fac6.png",
     "source": "京都観光Navi",
     "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16033",
     "categories": [
@@ -4721,11 +4767,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/16033-1.png"
   },
   {
-    "title": "映画村文化体験プログラム「文楽」【太秦映画村】",
+    "title": "東福茶宴【東福寺　本坊庭園】",
     "start_date": "2027-04-01",
     "end_date": "2027-05-09",
     "area": "京都",
-    "venue": "太秦映画村内「御池町屋」",
+    "venue": "東福寺　本坊庭園（方丈）",
     "category": "tourism",
     "score": 99,
     "tags": [
@@ -4733,64 +4779,40 @@ window.EVENT_DATA = [
       "フェス",
       "京都",
       "寺社",
-      "太秦映画村内「御池町屋」"
+      "東福寺 本坊庭園（方丈）"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/fc61187048f7604ef9.png",
+    "image_url": "images/d41546de4e73be2616.png",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=16010",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15968",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/16010-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15968-1.png"
   },
   {
-    "title": "こと九条ねぎ奉納祭【上賀茂神社】",
+    "title": "全日本トライアル選手権第8戦 City Trial Japan大会（City Trial Japan 2026 in Kyoto）【岡崎公園】",
     "start_date": "2027-04-01",
     "end_date": "2027-05-09",
     "area": "京都",
-    "venue": "上賀茂神社",
+    "venue": "岡崎公園（平安神宮前）",
     "category": "tourism",
     "score": 99,
     "tags": [
       "イベント",
       "フェス",
       "京都",
-      "寺社",
-      "上賀茂神社"
+      "公園",
+      "寺社"
     ],
     "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/1744d46d275e887032.jpg",
+    "image_url": "images/6cf678cd456350aa4c.jpg",
     "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15989",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15911",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15989-1.jpg"
-  },
-  {
-    "title": "ブリュワーズナイト 感謝祭 in SVB京都",
-    "start_date": "2027-04-01",
-    "end_date": "2027-05-09",
-    "area": "京都",
-    "venue": "スプリングバレーブルワリー京都2F",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都",
-      "寺社",
-      "スプリングバレーブルワリー京都2F"
-    ],
-    "description": "京都の祭りや季節の行事、アートイベント、体験・ツアー、寺院の特別公開まで。今知りたい、旬の観光情報を発信しています。",
-    "image_url": "images/4cf5c18457bca3fffe.png",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15958",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15958-1.png"
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15911-1.jpg"
   },
   {
     "title": "ええはがきコンテスト | ええはがき",
@@ -4815,28 +4837,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.hankyu.co.jp/images/ogp/hankyu_image.jpg"
   },
   {
-    "title": "季節の行事",
-    "start_date": "2027-06-01",
-    "end_date": "2027-07-31",
-    "area": "京都",
-    "venue": "京都",
-    "category": "tourism",
-    "score": 99,
-    "tags": [
-      "イベント",
-      "フェス",
-      "京都"
-    ],
-    "description": "京都では、古くから行われてきた、祭りや年中行事が受け継がれ、毎日のように、どこかで何かしらの行事が行われていると言ってもいいほど。そういったイベントからも季節の変化を感じることができる行事をご紹介します。",
-    "image_url": "images/60b2c17d2504db7f7f.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/season/june/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_season-06.jpg"
-  },
-  {
     "title": "時代祭「有料観覧席」",
     "start_date": "2027-06-25",
     "end_date": "2027-07-01",
@@ -4856,6 +4856,28 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_major_jidai.jpg"
+  },
+  {
+    "title": "季節の行事",
+    "start_date": "2027-06-27",
+    "end_date": "2027-06-30",
+    "area": "京都",
+    "venue": "京都",
+    "category": "tourism",
+    "score": 99,
+    "tags": [
+      "イベント",
+      "フェス",
+      "京都"
+    ],
+    "description": "京都では、古くから行われてきた、祭りや年中行事が受け継がれ、毎日のように、どこかで何かしらの行事が行われていると言ってもいいほど。そういったイベントからも季節の変化を感じることができる行事をご紹介します。",
+    "image_url": "images/d073390c0a6ba14737.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/season/june/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_season-06.jpg"
   },
   {
     "title": "どんな祭？",
@@ -4943,11 +4965,11 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/img/ogp/ogp_major_okuribi.jpg"
   },
   {
-    "title": "大河ドラマ「豊臣兄弟！」展",
-    "start_date": "2026-11-27",
-    "end_date": "2026-11-27",
+    "title": "わくわくキッズひろば",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
     "area": "大阪",
-    "venue": "セブンパーク天美 ・内容が変更になる場合がございます。あらかじめご了承ください。 日程 2026/11/27(金) 〜 2026/12/01(火)",
+    "venue": "セブンパーク天美 2F Zoff横 ※12/25(金)のみ 1F AMAMI STADIUM",
     "category": "tourism",
     "score": 95,
     "tags": [
@@ -4957,14 +4979,38 @@ window.EVENT_DATA = [
       "商業施設",
       "公園"
     ],
-    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 大河ドラマ「豊臣兄弟！」展 EVENT | イベント 掲載日：2026/11/5 ※画像をクリックすると拡大表示されます 見",
-    "image_url": "images/d863ffe0dc85aff178.jpg",
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント わくわくキッズひろば EVENT | イベント 掲載日：2026/11/28 ※画像をクリックすると拡大表示されます 遊ぶ ",
+    "image_url": "images/05f8e7675e235b597a.png",
     "source": "セブンパーク天美",
-    "source_url": "https://amami.sevenpark.jp/event/3100014045",
+    "source_url": "https://amami.sevenpark.jp/event/3100014006",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014045/img_3sae9mwbdlwkk.jpg"
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014006/img_3pzqui0sa98gc.png"
+  },
+  {
+    "title": "12月めちゃトク祭",
+    "start_date": "2026-12-07",
+    "end_date": "2026-12-07",
+    "area": "大阪",
+    "venue": "セブンパーク天美 各店（一部対象外店舗あり）",
+    "category": "tourism",
+    "score": 95,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 12月めちゃトク祭 EVENT | イベント 掲載日：2026/11/27 ※画像をクリックすると拡大表示されます キャンペ",
+    "image_url": "images/0d96e64c7074425b86.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014189",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014189/img_3sfkvuzhd94ws.jpg"
   },
   {
     "title": "阪南大学 古着販売・回収",
@@ -5155,136 +5201,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5849-file.jpg"
   },
   {
-    "title": "ATC便り 大阪のクリスマス謎解き2026｜ATCで夢のような冬を歩く 連載企画｜ATC、冬のあかり。 第2回 こんにちは、ATC経営戦略室のロバートです。 先週の記事では、…",
-    "start_date": "2026-11-27",
-    "end_date": "2026-11-27",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tourism",
-    "score": 91,
-    "tags": [
-      "イベント",
-      "大阪",
-      "ATC"
-    ],
-    "description": "2026.11.27 ATC便り 大阪のクリスマス謎解き2026｜ATCで夢のような冬を歩く 連載企画｜ATC、冬のあかり。 第2回 こんにちは、ATC経営戦略室のロバートです。 先週の記事では、…",
-    "image_url": "images/674436bcca665bd827.webp",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/blog/atc-dreamcore-christmas-line-nazotoki-2026/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/assets/img/common/img_sample_blog.png"
-  },
-  {
-    "title": "(土) 虹のコンキスタドールフリーライブ in 大阪ATC 海辺のステージ",
-    "start_date": "2026-11-28",
-    "end_date": "2026-11-28",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tourism",
-    "score": 91,
-    "tags": [
-      "イベント",
-      "大阪",
-      "ATC"
-    ],
-    "description": "2026.11.28(土) 虹のコンキスタドールフリーライブ in 大阪ATC 海辺のステージ",
-    "image_url": "images/105e62d4146dc7d76b.jpg",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/%e8%99%b9%e3%81%ae%e3%82%b3%e3%83%b3%e3%82%ad%e3%82%b9%e3%82%bf%e3%83%89%e3%83%bc%e3%83%ab%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%82%a4%e3%83%96-in-%e5%a4%a7%e9%98%aaatc-%e6%b5%b7%e8%be%ba%e3%81%ae/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/2zicon-560x355.jpg"
-  },
-  {
-    "title": "(土)～12.20(日) OSAKAアート＆てづくりバザールVOL.53",
-    "start_date": "2026-12-19",
-    "end_date": "2026-12-19",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tourism",
-    "score": 91,
-    "tags": [
-      "イベント",
-      "大阪",
-      "ATC"
-    ],
-    "description": "2026.12.19(土)～12.20(日) OSAKAアート＆てづくりバザールVOL.53",
-    "image_url": "images/f71568b44ab38696a3.png",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/osaka%e3%82%a2%e3%83%bc%e3%83%88%ef%bc%86%e3%81%a6%e3%81%a5%e3%81%8f%e3%82%8a%e3%83%90%e3%82%b6%e3%83%bc%e3%83%abvol-53/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/logo_vol53_ol_04-560x608.png"
-  },
-  {
-    "title": "(木)～05.09(日) UNDERTALE MUSEUM",
-    "start_date": "2027-04-22",
-    "end_date": "2027-04-22",
-    "area": "大阪",
-    "venue": "ATC",
-    "category": "tourism",
-    "score": 91,
-    "tags": [
-      "イベント",
-      "大阪",
-      "ATC"
-    ],
-    "description": "2027.04.22(木)～05.09(日) UNDERTALE MUSEUM",
-    "image_url": "images/b026b47ffb1790c6d2.jpg",
-    "source": "ATC",
-    "source_url": "https://www.atc-co.com/event/undertale-museum/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/UT_poster_tokyo-osaka_B1-トンボなし-560x784.jpg"
-  },
-  {
-    "title": "タンゴディオサ四重奏団コンサート Tango Diosa Quartet Concert",
-    "start_date": "2026-12-05",
-    "end_date": "2026-12-05",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 90,
-    "tags": [
-      "イベント",
-      "大阪"
-    ],
-    "description": "2026.12.05(土) タンゴディオサ四重奏団コンサート Tango Diosa Quartet Concert",
-    "image_url": "images/56bd81c30ca9d8009d.jpg",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/tango-diosa-quartet-concert/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/ATC_Tango_Diosa_flyer-1-560x792.jpg"
-  },
-  {
-    "title": "christmas at yours Live2026 ~with Strings~",
-    "start_date": "2026-12-20",
-    "end_date": "2026-12-20",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 90,
-    "tags": [
-      "イベント",
-      "大阪"
-    ],
-    "description": "2026.12.20(日) christmas at yours Live2026 ~with Strings~",
-    "image_url": "images/8dc7e435918983606e.jpg",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/christmas-at-yours-live2026/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/IMG_1086-560x793.jpeg"
-  },
-  {
     "title": "TOTTEI PARK イルミナイト －AUTUMN LEAVES－",
     "start_date": "2026-09-01",
     "end_date": "2026-11-30",
@@ -5418,6 +5334,28 @@ window.EVENT_DATA = [
     "original_image_url": "https://ja.kyoto.travel/resource/event/15961-1.jpg"
   },
   {
+    "title": "第22期「灘大学」(全6回) 2026年11月28日（土） ~2026年11月28日（土） 灘区のまちをキャンパスに、毎回ユニークな視点から灘の魅力を紹介する市民講座「灘大学」。第22期となる今期も、文化・防災・自然環境",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tech",
+    "score": 85,
+    "tags": [
+      "AI・IT",
+      "ガジェット",
+      "兵庫"
+    ],
+    "description": "開催中 第22期「灘大学」(全6回) 2026年11月28日（土） ~2026年11月28日（土） 灘区のまちをキャンパスに、毎回ユニークな視点から灘の魅力を紹介する市民講座「灘大学」。第22期となる今期も、文化・防災・自然環境など、さまざまなジャンルや視点から灘のまちを再発見する講座を開催します。（全6回） パソコンやスマートフォンによ",
+    "image_url": "images/35358ab1b20fcad876.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/37551/",
+    "categories": [
+      "tech"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/3581757dd713ae8f6aaea70122511c30-747x1024.jpg"
+  },
+  {
     "title": "ベビーカステラ 和蘭陀焼き",
     "start_date": "2026-12-04",
     "end_date": "2026-12-04",
@@ -5512,6 +5450,30 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5071-file.jpg"
+  },
+  {
+    "title": "【島村楽器】馬越脇 崚 ミニコンサート＆45分特別マンツーマンレッスン",
+    "start_date": "2027-01-11",
+    "end_date": "2027-01-11",
+    "area": "大阪",
+    "venue": "セブンパーク天美 1F AMAMI STADIUM",
+    "category": "tourism",
+    "score": 80,
+    "tags": [
+      "イベント",
+      "大阪",
+      "天美",
+      "商業施設",
+      "公園"
+    ],
+    "description": "サービス ニュース 催事開催はこちら セブンパークについて イベント協賛・広告出稿 環境への取り組み 安心安全への取り組み SDGs SDGs テナント出店を検討中の方はこちら 催事開催はこちら アクセス 平面 立体 トップ イベント 【島村楽器】馬越脇 崚 ミニコンサート＆45分特別マンツーマンレッスン EVENT | イベント 掲載日：2026/11/2",
+    "image_url": "images/697e7d1bc7a449cbf5.jpg",
+    "source": "セブンパーク天美",
+    "source_url": "https://amami.sevenpark.jp/event/3100014201",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://amami.sevenpark.jp/app/31/img/event/3100014201/img_3sfsi1y2dbeog.jpg"
   },
   {
     "title": "有馬の秘宝と月への舟　第２章",
@@ -5759,91 +5721,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-5993-file.jpg"
   },
   {
-    "title": "虹のコンキスタドールフリーライブ in 大阪ATC 海辺のステージ",
-    "start_date": "2026-11-28",
-    "end_date": "2026-11-28",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 72,
-    "tags": [
-      "イベント",
-      "大阪"
-    ],
-    "description": "2026.11.28(土) 虹のコンキスタドールフリーライブ in 大阪ATC 海辺のステージ",
-    "image_url": "images/8c9b4f445f584f5fc6.jpg",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/%e8%99%b9%e3%81%ae%e3%82%b3%e3%83%b3%e3%82%ad%e3%82%b9%e3%82%bf%e3%83%89%e3%83%bc%e3%83%ab%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%82%a4%e3%83%96-in-%e5%a4%a7%e9%98%aaatc-%e6%b5%b7%e8%be%ba%e3%81%ae/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/11/2zicon-560x355.jpg"
-  },
-  {
-    "title": "OSAKAアート＆てづくりバザールVOL.53",
-    "start_date": "2026-12-19",
-    "end_date": "2026-12-19",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 72,
-    "tags": [
-      "イベント",
-      "大阪"
-    ],
-    "description": "2026.12.19(土)～12.20(日) OSAKAアート＆てづくりバザールVOL.53",
-    "image_url": "images/4078c8dba6da8d48c1.png",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/osaka%e3%82%a2%e3%83%bc%e3%83%88%ef%bc%86%e3%81%a6%e3%81%a5%e3%81%8f%e3%82%8a%e3%83%90%e3%82%b6%e3%83%bc%e3%83%abvol-53/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/logo_vol53_ol_04-560x608.png"
-  },
-  {
-    "title": "UNDERTALE MUSEUM",
-    "start_date": "2027-04-22",
-    "end_date": "2027-04-22",
-    "area": "大阪",
-    "venue": "大阪",
-    "category": "tourism",
-    "score": 72,
-    "tags": [
-      "イベント",
-      "大阪"
-    ],
-    "description": "2027.04.22(木)～05.09(日) UNDERTALE MUSEUM",
-    "image_url": "images/beade6e08f0673d0a9.jpg",
-    "source": "ATCトップ",
-    "source_url": "https://www.atc-co.com/event/undertale-museum/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.atc-co.com/atcdir/wp-content/uploads/2026/10/UT_poster_tokyo-osaka_B1-トンボなし-560x784.jpg"
-  },
-  {
-    "title": "「阪急沿線 観光まちあるき2026」 2026年4月1日（水） ~2027年3月31日（水） 阪急沿線の観光スポットや隠れた名所をめぐるウォーキングイベント。 神戸市の様々なエリアを巡るツアーやコースが用意されており、ま",
-    "start_date": "2026-04-01",
-    "end_date": "2027-03-31",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 71,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "開催中 「阪急沿線 観光まちあるき2026」 2026年4月1日（水） ~2027年3月31日（水） 阪急沿線の観光スポットや隠れた名所をめぐるウォーキングイベント。 神戸市の様々なエリアを巡るツアーやコースが用意されており、まだ知らない沿線の魅力を楽しむことができます。 ウォーキングアプリaruku&で参加するコースでは、神戸市にあるミ",
-    "image_url": "images/b6ffc74f2bf9dda512.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/36265/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/dab045d5d99dbdb62ee008fcfc80e302-1-1024x634.jpg"
-  },
-  {
     "title": "平岡八幡宮　花の天井秋の特別拝観",
     "start_date": "2026-09-18",
     "end_date": "2026-11-30",
@@ -6000,6 +5877,27 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/umie-xmasmarket2026-1-1024x801.jpg"
   },
   {
+    "title": "「Taste of KOBE-AWAJI Island 2026」淡路島クラフトサーカス 2026年11月28日（土） ~2026年11月28日（土） 「Taste of KOBE-AWAJI Island 2026」は",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 71,
+    "tags": [
+      "イベント",
+      "兵庫"
+    ],
+    "description": "開催中 「Taste of KOBE-AWAJI Island 2026」淡路島クラフトサーカス 2026年11月28日（土） ~2026年11月28日（土） 「Taste of KOBE-AWAJI Island 2026」は、神戸と淡路島で腕をふるうシェフたちが、地元の生産者が育てた厳選食材を使い、この日のためだけの一皿を仕立てる、一",
+    "image_url": "images/d67e4e0f4fa92b808b.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/39123/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/Taste-of-KOBE-AWAJI-Island--1024x683.jpg"
+  },
+  {
     "title": "Penguinmarket Records 20th Anniversary｜KYOTO【CLUB METRO】",
     "start_date": "2026-11-29",
     "end_date": "2026-11-29",
@@ -6067,28 +5965,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.lucua.jp/assets/thumbnails/thumb-1200xauto-6190-file.jpg"
   },
   {
-    "title": "「メリケンミュージックナイツ」メリケンパーク 2026年6月11日（木） ~2027年3月26日（金） 「メリケンパークを音楽の力で盛り上げる」をコンセプトに、年間を通じて、誰もが気軽に音楽コンテンツ等を楽しめるイベント",
-    "start_date": "2026-06-11",
-    "end_date": "2027-03-26",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 61,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "公園"
-    ],
-    "description": "開催中 「メリケンミュージックナイツ」メリケンパーク 2026年6月11日（木） ~2027年3月26日（金） 「メリケンパークを音楽の力で盛り上げる」をコンセプトに、年間を通じて、誰もが気軽に音楽コンテンツ等を楽しめるイベント。プロミュージシャンによる音楽ライブをお楽しみください。 エリア： 景観、体験 音楽 メリケンパーク・ハーバーラ",
-    "image_url": "images/0df6fc41d471fbb6fd.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/36478/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/4a35f9263d3f072529ff3f52222505e1-1.jpeg"
-  },
-  {
     "title": "「姿を消した先輩を追え 〜神戸から始まる物語〜」神戸市周辺 2026年9月18日（金） ~2027年5月31日（月） 没入型謎解き体験「姿を消した先輩を追え〜神戸から始まる物語〜」が開催されます。 「姿を消した記者を追え",
     "start_date": "2026-09-18",
     "end_date": "2027-05-31",
@@ -6112,25 +5988,67 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/sugata-wo-keshita-senpai-wo-oe-01-1024x683.png"
   },
   {
-    "title": "マインドフルネス禅庭体験 ―庭への探求と砂紋づくり【顕本法華宗 総本山 妙満寺】",
-    "start_date": "2026-11-27",
-    "end_date": "2026-11-27",
-    "area": "京都",
-    "venue": "京都",
+    "title": "「はじめての森の手入れ体験 in キーナの森」 2026年11月28日（土） ~2026年11月28日（土） 「キーナの森」で、里山の自然や森の手入れについて学べる体験イベントを開催！ 樹木の伐採やごはんづくりのいずれか",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "兵庫",
+    "venue": "兵庫",
     "category": "tourism",
     "score": 61,
     "tags": [
       "イベント",
-      "京都"
+      "兵庫"
     ],
-    "description": "まち歩き／ツアー／体験 2026年11月27日（金） マインドフルネス禅庭体験 ―庭への探求と砂紋づくり【顕本法華宗 総本山 妙満寺】 #雨の日も楽しめる #約2時間 #上賀茂・北山・大徳寺 #鞍馬・貴船・花背",
-    "image_url": "images/b1945cffa6e9dc63f2.jpg",
-    "source": "京都観光Navi",
-    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15921",
+    "description": "開催中 「はじめての森の手入れ体験 in キーナの森」 2026年11月28日（土） ~2026年11月28日（土） 「キーナの森」で、里山の自然や森の手入れについて学べる体験イベントを開催！ 樹木の伐採やごはんづくりのいずれかを選んで体験でき、スタッフの指導のもと、木の伐り方や薪割り、火の扱い方などを学べます。作業のあとは、羽釜ごはんと",
+    "image_url": "images/dad1c25c6c07a31674.jpg",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/38536/",
     "categories": [
       "tourism"
     ],
-    "original_image_url": "https://ja.kyoto.travel/resource/event/15921-1.jpg"
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/4f7d63f603e41f2f7539a4cefb269752-1-1024x683.jpg"
+  },
+  {
+    "title": "「異人館マジックライブ～歴史的洋館で楽しむ特別なマジック体験～」ラインの館 2026年11月28日（土） ~2026年11月28日（土） 目の前で繰り広げられる、不思議で楽しいマジックの世界を体験できるイベントです。 ラ",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 61,
+    "tags": [
+      "イベント",
+      "兵庫"
+    ],
+    "description": "開催中 「異人館マジックライブ～歴史的洋館で楽しむ特別なマジック体験～」ラインの館 2026年11月28日（土） ~2026年11月28日（土） 目の前で繰り広げられる、不思議で楽しいマジックの世界を体験できるイベントです。 ラインの館にて、少人数で楽しめるテーブルマジックを中心とした「マジックライブ」が開催されます。 間近で見るマジック",
+    "image_url": "images/3239e4a549ca44eeb3.png",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/39048/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/ijinkan-magiclive.png"
+  },
+  {
+    "title": "「天王ダムビオトープで遊ぼう！」 2026年11月28日（土） ~2026年11月28日（土） 自然いっぱいの天王ダムビオトープで、子どもから大人まで楽しめるイベントが開催されます。 ほくほくの焼き芋を味わえるほか、モル",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "兵庫",
+    "venue": "兵庫",
+    "category": "tourism",
+    "score": 61,
+    "tags": [
+      "イベント",
+      "兵庫"
+    ],
+    "description": "開催中 「天王ダムビオトープで遊ぼう！」 2026年11月28日（土） ~2026年11月28日（土） 自然いっぱいの天王ダムビオトープで、子どもから大人まで楽しめるイベントが開催されます。 ほくほくの焼き芋を味わえるほか、モルックや輪投げ、大縄など、遊びが盛りだくさん。モルックや大縄は手作りの道具を使って楽しめ、普段なかなか体験できない",
+    "image_url": "images/3d9c06556e362c756d.png",
+    "source": "Feel KOBE",
+    "source_url": "https://www.feel-kobe.jp/event/39164/",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/tenno-dam-biotope-main_01-725x1024.png"
   },
   {
     "title": "銭湯スイッチ。〜湯上がりの風と、歩く京都〜【QUESTION（コミュニティ・バンク京信）】",
@@ -6246,49 +6164,6 @@ window.EVENT_DATA = [
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/RMA2026_2500_1667-1024x683.jpg"
   },
   {
-    "title": "「神戸六甲ミーツ・アート2026 beyond」六甲山 2026年8月29日（土） ~2026年11月29日（日） 神戸六甲ミーツ・アートは、神戸・六甲山上で毎年開催される現代アートの芸術祭です。古くから、身近な山として",
-    "start_date": "2026-08-29",
-    "end_date": "2026-11-29",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 53,
-    "tags": [
-      "イベント",
-      "兵庫",
-      "神戸"
-    ],
-    "description": "開催中 「神戸六甲ミーツ・アート2026 beyond」六甲山 2026年8月29日（土） ~2026年11月29日（日） 神戸六甲ミーツ・アートは、神戸・六甲山上で毎年開催される現代アートの芸術祭です。古くから、身近な山として親しまれてきた六甲山。今年は約60組のアーティストがこの土地の自然や紡がれてきた物語に向き合い、多様な表現を展開",
-    "image_url": "images/87e13158f8f025f757.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/36439/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/RMA2026_2500_1667-1024x683.jpg"
-  },
-  {
-    "title": "「第11回 六甲山のキノコ展 in 森林植物園」 2026年9月6日（日） ~2026年12月18日（金） 「第11回 六甲山のキノコ展 in 森林植物園」は、六甲山で見られるさまざまなキノコを紹介する展示イベントです。",
-    "start_date": "2026-09-06",
-    "end_date": "2026-12-18",
-    "area": "兵庫",
-    "venue": "兵庫",
-    "category": "tourism",
-    "score": 53,
-    "tags": [
-      "イベント",
-      "兵庫"
-    ],
-    "description": "開催中 「第11回 六甲山のキノコ展 in 森林植物園」 2026年9月6日（日） ~2026年12月18日（金） 「第11回 六甲山のキノコ展 in 森林植物園」は、六甲山で見られるさまざまなキノコを紹介する展示イベントです。 会場には、身近なものから珍しいものまで、六甲山地に生息するキノコの標本が並びます。普段はなかなか気に留めないキ",
-    "image_url": "images/26accf66b84911abd2.jpg",
-    "source": "Feel KOBE",
-    "source_url": "https://www.feel-kobe.jp/event/37688/",
-    "categories": [
-      "tourism"
-    ],
-    "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/12b4b6eef871b3eef1129fb05d967ae0.jpg"
-  },
-  {
     "title": "「サカナクション「グッドナイト・プラネタリウム」特別上映 追加上映決定」バンドー神戸青少年科学館 2026年9月29日（火） ~2026年12月28日（月） バンドー神戸青少年科学館にて、サカナクションの音楽と映像による",
     "start_date": "2026-09-29",
     "end_date": "2026-12-28",
@@ -6331,6 +6206,27 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/3c363014c069343d9bfefe0fd659534e-1.jpg"
+  },
+  {
+    "title": "仁和寺霊宝館秋季名宝展【仁和寺】",
+    "start_date": "2026-10-03",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "京都",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "京都"
+    ],
+    "description": "特別公開 2026年10月3日（土）～11月29日（日） 月曜日休館 【10月12日（月・祝）・11月23日（月・祝）は開館】 仁和寺霊宝館秋季名宝展【仁和寺】",
+    "image_url": "images/90f0409c16098e2e0f.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=4810",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/4810-1.png"
   },
   {
     "title": "「兵庫津発掘‐よみがえる江戸時代の浜本陣と町家‐」兵庫県立兵庫津ミュージアム 2026年10月10日（土） ~2026年12月6日（日） 港湾都市として繁栄した兵庫津の地下には、千年以上にわたる人々の営みが埋もれています",
@@ -6509,5 +6405,114 @@ window.EVENT_DATA = [
       "tourism"
     ],
     "original_image_url": "https://www.feel-kobe.jp/wp-content/uploads/803c92b08a58677a73d6cf05445c846b-1-1024x724.png"
+  },
+  {
+    "title": "梅小路公園紅葉まつり（ライトアップ）",
+    "start_date": "2026-11-13",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "京都",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "京都",
+      "公園"
+    ],
+    "description": "特別公開 夜観光 2026年11月13日（金）～11月29日（日）※11/16（月）、11/24（火）は休園 ※11月16日（月）、11月24日（火）は休園 梅小路公園紅葉まつり（ライトアップ）",
+    "image_url": "images/5ce2328f69dce15444.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=3731",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/3731-1.jpg"
+  },
+  {
+    "title": "京都丹波KAMEOKA夢ナリエ【ききょうの里】",
+    "start_date": "2026-11-21",
+    "end_date": "2026-12-26",
+    "area": "京都",
+    "venue": "ききょうの里（亀岡市宮前町猪倉休場20）",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "京都"
+    ],
+    "description": "明智光秀ゆかりの谷性寺門前の庭園「ききょうの里」で開催されるイルミネーションイベント。絵行灯が描く光の小径、幻想的に輝く竹林ライトアップ。シャボン玉イベントもあり。ペットの同伴可能。",
+    "image_url": "images/698df932485dbf8a9f.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15831",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15831-1.jpg"
+  },
+  {
+    "title": "上野通明 J.S.バッハ：無伴奏チェロ組曲全曲演奏会【京都コンサートホール アンサンブルホールムラタ】",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "京都",
+    "venue": "京都",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "京都",
+      "ホール"
+    ],
+    "description": "アート／音楽／劇場 2026年11月28日（土） 上野通明 J.S.バッハ：無伴奏チェロ組曲全曲演奏会【京都コンサートホール アンサンブルホールムラタ】 #雨の日も楽しめる #音楽 #上賀茂・北山・大徳寺",
+    "image_url": "images/d9530e847c0dd08be6.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=14327",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/14327-1.jpg"
+  },
+  {
+    "title": "DJ KRUSH “TOKYØHUM” JAPAN TOUR 2026 in Kyoto【CLUB METRO】",
+    "start_date": "2026-11-28",
+    "end_date": "2026-11-28",
+    "area": "京都",
+    "venue": "京都",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "京都",
+      "ホール"
+    ],
+    "description": "アート／音楽／劇場 夜観光 2026年11月28日(土) DJ KRUSH “TOKYØHUM” JAPAN TOUR 2026 in Kyoto【CLUB METRO】 #夜観光 #音楽 #市内中心部 #京都御所・下鴨",
+    "image_url": "images/10907a5cb46644c464.jpg",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15971",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15971-1.jpg"
+  },
+  {
+    "title": "京都府立府民ホール アルティ『和管洋弦の奏で』篠笛×ヴァイオリン",
+    "start_date": "2026-11-29",
+    "end_date": "2026-11-29",
+    "area": "京都",
+    "venue": "京都",
+    "category": "tourism",
+    "score": 53,
+    "tags": [
+      "イベント",
+      "京都",
+      "ホール"
+    ],
+    "description": "アート／音楽／劇場 2026年11月29日(日） 京都府立府民ホール アルティ『和管洋弦の奏で』篠笛×ヴァイオリン #京都御所・下鴨 #二条城・西陣",
+    "image_url": "images/7ed3e8bf5db0e84b18.png",
+    "source": "京都観光Navi",
+    "source_url": "https://ja.kyoto.travel/event/single.php?event_id=15374",
+    "categories": [
+      "tourism"
+    ],
+    "original_image_url": "https://ja.kyoto.travel/resource/event/15374-1.png"
   }
 ];
